@@ -89,7 +89,7 @@ Function Get-Colons
         [int32]$Depth
     )
 
-    $Colons = ":"
+    $Colons = "::"
     For($index = 0; $index -lt $Depth; $index++)
     {
         $Colons += ":"
@@ -118,7 +118,7 @@ Function Print-Topics
             $Colons = Get-Colons -Depth $Depth
             $Whitespace = Get-Whitespace -Depth $Depth
             $Result = $Result + "$($Whitespace)$($_)$($Colons)`n"
-            $Result += Print-Topics -Depth ($Depth++) -Topics $Value
+            $Result += Print-Topics -Depth ($Depth + 1) -Topics $Value
         }
         Else
         {
@@ -129,12 +129,13 @@ Function Print-Topics
     return $Result
 }
 
-$Doc = @"
-= Handbuch _Marco Herzig_
+$Doc = "= Handbuch _Marco Herzig_
 
 
-"@
+"
 
-$Doc += Print-Topics -Depth 1 -Topics $AllTopics
+$Doc += Print-Topics -Depth 0 -Topics $AllTopics
 
 echo $Doc
+
+$Doc | Out-File -FilePath "$($Dest)\_index.adoc" -Encoding ASCII
