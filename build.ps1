@@ -64,3 +64,77 @@ Foreach ($SrcDoc in $SrcDocs)
         }
     }
 }
+
+Function Get-Whitespace
+{
+    [CmdletBinding()]
+    Param(
+        [Parameter(Mandatory=$true)]
+        [int32]$Depth
+    )
+
+    $Whitespace = ""
+    For($index = 0; $index -lt $Depth; $index++)
+    {
+        $Whitespace += "    "
+    }
+    return $Whitespace
+}
+
+Function Get-Colons
+{
+    [CmdletBinding()]
+    Param(
+        [Parameter(Mandatory=$true)]
+        [int32]$Depth
+    )
+
+    $Colons = ":"
+    For($index = 0; $index -lt $Depth; $index++)
+    {
+        $Colons += ":"
+    }
+    return $Colons
+}
+
+Function Print-Topics
+{
+    [CmdletBinding()]
+    Param(
+        [Parameter(Mandatory=$true)]
+        [int32]$Depth,
+
+        [Parameter(Mandatory=$true)]
+        [Hashtable]$Topics
+    )
+
+    $Result = ""
+    $Topics.keys | % {
+        $Value = $Topics[$_]
+        $IsTopic = $Value.GetType().Name -eq "Hashtable"
+        If($IsTopic)
+        {
+            # hier startet die Rekursion
+            $Colons = Get-Colons -Depth $Depth
+            $Whitespace = Get-Whitespace -Depth $Depth
+            $Result = $Result + "$($Whitespace)$($_)$($Colons)`n"
+            $Result += Print-Topics -Depth ($Depth++) -Topics $Value
+        }
+        Else
+        {
+            $Whitespace = Get-Whitespace -Depth $Depth
+            $Result = $Result + "$($Whitespace)$($_)`n"
+        }
+    }
+    return $Result
+}
+
+$Doc = @"
+= Handbuch _Marco Herzig_
+
+
+"@
+
+$Doc += Print-Topics -Depth 1 -Topics $AllTopics
+
+echo $Doc
