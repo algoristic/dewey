@@ -10,21 +10,6 @@ Param(
     [string[]]$Dest
 )
 
-Function Add-Topic
-{
-    [CmdletBinding()]
-    Param(
-        [Parameter(Mandatory=$true)]
-        [array]$TopicList,
-
-        [Parameter(Mandatory=$true)]
-        [int32]$Iterator,
-
-        [Parameter(Mandatory=$true)]
-        [String]$AttributeParam
-    )
-}
-
 $AllTopics = @{}
 $SrcDocs = Get-ChildItem -Recurse -Path $Src | ? { $_.Extension -in ".asciidoc",".adoc",".ad" }
 Foreach ($SrcDoc in $SrcDocs)
