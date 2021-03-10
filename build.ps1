@@ -123,7 +123,7 @@ Function Print-Topics
         Else
         {
             $Whitespace = Get-Whitespace -Depth $Depth
-            $Result = $Result + "$($Whitespace)$($_)`n"
+            $Result = $Result + "$($Whitespace)link:$($Value)[$($_)] +`n"
         }
     }
     return $Result
@@ -134,8 +134,12 @@ $Doc = "= Handbuch _Marco Herzig_
 
 "
 
+# erstelle eine Navigations-Seite
 $Doc += Print-Topics -Depth 0 -Topics $AllTopics
 
-echo $Doc
+# schreibe die Navigations-Seite heraus
+$OutFile = "$($Dest)\_index.adoc"
+$Doc | Out-File -FilePath $OutFile -Encoding ASCII
 
-$Doc | Out-File -FilePath "$($Dest)\_index.adoc" -Encoding ASCII
+# kompiliere asciidoc nach html
+# TODO
