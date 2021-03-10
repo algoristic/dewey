@@ -11,6 +11,7 @@ Param(
 )
 
 $AllTopics = @{}
+[System.Collections.ArrayList]$CompileDocuments = @()
 $SrcDocs = Get-ChildItem -Recurse -Path $Src | ? { $_.Extension -in ".asciidoc",".adoc",".ad" }
 Foreach ($SrcDoc in $SrcDocs)
 {
@@ -36,6 +37,9 @@ Foreach ($SrcDoc in $SrcDocs)
         # schneide den aboluten Pfad heraus
         $AbsolutePart = $SrcPath.IndexOf($Src.Substring(1))
         $BuildPath = $SrcPath.Substring($AbsolutePart)
+        # den Pfad für's kompilieren schonmal merken
+        $CompileDocuments.Add(".$($BuildPath)")
+
         # es ist evtl. nicht notwendig hier bereits den $Dest-Teil davor zu hängen, da die
         # Pfade ja relativ zu einer Datei im obersten build-Verzeichnis funkionieren sollen!
         # $BuildPath = "$($Dest)\$($BuildPath.Substring($Src.Length))"
@@ -142,4 +146,9 @@ $OutFile = "$($Dest)\_index.adoc"
 $Doc | Out-File -FilePath $OutFile -Encoding ASCII
 
 # kompiliere asciidoc nach html
-# TODO
+# TODO $CompileDocuments verketten und hinten anhängen
+$Documents = ""
+$CompileDocuments | % {
+    $Documents += " $($_)"
+}
+& "asciidoctor.bat" "-R $($Src)" "-D $($Dest)" $Documents
