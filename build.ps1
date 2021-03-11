@@ -38,7 +38,7 @@ Foreach ($SrcDoc in $SrcDocs)
         $AbsolutePart = $SrcPath.IndexOf($Src.Substring(1))
         $BuildPath = $SrcPath.Substring($AbsolutePart)
         # den Pfad für's kompilieren schonmal merken
-        $CompileDocuments.Add(".$($BuildPath)")
+        $CompileDocuments.Add(".$($BuildPath)") | Out-Null
 
         # es ist evtl. nicht notwendig hier bereits den $Dest-Teil davor zu hängen, da die
         # Pfade ja relativ zu einer Datei im obersten build-Verzeichnis funkionieren sollen!
