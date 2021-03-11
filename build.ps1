@@ -7,9 +7,57 @@ Param(
     [String]$Src,
 
     [Parameter(Mandatory=$true)]
-    [string[]]$Dest
+    [string[]]$Dest,
+
+    [Parameter(Mandatory=$false)]
+    [ValidateSet("TRACE", "DEBUG","INFO","WARN","ERROR")]
+    [String]$LogLevel = "INFO"
 )
 
+# Logging Standardbausteine
+Function Is-RightLevel
+{
+    [CmdletBinding()]
+    Param(
+        [Parameter(Mandatory=$true)]
+        [String]$WriteLevel
+    )
+
+    $Levels = "TRACE", "DEBUG","INFO","WARN","ERROR"
+    $LogPriority = $Levels.IndexOf($LogLevel)
+    $WritePriority = $Levels.IndexOf($WriteLevel)
+    return ($LogPriority -le $WritePriority)
+}
+Function Write-Log
+{
+    [CmdletBinding()]
+    Param(
+        [Parameter(Mandatory=$true)]
+        [String]$Message,
+
+        [Parameter(Mandatory=$false)]
+        [ValidateSet("TRACE", "DEBUG","INFO","WARN","ERROR")]
+        [String]$Level = "INFO",
+
+        [Parameter(Mandatory=$false)]
+        [String]$Depth = 0
+    )
+
+    $stamp = (Get-Date).ToString("yyyy/MM/dd HH:mm:ss")
+    $line = "$stamp $Level"
+    for($i = 0; $i -le $Depth; $i++)
+    {
+        $line += "`t"
+    }
+    $line += $Message
+    if(Is-RightLevel -WriteLevel $Level)
+    {
+        Write $line
+    }
+
+}
+
+# eigentliches Skript
 $AllTopics = @{}
 [System.Collections.ArrayList]$CompileDocuments = @()
 $SrcDocs = Get-ChildItem -Recurse -Path $Src | ? { $_.Extension -in ".asciidoc",".adoc",".ad" }
@@ -158,5 +206,8 @@ $SrcPath = (Get-Item $Src).FullName
 $DestPath = (Get-Item $Dest).FullName
 $CompileDocuments | % {
     $FilePath = (Get-Item $_).FullName
+    Write-Log "Compile: $FilePath"
+    Write-Log "Src: $SrcPath, Dest: $DestPath" DEBUG
     & C:\tools\ruby30\bin\asciidoctor.bat -R $SrcPath -D $DestPath $FilePath
+    Write-Log "Finished: $FilePath" DEBUG
 }
