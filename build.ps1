@@ -196,18 +196,15 @@ If(Test-Path $Dest)
 New-Item $Dest -ItemType "directory" | Out-Null
 
 # schreibe die Navigations-Seite heraus und kompiliere und lösche sie anschließend
-$OutFile = "$($Dest)\_index.adoc"
+$OutFile = "$($Dest)\index.adoc"
 $Doc | Out-File -FilePath $OutFile -Encoding ASCII
-& "asciidoctor.bat" $OutFile
+& asciidoctor.bat $OutFile
 Remove-Item $OutFile
 
 # kompiliere asciidoc nach html
-$SrcPath = (Get-Item $Src).FullName
-$DestPath = (Get-Item $Dest).FullName
 $CompileDocuments | % {
-    $FilePath = (Get-Item $_).FullName
-    Write-Log "Compile: $FilePath"
-    Write-Log "Src: $SrcPath, Dest: $DestPath" DEBUG
-    & C:\tools\ruby30\bin\asciidoctor.bat -R $SrcPath -D $DestPath $FilePath
-    Write-Log "Finished: $FilePath" DEBUG
+    Write-Log "Compile: $_"
+    Write-Log "Src: $Src, Dest: $Dest" DEBUG
+    & asciidoctor.bat -R $Src -D $Dest $_
+    Write-Log "Finished: $_" DEBUG
 }
