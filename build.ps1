@@ -42,7 +42,6 @@ Foreach ($SrcDoc in $SrcDocs)
 
         # es ist evtl. nicht notwendig hier bereits den $Dest-Teil davor zu hängen, da die
         # Pfade ja relativ zu einer Datei im obersten build-Verzeichnis funkionieren sollen!
-        # $BuildPath = "$($Dest)\$($BuildPath.Substring($Src.Length))"
         $BuildPath = ".\$($BuildPath.Substring($Src.Length))"
         # alle asciidoc-Endungen durch die kompilierte html-Variante ersetzen
         $BuildPath = $BuildPath -Replace ".asciidoc",".html" -Replace ".adoc",".html" -Replace ".ad",".html"
@@ -141,14 +140,17 @@ $Doc = "= Handbuch _Marco Herzig_
 # erstelle eine Navigations-Seite
 $Doc += Print-Topics -Depth 0 -Topics $AllTopics
 
-# schreibe die Navigations-Seite heraus
+# schreibe die Navigations-Seite heraus und kompiliere und lösche sie anschließend
 $OutFile = "$($Dest)\_index.adoc"
 $Doc | Out-File -FilePath $OutFile -Encoding ASCII
+& "asciidoctor.bat" $OutFile
+Remove-Item $OutFile
 
 # kompiliere asciidoc nach html
 # TODO $CompileDocuments verketten und hinten anhängen
-$Documents = ""
+$SrcPath = (Get-Item $Src).FullName
+$DestPath = (Get-Item $Dest).FullName
 $CompileDocuments | % {
-    $Documents += " $($_)"
+    $FilePath = (Get-Item $_).FullName
+    & C:\tools\ruby30\bin\asciidoctor.bat -R $SrcPath -D $DestPath $FilePath
 }
-& "asciidoctor.bat" "-R $($Src)" "-D $($Dest)" $Documents
