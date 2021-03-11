@@ -171,7 +171,7 @@ Function Print-Topics
     }
     return $Result
 }
-$Doc = Get-Content "./src/resources/index.root.ad" -Encoding UTF8
+$Doc = Get-Content "./src/resources/templates/index.root.ad" -Encoding UTF8
 $Doc += "`n"
 
 # erstelle eine Navigations-Seite
