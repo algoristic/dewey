@@ -140,12 +140,12 @@ $Doc = "= Handbuch _Marco Herzig_
 # erstelle eine Navigations-Seite
 $Doc += Print-Topics -Depth 0 -Topics $AllTopics
 
-# TODO build Verzeichnis leeren und neu aufbauen
+# build Verzeichnis leeren und neu aufbauen
 If(Test-Path $Dest)
 {
-    #Remove-Item -Force -Path $Dest
+    Remove-Item -Path $Dest -Force -Recurse
 }
-#New-Item $Dest
+New-Item $Dest -ItemType "directory" | Out-Null
 
 # schreibe die Navigations-Seite heraus und kompiliere und lösche sie anschließend
 $OutFile = "$($Dest)\_index.adoc"
