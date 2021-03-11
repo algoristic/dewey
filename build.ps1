@@ -64,7 +64,7 @@ $SrcDocs = Get-ChildItem -Recurse -Path $Src | ? { $_.Extension -in ".asciidoc",
 Foreach ($SrcDoc in $SrcDocs)
 {
     $SrcPath = $SrcDoc.FullName
-    $Content = Get-Content $SrcPath
+    $Content = Get-Content $SrcPath -Encoding UTF8
     $Meta = $Content | ? { $_.Contains(":dewey:") }
     If($Meta)
     {
@@ -116,36 +116,29 @@ Foreach ($SrcDoc in $SrcDocs)
     }
 }
 
-Function Get-Whitespace
+Function Get-Prefix
 {
     [CmdletBinding()]
     Param(
         [Parameter(Mandatory=$true)]
-        [int32]$Depth
+        [int32]$Depth,
+
+        [Parameter(Mandatory=$false)]
+        [string]$Prefix = "",
+
+        [Parameter(Mandatory=$false)]
+        [string]$Start = "",
+
+        [Parameter(Mandatory=$false)]
+        [string]$End = ""
     )
 
-    $Whitespace = ""
+    $Result = $Start
     For($index = 0; $index -lt $Depth; $index++)
     {
-        $Whitespace += "    "
+        $Result += $Prefix
     }
-    return $Whitespace
-}
-
-Function Get-Colons
-{
-    [CmdletBinding()]
-    Param(
-        [Parameter(Mandatory=$true)]
-        [int32]$Depth
-    )
-
-    $Colons = "::"
-    For($index = 0; $index -lt $Depth; $index++)
-    {
-        $Colons += ":"
-    }
-    return $Colons
+    return ($Result + $End)
 }
 
 Function Print-Topics
@@ -166,24 +159,20 @@ Function Print-Topics
         If($IsTopic)
         {
             # hier startet die Rekursion
-            $Colons = Get-Colons -Depth $Depth
-            $Whitespace = Get-Whitespace -Depth $Depth
-            $Result = $Result + "$($Whitespace)$($_)$($Colons)`n"
+            $Prefix = Get-Prefix $Depth "=" "==" " "
+            $Result = $Result + "$($Prefix)$($_)`n `n"
             $Result += Print-Topics -Depth ($Depth + 1) -Topics $Value
         }
         Else
         {
-            $Whitespace = Get-Whitespace -Depth $Depth
-            $Result = $Result + "$($Whitespace)link:$($Value)[$($_)] +`n"
+            $Prefix = Get-Prefix $Depth "" "======" " "
+            $Result = $Result + "$($Prefix)link:$($Value)[$($_)]`n `n"
         }
     }
     return $Result
 }
-
-$Doc = "= Handbuch _Marco Herzig_
-
-
-"
+$Doc = Get-Content "./src/resources/index.root.ad" -Encoding UTF8
+$Doc += "`n"
 
 # erstelle eine Navigations-Seite
 $Doc += Print-Topics -Depth 0 -Topics $AllTopics
@@ -197,7 +186,7 @@ New-Item $Dest -ItemType "directory" | Out-Null
 
 # schreibe die Navigations-Seite heraus und kompiliere und lösche sie anschließend
 $OutFile = "$($Dest)\index.adoc"
-$Doc | Out-File -FilePath $OutFile -Encoding ASCII
+$Doc | Out-File -FilePath $OutFile -Encoding UTF8
 & asciidoctor.bat $OutFile
 Remove-Item $OutFile
 
