@@ -154,7 +154,6 @@ $Doc | Out-File -FilePath $OutFile -Encoding ASCII
 Remove-Item $OutFile
 
 # kompiliere asciidoc nach html
-# TODO $CompileDocuments verketten und hinten anhängen
 $SrcPath = (Get-Item $Src).FullName
 $DestPath = (Get-Item $Dest).FullName
 $CompileDocuments | % {
