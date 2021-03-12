@@ -64,13 +64,13 @@ $SrcDocs = Get-ChildItem -Recurse -Path $Src | ? { $_.Extension -in ".asciidoc",
 Foreach ($SrcDoc in $SrcDocs)
 {
     $SrcPath = $SrcDoc.FullName
-    $Content = Get-Content $SrcPath -Encoding UTF8
-    $Meta = $Content | ? { $_.Contains(":dewey:") }
+    $OriginalContent = Get-Content $SrcPath -Encoding UTF8
+    $Meta = $OriginalContent | ? { $_.Contains(":dewey:") }
     If($Meta)
     {
         ### Sammle Daten für index-Dokument
         # entferne führendes '= ' vom Titel
-        $Title = $Content[0]
+        $Title = $OriginalContent[0]
         $Title = $Title.Substring(2).Trim()
 
         # entferne ':dewey:'-Deklaration und baue Liste aus der Themenhierarchie
@@ -88,11 +88,14 @@ Foreach ($SrcDoc in $SrcDocs)
         $BuildPath = $SrcPath.Substring($AbsolutePart)
         $BuildPath = ".$BuildPath"
 
+        # erstelle ein temporäres build-Dokument, in dem die ':dewey-x'-Platzhalter aufgelöst werden
         $OriginalItem = Get-Item $BuildPath
         $OriginalName = $OriginalItem.Name
         $TempItemName = "_build_$OriginalName"
         $BuildDirectory = $OriginalItem.DirectoryName
         $TempItem = "$BuildDirectory\$TempItemName"
+        # schreibe die Inhalte des Original-Dokuments in das temporäre build-Dokument
+        $OriginalContent | Out-File -FilePath $TempItem -Encoding UTF8
 
         # den Pfad für's kompilieren schonmal merken
         $CompileDocuments.Add($BuildPath) | Out-Null
