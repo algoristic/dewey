@@ -91,7 +91,7 @@ Foreach ($SrcDoc in $SrcDocs)
         # erstelle ein temporäres build-Dokument, in dem die ':dewey-x'-Platzhalter aufgelöst werden
         $OriginalItem = Get-Item $BuildPath
         $OriginalName = $OriginalItem.Name
-        $TempItemName = "_build_$OriginalName"
+        $TempItemName = "_$OriginalName"
         $BuildDirectory = $OriginalItem.DirectoryName
         $TempItem = "$BuildDirectory\$TempItemName"
         # schreibe die Inhalte des Original-Dokuments in das temporäre build-Dokument
@@ -106,13 +106,15 @@ Foreach ($SrcDoc in $SrcDocs)
             return $Content
         }
         $BuildContent | Out-File -FilePath $TempItem -Encoding UTF8
+        $TempItem = $TempItem.Substring($AbsolutePart)
+        $TempItem = ".$TempItem"
 
         # den Pfad für's kompilieren schonmal merken
-        $CompileDocuments.Add($BuildPath) | Out-Null
+        $CompileDocuments.Add($TempItem) | Out-Null
 
         # es ist evtl. nicht notwendig hier bereits den $Dest-Teil davor zu hängen, da die
         # Pfade ja relativ zu einer Datei im obersten build-Verzeichnis funkionieren sollen!
-        $TargetPath = ".\$($BuildPath.Substring($Src.Length))"
+        $TargetPath = ".\$($TempItem.Substring($Src.Length))"
         # alle asciidoc-Endungen durch die kompilierte html-Variante ersetzen
         $TargetPath = $TargetPath -Replace ".asciidoc",".html" -Replace ".adoc",".html" -Replace ".ad",".html"
 
@@ -217,5 +219,6 @@ $CompileDocuments | % {
     Write-Log "Compile: $_"
     Write-Log "Src: $Src, Dest: $Dest" DEBUG
     & asciidoctor.bat -R $Src -D $Dest $_
+    Remove-Item -Force $_
     Write-Log "Finished: $_" DEBUG
 }
