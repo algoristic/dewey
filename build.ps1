@@ -114,7 +114,7 @@ Foreach ($SrcDoc in $SrcDocs)
 
         # es ist evtl. nicht notwendig hier bereits den $Dest-Teil davor zu hängen, da die
         # Pfade ja relativ zu einer Datei im obersten build-Verzeichnis funkionieren sollen!
-        $TargetPath = ".\$($TempItem.Substring($Src.Length))"
+        $TargetPath = ".$($TempItem.Substring($Src.Length))"
         # alle asciidoc-Endungen durch die kompilierte html-Variante ersetzen
         $TargetPath = $TargetPath -Replace ".asciidoc",".html" -Replace ".adoc",".html" -Replace ".ad",".html"
 
@@ -209,7 +209,7 @@ If(Test-Path $Dest)
 New-Item $Dest -ItemType "directory" | Out-Null
 
 # schreibe die Navigations-Seite heraus und kompiliere und lösche sie anschließend
-$OutFile = "$($Dest)\index.adoc"
+$OutFile = "$($Dest)/index.adoc"
 $Doc | Out-File -FilePath $OutFile -Encoding UTF8
 & asciidoctor.bat $OutFile
 Remove-Item $OutFile
