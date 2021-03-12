@@ -62,8 +62,6 @@ Function Write-Log
 
 # eigentliches Skript
 $AllTopics = @{}
-[System.Collections.ArrayList]$CompileDocuments = @()
-
 # build Verzeichnis leeren und neu aufbauen
 If(Test-Path $Dest)
 {
@@ -220,6 +218,6 @@ $Doc += Print-Topics -Depth 0 -Topics $AllTopics
 $OutFile = "$($Dest)/index.adoc"
 Write-Log "Create $OutFile"
 $Doc | Out-File -FilePath $OutFile -Encoding UTF8
-Write-Log "Compile $OutFile"
+Write-Log "Compile $OutFile "
 & asciidoctor.bat $OutFile
 Remove-Item $OutFile
