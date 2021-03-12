@@ -7,7 +7,10 @@ Param(
     [String]$Src,
 
     [Parameter(Mandatory=$true)]
-    [string[]]$Dest,
+    [string]$Dest,
+
+    [Parameter(Mandatory=$false)]
+    [string]$TemplateRoot = "./src/resources/templates",
 
     [Parameter(Mandatory=$false)]
     [ValidateSet("TRACE", "DEBUG","INFO","WARN","ERROR")]
@@ -100,7 +103,7 @@ Foreach ($SrcDoc in $SrcDocs)
             If($_.Contains(":dewey-template:"))
             {
                 $TemplateName = $_.Substring(":dewey-template: ".Length)
-                $TemplatePath = "./src/resources/templates/$TemplateName"
+                $TemplatePath = "$TemplateRoot/$TemplateName"
                 $Content = Get-Content $TemplatePath -Encoding UTF8
             }
             return $Content
@@ -195,7 +198,7 @@ Function Print-Topics
     }
     return $Result
 }
-$Doc = Get-Content "./src/resources/templates/index.root.ad" -Encoding UTF8
+$Doc = Get-Content "$TemplateRoot/index.root.ad" -Encoding UTF8
 $Doc += "`n"
 
 # erstelle eine Navigations-Seite
