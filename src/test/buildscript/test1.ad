@@ -1,6 +1,7 @@
 = Test löl
 :dewey: Thema 1; Thema 2
-:toc: left
+:dewey-meta:
+include::../../resources/templates/doc.template.ad[]
 
 == abc
 
