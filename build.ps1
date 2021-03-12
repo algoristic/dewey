@@ -68,6 +68,7 @@ Foreach ($SrcDoc in $SrcDocs)
     $Meta = $Content | ? { $_.Contains(":dewey:") }
     If($Meta)
     {
+        ### Sammle Daten für index-Dokument
         # entferne führendes '= ' vom Titel
         $Title = $Content[0]
         $Title = $Title.Substring(2).Trim()
@@ -85,14 +86,22 @@ Foreach ($SrcDoc in $SrcDocs)
         # schneide den aboluten Pfad heraus
         $AbsolutePart = $SrcPath.IndexOf($Src.Substring(1))
         $BuildPath = $SrcPath.Substring($AbsolutePart)
+        $BuildPath = ".$BuildPath"
+
+        $OriginalItem = Get-Item $BuildPath
+        $OriginalName = $OriginalItem.Name
+        $TempItemName = "_build_$OriginalName"
+        $BuildDirectory = $OriginalItem.DirectoryName
+        $TempItem = "$BuildDirectory\$TempItemName"
+
         # den Pfad für's kompilieren schonmal merken
-        $CompileDocuments.Add(".$($BuildPath)") | Out-Null
+        $CompileDocuments.Add($BuildPath) | Out-Null
 
         # es ist evtl. nicht notwendig hier bereits den $Dest-Teil davor zu hängen, da die
         # Pfade ja relativ zu einer Datei im obersten build-Verzeichnis funkionieren sollen!
-        $BuildPath = ".\$($BuildPath.Substring($Src.Length))"
+        $TargetPath = ".\$($BuildPath.Substring($Src.Length))"
         # alle asciidoc-Endungen durch die kompilierte html-Variante ersetzen
-        $BuildPath = $BuildPath -Replace ".asciidoc",".html" -Replace ".adoc",".html" -Replace ".ad",".html"
+        $TargetPath = $TargetPath -Replace ".asciidoc",".html" -Replace ".adoc",".html" -Replace ".ad",".html"
 
         $CurrentTopics = $AllTopics
         For($index = 0; $index -le $Meta.Length; $index++)
@@ -100,7 +109,7 @@ Foreach ($SrcDoc in $SrcDocs)
             If($index -eq ($Meta.Length))
             {
                 # das hier ist berets die Tiefste Stufe = wir fügen unser Thema der Liste hinzu
-                $CurrentTopics.add($Title, $BuildPath)
+                $CurrentTopics.add($Title, $TargetPath)
             }
             Else
             {
