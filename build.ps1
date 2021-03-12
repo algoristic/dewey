@@ -62,12 +62,16 @@ Function Write-Log
 
 # eigentliches Skript
 $AllTopics = @{}
+
 # build Verzeichnis leeren und neu aufbauen
 If(Test-Path $Dest)
 {
     Remove-Item -Path $Dest -Force -Recurse
 }
 New-Item $Dest -ItemType "directory" | Out-Null
+
+# Bilder kopieren
+Get-ChildItem $Src | Copy-Item -Destination $Dest -Recurse -Filter *.png
 
 $SrcDocs = Get-ChildItem -Recurse -Path $Src | ? { $_.Extension -in ".asciidoc",".adoc",".ad" }
 Foreach ($SrcDoc in $SrcDocs)
@@ -208,6 +212,7 @@ Function Print-Topics
     }
     return $Result
 }
+
 $Doc = Get-Content "$TemplateRoot/index.root.ad" -Encoding UTF8
 $Doc += "`n"
 
