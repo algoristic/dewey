@@ -95,7 +95,17 @@ Foreach ($SrcDoc in $SrcDocs)
         $BuildDirectory = $OriginalItem.DirectoryName
         $TempItem = "$BuildDirectory\$TempItemName"
         # schreibe die Inhalte des Original-Dokuments in das temporäre build-Dokument
-        $OriginalContent | Out-File -FilePath $TempItem -Encoding UTF8
+        $BuildContent = $OriginalContent | % {
+            $Content = $_
+            If($_.Contains(":dewey-template:"))
+            {
+                $TemplateName = $_.Substring(":dewey-template: ".Length)
+                $TemplatePath = "./src/resources/templates/$TemplateName"
+                $Content = Get-Content $TemplatePath -Encoding UTF8
+            }
+            return $Content
+        }
+        $BuildContent | Out-File -FilePath $TempItem -Encoding UTF8
 
         # den Pfad für's kompilieren schonmal merken
         $CompileDocuments.Add($BuildPath) | Out-Null
