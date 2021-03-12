@@ -63,6 +63,14 @@ Function Write-Log
 # eigentliches Skript
 $AllTopics = @{}
 [System.Collections.ArrayList]$CompileDocuments = @()
+
+# build Verzeichnis leeren und neu aufbauen
+If(Test-Path $Dest)
+{
+    Remove-Item -Path $Dest -Force -Recurse
+}
+New-Item $Dest -ItemType "directory" | Out-Null
+
 $SrcDocs = Get-ChildItem -Recurse -Path $Src | ? { $_.Extension -in ".asciidoc",".adoc",".ad" }
 Foreach ($SrcDoc in $SrcDocs)
 {
@@ -112,8 +120,12 @@ Foreach ($SrcDoc in $SrcDocs)
         $TempItem = $TempItem.Substring($AbsolutePart)
         $TempItem = ".$TempItem"
 
-        # den Pfad für's kompilieren schonmal merken
-        $CompileDocuments.Add($TempItem) | Out-Null
+        # kompiliere .adoc nach .html
+        Write-Log "Compile: $TempItem"
+        Write-Log "Src: $Src, Dest: $Dest" DEBUG
+        & asciidoctor.bat -R $Src -D $Dest $TempItem
+        Remove-Item -Force $TempItem
+        Write-Log "Finished: $_" DEBUG
 
         # es ist evtl. nicht notwendig hier bereits den $Dest-Teil davor zu hängen, da die
         # Pfade ja relativ zu einer Datei im obersten build-Verzeichnis funkionieren sollen!
@@ -204,24 +216,10 @@ $Doc += "`n"
 # erstelle eine Navigations-Seite
 $Doc += Print-Topics -Depth 0 -Topics $AllTopics
 
-# build Verzeichnis leeren und neu aufbauen
-If(Test-Path $Dest)
-{
-    Remove-Item -Path $Dest -Force -Recurse
-}
-New-Item $Dest -ItemType "directory" | Out-Null
-
 # schreibe die Navigations-Seite heraus und kompiliere und lösche sie anschließend
 $OutFile = "$($Dest)/index.adoc"
+Write-Log "Create $OutFile"
 $Doc | Out-File -FilePath $OutFile -Encoding UTF8
+Write-Log "Compile $OutFile"
 & asciidoctor.bat $OutFile
 Remove-Item $OutFile
-
-# kompiliere asciidoc nach html
-$CompileDocuments | % {
-    Write-Log "Compile: $_"
-    Write-Log "Src: $Src, Dest: $Dest" DEBUG
-    & asciidoctor.bat -R $Src -D $Dest $_
-    Remove-Item -Force $_
-    Write-Log "Finished: $_" DEBUG
-}
