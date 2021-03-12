@@ -10,7 +10,7 @@ Param(
     [string]$Dest,
 
     [Parameter(Mandatory=$false)]
-    [string]$TemplateRoot = "./src/resources/templates",
+    [string]$TemplateRoot = "./src/main/resources/templates",
 
     [Parameter(Mandatory=$false)]
     [ValidateSet("TRACE", "DEBUG","INFO","WARN","ERROR")]
