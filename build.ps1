@@ -50,7 +50,7 @@ Function Write-Log
     $line = "$stamp $Level"
     for($i = 0; $i -le $Depth; $i++)
     {
-        $line += "`t"
+        $line += "  "
     }
     $line += $Message
     if(Is-RightLevel -WriteLevel $Level)
@@ -106,7 +106,7 @@ Foreach ($SrcDoc in $SrcDocs)
         $OriginalName = $OriginalItem.Name
         $TempItemName = "_$OriginalName"
         $BuildDirectory = $OriginalItem.DirectoryName
-        $TempItem = "$BuildDirectory\$TempItemName"
+        $TempItem = "$BuildDirectory/$TempItemName"
         # schreibe die Inhalte des Original-Dokuments in das temporäre build-Dokument
         $BuildContent = $OriginalContent | % {
             $Content = $_
@@ -122,18 +122,24 @@ Foreach ($SrcDoc in $SrcDocs)
         $TempItem = $TempItem.Substring($AbsolutePart)
         $TempItem = ".$TempItem"
 
-        # kompiliere .adoc nach .html
-        Write-Log "Compile: $TempItem"
-        Write-Log "Src: $Src, Dest: $Dest" DEBUG
-        & asciidoctor.bat -R $Src -D $Dest $TempItem
-        Remove-Item -Force $TempItem
-        Write-Log "Finished: $_" DEBUG
-
-        # es ist evtl. nicht notwendig hier bereits den $Dest-Teil davor zu hängen, da die
         # Pfade ja relativ zu einer Datei im obersten build-Verzeichnis funkionieren sollen!
         $TargetPath = ".$($TempItem.Substring($Src.Length))"
+        $TargetPath = $TargetPath.Substring(0, ($TargetPath.Length - ($TempItemName.Length + 1)))
+        $TargetPath = "$TargetPath/$OriginalName"
         # alle asciidoc-Endungen durch die kompilierte html-Variante ersetzen
         $TargetPath = $TargetPath -Replace ".asciidoc",".html" -Replace ".adoc",".html" -Replace ".ad",".html"
+
+        # bereite den Zielpfad als relativ zum root-Verzeichnis auf
+        $BuildTarget = "$Dest/$($TargetPath.Substring(2))"
+
+        # kompiliere .adoc nach .html
+        Write-Log "Compile: $TempItem"
+        Write-Log "Src: $Src, Dest: $Dest" DEBUG 1
+        Write-Log "Build target: $BuildTarget" DEBUG 1
+        Write-Log "Reference in index.html: $TargetPath" DEBUG 1
+        & asciidoctor.bat -o $BuildTarget $TempItem
+        Remove-Item -Force $TempItem
+        Write-Log "Finished: $BuildTarget" DEBUG
 
         $CurrentTopics = $AllTopics
         For($index = 0; $index -le $Meta.Length; $index++)
