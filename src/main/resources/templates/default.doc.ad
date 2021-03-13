@@ -1,7 +1,18 @@
+// Inhaltsverzeichnis Einstellungen
 :toc: left
 :toc-title: Inhalte
 :toclevels: 4
 
+// i18n
 :last-update-label: Zuletzt geändert:
+:figure-caption: Abb.
+:example-caption: Beispiel
+:table-caption: Tabelle
+:tip-caption: Hinweis
+:note-caption: Anmerkung
+:caution-caption: Achtung
+:warning-caption: Warnung
+:important-caption: Wichtig
 
+// Standard-Link für den Rücksprung zur Hauptseite
 _link:index.html[&rarr; Zurück zur Startseite]_
