@@ -1,0 +1,65 @@
+= Was ist ein Projekt?
+:dewey: Projektmanagement; Grundlagen
+:dewey-template: default.doc.ad
+
+== Beschreibung
+
+_Eine allgemein gültige Definition dafür, was ein Projekt ist, existiert nicht!_
+
+.Bestimmtheit
+Als Projekt bezeichnet man meist ein *zielorientiertes* Vorhaben zur Herstellung eines Produktes, zur Erbringung einer Dienstleistung o. Ä.
+
+.Einmaligkeit
+Eine *zeitliche, finanzielle und personelle Begrenzung* liegen bei einem Projekt vor.
+
+.Komplexität
+Ein Projekt berührt stest mehr als nur einen Fachbereich und erfordert daher die Bildung einer *projektspezifischen Organisation*.
+
+IMPORTANT: Ein Projekt, wird durch die *Einmaligkeit* seiner Bedinungen und seine *Komplexität* gegenüber anderen Formen der Zusammenarbeit abgegrenzt.
+
+== Kriterien für ein Projekt
+
+* das Ziel bzw. das Ergebnis ist *messbar*
+* die Arbeit erfolgt mit begrenzten Ressourcen: *zeitlich, finanziell und personell*
+    ** _zeitlich_: eine Befristung (i. d. R. fester Start und festes Ende) liegt vor
+    ** _finanziell_: ein begrenztes Budget wird für die Projektarbeit zur Verfügung gestellt
+    ** _personell_: ein definiertes Team arbeitet an der Erfüllung der Anforderungen
+* *Teamarbeit* ist notwendig: das Team, das an einem Projekt arbeitet wird projektspezifisch zusammengestellt
+* die Aufgabenstellung ist *neuartig* und *komplex*
+    ** _neuartig_: ein Projekt ist kein "Tagesgechäft"
+    ** _komplex_: betrifft mehrere Disziplinen, Fach- und Verantwortungsbereiche
+* damit die Arbeit an einem Projekt gelingen kann, folgt ein Projekt einem *bestimmten Ablauf*
+    ** da die Ressourcen des Projektes begrenzt sind, erfordert es eine gute Planung im Vorfeld
+
+== Projektarten
+
+.Projektarten
+image::./resources/projektarten_001.png[Projektarten, 500, float="right"]
+
+Standardprojekt::
+Hat eine klare Aufgabenstellung und kann auf Erfahrungen in den Fachbereichen zurückgreifen. +
+_Beispiel_: technisches Kundenprojekt +
+_Herausforderung_: effiziente Projektsteuerung
+
+Akzeptanzprojekt:: "große" Standardprojekt, in denen viele Fachbereiche betroffen sind und viele Stakeholder betroffen sind, bzw. überzeugt werden müssen. +
+_Beispiel_: komplexes IT-Infrastrukturprojekt +
+_Herausforderung_: Stakeholdermanagement
+
+Potentialprojekt:: Projekte ihne viel Vorwissen und mit einem kleinen Team +
+_Beispiel_: Machbarkeitssudien oder Forschungsprojekte +
+_Herausforderung_: Projektziele bzw. Projektleistungsumfang einschätzen
+
+Pionierprojekt:: Bereichsübergreifend, Folgenschwer und schwer einschätzbar. Betreffen viele Geschäftsbereiche und bergen große finanizielle Risiken. +
+_Beispiel_: Firmenfusion, großes Bauprojekt +
+_Herausforderung_: Risikomanagement
+
+== Andere Formen der Zusammenarbeit
+
+Regel-/Geschäftsprozess::
+So bezeichnet man regelmäßig im Geschäftsbetrieb anfallende Aufgaben, wie z. B. die Bearbeitung der Eingangspost, oder das Verbuchen einer Rechnung.
+
+Linienmaßnahmen::
+Unter Linienmaßnahmen versteht man Aufgaben oder Aufgabenpakete, die eindeutig einem bestimmten Geschäftsbereich zugeordnet werden können, wie z. B. die Auslieferung eines Software-Updates an einen Kunden.
+
+Vorhaben::
+Vorhaben sind, wie auch Projekte, "einmalig", benötigen aber keine projektspezifische Organisation - sie finden also innerhalb eines bestimmten Fachbereiches statt und sind damit nicht komplex genug. Ein Beispiel wäre die Durchführung einer geziehlten Vertriebskampagne oder der Entwurf des Prototypen einer komplett neuen Softwareoberfläche.
