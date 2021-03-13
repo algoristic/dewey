@@ -72,6 +72,7 @@ New-Item $Dest -ItemType "directory" | Out-Null
 
 # Bilder kopieren
 Get-ChildItem $Src | Copy-Item -Destination $Dest -Recurse -Filter *.png
+Get-ChildItem $Dest | Remove-Item -Recurse -Include *.ad, *.adoc, *.asciidoc
 
 $SrcDocs = Get-ChildItem -Recurse -Path $Src | ? { $_.Extension -in ".asciidoc",".adoc",".ad" }
 Foreach ($SrcDoc in $SrcDocs)
