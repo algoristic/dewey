@@ -4,7 +4,9 @@
 
 :imagesdir: resources
 
-== Komponenten des Projektmanagements
+== Komponenten
+
+Projektmanagement umfasst die folgenden Bereiche:
 
 Führungsaufgaben::
     * Zieldefinition
@@ -22,23 +24,7 @@ Führungsmittel::
         ** Meilensteine und Termine
         ** Kosten- und Risikomanagement
 
-=== Kompetenzereiche nach PMIfootnote:[Projekt Management Institute, Internationaler Projektmanagementverband]
-
-. Technical Project Management
-    ** Methoden
-    ** Verfahren
-    ** Techniken
-. Leadership
-. Strategy- and Business-Management
-
-=== Projektmanagement nach DIN 69901
-
-Nach DIN 69901:2009 beschreibt Projektmanagement die eigenverantwortliche Durchführung und Begleitung eines Projektes über dessen Phasen hinweg:
-
-.Projektmanagement Phasen
-image::projektmanagement_phasen_001.png[Projektmanagement Phasen]
-
-== Magisches Dreieck des Projektmanagements
+== Magisches Dreieck
 
 .Magisches Dreieck des Projektmanagements
 image::magisches_dreieck_001.png[Magisches Dreieck des Projektmanagements]
@@ -47,17 +33,6 @@ Projektmanagement kann nur erfolgreich sein, wenn ein *Gleichgewicht zwischen de
 
 .Beispiel
 Wenn die ursprünglich vereinbahrte Zeit nicht ausreicht, so werden bspw. verzichtbare Funktionen aus dem Umfang entfernt und in eine spätere Version verschoben. An der Qualität der Ergebnisse wird hingegen nichts geändert. Auch die Überlastung von Mitarbeitern kommt nicht in Frage.
-
-== Erfolgsfaktoren im Projektmanagement
-
-* *Eignung* der Projektmitarbeiter
-    ** Ausbildung und Schulung
-* Richtige *Zusammensetzung des Projektteams*
-    ** sowohl fachlich wie persönlich
-* *Kommunikation* mit Einbeziehung der Stakeholder
-* Korrekte *Zieldefinition* durch umfassende Analyse
-* *strategische Bedeutung* des Projektes erkennen und kommunizieren
-    ** Unterstützung der obersten Führungsebene sichern
 
 === Projekt&nbsp;+&nbsp;Management =&nbsp;Projektmanagement
 
@@ -72,3 +47,37 @@ Für viele Angestellte ist der Wechsel ins Projektmanagement der erste Schritt i
 
 .Kompetenzen Projektmanager
 image::kompetenzen_projektleiter_001.png[Kompetenzen Projektmanager]
+
+=== Kompetenzereiche nach PMI
+
+Das PMIfootnote:[Projekt Management Institute, Internationaler Projektmanagementverband] unterscheidet die folgenden Kompetenzbereiche, die ein erfolgreicher Projektmanager aufweisen muss:
+
+Technical Project Management::
+    * Methoden
+    * Verfahren
+    * Techniken
+Leadership::
+    * Motivation
+    * Moderation
+    * Kommunikation
+Strategy- and Business-Management::
+    * (Selbst-) Management
+    * unternehmerisches Handeln
+
+=== Projektmanagement nach DIN 69901
+
+Nach DIN 69901:2009 beschreibt Projektmanagement die eigenverantwortliche Durchführung und Begleitung eines Projektes über dessen Phasen hinweg:
+
+.Projektmanagement Phasen
+image::projektmanagement_phasen_001.png[Projektmanagement Phasen]
+
+== Erfolgsfaktoren
+
+* *Eignung* der Projektmitarbeiter
+    ** Ausbildung und Schulung
+* Richtige *Zusammensetzung des Projektteams*
+    ** sowohl fachlich wie persönlich
+* *Kommunikation* mit Einbeziehung der Stakeholder
+* Korrekte *Zieldefinition* durch umfassende Analyse
+* *strategische Bedeutung* des Projektes erkennen und kommunizieren
+    ** Unterstützung der obersten Führungsebene sichern
