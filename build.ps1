@@ -10,6 +10,9 @@ Param(
     [string]$Dest,
 
     [Parameter(Mandatory=$false)]
+    [switch]$Production = $false,
+
+    [Parameter(Mandatory=$false)]
     [string]$TemplateRoot = "./src/main/resources/templates",
 
     [Parameter(Mandatory=$false)]
@@ -141,6 +144,10 @@ Foreach ($SrcDoc in $SrcDocs)
         Remove-Item -Force $TempItem
         Write-Log "Finished: $BuildTarget" DEBUG
 
+        If($Production)
+        {
+            $TargetPath = $TargetPath.Substring(0, ($TargetPath.Length - 5))
+        }
         $ContentSummary = ""
         $OriginalContent | ? { $_ -match "^== " } | % {
             $ContentSummary += ($_.Substring(3) + ", ")
