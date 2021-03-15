@@ -2,7 +2,7 @@
 :dewey: Projektmanagement; Grundlagen
 :dewey-template: default.doc.ad
 
-:imagesdir: resources
+:imagesdir: resources/images
 
 == Beschreibung
 
@@ -35,12 +35,11 @@ IMPORTANT: Ein Projekt, wird durch die *Einmaligkeit* seiner Bedinungen und sein
 
 == Projektarten
 
-Standardprojekt::
-Hat eine klare Aufgabenstellung und kann auf Erfahrungen in den Fachbereichen zurückgreifen. +
+Standardprojekt:: Hat eine klare Aufgabenstellung und kann auf Erfahrungen in den Fachbereichen zurückgreifen. +
 *Beispiel*: technisches Kundenprojekt +
 *Herausforderung*: effiziente Projektsteuerung
 
-Akzeptanzprojekt:: "große" Standardprojekt, in denen viele Fachbereiche betroffen sind und viele Stakeholder betroffen sind, bzw. überzeugt werden müssen. +
+Akzeptanzprojekt:: "Große" Standardprojekte, in denen viele Fachbereiche betroffen sind und viele Stakeholder betroffen sind, bzw. überzeugt werden müssen. +
 *Beispiel*: komplexes IT-Infrastrukturprojekt +
 *Herausforderung*: Stakeholdermanagement
 
@@ -48,7 +47,7 @@ Potentialprojekt:: Projekte ihne viel Vorwissen und mit einem kleinen Team +
 *Beispiel*: Machbarkeitssudien oder Forschungsprojekte +
 *Herausforderung*: Projektziele bzw. Projektleistungsumfang einschätzen
 
-Pionierprojekt:: Bereichsübergreifend, Folgenschwer und schwer einschätzbar. Betreffen viele Geschäftsbereiche und bergen große finanizielle Risiken. +
+Pionierprojekt:: Bereichsübergreifend, folgenschwer und schwer einschätzbar. Betreffen viele Geschäftsbereiche und bergen große finanizielle Risiken. +
 *Beispiel*: Firmenfusion, großes Bauprojekt +
 *Herausforderung*: Risikomanagement
 

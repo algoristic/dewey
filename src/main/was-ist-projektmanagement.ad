@@ -2,7 +2,7 @@
 :dewey: Projektmanagement; Grundlagen
 :dewey-template: default.doc.ad
 
-:imagesdir: resources
+:imagesdir: resources/images
 
 == Komponenten
 
@@ -27,7 +27,7 @@ Führungsmittel::
 == Magisches Dreieck
 
 .Magisches Dreieck des Projektmanagements
-image::magisches_dreieck_001.png[Magisches Dreieck des Projektmanagements, 640, align="center"]
+image::magisches_dreieck_001.png[Magisches Dreieck des Projektmanagements, 600, align="center"]
 
 Projektmanagement kann nur erfolgreich sein, wenn ein *Gleichgewicht zwischen den Ecken dieses Dreiecks* gefunden wird. Dabei ist der zentrale Punkt *Stakeholderzufiedenheit* ebenso ein Faktor für den erfolgreichen Projektabschluss. Wenn ein Kunde nach Projektabschluss zwar ein Produkt nach seinen Vorstellungen erhält aber danach nicht mehr mit uns zusammenarbeiten will, so ist das Projekt zwar wirtschaftlich erfolgreich gewesen, gilt im ganzen aber als gescheitert. Dasselbe gilt, wenn Mitarbeiter wegen übermäßigem Druck nicht mehr mit dem Projektmanager zusammenarbeiten wollen.
 
@@ -62,14 +62,14 @@ Strategy- and Business-Management::
 Nach DIN 69901:2009 beschreibt Projektmanagement die eigenverantwortliche Durchführung und Begleitung eines Projektes über dessen Phasen hinweg:
 
 .Projektmanagement Phasen
-image::projektmanagement_phasen_001.png[Projektmanagement Phasen, 640, align="center"]
+image::projektmanagement_phasen_001.png[Projektmanagement Phasen, 500, align="center"]
 
 === Projekt&nbsp;+&nbsp;Management =&nbsp;Projektmanagement
 
 Wenn die klassischen Aufgaben des Managements auf ein Projekt angewandt werden, so sprechen wir von Projektmanagement.
 
 .Projekt + Management = Projektmanagement
-image::projekt-management-projektmanagement_001.png[Projekt + Management = Projektmanagement, 640, align="center"]
+image::projekt-management-projektmanagement_001.png[Projekt + Management = Projektmanagement, 600, align="center"]
 
 == Erfolgsfaktoren
 
