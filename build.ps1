@@ -141,13 +141,20 @@ Foreach ($SrcDoc in $SrcDocs)
         Remove-Item -Force $TempItem
         Write-Log "Finished: $BuildTarget" DEBUG
 
+        $ContentSummary = ""
+        $OriginalContent | ? { $_ -match "^== " } | % {
+            $ContentSummary += ($_.Substring(3) + ", ")
+        }
+        $ContentSummary = $ContentSummary.Substring(0, ($ContentSummary.Length - 2))
+
+        # verarbeite die angegebene Ordnung im Dokument für die Menüstruktur im index.html
         $CurrentTopics = $AllTopics
         For($index = 0; $index -le $Meta.Length; $index++)
         {
             If($index -eq ($Meta.Length))
             {
                 # das hier ist berets die Tiefste Stufe = wir fügen unser Thema der Liste hinzu
-                $CurrentTopics.add($Title, $TargetPath)
+                $CurrentTopics.add($Title, @( $TargetPath, $ContentSummary ))
             }
             Else
             {
@@ -212,8 +219,9 @@ Function Print-Topics
         }
         Else
         {
-            $Prefix = Get-Prefix $Depth "" "======" " "
-            $Result = $Result + "$($Prefix)link:$($Value)[$($_)]`n `n"
+            $Prefix = Get-Prefix $Depth "" "=====" " "
+            $Result += "$($Prefix)link:$($Value[0])[$($_)]`n `n"
+            $Result += "[small silver]#&rarr; $($Value[1])#`n `n"
         }
     }
     return $Result
@@ -231,4 +239,4 @@ Write-Log "Create $OutFile"
 $Doc | Out-File -FilePath $OutFile -Encoding UTF8
 Write-Log "Compile $OutFile "
 & asciidoctor.bat $OutFile
-Get-ChildItem $Dest | Remove-Item -Recurse -Include *.ad, *.adoc, *.asciidoc
+#Get-ChildItem $Dest | Remove-Item -Recurse -Include *.ad, *.adoc, *.asciidoc
