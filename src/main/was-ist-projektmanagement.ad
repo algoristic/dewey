@@ -1,0 +1,77 @@
+= Was ist Projektmanagement?
+:dewey: Projektmanagement; Grundlagen
+:dewey-template: default.doc.ad
+
+:imagesdir: resources
+
+== Komponenten des Projektmanagements
+
+Führungsaufgaben::
+    * Zieldefinition
+    * Kontrolle und Steuerung
+Führungsorganisation::
+    * Projektorganisation
+    * Projektdurchführung/-abwicklung
+Führungstechniken::
+    * Motivation der Mitarbeiter
+    * Besprechungs- und Präsentationstechniken
+    * Entcheidungsfindungstechnik
+Führungsmittel::
+    * Projektplanungs- und Steuerungssysteme
+        ** Arbeitspakete
+        ** Meilensteine und Termine
+        ** Kosten- und Risikomanagement
+
+=== Kompetenzereiche nach PMIfootnote:[Projekt Management Institute, Internationaler Projektmanagementverband]
+
+. Technical Project Management
+    ** Methoden
+    ** Verfahren
+    ** Techniken
+. Leadership
+. Strategy- and Business-Management
+
+=== Projektmanagement nach DIN 69901
+
+Nach DIN 69901:2009 beschreibt Projektmanagement die eigenverantwortliche Durchführung und Begleitung eines Projektes über dessen Phasen hinweg:
+
+. Initialisierung
+. Defintion
+. Planung
+. Steuerung
+. Abschluss
+
+== Magisches Dreieck des Projektmanagements
+
+.Magisches Dreieck des Projektmanagements
+image::magisches_dreieck_001.png[Magisches Dreieck des Projektmanagements]
+
+Projektmanagement kann nur erfolgreich sein, wenn ein *Gleichgewicht zwischen den Ecken dieses Dreiecks* gefunden wird. Dabei ist der zentrale Punkt *Stakeholderzufiedenheit* ebenso ein Faktor für den erfolgreichen Projektabschluss. Wenn ein Kunde nach Projektabschluss zwar ein Produkt nach seinen Vorstellungen erhält aber danach nicht mehr mit uns zusammenarbeiten will, so ist das Projekt zwar wirtschaftlich erfolgreich gewesen, gilt im ganzen aber als gescheitert. Dasselbe gilt, wenn Mitarbeiter wegen übermäßigem Druck nicht mehr mit dem Projektmanager zusammenarbeiten wollen.
+
+.Beispiel
+Wenn die ursprünglich vereinbahrte Zeit nicht ausreicht, so werden bspw. verzichtbare Funktionen aus dem Umfang entfernt und in eine spätere Version verschoben. An der Qualität der Ergebnisse wird hingegen nichts geändert. Auch die Überlastung von Mitarbeitern kommt nicht in Frage.
+
+== Erfolgsfaktoren im Projektmanagement
+
+* *Eignung* der Projektmitarbeiter
+    ** Ausbildung und Schulung
+* Richtige *Zusammensetzung des Projektteams*
+    ** sowohl fachlich wie persönlich
+* *Kommunikation* mit Einbeziehung der Stakeholder
+* Korrekte *Zieldefinition* durch umfassende Analyse
+* *strategische Bedeutung* des Projektes erkennen und kommunizieren
+    ** Unterstützung der obersten Führungsebene sichern
+
+=== Projekt + Management = Projektmanagement
+
+Wenn die klassischen Aufgaben des Managements auf ein Projekt angewandt werden, so sprechen wir von Projektmanagement.
+
+.Projekt + Management = Projektmanagement
+image::projekt-management-projektmanagement_001.png[Projekt + Management = Projektmanagement]
+
+== Kompetenzen Projektmanager
+
+Für viele Angestellte ist der Wechsel ins Projektmanagement der erste Schritt in Richtung Führungsverantwortung. Dabei sind ganz andere Qualitäten gefragt, als fachlich für eine operative Tätigkeit notwendig sind. Neben Sicherheit in der Anwendung anerkannter Methoden muss der Projektmanager über Kommunikations- und Sozialkompetenzen verfügen, da er nun "zwischen den Stühlen steht": er ist nicht mehr Teil des operativen Teams, das er nun mit Fingerspitzengefühl führen muss, und hat gleichzeitig eine hohe Führungsetage über sich, die Gelingen des Projektes und dessen Wichtigkeit überzeugt bleiben muss. Gleichzeitig muss fachlich den Überblick über den Gegenstand des Projektes behalten ohne _technisch_ zu tief einzutauchen.
+
+.Kompetenzen Projektmanager
+image::kompetenzen_projektleiter_001.png[Kompetenzen Projektmanager]
