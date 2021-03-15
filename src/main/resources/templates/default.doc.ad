@@ -15,5 +15,7 @@ Marco Herzig
 :warning-caption: Warnung
 :important-caption: Wichtig
 
+:icons: font
+
 // Standard-Link für den Rücksprung zur Hauptseite
 _link:/[&rarr; Zurück zur Startseite]_
