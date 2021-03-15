@@ -221,7 +221,7 @@ Function Print-Topics
         {
             $Prefix = Get-Prefix $Depth "" "=====" " "
             $Result += "$($Prefix)link:$($Value[0])[$($_)]`n `n"
-            $Result += "[silver]#&rarr; $($Value[1])#`n `n"
+            $Result += "[horizontal]`n&mdash;:: $($Value[1])`n `n"
         }
     }
     return $Result
