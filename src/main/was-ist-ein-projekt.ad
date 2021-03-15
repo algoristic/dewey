@@ -35,9 +35,6 @@ IMPORTANT: Ein Projekt, wird durch die *Einmaligkeit* seiner Bedinungen und sein
 
 == Projektarten
 
-.Übersicht Projektarten
-image::projektarten_001.png[Übersicht Projektarten, 500, align="center"]
-
 Standardprojekt::
 Hat eine klare Aufgabenstellung und kann auf Erfahrungen in den Fachbereichen zurückgreifen. +
 *Beispiel*: technisches Kundenprojekt +
@@ -54,6 +51,9 @@ Potentialprojekt:: Projekte ihne viel Vorwissen und mit einem kleinen Team +
 Pionierprojekt:: Bereichsübergreifend, Folgenschwer und schwer einschätzbar. Betreffen viele Geschäftsbereiche und bergen große finanizielle Risiken. +
 *Beispiel*: Firmenfusion, großes Bauprojekt +
 *Herausforderung*: Risikomanagement
+
+.Übersicht Projektarten
+image::projektarten_001.png[Übersicht Projektarten, 500, align="center"]
 
 == Andere Formen der Zusammenarbeit
 
