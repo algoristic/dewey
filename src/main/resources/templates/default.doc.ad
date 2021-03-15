@@ -5,7 +5,7 @@ Marco Herzig
 :toc-title: Inhalte
 :toclevels: 4
 // i18n
-:last-update-label: Zuletzt geändert:
+:last-update-label!:
 :figure-caption: Abb.
 :example-caption: Beispiel
 :table-caption: Tabelle
