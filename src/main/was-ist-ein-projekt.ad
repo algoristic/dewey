@@ -2,6 +2,8 @@
 :dewey: Projektmanagement; Grundlagen
 :dewey-template: default.doc.ad
 
+:imagesdir: resources
+
 == Beschreibung
 
 _Eine allgemein gültige Definition dafür, was ein Projekt ist, existiert nicht!_
@@ -34,7 +36,7 @@ IMPORTANT: Ein Projekt, wird durch die *Einmaligkeit* seiner Bedinungen und sein
 == Projektarten
 
 .Übersicht Projektarten
-image::./resources/projektarten_001.png[Übersicht Projektarten, 640]
+image::projektarten_001.png[Übersicht Projektarten, 640]
 
 Standardprojekt::
 Hat eine klare Aufgabenstellung und kann auf Erfahrungen in den Fachbereichen zurückgreifen. +
