@@ -1,4 +1,7 @@
 /* LAYOUTING */
+body {
+    font-family: "Open Sans", "DejaVu Sans", sans-serif;
+}
 #footer {
     display: none
 }
