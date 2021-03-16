@@ -1,1 +1,58 @@
-<mxfile host="Electron" modified="2021-03-15T07:33:28.625Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.1.8 Chrome/87.0.4280.88 Electron/11.1.1 Safari/537.36" etag="abD--p-jOlfwWdqdyhf4" version="14.1.8" type="device"><diagram id="u5Vtdtb2DRWhi22GOgC4" name="Seite-1">7VnbkuI2EP0aHklhm+vjALOZqs1UTYZUZfcpJezG1lqWiCwPl69PC8v4xoCZcEll9gnpSGpJfY66JdNyJtH6V0mWwbPwgLXsjrduOdOWbVuD7gB/NLJJkd6wlwK+pJ7plAMzugUDdgyaUA/iUkclBFN0WQZdwTm4qoQRKcWq3G0hWHnWJfGhBsxcwuron9RTQYoO7UGOPwH1g2xmqz9KWyKSdTY7iQPiiVUBch5bzkQKodJStJ4A087L/JKO+/JO635hErhqMuCVjp7D5FXxlx+PU/LUpqO/HtrGyhthidnwTGwpYaGIlqCAb83a1SZziII1TjcOVMQQsLAYKylCmAgm5K6L03eHMF9gy4IyVsA9AsOFizhh1OeIydRx4zeQiqLPHwweUc/T841XAVUwWxJXT75ChSEmRcI90Jvq6MmxkXL/1VCAXh2bLaFNWL/rK2vPAEoXRARKbrBLNqBvSDOqHZrqKpeAlfEaFOjvGowY1fl7yzkxWDDcnMGTXePpq4iihNOQKCr4VVlisLgMSb/tDF2KI8f+j3Hk1Dh6BhVgROQ/T1OJqX39blR1a1R9aU2c1ngSyIT78W34usa52icZ3ewzEsdZ1xCUG5jKFU7f/Tkd1DitsQfce9B3AqxxwaFMJG5cbr4ZD+0q34st03WxabrJamuqvmX9sPy9gOdDdCUb8Z4s3hdSug/wajeVClm4V5FIF07HKEWkD+pUvqmTXyC3d4DbDJPAMC29lZd7iHAzw4uguJG9tuxOWVv2qKKZdJtmVPHKUzXUqxiqii/1Q83QTn/7bX9cksN/K8kD4rKOiuuwiDsnRHxXSWa3+lOS7N5TktVw51gflKQzqEiyf1tJWvUbf8vuM52IEhzc99WO3RRhNEOeCceXTqTJNW04e95cHzADNo9V++xxCVcgOQQRSBq7AT797M4TwZzH+FELCBbXf2baNkeveA4MdLlkfYGk221wkdq/nG+SdK36w6SJnCqPlyO8HrOyTSKc+qt28nEj1SF/AInOUVN9+XzBaKjaaAtn14tAtQKPmqn9U2p1cECq3QNSrcbDy0m1fulvIjKtlYV+HDx0A+qHQHUwn29Xv+BPW0iK7qCgXw0nFVgguf93IkxzXkoDLb4X5eljcYY9zHqn7X0KSbat058Mjl4iLq/J3oc0+SLFDwgVkpCEKpGZ/iZakktG+K6WRqZ06FxmQ9uuwKufYIw2UGx+AuaUeQWrnfY2iUmEkS5WuM0m6k+RVxrTUORx8/cEFaLS46Xin/HziFitbq+ZWgdXU2v/9HsmDshSF91Ess1YEjfUl/qDLiswlHtvx1ejjxgVtm6Usm7q7wafNP5P/rZ6zRx+vStCgwf73RwuhUrzuDPFhV4oylSDTEPJX4+B0WdnoOkh+EDUwWr+d2P6QSH/09Z5/Ac=</diagram></mxfile>
+<mxfile host="Electron" modified="2021-03-16T12:16:37.106Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.1.8 Chrome/87.0.4280.88 Electron/11.1.1 Safari/537.36" etag="0YEHemJ1iyDWlo1fD8eY" compressed="false" version="14.1.8" type="device">
+  <diagram id="u5Vtdtb2DRWhi22GOgC4" name="Seite-1">
+    <mxGraphModel dx="1747" dy="585" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#3D3D3D" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ri9MkuRtnPjEDaH-i9_A-1" value="Sozialkompetenz" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacingRight=2;" parent="1" vertex="1">
+          <mxGeometry x="160" y="80" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ri9MkuRtnPjEDaH-i9_A-2" value="Kommunikation" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacingLeft=2;" parent="1" vertex="1">
+          <mxGeometry x="320" y="80" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ri9MkuRtnPjEDaH-i9_A-3" value="Methodenkompetenz" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacingRight=2;" parent="1" vertex="1">
+          <mxGeometry x="160" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ri9MkuRtnPjEDaH-i9_A-4" value="Führungskompetenz" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacingLeft=2;shadow=0;glass=0;sketch=0;" parent="1" vertex="1">
+          <mxGeometry x="320" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ri9MkuRtnPjEDaH-i9_A-7" value="" style="endArrow=none;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="Ri9MkuRtnPjEDaH-i9_A-3" target="Ri9MkuRtnPjEDaH-i9_A-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="290" as="sourcePoint" />
+            <mxPoint x="250" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ri9MkuRtnPjEDaH-i9_A-8" value="" style="endArrow=none;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" source="Ri9MkuRtnPjEDaH-i9_A-1" target="Ri9MkuRtnPjEDaH-i9_A-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="310" as="sourcePoint" />
+            <mxPoint x="370" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ri9MkuRtnPjEDaH-i9_A-11" value="&lt;ul&gt;&lt;li&gt;Management&lt;/li&gt;&lt;li&gt;Selbst-Management&lt;/li&gt;&lt;li&gt;unternehmerisches Handeln&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="460" y="160" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ri9MkuRtnPjEDaH-i9_A-12" value="&lt;ul&gt;&lt;li&gt;Kommunikation&lt;/li&gt;&lt;ul&gt;&lt;li&gt;zum Kunden&lt;/li&gt;&lt;li&gt;zum Team&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;Konflikt- und Krisenmanagement&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="460" y="70" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ri9MkuRtnPjEDaH-i9_A-14" value="&lt;ul&gt;&lt;li&gt;Teamfähigkeit bzw. -orientierung&lt;/li&gt;&lt;li style=&quot;&quot;&gt;Moderation&lt;/li&gt;&lt;li style=&quot;&quot;&gt;Motivation&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="-120" y="80" width="250" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Ri9MkuRtnPjEDaH-i9_A-15" value="&lt;ul&gt;&lt;li&gt;Projektstrukturierung, -planung und&lt;br&gt;-controlling&lt;/li&gt;&lt;li&gt;Teambildung und -zusammenstellung&lt;/li&gt;&lt;li&gt;Risiko- und Qualitätsmanagement&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="-120" y="145" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Ri9MkuRtnPjEDaH-i9_A-16" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;shadow=0;glass=0;sketch=0;align=left;strokeColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="460" y="70" width="20" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Ri9MkuRtnPjEDaH-i9_A-17" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;shadow=0;glass=0;sketch=0;align=left;strokeColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="460" y="150" width="20" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ri9MkuRtnPjEDaH-i9_A-18" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;shadow=0;glass=0;sketch=0;align=left;rotation=-180;fontColor=#FFFFFF;strokeColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="120" y="70" width="20" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ri9MkuRtnPjEDaH-i9_A-19" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;shadow=0;glass=0;sketch=0;align=left;rotation=-180;fontColor=#FFFFFF;strokeColor=#FFFFFF;" parent="1" vertex="1">
+          <mxGeometry x="120" y="150" width="20" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
