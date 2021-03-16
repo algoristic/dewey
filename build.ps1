@@ -63,7 +63,25 @@ Function Write-Log
     {
         Write $line
     }
+}
 
+Function Remove-Empty
+{
+    [CmdletBinding()]
+    Param(
+        [Parameter(Mandatory=$true)]
+        [String]$Dir
+    )
+    Get-ChildItem $Dir | % {
+        If($_.PSIsContainer)
+        {
+            Remove-Empty $_.FullName
+            If(!(Get-ChildItem -Recurse -Path $_.FullName))
+            {
+                Remove-Item $_.FullName -Confirm:$false
+            }
+        }
+    }
 }
 
 # eigentliches Skript
@@ -281,4 +299,7 @@ Write-Log "Create $OutFile"
 $Doc | Out-File -FilePath $OutFile -Encoding UTF8
 Write-Log "Compile $OutFile "
 & asciidoctor.bat -a stylesheet=$BuildCss $OutFile
+# lösche sämtliche anfallenden build-Artefakte
 Get-ChildItem $Dest | Remove-Item -Recurse -Include *.ad, *.adoc, *.asciidoc, *.css
+# lösche leere Verzeichnisse TODO: echte Rekursion einbauen, um von unten nach oben zu löschen
+Remove-Empty $Dest
