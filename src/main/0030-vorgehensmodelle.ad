@@ -10,19 +10,19 @@ Der Deming-Cycle beschreibt ein Konzept für einen kontinuierlichen Verbesserung
 
 IMPORTANT: PDCA = **P**lan **D**o **C**heck **A**ct
 
-. Plan
+. **P**lan
     * Analysieren
     * Annahmen treffen
     * Maßnahmen ableiten
-. Do
+. **D**o
     * Maßnahmen umsetzen
-. Check
+. **C**heck
     * Umsetzungsergebnisse analysieren
     * Entscheidung: Maßnahmen etablieren, modifizieren oder zurücknehmen?
-. Act
+. **A**ct
     * Maßnahmen anpassen und in Standards/Strategien übernehmen
     * Maßnahmen und Änderungen rückgängig machen
-. &rarr; wieder zu 1.
+. **&rarr;** wieder zu 1.
 
 //TODO: Grafik dazu machen?
 
