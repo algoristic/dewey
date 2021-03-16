@@ -80,12 +80,28 @@ h1, h2, h3, #toctitle, .sidebarblock>.content>.title, h4, h5, h6 {
     color: var(--color);
     border-bottom-color: var(--gray);
 }
+table {
+    background: none;
+}
+table thead, table tfoot {
+    background: var(--header-background);
+}
+table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
+    color: var(--color);
+}
 table tr th, table tr td {
     color: inherit;
+}
+table.tableblock, th.tableblock, td.tableblock {
+    border-color: var(--gray);
 }
 @media screen and (min-width:768px) {
     #toc.toc2 {
         background: var(--header-background);
         border-right-color: var(--gray);
     }
+}
+/* SPECIFIC CONSTRUCTS */
+#traditional-vs-agile-table tbody tr td:first-child {
+    background: var(--header-background);
 }

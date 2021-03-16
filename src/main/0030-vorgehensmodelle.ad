@@ -84,3 +84,63 @@ Vorgehensmodelle unterstützen und organisieren in geeigneter Form den gesamten 
 _Methoden und Elemente_ aus dem *Projektmanagement* mit +
 _Prozessen und Phasen_ aus dem *Projektablauf*
 * ... schaffen "Best-Practices", machen Projekte vergleichbar, schaffen Lösungsmuster u. Ä.
+
+== Traditionelles vs. Agiles Projektmanagement
+
+=== Übersicht
+
+==== Traditionelles Projektmanagement
+* bedient sich sequentieller Modelle, um Abläufe im Vorfeld zu planen
+* mithilfe von Netzplantechnik kann direkt zum Projektstart ein fester Termin mit dem Kunden vereinbahrt werden
+    ** sehr hilfreich bei Projekten mit einer hohen geforderten Termintreue, wie z. B. Bauprojekten
+
+==== Agiles Projektmanagement
+* Fokus liegt auf hoher Flexibilität gegenüber sich ändernden Anforderungen
+* erfordert aktives Mitwirken des Auftraggebers
+* Fokus auf dem Produkt und der Aktzeptanz durch den Anwender gegenüber Termin- und Kostentreue
+
+=== Vergleich: Traditionell vs. Agil
+
+[#traditional-vs-agile-table,cols=3*,options=header]
+|===
+|Kriterium
+|Traditionell
+|Agil
+
+|*Fokus*
+|Plandurchführung
+| Kommunikation
+
+|*Planungsumfang*
+|Ganzheitlich
+|Inkrementell
+
+|*Planungsauslegung*
+|Stabil
+|Flexibel
+
+|*Planungsreichweite*
+|Langfristig
+|Kurzfristig
+
+|*Planungsgrad*
+|Übersichtlich / gut&nbsp;planbar
+|Komplex / schwer&nbsp;planbar
+
+|*Zielsetzung*
+|Fixiert
+|Veränderbar
+
+|*Führungsstil*
+|Delegierend
+|Selbstorganisierend
+
+|*Führungsrichtung*
+|Top-down
+|Bottom-up
+
+|*Dokumentation*
+|Ausführlich
+|Reduziert
+
+|===
