@@ -1,0 +1,9 @@
+#footer{display:none}
+details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:2.5em;margin-top:2.5em}
+.admonitionblock td.content>.title,.audioblock>.title,.exampleblock>.title,.imageblock>.title,.listingblock>.title,.literalblock>.title,.stemblock>.title,.openblock>.title,.paragraph>.title,.quoteblock>.title,table.tableblock>.title,.verseblock>.title,.videoblock>.title,.dlist>.title,.olist>.title,.ulist>.title,.qlist>.title,.hdlist>.title{font-size:.85rem}
+.paragraph.lead>p,#preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:.9em}
+ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
+ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:0}
+.imageblock>.title{margin-bottom:0;margin-top: 0.625em}
+.imageblock.text-center>.title{text-align:center}
+p,blockquote,dt,td.content,span.alt{font-size:.9rem}
