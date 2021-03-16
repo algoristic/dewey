@@ -13,6 +13,9 @@ Param(
     [switch]$Production = $false,
 
     [Parameter(Mandatory=$false)]
+    [string]$Theme = "dark",
+
+    [Parameter(Mandatory=$false)]
     [string]$TemplateRoot = "./src/main/resources/templates",
 
     [Parameter(Mandatory=$false)]
@@ -72,6 +75,38 @@ If(Test-Path $Dest)
     Remove-Item -Path $Dest -Force -Recurse
 }
 New-Item $Dest -ItemType "directory" | Out-Null
+
+# Erstelle build-style Datei (aus default+theme), nutze diese und lösche sie danach
+$DefaultCss = "$Src/resources/web/style.css"
+$DefaultCssPath = (Get-Item $DefaultCss).FullName
+$ThemeCss = "$Src/resources/web/themes/$Theme.css"
+$ThemeExists = Test-Path $ThemeCss
+$BuildCss = $DefaultCssPath
+If($ThemeExists)
+{
+    Write-Log "Use theme $theme"
+    # Pfad für temporäre build-CSS
+    $BuildCss = "$Dest/_build.css"
+    # lese Inhalte (Standard und Theme)
+    $DefaultStyle = Get-Content $DefaultCss -Encoding UTF8
+    $CustomStyle = Get-Content $ThemeCss -Encoding UTF8
+    # schreibe Inhalte in build-CSS
+    $BuildStyle = @()
+    $DefaultStyle | % { $BuildStyle += $_ }
+    $CustomStyle | % { $BuildStyle += $_ }
+
+    # Wichtig: das Rausschreiben funktioniert nur so, da auf dem Standardweg (via Out-File)
+    # der Output-Typ immer "UTF-8-BOM" ist (anstatt) "UTF-8".
+    # Das wiederum sorgt dafür, dass das CSS keine externen Quellen lädt - wie z. B. fonts.google oder fontawesome.io
+    $Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding $False
+    [System.IO.File]::WriteAllLines($BuildCss, $BuildStyle, $Utf8NoBomEncoding)
+    $BuildCss = (Get-Item $BuildCss).FullName
+}
+Else
+{
+    Write-Log "Theme $Theme does not exist (under path '$ThemeCss')" WARN
+    Write-Log "Use default asciiDoc theme"
+}
 
 # Bilder kopieren
 Get-ChildItem $Src | Copy-Item -Destination $Dest -Recurse -Filter *.png
@@ -140,7 +175,7 @@ Foreach ($SrcDoc in $SrcDocs)
         Write-Log "Src: $Src, Dest: $Dest" DEBUG 1
         Write-Log "Build target: $BuildTarget" DEBUG 1
         Write-Log "Reference in index.html: $TargetPath" DEBUG 1
-        & asciidoctor.bat -o $BuildTarget -a stylesheet=./resources/web/style.css $TempItem
+        & asciidoctor.bat -o $BuildTarget -a stylesheet=$BuildCss $TempItem
         Remove-Item -Force $TempItem
         Write-Log "Finished: $BuildTarget" DEBUG
 
@@ -245,5 +280,5 @@ $OutFile = "$($Dest)/index.adoc"
 Write-Log "Create $OutFile"
 $Doc | Out-File -FilePath $OutFile -Encoding UTF8
 Write-Log "Compile $OutFile "
-& asciidoctor.bat -a stylesheet=../src/main/resources/web/style.css $OutFile
-Get-ChildItem $Dest | Remove-Item -Recurse -Include *.ad, *.adoc, *.asciidoc
+& asciidoctor.bat -a stylesheet=$BuildCss $OutFile
+Get-ChildItem $Dest | Remove-Item -Recurse -Include *.ad, *.adoc, *.asciidoc, *.css
