@@ -46,7 +46,7 @@ IMPORTANT: Das gewählte Phasenmodell des Projektmanagements bietet praktisch de
 
 === Taxonomie der Phasenmodelle
 
-==== Sequentielle Modelle
+==== Sequentiell
 * feste Abfolge von Phasen
 * Abschluss einer Phase ist notwendig für den Übergang in die nächste
 * Rückschritte in die vorangegangene Phase sind in solchen Modelle i. d. R. nicht vorgesehen
@@ -54,13 +54,13 @@ IMPORTANT: Das gewählte Phasenmodell des Projektmanagements bietet praktisch de
 .Herausforderung
 Unflexibel im komplexen Umfeld.
 
-==== Nebenläufige Modelle
+==== Nebenläufig
 * mögliche Überlappung von Phasen aus dem _sequentiellen Modell_
 
 .Herausforderung
 Gefahr auf unvollstäniger Basis zu arbeiten.
 
-==== Wiederholende Modelle
+==== Wiederholend
 * Leistungserstellung in mehreren Inkrementen, für die Phasen teilweise immer wieder durchlaufen werden
 * _Inkrement_ = Teilmenge der Gesamtanforderung(_en_)
 * aufeinander aufbauend werden mehrere Inkremente erstellt, die sich der Gesamtanforderung annähren
@@ -69,7 +69,7 @@ Gefahr auf unvollstäniger Basis zu arbeiten.
 .Herausforderung
 Erhöhen den Projektmanagement Aufwand.
 
-==== Wiederverwendende Modelle
+==== Wiederverwendend
 * ziehlt darauf ab Ergebnisse so zu gestalten, dass sie in späteren Projekten wiederverwendet werden können, bzw. versucht ebensolche Ergebnisse wiederzuverwenden
 
 .Herausforderung
@@ -85,21 +85,21 @@ _Methoden und Elemente_ aus dem *Projektmanagement* mit +
 _Prozessen und Phasen_ aus dem *Projektablauf*
 * ... schaffen "Best-Practices", machen Projekte vergleichbar, schaffen Lösungsmuster u. Ä.
 
-== Traditionelles vs. Agiles Projektmanagement
+== Traditionell vs. Agil
 
 === Übersicht
 
-==== Traditionelles Projektmanagement
-* bedient sich sequentieller Modelle, um Abläufe im Vorfeld zu planen
+.Traditionelles Projektmanagement
+* bedient sich *sequentieller Modelle*, um Abläufe im Vorfeld zu planen
 * mithilfe von Netzplantechnik kann direkt zum Projektstart ein fester Termin mit dem Kunden vereinbahrt werden
     ** sehr hilfreich bei Projekten mit einer hohen geforderten Termintreue, wie z. B. Bauprojekten
 
-==== Agiles Projektmanagement
-* Fokus liegt auf hoher Flexibilität gegenüber sich ändernden Anforderungen
+.Agiles Projektmanagement
+* Fokus liegt auf hoher *Flexibilität* gegenüber sich ändernden Anforderungen
 * erfordert aktives Mitwirken des Auftraggebers
 * Fokus auf dem Produkt und der Aktzeptanz durch den Anwender gegenüber Termin- und Kostentreue
 
-=== Vergleich: Traditionell vs. Agil
+=== Direkter Vergleich
 
 [#traditional-vs-agile-table,cols=3*,options=header]
 |===
@@ -144,3 +144,33 @@ _Prozessen und Phasen_ aus dem *Projektablauf*
 |Reduziert
 
 |===
+
+=== Traditionelles Projektmanagement
+
+Pro::
+* Übersichtlich, gut plan- und kommunizierbar
+* klarer Ablauf mit fixem Endtermin und Meilensteinen
+* gute Planbarkeit der Ressourcen im gesamten Projektverlauf
+* gute Planbarkeit der Kosten (schon vor projektstart)
+
+Kontra::
+* Änderungen im Projektverlauf (Ausfälle, Veränderung der Anforderungen) bedeuten oft hohen Aufwand und starke Verzögerungen bzw. Kosten
+* anderereits können Chancen auf Bescheunigung nicht wahrgenommen werden
+
+Fazit::
+Vorgehen nach den traditionellen Ansätzen des Projektmanagement ist gut plan- und kommunizierbar, dadurch aber auch _starr_ (was in vielen Branchen nicht schlecht sein muss). Gut etablierbar in Top-down Hierarchien (Stichwort "Micromanagement"), kommt dem Kunden in vielen Punkten entgegen und ist "bequem" für das Management.
+
+=== Agiles Projektmanagement
+
+Pro::
+* sehr flexibel, schnelle Reaktion auf veränderte Anforderungen etc.
+* hoher Freiheitsgrad der Mitarbeiter bedeutet oft eine hohe Zufriedenheit und Motivation
+* Fokus liegt auf dem Schaffen eines angemessenen (d. h. _die Anfoderungen erfüllenden_) Produktes &rarr; oft wird dem Kunden erst im Projektverlauf klar, dass die ursprüngliche Spezifikation falsch war
+
+Kontra::
+* erfordert Mitwirken des Auftraggebers und ist daher manchmal schwer kommunizierbar
+* weniger Kontrolle und Eingriffsmöglichkeiten durch das Management
+* Planung wird komplexer und es ist schwierig zu Projektstart Termine und Kosten zu vereinbahren
+
+Fazit::
+Ermöglicht schnelle Reaktionen auf Veränderungen im Projektumfeld. Fokussiert sich im wesentlichen auf das Schaffen eines guten produktes, nimmt dabei aber den Auftraggeber in die Pflicht. Setzt traditionelle Hierarchien in Unternehmen teilweise auer Kraft.

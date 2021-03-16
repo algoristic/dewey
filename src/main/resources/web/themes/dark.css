@@ -68,6 +68,7 @@ a {
 .admonitionblock>table td.content {
     border-left-color: var(--gray);
     color: var(--gray-medium);
+    background: var(--header-background);
 }
 .sect1+.sect1 {
     border-top-color: var(--gray);
