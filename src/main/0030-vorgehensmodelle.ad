@@ -1,0 +1,55 @@
+= Vorgehensmodelle
+:dewey: Projektmanagement; Grundlagen
+:dewey-template: default.doc.ad
+
+:imagesdir: resources/images
+
+=== Phasenmodell
+
+Das Projektmanagement wird die Arbeit am Projekt in Phasen eingeteilt. Diese Phasen können je nach eingesetztem Projektmanagement Standard in ihrem Namen und ihrem Umfang variieren, verfolgen aber prinzipiell dasselbe Muster:
+
+Initiierung:: Vom Projekt existiert am Anfang nicht mehr als eine _grundlegende Idee_, egal ob beim Kunden oder einem Mitarbeiter. Die Umsetzbarkeit dieser Idee ist aufgrund des komplexen Charakters von Projekten nur schwer einzuschätzen. Folglich müssen zu Beginn die Anforderungen analysiert und aus ihnen ein _grober Umsetzungsplan_ herausgearbeitet werden, um eine Entscheidung treffen zu können. +
+asd
+Planung:: Wird das Projekt durchgeführt, so muss im Detail geplant werden
+* Welche _Risiken_ gibt es?
+* Welches _Personal_ steht mir wann und in welchem Umfang zur Verfügung?
+* Wie kann die Arbeit am Projekt in _sinnvolle Pakete_ gegliedert werden?
+* ...
+Durchführung:: Sobald die _Planung abgeschlossen_ ist und die notwendigen _Ressourcen zur Verfügung_ stehen kann die Arbeit am Projet losgehen. Die Rolle des Projektmanagers ist es nun den Fortschritt zu überwachen, Störungen zu beseitigen und mit Planänderungen umzugehen.
+Abschluss:: Ist das Projektergebnis fertiggestellt und ausreichend getestet kann es an den Kunden ausgeliefert werden. Hier lohnt es sich Projekterfolge zu feiern und _Lessons Learned_ zu vergegenwärtigen.
+
+// TODO: einfache Grafik
+
+== Vorgehensmodelle
+
+Vorgehensmodelle...
+
+* beschreiben _Prozesse, Aufgaben und Rolle_ entlang des *Projektlebenszyklus*
+* verknüpfen +
+_Methoden und Elemente_ aus dem *Projektmanagement* mit +
+_Prozessen und Phasen_ aus dem *Projektablauf*
+* schaffen "Best-Practices", machen Projekte vergleichbar, schaffen Lösungsmuster u. Ä.
+
+NOTE: Generell müssen Vorgehenmodelle nicht nur auf Projekte angewandt werden, sondern können, in geeigneter Form, den gesamten Produktionsprozess organisieren.
+
+== PDCA-Zyklus (Deming-Cycle)
+
+Der Deming-Cycle beschreibt ein Konzept für einen kontinuierlichen Verbesserungsprozess, der die Grundlage für eine Vielzahl von (Management-) Prozessen bildet.
+
+IMPORTANT: PDCA = **P**lan **D**o **C**heck **A**ct
+
+. Plan
+    * Analysieren
+    * Annahmen treffen
+    * Maßnahmen ableiten
+. Do
+    * Maßnahmen umsetzen
+. Check
+    * Umsetzungsergebnisse analysieren
+    * Entscheidung: Maßnahmen etablieren, modifizieren oder zurücknehmen?
+. Act
+    * Maßnahmen anpassen und in Standards/Strategien übernehmen
+    * Maßnahmen und Änderungen rückgängig machen
+. &rarr; wieder zu 1.
+
+//TODO: Grafik dazu machen?
