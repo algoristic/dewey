@@ -1,8 +1,3 @@
-/*
-
-WICHTIG: Der Inhalt dieser Datei wird (im build-Prozess) ans Ende der style.css kopiert, um dort die Standard-asciiDoc Regeln zu überschreiben!
-
-*/
 /* LAYOUTING */
 #footer {
     display: none
