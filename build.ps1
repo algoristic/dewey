@@ -301,5 +301,5 @@ Write-Log "Compile $OutFile "
 & asciidoctor.bat -a stylesheet=$BuildCss $OutFile
 # lösche sämtliche anfallenden build-Artefakte
 Get-ChildItem $Dest | Remove-Item -Recurse -Include *.ad, *.adoc, *.asciidoc, *.css
-# lösche leere Verzeichnisse TODO: echte Rekursion einbauen, um von unten nach oben zu löschen
+# lösche leere Verzeichnisse rekursiv
 Remove-Empty $Dest
