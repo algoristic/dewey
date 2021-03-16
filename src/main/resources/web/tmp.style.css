@@ -1,3 +1,4 @@
+/* LAYOUTING */
 #footer {
     display: none
 }
@@ -27,3 +28,25 @@ ol>li p, ul>li p, ul dd, ol dd, .olist .olist, .ulist .ulist, .ulist .olist, .ol
 p, blockquote, dt, td.content, span.alt {
     font-size: .9rem
 }
+/* THEMING */
+:root {
+    /* orange */
+    --primary: #ff6a3d;
+    /* lavender */
+    --secondary: #9daaf2;
+    /* yellow */
+    --highlight: #f9db6d;
+    /*dark blue*/
+    --background: #151b2d;
+    /*darker-blue*/
+    --header-background: #101523;
+    /*white*/
+    --color: #f8f8fb;
+    /*white*/
+    --heading-color: var(--primary);
+    /* gray */
+    --gray: #363b3d;
+    /* light-gray */
+    --gray-light: #e8e6e3;
+}
+/* ACTUAL COLORING */
