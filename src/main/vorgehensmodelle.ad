@@ -46,34 +46,33 @@ IMPORTANT: Das gewählte Phasenmodell des Projektmanagements bietet praktisch de
 
 === Taxonomie der Phasenmodelle
 
-==== Sequentiell
+Sequentiell::
+Beschreibung:::
 * feste Abfolge von Phasen
 * Abschluss einer Phase ist notwendig für den Übergang in die nächste
 * Rückschritte in die vorangegangene Phase sind in solchen Modelle i. d. R. nicht vorgesehen
+Herausforderung::: Unflexibel im komplexen Umfeld.
 
-.Herausforderung
-Unflexibel im komplexen Umfeld.
 
-==== Nebenläufig
+Nebenläufig::
+Beschreibung:::
 * mögliche Überlappung von Phasen aus dem _sequentiellen Modell_
+Herausforderung::: Gefahr auf unvollstäniger Basis zu arbeiten.
 
-.Herausforderung
-Gefahr auf unvollstäniger Basis zu arbeiten.
 
-==== Wiederholend
+Wiederholend::
+Beschreibung:::
 * Leistungserstellung in mehreren Inkrementen, für die Phasen teilweise immer wieder durchlaufen werden
 * _Inkrement_ = Teilmenge der Gesamtanforderung(_en_)
 * aufeinander aufbauend werden mehrere Inkremente erstellt, die sich der Gesamtanforderung annähren
 * senkt Komplexität am Anfang
+Herausforderung::: Erhöht den Projektmanagement Aufwand.
 
-.Herausforderung
-Erhöhen den Projektmanagement Aufwand.
 
-==== Wiederverwendend
+Wiederverwendend::
+Beschreibung:::
 * ziehlt darauf ab Ergebnisse so zu gestalten, dass sie in späteren Projekten wiederverwendet werden können, bzw. versucht ebensolche Ergebnisse wiederzuverwenden
-
-.Herausforderung
-Erhöhen Komplexität in der Entwicklung durch (unnötige) Abstraktion.
+Herausforderung::: Erhöht Komplexität in der Entwicklung durch (unnötige) Abstraktion.
 
 == Vorgehensmodelle
 
@@ -89,12 +88,12 @@ _Prozessen und Phasen_ aus dem *Projektablauf*
 
 === Übersicht
 
-.Traditionelles Projektmanagement
+Traditionelles Projektmanagement::
 * bedient sich *sequentieller Modelle*, um Abläufe im Vorfeld zu planen
 * mithilfe von Netzplantechnik kann direkt zum Projektstart ein fester Termin mit dem Kunden vereinbahrt werden
     ** sehr hilfreich bei Projekten mit einer hohen geforderten Termintreue, wie z. B. Bauprojekten
 
-.Agiles Projektmanagement
+Agiles Projektmanagement::
 * Fokus liegt auf hoher *Flexibilität* gegenüber sich ändernden Anforderungen
 * erfordert aktives Mitwirken des Auftraggebers
 * Fokus auf dem Produkt und der Aktzeptanz durch den Anwender gegenüber Termin- und Kostentreue

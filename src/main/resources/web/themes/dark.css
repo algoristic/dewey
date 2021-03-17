@@ -10,7 +10,7 @@ details, .audioblock, .imageblock, .literalblock, .listingblock, .stemblock, .vi
     margin-top: 2.5em
 }
 .admonitionblock td.content>.title, .audioblock>.title, .exampleblock>.title, .imageblock>.title, .listingblock>.title, .literalblock>.title, .stemblock>.title, .openblock>.title, .paragraph>.title, .quoteblock>.title, table.tableblock>.title, .verseblock>.title, .videoblock>.title, .dlist>.title, .olist>.title, .ulist>.title, .qlist>.title, .hdlist>.title {
-    font-size: .85rem
+    font-family: inherit;
 }
 .paragraph.lead>p, #preamble>.sectionbody>[class="paragraph"]:first-of-type p {
     font-size: .9em
@@ -30,6 +30,17 @@ ol>li p, ul>li p, ul dd, ol dd, .olist .olist, .ulist .ulist, .ulist .olist, .ol
 }
 p, blockquote, dt, td.content, span.alt {
     font-size: .9rem
+}
+dl dt {
+    font-style: italic;
+    font-weight: inherit;
+    font-size: 1rem;
+}
+.dlist .dlist dl dt {
+    font-size: .9rem;
+}
+ul, ol, dl {
+    line-height: 1.45;
 }
 /* THEMING */
 :root {
@@ -95,6 +106,12 @@ table tr th, table tr td {
 }
 table.tableblock, th.tableblock, td.tableblock {
     border-color: var(--gray);
+}
+dl dt {
+    color: var(--primary);
+}
+.dlist .dlist dl dt {
+    color: var(--color);
 }
 @media screen and (min-width:768px) {
     #toc.toc2 {
