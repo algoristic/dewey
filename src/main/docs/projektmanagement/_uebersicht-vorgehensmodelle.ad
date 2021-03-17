@@ -7,11 +7,9 @@
 // siehe: PM_Teil1_PM-Grundlagen_kap2_erg_Info.pdf
 
 == Grundmodelle
-
 Schwerpunkt liegt auf der Projektabwicklung bzw. Produktrealisierung weitestgehend *ohne Projektmanagement*.
 
 === Wasserfall-Modell
-
 Beschreibung::
 * Das Wasserfall-Modell ist ein lineares, _nicht-iteratives Vorgehensmodell_ und orientiert sich damit direkt am klassischen Phasenmodell
 * Die Phasenergenisse gehen als Voraussetzung in die nächste Phase ein
@@ -34,7 +32,6 @@ image::wasserfall-modell_001.png[Wasserfall-Modell, 360, align="center"]
 Das erweiterte Wasserfall-Modell ergänzt das klassische Wasserfall-Modell um den Aspekt der Iterativität, durch mögliche Rücksprünge in die vorherige Phase. Damit schafft es die Grundlage für iterative Vorgehensweisen, ist allerdings in der Praxis immer noch schwer zu handhaben.
 
 === V-Modell
-
 Beschreibung:: Das V-Modell setzt auf dem Wasserfall-Modell auf und erweitert dieses, indem es für die unterschiedlichen Entwicklungsphasen Teststufen empfiehlt. So stehen dem Grobentwurf, also der Architektur, Systemtests gegenüber, der feineren Struktur Integrationstests, usw.
 
 Pro::
@@ -48,11 +45,9 @@ Kontra::
 image::v-modell_001.png[V-Modell, 420, align="center"]
 
 == Erweiterte Grundmodelle
-
 Schwerpunkt liegt auf der Projektabwicklung bzw. Produktrealisierung mit *mehr oder weniger Projektmanagement*.
 
 === Spiralmodell
-
 Beschreibung:: Das Spiralmodell ist ein iteratives Modell, bei dem in mehreren Zyklen Prototypen gebaut werden. Jeder Prototyp nährt sich dabei weiter den Anforderungen an und versucht identifizierte Risiken zu beseitigen. Jeder Zyklus besteht aus vier Schritten:
 . Definition
     ** Festlegen von Zielen
@@ -80,7 +75,6 @@ Kontra::
 * Wissen über die Handhabung von Risiken ist nicht immer verfügbar
 
 === V-Modell XT
-
 Beschreibung:: Das V-Modell XT (e**x**treme **t**ailoring) ist die neuste Revision des urspünglichen V-Modells und ein deutscher Standard. Die Benennung "Extreme Tailoring" (zu deutsch etwa "extreme Maßschneiderung") betont der Aspekt der hohen Anpassbarkeit des Modells auf die verschiedensten Projekttypen, Produktarten und Vorgehensvarianten.
 
 Pro::
@@ -96,7 +90,6 @@ Kontra::
 === RUP (Rational Unified Process)
 
 == Agile Modelle
-
 Schwerpunkt liegt auf der Projektabwicklung bzw. Produktrealisierung mit *mehr Projektmanagement*.
 
 === Extreme Programming
@@ -104,7 +97,6 @@ Schwerpunkt liegt auf der Projektabwicklung bzw. Produktrealisierung mit *mehr P
 === Feature-Driven Development
 
 == Best-Practice-Projektmanagement
-
 Schwerpunkt liegt, wie der Name schon sagt, auf der *Projektabwicklung mit Projektmanagement*.
 
 === PMI/PMBOK
