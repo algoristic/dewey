@@ -1,8 +1,8 @@
-= Vorgehensmodelle
-:dewey: Projektmanagement; Grundlagen
+= Übersicht Vorgehensmodelle
+:dewey: Projektmanagement; Vorgehensmodelle
 :dewey-template: default.doc.ad
 
-:imagesdir: resources/images
+:imagesdir: ../../resources/images
 
 == PDCA-Zyklus (Deming-Cycle)
 
