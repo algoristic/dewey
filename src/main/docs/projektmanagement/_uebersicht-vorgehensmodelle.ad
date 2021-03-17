@@ -13,17 +13,17 @@ Schwerpunkt liegt auf der Projektabwicklung bzw. Produktrealisierung weitestgehe
 === Wasserfall-Modell
 
 Beschreibung::
-* Das Wasserfall-Modell ist ein lineares, nicht-iteratives Vorgehensmodell und orientiert sich damit direkt am klassischen Phasenmodell
+* Das Wasserfall-Modell ist ein lineares, _nicht-iteratives Vorgehensmodell_ und orientiert sich damit direkt am klassischen Phasenmodell
 * Die Phasenergenisse gehen als Voraussetzung in die nächste Phase ein
-* Der Fokus liegt auf der Produkterstellung mit möglichst wenig Management, das Projektmanagement wird folglich nicht direkt berücksichtigt in diesem Modell
+* Der _Fokus liegt auf der Produkterstellung_ mit möglichst wenig Management, das Projektmanagement wird folglich nicht direkt berücksichtigt in diesem Modell
 
 Pro::
 * klare Abgrenzung der Phasen
-* Qualitätssicherung durch Phasenergebnisse
+* *Qualitätssicherung* durch Phasenergebnisse
 * _wenn_ stabile Anforderungen vorliegen, ein sehr effektives Modell
 
 Kontra::
-* Unflexibel gegenüber Änderungen
+* *Unflexibel* gegenüber Änderungen
 * Änderungen im Projektverlauf können sehr teuer werden
 * Auftraggeber sieht das fertige Produkt erst am Ende
 
@@ -31,7 +31,7 @@ Kontra::
 image::wasserfall-modell_001.png[Wasserfall-Modell, 360, align="center"]
 
 ==== Erweitertes Wasserfall-Modell
-Das erweiterte Wasserfall-Modell ergänzt das klassische Wasserfall-Modell um den Aspekt der Iterativität, durch mögliche Rücksprünge in die vorherige Phase. Damit schafft es die Grundlage für iterative Vorgehensweisen, ist allerdings in der Praxis immernoch schwer zu handhaben.
+Das erweiterte Wasserfall-Modell ergänzt das klassische Wasserfall-Modell um den Aspekt der Iterativität, durch mögliche Rücksprünge in die vorherige Phase. Damit schafft es die Grundlage für iterative Vorgehensweisen, ist allerdings in der Praxis immer noch schwer zu handhaben.
 
 === V-Modell
 
@@ -52,6 +52,32 @@ image::v-modell_001.png[V-Modell, 420, align="center"]
 Schwerpunkt liegt auf der Projektabwicklung bzw. Produktrealisierung mit *mehr oder weniger Projektmanagement*.
 
 === Spiralmodell
+
+Beschreibung:: Das Spiralmodell ist ein iteratives Modell, bei dem in mehreren Zyklen Prototypen gebaut werden. Jeder Prototyp nährt sich dabei weiter den Anforderungen an und versucht identifizierte Risiken zu beseitigen. Jeder Zyklus besteht aus vier Schritten:
+. Definition
+    ** Festlegen von Zielen
+    ** Erheben von Anforderungen
+    ** Identifikation von Alternativen
+. Analyse
+    ** Evaluieren der möglichen Lösungen
+    ** Erkennen von Risiken
+    ** Strategien zur Risikovermeidung
+. Realisierung und Test
+    ** Erstellen eines Prototypen auf Basis des Inputs der vorherigen Phasen
+. Planung
+    ** Review der Ergebnisse und Schritte
+    ** Planung der nächsten Iteration
+
+Pro::
+* permanentes Feedback durch Iterationen
+* schnelle Fehlererkennung
+* Risikoorientierung
+
+Kontra::
+* Ein (Management-)Prozessmodell wird nicht für die gesamte Entwicklung festgelegt
+    ** das resultiert in einem höheren Managementaufwand
+* für kleine und mittlere Projekte aufgrund des Aufwandes weniger geeignet
+* Wissen über die Handhabung von Risiken ist nicht immer verfügbar
 
 === V-Modell XT
 
