@@ -1,0 +1,64 @@
+<mxfile host="Electron" modified="2021-03-17T17:10:35.800Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.1.8 Chrome/87.0.4280.88 Electron/11.1.1 Safari/537.36" etag="JSRusfKAo7zz6TFWN9wp" compressed="false" version="14.1.8" type="device">
+  <diagram id="r_3KO6FTVMacoQKkOz0y" name="Seite-1">
+    <mxGraphModel dx="769" dy="484" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="v4nzcLB4CdX6LPzqqRq_-8" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b0e3e6;strokeColor=#0e8088;" parent="1" vertex="1">
+          <mxGeometry x="40" y="400" width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v4nzcLB4CdX6LPzqqRq_-11" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=0;fillColor=#bac8d3;strokeColor=#23445d;sketch=0;" parent="1" vertex="1">
+          <mxGeometry x="40" y="400" width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v4nzcLB4CdX6LPzqqRq_-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="120" y="80" width="440" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="bylbMAvAZd9EKdHkaUJy-1" value="Initialisierung" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="120" y="80" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bylbMAvAZd9EKdHkaUJy-2" value="Definition" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="200" y="130" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bylbMAvAZd9EKdHkaUJy-3" value="Planung" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="280" y="180" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bylbMAvAZd9EKdHkaUJy-4" value="Steuerung" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="360" y="230" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bylbMAvAZd9EKdHkaUJy-5" value="Abschluss" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="440" y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v4nzcLB4CdX6LPzqqRq_-2" value="Start" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" parent="1" vertex="1">
+          <mxGeometry x="80" y="80" width="40" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="v4nzcLB4CdX6LPzqqRq_-3" value="Ende" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;" parent="1" vertex="1">
+          <mxGeometry x="560" y="80" width="40" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="v4nzcLB4CdX6LPzqqRq_-4" value="Kunde" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="40" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="v4nzcLB4CdX6LPzqqRq_-5" value="Kunde" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="600" y="40" width="40" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="v4nzcLB4CdX6LPzqqRq_-6" value="Unterstützungsprozesse" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="80" y="320" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v4nzcLB4CdX6LPzqqRq_-7" value="Wertschöpfungsprozess" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="80" y="360" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v4nzcLB4CdX6LPzqqRq_-9" value="Führungsprozesse" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#b1ddf0;strokeColor=#10739e;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="80" y="40" width="520" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v4nzcLB4CdX6LPzqqRq_-10" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.acute_triangle;dx=0.5;fillColor=#bac8d3;strokeColor=#23445d;" parent="1" vertex="1">
+          <mxGeometry x="40" width="590" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v4nzcLB4CdX6LPzqqRq_-12" value="Projektlebenszyklus" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=1;sketch=0;opacity=25;" parent="1" vertex="1">
+          <mxGeometry x="40" y="400" width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="v4nzcLB4CdX6LPzqqRq_-14" value="Projektmanagementprozesse" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=1;sketch=0;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="120" y="80" width="440" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
