@@ -1,8 +1,10 @@
-= Übersicht Vorgehensmodelle
+= 🚧 Übersicht Vorgehensmodelle
 :dewey: Projektmanagement; Vorgehensmodelle
 :dewey-template: default.doc.ad
 
 :imagesdir: images
+
+Diese Seite dient lediglich als grobe Übersicht über die verschiedenen Vorgehensmodelle. Eine detailliertere Betrachtung findet sich auf anderen Webseiten.
 
 // siehe: PM_Teil1_PM-Grundlagen_kap2_erg_Info.pdf
 
@@ -127,7 +129,31 @@ Beschreibung:: Die DIN 69901:2009 ist ein kosequent prozessorientiertes Vorgehen
 .Prozesshaus DIN 69901
 image::din69901_001.png[Prozesshaus DIN 69901, 550, align="center"]
 
+Pro::
+* konsequent Prozessorientiert
+* konsistenzes Prozessmodell
+* individuelle, projektspezifische Anpassung möglich und notwendig
+
+Kontra::
+* liefert keine konkreten Handlungsempfehlungen
+* auf vollständige Darstellung aller Abhängigkeiten wird (bewusst) verzichtet
+
 === PMI/PMBOK
+
+Beschreibung:: PM/PMBOK ist ein Rahmenwerk und _de facto_ Standard, der 42 Projektmanagementprozesse definiert, die in 5 Prozessgruppen eingruppiert werden:
+* *Initiierung*: Prozesse zur formalen Autorisierung des Projektes
+* *Planung*: Festlegen des Projektumfangs und konkrete Planung
+* *Ausführung*: Sicherstellen, dass die einzelnen Aktivitäten durchgeführt werden, wie sie geplant wurden
+* *Überwachung und Steuerung*: Informationen zur Projektperformance sammeln und bewerten
+* *Abschluss*: Vertragsbeendigung und Projektabschluss
+
+Pro::
+* Reflektiert gängige Vorgehensweisen aus der Praxis
+* Proessorientierung und -gruppierung sorgt für gute Nachvollziehbarkeit
+
+Kontra::
+* zu komplex für kleinere Projekte
+* soziale Aspekte, wie Führung und Kommunikation werden im Guide vernachlässigt behandelt
 
 === PRINCE2
 
