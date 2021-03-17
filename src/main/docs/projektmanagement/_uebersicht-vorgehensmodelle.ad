@@ -2,31 +2,78 @@
 :todo-dewey: Projektmanagement; Vorgehensmodelle
 :dewey-template: default.doc.ad
 
-:imagesdir: ../../resources/images
+:imagesdir: images
+
+// siehe: PM_Teil1_PM-Grundlagen_kap2_erg_Info.pdf
 
 == Grundmodelle
 
+Schwerpunkt liegt auf der Projektabwicklung bzw. Produktrealisierung weitestgehend *ohne Projektmanagement*.
+
 === Wasserfall-Modell
 
-=== Erweitertes Wasserfall-Modell
+Beschreibung::
+* Das Wasserfall-Modell ist ein lineares, nicht-iteratives Vorgehensmodell und orientiert sich damit direkt am klassischen Phasenmodell
+* Die Phasenergenisse gehen als Voraussetzung in die nächste Phase ein
+* Der Fokus liegt auf der Produkterstellung mit möglichst wenig Management, das Projektmanagement wird folglich nicht direkt berücksichtigt in diesem Modell
 
-=== V-Modell 97
+Pro::
+* klare Abgrenzung der Phasen
+* Qualitätssicherung durch Phasenergebnisse
+* _wenn_ stabile Anforderungen vorliegen, ein sehr effektives Modell
+
+Kontra::
+* Unflexibel gegenüber Änderungen
+* Änderungen im Projektverlauf können sehr teuer werden
+* Auftraggeber sieht das fertige Produkt erst am Ende
+
+==== Erweitertes Wasserfall-Modell
+Das erweiterte Wasserfall-Modell ergänzt das klassische Wasserfall-Modell um den Aspekt der Iterativität, durch mögliche Rücksprünge in die vorherige Phase. Damit schafft es die Grundlage für iterative Vorgehensweisen, ist allerdings in der Praxis immernoch schwer zu handhaben.
+
+=== V-Modell
+
+Beschreibung:: Das V-Modell setzt auf dem Wasserfall-Modell auf und erweitert dieses, indem es für die unterschiedlichen Entwicklungsphasen Teststufen empfiehlt. So stehen dem Grobentwurf, also der Architektur, Systemtests gegenüber, der feineren Struktur Integrationstests, usw.
+
+Pro::
+* praxisnähere Weiterenticklung des einfachen Wasserfall-Modells
+* Qualitätssteigerung durch Rückkopplung mit Tests
+
+Kontra::
+* Nach wie vor zu starr, vor allem im komplexen Umfeld
 
 == Erweiterte Grundmodelle
+
+Schwerpunkt liegt auf der Projektabwicklung bzw. Produktrealisierung mit *mehr oder weniger Projektmanagement*.
 
 === Spiralmodell
 
 === V-Modell XT
 
+Beschreibung:: Das V-Modell XT (e**x**treme **t**ailoring) ist die neuste Revision des urspünglichen V-Modells und ein deutscher Standard. Die Benennung "Extreme Tailoring" (zu deutsch etwa "extreme Maßschneiderung") betont der Aspekt der hohen Anpassbarkeit des Modells auf die verschiedensten Projekttypen, Produktarten und Vorgehensvarianten.
+
+Pro::
+* hochgradige Anpassbarkeit
+* organisationsneutral
+
+Kontra::
+* erfordert einen hohen Grad an Bürokratie
+    ** das Modell wurde ursprünglich von der Bundeswehr entwickelt
+* schwergewichtig bzw. komplex in der Implementierung (allein die Dokumentation umfasst über 200 Seiten)
+* Nutzung funktioniert ausschließlich im deutschsprachigen Raum
+
 === RUP (Rational Unified Process)
 
 == Agile Modelle
+
+Schwerpunkt liegt auf der Projektabwicklung bzw. Produktrealisierung mit *mehr Projektmanagement*.
 
 === Extreme Programming
 
 === Feature-Driven Development
 
 == Best-Practice-Projektmanagement
+
+Schwerpunkt liegt, wie der Name schon sagt, auf der *Projektabwicklung mit Projektmanagement*.
 
 === PMI/PMBOK
 
