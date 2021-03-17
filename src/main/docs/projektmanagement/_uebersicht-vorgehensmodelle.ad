@@ -87,17 +87,36 @@ Kontra::
 * schwergewichtig bzw. komplex in der Implementierung (allein die Dokumentation umfasst über 200 Seiten)
 * Nutzung funktioniert ausschließlich im deutschsprachigen Raum
 
-=== RUP (Rational Unified Process)
-
 == Agile Modelle
 Schwerpunkt liegt auf der Projektabwicklung bzw. Produktrealisierung mit *mehr Projektmanagement*.
 
+=== Scrum
+Beschreibung:: Scrum ist ein iteratives Vorgehensmodell der Softwareentwicklung, das grundlegende Kernelemente es Vorgehens zur Verfügung stellt, die Ausgestaltung der angewandten Methoden und Prozesse aber dem Team überlässt. Ziel von Scrum ist es Risiken und Störungen des Produktionsablaufes offenzulegen und damit den Produktionsprozess zu optimieren.
+
+Pro::
+* wenig Regeln, einfach und verständlich einführbar
+* kurze Kommunikationswege und schnelles Feedback
+* hohe Transparenz durch regelmäßigen Austausch
+
+Kontra::
+* hoher Kommunikations- und Abstimmungsaufwand
+* wenig konkrete Handlungsempfehlungen
+* hoher Koordinationsaufwand bei größeren Projekten oder Produkten
+
 === Extreme Programming
+Beschreibung:: Extreme Programming (kurz _XP_) ist ein iteratives Vorgehensmodell der Softwareentwicklung. Im Gegensatz zu Scrum gibt XP Methoden für die Entwicklung, Testing, Projekt-Management etc. vor. Ziel von XP ist es Entwicklungs- und Änderungskosten zu minimieren.
 
-=== Feature-Driven Development
+Pro::
+* inkrementelles Arbeiten in sehr kurzen Zyklen
+* gute Adaption an neue Anforderungen
+* Endtermin ist fest geplant
 
-== Best-Practice-Projektmanagement
-Schwerpunkt liegt, wie der Name schon sagt, auf der *Projektabwicklung mit Projektmanagement*.
+Kontra::
+* hoher Kommunikations- und Abstimmungsaufwand
+* in Reinform nicht gut für große Projekte geeinget
+
+== Projektmanagement-Standards
+Schwerpunkt liegt, wie der Name schon sagt, auf der *Projektabwicklung mit Projektmanagement* mit der Prämisse Projektmanagement und Produktionsprozesse zu entkoppeln.
 
 === PMI/PMBOK
 
