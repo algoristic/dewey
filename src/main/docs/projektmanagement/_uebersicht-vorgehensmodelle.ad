@@ -1,5 +1,5 @@
 = Übersicht Vorgehensmodelle
-:todo-dewey: Projektmanagement; Vorgehensmodelle
+:dewey: Projektmanagement; Vorgehensmodelle
 :dewey-template: default.doc.ad
 
 :imagesdir: images
@@ -27,6 +27,9 @@ Kontra::
 * Änderungen im Projektverlauf können sehr teuer werden
 * Auftraggeber sieht das fertige Produkt erst am Ende
 
+.Wasserfall-Modell
+image::wasserfall-modell_001.png[Wasserfall-Modell, 360, align="center"]
+
 ==== Erweitertes Wasserfall-Modell
 Das erweiterte Wasserfall-Modell ergänzt das klassische Wasserfall-Modell um den Aspekt der Iterativität, durch mögliche Rücksprünge in die vorherige Phase. Damit schafft es die Grundlage für iterative Vorgehensweisen, ist allerdings in der Praxis immernoch schwer zu handhaben.
 
@@ -40,6 +43,9 @@ Pro::
 
 Kontra::
 * Nach wie vor zu starr, vor allem im komplexen Umfeld
+
+.V-Modell
+image::v-modell_001.png[V-Modell, 420, align="center"]
 
 == Erweiterte Grundmodelle
 
