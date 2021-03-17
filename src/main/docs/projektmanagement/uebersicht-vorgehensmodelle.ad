@@ -156,5 +156,16 @@ Kontra::
 * soziale Aspekte, wie Führung und Kommunikation werden im Guide vernachlässigt behandelt
 
 === PRINCE2
+Beschreibung:: **PR**ojects **IN** **C**ontrolled **E**nviroments **2** bildet einen strukturierten Rahmen um das eweilige Projekt und gibt den Mitgliedern des Projektmanagements anhand seines Prozessmodells konkrete Handlungsempfehlungen für jede Phase. PRINCE2 definiert Rollen und Verantwortlichkeiten und das Prinzip der "Management by Exception"footnote:["Management by Exception" oder auch "Ausnahmeprinzip" bedeutet, dass eine Führungskraft solange die volle Entscheidungsgewalt hat, bis etwas unvorhergesehenes eintritt oder allgemein etwas, das ihren Handlungsspielraum überschreitet. Dieses Ereignis wird dann zur nächsthöheren Führungsebene hocheskaliert.]. Außerdem steht im Kern das Prinzip der fortlaufenden geschäftlichen Rechtfertigung.
 
-=== ISO 21500
+Pro::
+* starke Orientierung am wirtschaftlichen Nutzen
+* ergebnis- bzw. produktbasierte Planung
+* gibt genaue Handlungsempfehlungen
+* definiertes Prozess-, Rollen- und Problemmanagement
+
+Kontra::
+* Projektbürokrtie durch Fokus auf Dokumente
+* für kleinere Projekte zu schwergewichtig
+* keine Anforderungsanalyse bedacht
+* keine sozialen Komponenten (wie Führung oder Kommunikation)
