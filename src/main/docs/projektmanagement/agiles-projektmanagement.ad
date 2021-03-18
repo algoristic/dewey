@@ -105,7 +105,7 @@ Definition of Ready (DoR):::: Legt fest ab welcher Detaillierung die Bearbeitung
 Definition of Done (DoD):::: Legt fest, ab wann ein Backlog-Eintrag als vollständig bearbeitet gilt. Existieren Unit-Tests? Existiert eine Dokumentation? Wurde er abgenommen? ...
 
 === Kritik
- Die {dev} werden, z. B. in der _Sprint-Retrospective_ angehalten sich stetig zu verbessern. Der {sm} hat zwar die Aufgabe _Impediments_ aus dem Weg zu räumen, aber es fehlt ein Feedback zur Arbeit des {po}.
+Die {dev} werden, z. B. in der _Sprint-Retrospective_ angehalten sich stetig zu verbessern. Der {sm} hat zwar die Aufgabe _Impediments_ aus dem Weg zu räumen, aber es fehlt ein Feedback zur Arbeit des {po}.
 
 Für die Arbeit an großen und komplexen Projekten, an denen mehrere Scrum-Teams beteiligt sind, gibt es kein Konzept. Hier muss auf externe _Skalierungframeworks_ zurückgegriffen werden.
 
