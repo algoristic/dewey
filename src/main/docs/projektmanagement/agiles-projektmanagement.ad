@@ -4,4 +4,83 @@
 
 :imagesdir: images
 
+:po: Product-Owner
+:dev: Entwickler
+:sm: Scrum-Master
+
 Der Fokus von agilen Arbeitsmethoden liegt auf einer hohen Flexibilität gegenüber sich verändernden Anforderungen in einem schnelllebigen Umfeld. Ziel ist es die Wertschöpfung soweit zu verschlanken wie möglich, ohne dabei die Qualität (negativ) zu beeinflussen. Das geht einher mit einem höheren Aufwand an Projektmanagement und einer stärkeren Einbindung des Kunden in die Produkterstellung.
+
+== Das Agile Manifest
+
+=== Die 4 Werte
+_Wir erschließen bessere Wege, Software zu entwickeln, indem wir es selbst tun und anderen dabei helfen. Durch diese Tätigkeit haben wir diese Werte zu schätzen gelernt:_
+
+. *Individuen und Interaktionen* sind wichtiger als _Prozesse und Tools_.
+. *Funktionierende Software* ist wichtiger als _eine umfangreiche Dokumentation_.
+. *Zusammenarbeit mit dem Kunden* ist wichtiger als _Verträge und Verhandlungen_.
+. *Reagieren auf Veränderungen* ist wichtiger als _das Verfolgen eines Planes_.
+
+_Das heißt, obwohl wir die Werte auf der rechten Seite wichtig finden, schätzen wir die Werte auf der linken Seite höher ein._
+
+=== Die 12 Prinzipien
+_Wir folgen diesen Prinzipien:_
+
+. *Kundenzufriedenheit*: Unsere höchste Priorität ist es, den Kunden durch frühe und kontinuierliche Auslieferung wertvoller Software zufrieden zu stellen.
+. *Änderungsfreundlichkeit*: Heisse Anforderungsänderungen selbst spät in der Entwicklung willkommen. Agile Prozesse nutzen Veränderungen zum Wettbewerbsvorteil des Kunden.
+. *Time-Boxing*: Liefere funktionierende Software regelmäßig innerhalb weniger Wochen oder Monate und bevorzuge dabei die kürzere Zeitspanne.
+. *Zusammenarbeit*: Fachexperten und Entwickler müssen während des Projektes täglich zusammenarbeiten.
+. *Vertrauen*: Errichte Projekte rund um motivierte Individuen. Gib ihnen das Umfeld und die Unterstützung, die sie benötigen und vertraue darauf, dass sie die Aufgabe erledigen.
+. *Direkte Kommunikation*: Die effizienteste und effektivste Methode, Informationen an und innerhalb eines Entwicklungsteams zu übermitteln, ist im Gespräch von Angesicht zu Angesicht.
+. *Funktionierendes Produkt*: Funktionierende Software ist das wichtigste Fortschrittsmaß.
+. *Nachhaltigkeit*: Agile Prozesse fördern nachhaltige Entwicklung. Die Auftraggeber, Entwickler und Benutzer sollten ein gleichmäßiges Tempo auf unbegrenzte Zeit halten können.
+. *Laufende Optimierung*: Ständiges Augenmerk auf technische Exzellenz und gutes Design fördert Agilität.
+. *Einfachheit*: Einfachheit -- die Kunst, die Menge nicht getaner Arbeit zu maximieren -- ist essenziell.
+. *Selbstorganisation*: Die besten Architekturen, Anforderungen und Entwürfe entstehen durch selbstorganisierte Teams.
+. *Kontinuierliche Verbesserung*: In regelmäßigen Abständen reflektiert das Team, wie es effektiver werden kann und passt sein Verhalten entsprechend an.
+
+== Scrum
+Scrum ist ein sehr leichtgewichtiges, *iteratives Vorgehensmodell* der Softwareentwicklung, das grundlegende Kernelemente es Vorgehens zur Verfügung stellt, die Ausgestaltung der angewandten Methoden und Prozesse aber dem Team überlässt. Ziel von Scrum ist es *Risiken und Störungen des Produktionsablaufes offenzulegen* und damit den Produktionsprozess zu optimieren.
+
+Aufrund dieser Offenheit ist es erforderlich Scrum bei jeder Implementierung in einer Umgebung anzupassen bzw. über die vorhandenen Prozesse zu legen. Dieses Vorgehen deckt oft Schwächen in den Prozessen auf, jedoch ist es an den Betroffenen diese Schwächen zu erkennen und zu reagieren -- _Scrum selbst gibt keine Handlungsempfehlungen_.
+
+=== Elemente
+Scrum definiert die folgenden Rollen, Aktivitäten und Artefakte:
+
+==== Rollen
+Die Beteiligten in diesen Rollen ergeben in ihrer Gesamtheit das *Scrum-Team*.
+
+{po}:: Hat die *fachliche Hoheit* über die Anforderungen an das Produkt und legt die Prioritäten fest.
+{dev}:: Haben die *technische Hoheit* über das Produkt und sichern die Funktionalität und Qualität.
+{sm}:: Hat die Hoheit über den *Scrum-Prozess* und sichert seine *Einhaltung* durch alle Beteiligten.
+
+
+==== Aktivitäten
+Die Aktivitäten ergeben in ihrer Gesamtheit den *Scrum-Prozess*. Den Rahmen für diese sich wiederholenden Aktivitäten bietet der *Sprint*.
+
+===== Ablauf
+. Der _Sprint_ startet mit dem *Sprint-Planning*.
+. Danach beginnt die Arbeit am Produkt -- währenddessen findet jeden Tag ein *Daily-Scrum* zu kurzen Abstimmung statt.
+. Zum Ende des Sprints kommen alle Beteiligten im *Sprint-Review* zusammen um die Fortschritte am Produkt zu sehen.
+. Im direkten Anschluss findet die *Sprint-Retrospective* statt -- diese beendet den Sprint.
+. Danach -- in der Regel am folgenden Tag -- beginnt der nächste Sprint mit dem _Sprint-Planning_ ...
+
+===== Übersicht
+Sprint:: Entwicklungszyklus bzw. *Iteration* in der Entwicklung. Im Sprint wird von den {dev}n ein *funktionierendes Inkrement* fertiggestellt, dass sich im Laufe der Iterationen immer weiter an die Gesamtmenge der Anforderungen annährt.
+Time-Box::: 1 bis 4 Wochen
+Sprint-Planning:: Zweigeteilte Aktivität: In der ersten Hälfte planen {po} und {dev} die Inhalte des kommenden Sprints. Der {po} präsentiert die wichtigsten Aufgaben und die {dev} schätzen den Aufwand ab und entscheiden, wie viele Aufgaben sie im nächsten Sprint bearbeiten können. Mit den ausgewählten Aufgaben wird der Sprint gefüllt. Der {sm} sichert ab, dass nicht mehr geplant wird, als die {dev} für realistisch halten. In der zweiten Hälfte besprechen die {dev} geplanten Aufgaben (ohne den {po}) und priorisieren diese nochmals für den Sprint. Dabei werden die fachlichen Aufgaben auch evtl. auf technischer Ebene nochmals in einzelne Punkte aufgegliedert.
+Time-Box::: 4 bis 8 Stunden
+Daily-Scrum:: Die {dev} berichten sich gegenseitig von ihren Fortschritten und Behinderungen (*Impediments*). Der {po} kann hier teilnehmen, hat allerdings kein aktives Mitspracherecht, kann aber gerne Rückfragen beantworten. Der {so} nmmt ebenfalls Teil und versucht _Impediments_ zu identifizieren.
+Time-Box::: 15 Minuten
+Sprint-Review:: Die {dev} zeigen live, an einem funktionierenden System (_keine Demo_, _kein Powerpoint_), was sie im Sprint erreicht haben. Zuschauer sind der {po} und weitere interessierte Stakeholder. Nach der Präsentation entscheidet der {po}, ob das Inkrement produktiv gehen kann oder noch weiterentwickelt werden muss. Der {sm} sichert ab, dass aufkommende Kritik in einem konstruktiven Rahmen bleibt und sich die {dev} nicht unter Druck setzen lassen.
+Time-Box::: 2 bis 4 Stunden
+Sprint-Retrospective:: Die {dev} und der {sm} reflektieren den vergangenen Sprint. Dabei wird im allgemeinen geprüft was gut funktioniert hat und was nicht. Gemeinsam wird versucht Lösungsstrategien zu finden
+Time-Box::: 2 bis 4 Stunden
+
+==== Artefakte
+
+=== Kritik
+ Die {dev} werden, z. B. in der _Sprint-Retrospective_ angehalten sich stetig zu verbessern. Der {sm} hat zwar die Aufgabe _Impediments_ aus dem Weg zu räumen, aber es fehlt ein Feedback zur Arbeit des {po}.
+
+Für die Arbeit an großen und komplexen Projekten, an denen mehrere Scrum-Teams beteiligt sind, gibt es kein Konzept. Hier muss auf externe _Skalierungframeworks_ zurückgegriffen werden.
+
+Scrum ist ausschließlich für _Feature-Entwicklung_ geeinget. Besonders bei der _produktgetriebenen Entwicklung_ gibt es aber im Hintergrund oft weitreichende _Maintenance_-Aufgaben, die in Scrum nur schwer zu berücksichtigen sind.   
