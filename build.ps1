@@ -15,6 +15,10 @@ Param(
     [Parameter(Mandatory=$false)]
     [string]$Theme = "dark",
 
+    # Retains original structure if $false
+    [Parameter(Mandatory=$false)]
+    [switch]$Flatten = $true,
+
     [Parameter(Mandatory=$false)]
     [string]$TemplateRoot = "./src/main/resources/templates",
 
@@ -127,7 +131,14 @@ Else
 }
 
 # Bilder kopieren
-Get-ChildItem $Src | Copy-Item -Destination $Dest -Recurse -Filter *.png
+If($Flatten) {
+    New-Item $Dest/pages/images -ItemType "directory"
+    Get-ChildItem -Path $Src -Recurse -Filter *.png | Copy-Item -Destination $Dest/pages/images
+}
+Else
+{
+    Get-ChildItem $Src | Copy-Item -Destination $Dest -Recurse -Filter *.png
+}
 
 $SrcDocs = Get-ChildItem -Recurse -Path $Src | ? { $_.Extension -in ".asciidoc",".adoc",".ad" }
 Foreach ($SrcDoc in $SrcDocs)
@@ -181,12 +192,25 @@ Foreach ($SrcDoc in $SrcDocs)
         # Pfade ja relativ zu einer Datei im obersten build-Verzeichnis funkionieren sollen!
         $TargetPath = ".$($TempItem.Substring($Src.Length))"
         $TargetPath = $TargetPath.Substring(0, ($TargetPath.Length - ($TempItemName.Length + 1)))
-        $TargetPath = "$TargetPath/$OriginalName"
+        If($Flatten) {
+            $TargetPath = "pages/$OriginalName"
+        }
+        Else
+        {
+            $TargetPath = "$TargetPath/$OriginalName"
+        }
         # alle asciidoc-Endungen durch die kompilierte html-Variante ersetzen
         $TargetPath = $TargetPath -Replace ".asciidoc",".html" -Replace ".adoc",".html" -Replace ".ad",".html"
 
         # bereite den Zielpfad als relativ zum root-Verzeichnis auf
-        $BuildTarget = "$Dest/$($TargetPath.Substring(2))"
+        If($Flatten)
+        {
+            $BuildTarget = "$Dest/$TargetPath"
+        }
+        Else
+        {
+            $BuildTarget = "$Dest/$($TargetPath.Substring(2))"
+        }
 
         # kompiliere .adoc nach .html
         Write-Log "Compile: $TempItem"
