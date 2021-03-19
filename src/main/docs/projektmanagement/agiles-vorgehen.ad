@@ -71,11 +71,11 @@ Sprint:: Entwicklungszyklus bzw. *Iteration* in der Entwicklung. Im Sprint wird 
 Time-Box::: 1 bis 4 Wochen
 Sprint-Planning:: Zweigeteilte Aktivität: In der ersten Hälfte planen {po} und {dev} die Inhalte des kommenden Sprints. Der {po} präsentiert die wichtigsten Aufgaben und die {dev} schätzen den Aufwand ab und entscheiden, wie viele Aufgaben sie im nächsten Sprint bearbeiten können. Mit den ausgewählten Aufgaben wird der Sprint gefüllt. Der {sm} sichert ab, dass nicht mehr geplant wird, als die {dev} für realistisch halten. In der zweiten Hälfte besprechen die {dev} geplanten Aufgaben (ohne den {po}) und priorisieren diese nochmals für den Sprint. Dabei werden die fachlichen Aufgaben auch evtl. auf technischer Ebene nochmals in einzelne Punkte aufgegliedert.
 Time-Box::: 4 bis 8 Stunden
-Daily-Scrum:: Die {dev} berichten sich gegenseitig von ihren Fortschritten und Behinderungen (*Impediments*). Der {po} kann hier teilnehmen, hat allerdings kein aktives Mitspracherecht, kann aber gerne Rückfragen beantworten. Der {so} nmmt ebenfalls Teil und versucht _Impediments_ zu identifizieren.
+Daily-Scrum:: Die {dev} berichten sich gegenseitig von ihren Fortschritten und Hindernissen (*Impediments*). Der {po} kann hier teilnehmen, hat allerdings kein aktives Mitspracherecht, kann aber gerne Rückfragen beantworten. Der {so} nmmt ebenfalls Teil und versucht _Impediments_ zu identifizieren.
 Time-Box::: 15 Minuten
 Sprint-Review:: Die {dev} zeigen live, an einem funktionierenden System (_keine Demo_, _kein Powerpoint_), was sie im Sprint erreicht haben. Zuschauer sind der {po} und weitere interessierte Stakeholder. Nach der Präsentation entscheidet der {po}, ob das Inkrement produktiv gehen kann oder noch weiterentwickelt werden muss. Der {sm} sichert ab, dass aufkommende Kritik in einem konstruktiven Rahmen bleibt und sich die {dev} nicht unter Druck setzen lassen.
 Time-Box::: 2 bis 4 Stunden
-Sprint-Retrospective:: Die {dev} und der {sm} reflektieren den vergangenen Sprint. Dabei wird im allgemeinen geprüft was gut funktioniert hat und was nicht. Gemeinsam wird versucht Lösungsstrategien zu finden.
+Sprint-Retrospective:: Die {dev} und der {sm} reflektieren den vergangenen Sprint. Dabei wird im allgemeinen geprüft was gut funktioniert hat und was nicht, bzw. welche Hindernisse den Ablauf gestört haben. Gemeinsam wird versucht Lösungsstrategien zu finden.
 Time-Box::: 2 bis 4 Stunden
 
 ==== Artefakte
@@ -143,6 +143,60 @@ Das ursprüngliche Kanban-System wurde 1947 bei der _Toyota Motor Corporation_ u
 * Überlastung abbauen, sodass ein nachhaltiges Arbeitstempo entsteht
 * Akzeptanz für Änderungen am Prozess erhöhen
 
-== Agile Skalierungsframeworks
+=== Synergien
+Einige Praktiken, wie z. B. das *Kanban-Board* lassen sich großartig mit Vorgehensmodellen wie Scrum kombinieren, z. B. zur Darstellung der Backlog- oder Sprint-Backlog-Einträge und deren Priorisierung.
 
-_TODO_
+Zum anderen bietet Kanban einen Rahmen, der sich auch für bereiche eignet, in denen eine Verschlankung der Prozesse gewünscht ist, sich allerdings Methoden wie Scrum nicht eignen, da der Fokus auf bspw. auf Maintenance-Aufgaben liegt.
+
+== Agile Skalierungsframeworks
+Wie in der Kritik zu Scrum erwähnt, sind solche agilen Vorgehensmodelle eher für kleine Teams oder Projekte konzipiert. Sobald mehrere Teams an einem Produkt bzw. Projekt arbeiten ist es sinnvoll ein Skalerungsframework zu nutzen, das versucht den Rahmen von Scrum auf größere Organisationen abzubilden.
+
+=== Scaled Agile Framework (SAFe)
+_SAFe_ bettet die agile Entwicklung in ein Framework ein, dass die klassischen Unternehmensbereiche von großen Organisation mit einbezieht. Dabei bildet _SAFe_ eine stabile Organisationsstruktur, die sich über mehrere Teams oder sogar Portfolios verteilt. Unter direkter Einbeziehung von Kanban werden verschiedene Backlogs mit Fokus auf Features und Architektur gepflegt und es gibt diverse Erweiterungen von Scrum durch zusätzliche Rollen, Aktivitäten und Artefakte, wie z. B. dem Product Management oder dem Release-Planning.
+
+_SAFe_ definiert drei Sichten auf den erweiterten Scrum-Prozess:
+* *Portfolio*: Entscheidungen über strategische Themen, die als Einträge in das _Programm_ übernommen werden
+* *Programm*: Portfolio-Einträge werden in _Feature_-Einträge für die Backlogs umgewandelt
+* *Team*: Mehrere koordinierte Entwicklungsteams bearbeiten die Backlog-Einträge
+
+=== Large-Scale Scrum (LeSS)
+_LeSS_ definiert vor allem Hierarchien von Product-Ownern, deren Verantwortungsbereich je Ebene immer kleiner wird. Außerdem erweitert _LeSS_ den Scrum-Prozess dahingehend, dass über abgewandelte oder neue Aktivitäten die Arbeit der einzelnen {dev}-Teams synchronisiert wird.
+
+=== ScALeD Agile Lean Development
+_ScALeD_ liefert keine Vorgaben für Aufbau- und Ablauforganisation und ist auch kein Framework im eigentlichen Sinne. Stattdessen werden durch _ScALeD_ Prinzipien formuliert, die das agile Gedankengut unter Gesichtspunkten der Skalierung formulieren.
+
+Dadurch wird eher eine Meta-Sicht auf den Scrum-Prozess vorgegeben, deren Ziel es ist, selbstständig die optimale Aufbau- und Ablauforganisation für die eigene Organisation bzw. das eigene Projekt zu finden.
+
+Die _ScALeD_-Prinzipien, die auf der Webseitefootnote:[Quelle: http://scaledprinciples.org] in ausführlicher Form nachzulesen sind, sind folgende:
+
+Begeisterte Kunden::
+    * Definiere, was Wert bedeutet und schafft
+    * Produziere kleine, lieferbare Inkremente
+Zufriedene, produktive Mitarbeiter::
+    * Bilde eigenständige, funktionsübergreifende Teams
+    * Bevollmächtige und befähige die Mitarbeiter
+Globale Optimierung::
+    * Schaffe Transparenz in alle Richtungen
+    * Bevorzuge den persönlichen Kontakt
+    * Schaffe Flow und Rhythmus
+Unterstützende Führung::
+    * Setze Ziele und Rahmenbedingungen
+    * Dezentralisiere Kontrollstrukturen
+    * Kultiviere den Wandel und wandle die Kultur
+Kontinuierliche Verbesserung::
+    * Überprüfe das Produkt und passe es an
+    * Überprüfe den Entwicklungsprozess und passe ihn an
+    * Überprüfe die Organisation und passe sie an
+
+:cyc: Agile Scaling Cycle
+==== {cyc}
+Weil die _ScALeD_-Prinzipien in der Praxis nicht ausreichend sind, um in Organisationen oder Projekten gewinnbringend eingeetzt werden, gibt es den _Agile Scaling Cycle_. Was _Scrum_ für das _Agile Manifest_ ist, ist der _Agilge Scaling Cycle_ für die _ScALeD_-Prinzipien, der agilen Skalierung.
+
+Der {cyc} besteht aus drei einfachen Schritten, in deren Zentrum die agilen Werte und Prinzipien stehen. Für die einzelnen Schritte gibt es eine Reihe von möglichen Best-Practices, die ich danach kurz darstellen werde.
+
+Schritt 1: _Abhängigkeiten reduzieren_::
+Begonnen wird mit der Reduktion von Abhängigkeiten zwischen den Teams. Es wird geprüft, wie die Kommunikation zwischen den Teams aber auch den anderen Beteiligten, wie dem {po}, reduziert werden kann, ohne dass Informationen verloren gehen oder die Kommunikation unnötig fomalisiert wird.
+Schritt 2: _Teams koordinieren_::
+Dann wird geprüft, welche Methoden geeignet sind, um die Teams an den entscheidenden Punkten zu koordinieren oder zu synchronisieren. Generell gilt als Maß: *je weniger Maßnahmen zur Koordination, desto besser!* Schließlich sollen die Abhängkeiten reduziert und nicht _verkompliziert_ werden.
+Schritt 3: _Unternehmen entwickeln_::
+Im Scrum-Prozess, aber auch entlang des {cyc} werden Hindernisse auftreten, die weder die Teams noch der {sm} beseitigen können. Hierfür wird ein *Transitionsteam* eingeführt, das selbst nach _Scrum_ arbeitet und entsprechend hochrangig besetzt sein muss, damit es weitreichende organisatorische Änderungen veranlassen kann. Die großen, organisatorischen Hindernisse wandern ins *Transitions-Backlog* und werden vom Transitionsteam bearbeitet, dass diese umsetzen und den organisatorischen Nutzen dieser Änderungen rechtfertigen kann.
