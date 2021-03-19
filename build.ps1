@@ -217,7 +217,7 @@ Foreach ($SrcDoc in $SrcDocs)
         Write-Log "Src: $Src, Dest: $Dest" DEBUG 1
         Write-Log "Build target: $BuildTarget" DEBUG 1
         Write-Log "Reference in index.html: $TargetPath" DEBUG 1
-        & asciidoctor.bat -o $BuildTarget -a stylesheet=$BuildCss $TempItem
+        & asciidoctor.bat -o $BuildTarget -a stylesheet=$BuildCss -a lang=de $TempItem
         Remove-Item -Force $TempItem
         Write-Log "Finished: $BuildTarget" DEBUG
 
@@ -322,7 +322,7 @@ $OutFile = "$($Dest)/index.adoc"
 Write-Log "Create $OutFile"
 $Doc | Out-File -FilePath $OutFile -Encoding UTF8
 Write-Log "Compile $OutFile "
-& asciidoctor.bat -a stylesheet=$BuildCss $OutFile
+& asciidoctor.bat -a stylesheet=$BuildCss -a lang=de $OutFile
 # lösche sämtliche anfallenden build-Artefakte
 Get-ChildItem $Dest | Remove-Item -Recurse -Include *.ad, *.adoc, *.asciidoc, *.css
 # lösche leere Verzeichnisse rekursiv

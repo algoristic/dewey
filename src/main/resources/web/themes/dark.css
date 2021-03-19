@@ -31,6 +31,10 @@ ol>li p, ul>li p, ul dd, ol dd, .olist .olist, .ulist .ulist, .ulist .olist, .ol
 p, blockquote, dt, td.content, span.alt {
     font-size: .9rem
 }
+p {
+    hyphens: auto;
+    text-align: justify;
+}
 dl dt {
     font-style: italic;
     font-weight: inherit;
