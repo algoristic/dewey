@@ -1,4 +1,4 @@
-= Agile Skalierungsframeworks
+= Agile Skalierungs&shy;frameworks
 :dewey: Projektmanagement; Vorgehensmodelle; Agiles Vorgehen
 :dewey-template: default.doc.ad
 
@@ -14,6 +14,7 @@ Wie in der Kritik zu Scrum erwähnt, sind solche agilen Vorgehensmodelle eher f�
 _SAFe_ bettet die agile Entwicklung in ein Framework ein, dass die klassischen Unternehmensbereiche von großen Organisation mit einbezieht. Dabei bildet _SAFe_ eine stabile Organisationsstruktur, die sich über mehrere Teams oder sogar Portfolios verteilt. Unter direkter Einbeziehung von Kanban werden verschiedene Backlogs mit Fokus auf Features und Architektur gepflegt und es gibt diverse Erweiterungen von Scrum durch zusätzliche Rollen, Aktivitäten und Artefakte, wie z. B. dem Product Management oder dem Release-Planning.
 
 _SAFe_ definiert drei Sichten auf den erweiterten Scrum-Prozess:
+
 * *Portfolio*: Entscheidungen über strategische Themen, die als Einträge in das _Programm_ übernommen werden
 * *Programm*: Portfolio-Einträge werden in _Feature_-Einträge für die Backlogs umgewandelt
 * *Team*: Mehrere koordinierte Entwicklungsteams bearbeiten die Backlog-Einträge
@@ -51,20 +52,19 @@ Kontinuierliche Verbesserung::
 == Agile Scaling Cycle
 Weil die _ScALeD_-Prinzipien in der Praxis nicht ausreichend sind, um in Organisationen oder Projekten gewinnbringend eingeetzt werden, gibt es den _Agile Scaling Cycle_. Was _Scrum_ für das _Agile Manifest_ ist, ist der _Agilge Scaling Cycle_ für die _ScALeD_-Prinzipien, der agilen Skalierung.
 
-Der {cyc} besteht aus drei einfachen Schritten, in deren Zentrum die agilen Werte und Prinzipien stehen. Für die einzelnen Schritte gibt es eine Reihe von möglichen Best-Practices, die ich danach kurz darstellen werde.
+Der {cyc} besteht aus drei einfachen Schritten, in deren Zentrum die agilen Werte und Prinzipien stehen. Für die einzelnen Schritte gibt es eine Reihe von möglichen Best-Practices, für die ich ebenfalls einige Beispiele zeige.
 
 Schritt 1: _Abhängigkeiten reduzieren_::
 Begonnen wird mit der Reduktion von Abhängigkeiten zwischen den Teams. Es wird geprüft, wie die Kommunikation zwischen den Teams aber auch den anderen Beteiligten, wie dem {po}, reduziert werden kann, ohne dass Informationen verloren gehen oder die Kommunikation unnötig fomalisiert wird.
-Schritt 2: _Teams koordinieren_::
-Dann wird geprüft, welche Methoden geeignet sind, um die Teams an den entscheidenden Punkten zu koordinieren oder zu synchronisieren. Generell gilt als Maß: *je weniger Maßnahmen zur Koordination, desto besser!* Schließlich sollen die Abhängkeiten reduziert und nicht _verkompliziert_ werden.
-Schritt 3: _Unternehmen entwickeln_::
-Im Scrum-Prozess, aber auch entlang des {cyc} werden Hindernisse auftreten, die weder die Teams noch der {sm} beseitigen können. Hierfür wird ein *Transitionsteam* eingeführt, das selbst nach _Scrum_ arbeitet und entsprechend hochrangig besetzt sein muss, damit es weitreichende organisatorische Änderungen veranlassen kann. Die großen, organisatorischen Hindernisse wandern ins *Transitions-Backlog* und werden vom Transitionsteam bearbeitet, dass diese umsetzen und den organisatorischen Nutzen dieser Änderungen rechtfertigen kann.
-
-=== Mögliche Praktiken
-Eine Auswahl an Best-Practices und Ideen, um die einzelnen Schritte des {cyc} zu begleiten.
 
 .Praktiken zur Reduktion von Abhängigkeiten
 image::praktiken_abhaengigkeiten_001.png[Praktiken zur Reduktion von Abhängigkeiten, 460, align="center"]
 
+Schritt 2: _Teams koordinieren_::
+Dann wird geprüft, welche Methoden geeignet sind, um die Teams an den entscheidenden Punkten zu koordinieren oder zu synchronisieren. Generell gilt als Maß: *je weniger Maßnahmen zur Koordination, desto besser!* Schließlich sollen die Abhängkeiten reduziert und nicht _verkompliziert_ werden.
+
 .Praktiken zur Koordination von Teams
 image::praktiken_koordination_001.png[Praktiken zur Koordination von Teams, 460, align="center"]
+
+Schritt 3: _Unternehmen entwickeln_::
+Im Scrum-Prozess, aber auch entlang des {cyc} werden Hindernisse auftreten, die weder die Teams noch der {sm} beseitigen können. Hierfür wird ein *Transitionsteam* eingeführt, das selbst nach _Scrum_ arbeitet und entsprechend hochrangig besetzt sein muss, damit es weitreichende organisatorische Änderungen veranlassen kann. Die großen, organisatorischen Hindernisse wandern ins *Transitions-Backlog* und werden vom Transitionsteam bearbeitet, dass diese umsetzen und den organisatorischen Nutzen dieser Änderungen rechtfertigen kann.
