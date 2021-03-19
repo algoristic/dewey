@@ -132,7 +132,7 @@ Else
 
 # Bilder kopieren
 If($Flatten) {
-    New-Item $Dest/pages/images -ItemType "directory"
+    New-Item $Dest/pages/images -ItemType "directory" | Out-Null
     Get-ChildItem -Path $Src -Recurse -Filter *.png | Copy-Item -Destination $Dest/pages/images
 }
 Else
