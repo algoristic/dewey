@@ -200,3 +200,12 @@ Schritt 2: _Teams koordinieren_::
 Dann wird geprüft, welche Methoden geeignet sind, um die Teams an den entscheidenden Punkten zu koordinieren oder zu synchronisieren. Generell gilt als Maß: *je weniger Maßnahmen zur Koordination, desto besser!* Schließlich sollen die Abhängkeiten reduziert und nicht _verkompliziert_ werden.
 Schritt 3: _Unternehmen entwickeln_::
 Im Scrum-Prozess, aber auch entlang des {cyc} werden Hindernisse auftreten, die weder die Teams noch der {sm} beseitigen können. Hierfür wird ein *Transitionsteam* eingeführt, das selbst nach _Scrum_ arbeitet und entsprechend hochrangig besetzt sein muss, damit es weitreichende organisatorische Änderungen veranlassen kann. Die großen, organisatorischen Hindernisse wandern ins *Transitions-Backlog* und werden vom Transitionsteam bearbeitet, dass diese umsetzen und den organisatorischen Nutzen dieser Änderungen rechtfertigen kann.
+
+===== Mögliche Praktiken
+Eine Auswahl an Best-Practices und Ideen, um die einzelnen Schritte des {cyc} zu begleiten.
+
+.Praktiken zur Reduktion von Abhängigkeiten
+image::praktiken_abhaengigkeiten_001.png[Praktiken zur Reduktion von Abhängigkeiten, 460, align="center"]
+
+.Praktiken zur Koordination von Teams
+image::praktiken_koordination_001.png[Praktiken zur Koordination von Teams, 460, align="center"]
