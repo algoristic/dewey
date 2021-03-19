@@ -1,0 +1,78 @@
+= Scrum
+:dewey: Projektmanagement; Vorgehensmodelle; Agiles Vorgehen
+:dewey-template: default.doc.ad
+
+:po: Product-Owner
+:dev: Entwickler
+:sm: Scrum-Master
+
+Scrum ist ein sehr leichtgewichtiges, *iteratives Vorgehensmodell* der Softwareentwicklung, das grundlegende Kernelemente es Vorgehens zur Verfügung stellt, die Ausgestaltung der angewandten Methoden und Prozesse aber dem Team überlässt. Ziel von Scrum ist es *Risiken und Störungen des Produktionsablaufes offenzulegen* und damit den Produktionsprozess zu optimieren.
+
+Aufrund dieser Offenheit ist es erforderlich Scrum bei jeder Implementierung in einer Umgebung anzupassen bzw. über die vorhandenen Prozesse zu legen. Dieses Vorgehen deckt oft Schwächen in den Prozessen auf, jedoch ist es an den Betroffenen diese Schwächen zu erkennen und zu reagieren -- _Scrum selbst gibt keine Handlungsempfehlungen_.
+
+Eine wichtige Besonderheit ist, dass in Scrum nicht mit exakten zeitlichen Schätzungen garbeitet wird, sondern nur mit relativen Werten, sogenannten *Story-Points". Diese stellen die Komplexität der Aufgaben im Vergleich zueinander dar. Aus der Höhe der Punkte für eine Aufgabe lässt sich (besonders zu Beginn der Arbeit) nicht wirklich ableiten, wie lange die Bearbeitung dauern kann. Wenn die {dev} allerdings gelernt haben einzuschätzen, wie gut sie Aufgaben einer bestimmten Komplexität handhaben können, wird die Schätzung dessen, was in einer Iteration abgearbeitet werden kann, immer genauer. Dann lässt sich extrapolieren, ob das Projekt termintreu abgeschlossen werden kann.
+
+Scrum definiert die folgenden Rollen, Aktivitäten und Artefakte:
+
+== Rollen
+Die Beteiligten in diesen Rollen ergeben in ihrer Gesamtheit das *Scrum-Team*.
+
+{po}:: Hat die *fachliche Hoheit* über die Anforderungen an das Produkt und legt die Prioritäten fest.
+{dev}:: Haben die *technische Hoheit* über das Produkt und sichern die Funktionalität und Qualität.
+{sm}:: Hat die Hoheit über den *Scrum-Prozess* und sichert seine *Einhaltung* durch alle Beteiligten.
+
+
+== Aktivitäten
+Die Aktivitäten ergeben in ihrer Gesamtheit den *Scrum-Prozess*. Den Rahmen für diese sich wiederholenden Aktivitäten bietet der *Sprint*.
+
+=== Ablauf
+. Der _Sprint_ startet mit dem *Sprint-Planning*.
+. Danach beginnt die Arbeit am Produkt -- währenddessen findet jeden Tag ein *Daily-Scrum* zu kurzen Abstimmung statt.
+. Zum Ende des Sprints kommen alle Beteiligten im *Sprint-Review* zusammen um die Fortschritte am Produkt zu sehen.
+. Im direkten Anschluss findet die *Sprint-Retrospective* statt -- diese beendet den Sprint.
+. Danach -- in der Regel am folgenden Tag -- beginnt der nächste Sprint mit dem _Sprint-Planning_ ...
+
+=== Übersicht
+Sprint:: Entwicklungszyklus bzw. *Iteration* in der Entwicklung. Im Sprint wird von den {dev}n ein *funktionierendes Inkrement* fertiggestellt, dass sich im Laufe der Iterationen immer weiter an die Gesamtmenge der Anforderungen annährt.
+Time-Box::: 1 bis 4 Wochen
+Sprint-Planning:: Zweigeteilte Aktivität: In der ersten Hälfte planen {po} und {dev} die Inhalte des kommenden Sprints. Der {po} präsentiert die wichtigsten Aufgaben und die {dev} schätzen den Aufwand ab und entscheiden, wie viele Aufgaben sie im nächsten Sprint bearbeiten können. Mit den ausgewählten Aufgaben wird der Sprint gefüllt. Der {sm} sichert ab, dass nicht mehr geplant wird, als die {dev} für realistisch halten. In der zweiten Hälfte besprechen die {dev} geplanten Aufgaben (ohne den {po}) und priorisieren diese nochmals für den Sprint. Dabei werden die fachlichen Aufgaben auch evtl. auf technischer Ebene nochmals in einzelne Punkte aufgegliedert.
+Time-Box::: 4 bis 8 Stunden
+Daily-Scrum:: Die {dev} berichten sich gegenseitig von ihren Fortschritten und Hindernissen (*Impediments*). Der {po} kann hier teilnehmen, hat allerdings kein aktives Mitspracherecht, kann aber gerne Rückfragen beantworten. Der {so} nmmt ebenfalls Teil und versucht _Impediments_ zu identifizieren.
+Time-Box::: 15 Minuten
+Sprint-Review:: Die {dev} zeigen live, an einem funktionierenden System (_keine Demo_, _kein Powerpoint_), was sie im Sprint erreicht haben. Zuschauer sind der {po} und weitere interessierte Stakeholder. Nach der Präsentation entscheidet der {po}, ob das Inkrement produktiv gehen kann oder noch weiterentwickelt werden muss. Der {sm} sichert ab, dass aufkommende Kritik in einem konstruktiven Rahmen bleibt und sich die {dev} nicht unter Druck setzen lassen.
+Time-Box::: 2 bis 4 Stunden
+Sprint-Retrospective:: Die {dev} und der {sm} reflektieren den vergangenen Sprint. Dabei wird im allgemeinen geprüft was gut funktioniert hat und was nicht, bzw. welche Hindernisse den Ablauf gestört haben. Gemeinsam wird versucht Lösungsstrategien zu finden.
+Time-Box::: 2 bis 4 Stunden
+
+== Artefakte
+
+Product-Backlog:: Hier sammelt und priorisiert der {po} seine fachlichen Aufgaben, auch Einträge genannt.
+Sprint-Backlog:: Aufgaben, die im Sprint-Planning für den Sprint ausgewählt wurden, werden hier eingegliedert und von den {dev}n priorisiert.
+Inrement:: Funktionstüchtige, potentiell auslieferbare Software-Version.
+
+== Erweiterungen
+Da Scrum nur einen sehr kleine Rahmen vorgibt ergibt es Sinn, diesen nach den eigenen Bedürfnissen anzupassen. Dabei kann man sich bei Best-Practices aus dem Projektmanagement oder der Softwareentwicklung bedienen. Außerdem spielt Scrum wunderbar mit diversen Elementen des _Exctreme Programming_ zusammen.
+
+Beispiele für mögliche Erweiterungen:
+
+Rollen::
+Kunde::: Steht im engen Kontakt mit dem {po} und trägt seine Anforderungen an ihn heran.
+Anwender::: Sog. _Key-_ oder _Power-User_, der sich sehr gut mit den abzubildenden Prozessen auskennt. Dient als Vertreter der eigentlichen Nutzergruppe der Anwendung und steht dem {po} oder den {dev}n für Rückfragen zur Verfügung.
+Manager::: Schafft den Rahmen für den Einsatz und die Akzeptanz von Scrum im Unternehmen
+
+Aktivitäten::
+Product-Backlog Refinement::: Wird ein laufender Entwicklungsprozess auf Scrum "umgestellt", so existieren vermutlich sehr viele Backlog-Einträge, die es zu schätzen und zu priorisieren gilt. Um das Sprint-Planning nicht unnötig in die Länge zu ziehen, gibt es einen extra Termin (Time-Box z. B. 1 Stunde wöchentlich) bei dem strukturiert das Backlog durchgearbeitet wird.
+
+Artefakte::
+Sprint-Burndown-Chart::: Management-Tool, dass abbildet, wie schnell das Backlog Sprint für Sprint abgearbeitet wird. Daraus lässt sich eine Trendkurve ableiten, die anzeigt, ob der geplante Termin eingehalten werden kann oder nicht. So kann bereits nach wenigen Iterationen entschieden werden, ob mit dem Kunden über die Realisierung gesprochen werden muss oder nicht.
+Impediment-Backlog::: Übersicht des {sm}s, auf der er die Störfaktoren festhält und deren Auflösung durch sich priorisiert.
+Erweiterungen für Backlog-Einträge:::
+Definition of Ready (DoR):::: Legt fest ab welcher Detaillierung die Bearbeitung eines Eintrages möglich ist. Existieren User-Stories? Ist er geschätzt? ...
+Definition of Done (DoD):::: Legt fest, ab wann ein Backlog-Eintrag als vollständig bearbeitet gilt. Existieren Unit-Tests? Existiert eine Dokumentation? Wurde er abgenommen? ...
+
+== Kritik
+Die {dev} werden, z. B. in der _Sprint-Retrospective_ angehalten sich stetig zu verbessern. Der {sm} hat zwar die Aufgabe _Impediments_ aus dem Weg zu räumen, aber es fehlt ein Feedback zur Arbeit des {po}.
+
+Für die Arbeit an großen und komplexen Projekten, an denen mehrere Scrum-Teams beteiligt sind, gibt es kein Konzept. Hier muss auf externe _Skalierungframeworks_ zurückgegriffen werden.
+
+Scrum ist ausschließlich für _Feature-Entwicklung_ geeinget. Besonders bei der _produktgetriebenen Entwicklung_ gibt es aber im Hintergrund oft weitreichende _Maintenance_-Aufgaben, die in Scrum nur schwer zu berücksichtigen sind.

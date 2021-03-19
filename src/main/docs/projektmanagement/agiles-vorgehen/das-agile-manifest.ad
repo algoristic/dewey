@@ -1,0 +1,31 @@
+= Das Agile Manifest
+:dewey: Projektmanagement; Vorgehensmodelle; Agiles Vorgehen
+:dewey-template: default.doc.ad
+
+Der Fokus von agilen Arbeitsmethoden liegt auf einer hohen Flexibilität gegenüber sich verändernden Anforderungen in einem schnelllebigen Umfeld. Ziel ist es die Wertschöpfung soweit zu verschlanken wie möglich, ohne dabei die Qualität (negativ) zu beeinflussen. Das geht einher mit einem höheren Aufwand an Projektmanagement und einer stärkeren Einbindung des Kunden in die Produkterstellung.
+
+== Die 4 Werte
+_Wir erschließen bessere Wege, Software zu entwickeln, indem wir es selbst tun und anderen dabei helfen. Durch diese Tätigkeit haben wir diese Werte zu schätzen gelernt:_
+
+. *Individuen und Interaktionen* sind wichtiger als _Prozesse und Tools_.
+. *Funktionierende Software* ist wichtiger als _eine umfangreiche Dokumentation_.
+. *Zusammenarbeit mit dem Kunden* ist wichtiger als _Verträge und Verhandlungen_.
+. *Reagieren auf Veränderungen* ist wichtiger als _das Verfolgen eines Planes_.
+
+_Das heißt, obwohl wir die Werte auf der rechten Seite wichtig finden, schätzen wir die Werte auf der linken Seite höher ein._
+
+== Die 12 Prinzipien
+_Wir folgen diesen Prinzipien:_
+
+. *Kundenzufriedenheit*: Unsere höchste Priorität ist es, den Kunden durch frühe und kontinuierliche Auslieferung wertvoller Software zufrieden zu stellen.
+. *Änderungsfreundlichkeit*: Heisse Anforderungsänderungen selbst spät in der Entwicklung willkommen. Agile Prozesse nutzen Veränderungen zum Wettbewerbsvorteil des Kunden.
+. *Time-Boxing*: Liefere funktionierende Software regelmäßig innerhalb weniger Wochen oder Monate und bevorzuge dabei die kürzere Zeitspanne.
+. *Zusammenarbeit*: Fachexperten und Entwickler müssen während des Projektes täglich zusammenarbeiten.
+. *Vertrauen*: Errichte Projekte rund um motivierte Individuen. Gib ihnen das Umfeld und die Unterstützung, die sie benötigen und vertraue darauf, dass sie die Aufgabe erledigen.
+. *Direkte Kommunikation*: Die effizienteste und effektivste Methode, Informationen an und innerhalb eines Entwicklungsteams zu übermitteln, ist im Gespräch von Angesicht zu Angesicht.
+. *Funktionierendes Produkt*: Funktionierende Software ist das wichtigste Fortschrittsmaß.
+. *Nachhaltigkeit*: Agile Prozesse fördern nachhaltige Entwicklung. Die Auftraggeber, Entwickler und Benutzer sollten ein gleichmäßiges Tempo auf unbegrenzte Zeit halten können.
+. *Laufende Optimierung*: Ständiges Augenmerk auf technische Exzellenz und gutes Design fördert Agilität.
+. *Einfachheit*: Einfachheit -- die Kunst, die Menge nicht getaner Arbeit zu maximieren -- ist essenziell.
+. *Selbstorganisation*: Die besten Architekturen, Anforderungen und Entwürfe entstehen durch selbstorganisierte Teams.
+. *Kontinuierliche Verbesserung*: In regelmäßigen Abständen reflektiert das Team, wie es effektiver werden kann und passt sein Verhalten entsprechend an.

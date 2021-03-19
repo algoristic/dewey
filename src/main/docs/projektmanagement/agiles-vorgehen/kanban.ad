@@ -1,0 +1,39 @@
+= Kanban
+:dewey: Projektmanagement; Vorgehensmodelle; Agiles Vorgehen
+:dewey-template: default.doc.ad
+
+Das ursprüngliche Kanban-System wurde 1947 bei der _Toyota Motor Corporation_ und ist eine Methode der Produktionsprozesssteuerung. Kanban legte den Grundstein für die *Lean Production*: Die Minimierung von Aktivitäten, die Verluste erzeugen, ohne (negative) AUswirkungen auf die Produktivität.
+
+== Grundprinzipien
+. Beginnen Sie mit dem dem, was sie jetzt tun
+    ** Kanban benötigt keine "Startkonfiguration"
+    ** Kanban kann über bestehende Workflows und Systeme "gelegt" werden
+. Inkrementelle, evolutionäre Veränderungen vervolgen
+    ** besser schrittweise, kleine Änderungen, als große, die auf Ablehnung stoßen
+    ** obwohl ohne diesen Hintergedanken konzipiert, greift Kanban bereits den agilen Prinzipien vor
+. Aktuelle Prozesse, Rollen und Verantwortlichkeiten berücksichtigen
+    ** Kanban schreibt Änderungen nicht vor, verbietet sie aber auch nicht
+. Zu Führungsverantwortung auf allen Ebenen ermutigen
+    ** die besten Führungsqualitäten ergeben sich oft aus alltäglichen Maßnahmen von Menschen aus der Praxis
+
+== Die Kanban-Praktiken
+. Den Workflow visualisieren
+    ** Stichwort *Kanban-Board*
+. Laufende Arbeit begrenzen
+    ** Stichwort *Work-In-Progress-Limit*
+. Workflow Management
+. Prozessrichtlinien ausformulieren
+    ** Transparenz erzeugt Akzeptanz
+. Feedbackschleifen
+. Die Zusammenarbeit verbessern
+
+== Ziele
+* Verkürzung von (zu langen) Durchlaufzeiten
+* Engpässe erkennen und beseitigen
+* Überlastung abbauen, sodass ein nachhaltiges Arbeitstempo entsteht
+* Akzeptanz für Änderungen am Prozess erhöhen
+
+== Synergien
+Einige Praktiken, wie z. B. das *Kanban-Board* lassen sich großartig mit Vorgehensmodellen wie Scrum kombinieren, z. B. zur Darstellung der Backlog- oder Sprint-Backlog-Einträge und deren Priorisierung.
+
+Zum anderen bietet Kanban einen Rahmen, der sich auch für bereiche eignet, in denen eine Verschlankung der Prozesse gewünscht ist, sich allerdings Methoden wie Scrum nicht eignen, da der Fokus auf bspw. auf Maintenance-Aufgaben liegt.
