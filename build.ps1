@@ -3,11 +3,14 @@
 #>
 [CmdletBinding()]
 Param(
-    [Parameter(Mandatory=$true)]
-    [String]$Src,
+    [Parameter(Mandatory=$false)]
+    [String]$Src = ".\src\main\docs",
 
-    [Parameter(Mandatory=$true)]
-    [string]$Dest,
+    [Parameter(Mandatory=$false)]
+    [string]$Dest = ".\dist",
+
+    [Parameter(Mandatory=$false)]
+    [string]$Resources = ".\src\main\resources",
 
     [Parameter(Mandatory=$false)]
     [switch]$Production = $false,
@@ -24,7 +27,7 @@ Param(
     [switch]$Flatten = $true,
 
     [Parameter(Mandatory=$false)]
-    [string]$TemplateRoot = "./src/main/resources/templates",
+    [string]$TemplateRoot = ".\src\main\resources\templates",
 
     [Parameter(Mandatory=$false)]
     [ValidateSet("TRACE", "DEBUG","INFO","WARN","ERROR")]
@@ -93,8 +96,6 @@ Function Remove-Empty
 }
 
 # eigentliches Skript
-$AllTopics = @{}
-
 # build Verzeichnis leeren und neu aufbauen
 If(Test-Path $Dest)
 {
@@ -103,17 +104,17 @@ If(Test-Path $Dest)
 New-Item $Dest -ItemType "directory" | Out-Null
 
 # Erstelle build-style Datei (aus default+theme), nutze diese und lösche sie danach
-$DefaultCss = "$Src/resources/lib/style.css"
+$DefaultCss = "$Resources\lib\style.css"
 $DefaultCssPath = (Get-Item $DefaultCss).FullName
-$ThemeCss = "$Src/resources/web/themes/$Theme.css"
-$CustomCss = "$Src/resources/web/custom.css"
+$ThemeCss = "$Resources\web\themes\$Theme.css"
+$CustomCss = "$Resources\web\custom.css"
 $ThemeExists = Test-Path $ThemeCss
 $BuildCss = $DefaultCssPath
 If($ThemeExists)
 {
     Write-Log "Use theme $theme"
     # Pfad für temporäre build-CSS
-    $BuildCss = "$Dest/_build.css"
+    $BuildCss = "$Dest\_build.css"
     # lese Inhalte (Standard und Theme)
     $DefaultStyle = Get-Content $DefaultCss -Encoding UTF8
     $CustomStyle = Get-Content $CustomCss -Encoding UTF8
@@ -139,201 +140,116 @@ Else
 
 # Bilder kopieren
 If($Flatten) {
-    New-Item $Dest/pages/images -ItemType "directory" | Out-Null
-    Get-ChildItem -Path $Src -Recurse -Filter *.png | Copy-Item -Destination $Dest/pages/images
+    New-Item $Dest\images -ItemType "directory" | Out-Null
+    Get-ChildItem -Path $Src -Recurse -Filter *.png | Copy-Item -Destination $Dest\images
 }
 Else
 {
     Get-ChildItem $Src | Copy-Item -Destination $Dest -Recurse -Filter *.png
 }
 
-$SrcDocs = Get-ChildItem -Recurse -Path $Src | ? { $_.Extension -in ".asciidoc",".adoc",".ad" }
-Foreach ($SrcDoc in $SrcDocs)
+# verarbeite index.ad
+$IndexFile = Get-Content $Src\index.ad -Encoding UTF8
+$IndexFileContent = Get-Content "$Resources\templates\index.root.ad" -Encoding UTF8
+$IndexFileContent = $IndexFileContent | % {
+    $_.Replace("[TocLevels]", "$TocLevels")
+}
+$IndexFileContent += ""
+Foreach ($_ in $IndexFile)
 {
-    $SrcPath = $SrcDoc.FullName
-    $OriginalContent = Get-Content $SrcPath -Encoding UTF8
-    $Meta = $OriginalContent | ? { $_.Contains(":dewey:") }
-    If($Meta)
+    If($_ -and (-not ($_ -like "=*")))
     {
-        ### Sammle Daten für index-Dokument
+        $Doc = $_
+        $Dev = $false
+        If($Doc -like "dev:*")
+        {
+            # im Prod-build werden mit dev: markierte Bereiche weggelassen, da sich diese noch in Arbeit befinden
+            If($Production)
+            {
+                $IndexFileContent += ""
+                Continue
+            }
+            Else
+            {
+                # im dev-build werden dev: Bereiche drin gelassen
+                $Doc = $Doc.Substring(4)
+                # liegt hier allerdings eine Üerschrift vor, so wird diese einfach übernommen und muss nicht weiterverarbeitet werden
+                If($Doc -like "=*")
+                {
+                    $IndexFileContent += "$Doc"
+                    Continue
+                }
+                $Dev = $true
+            }
+        }
+        $Document = "$Src\$Doc"
+        $DocumentItem = Get-Item($Document)
+        $DocumentPath = $DocumentItem.FullName
+        $BuildPath = "$Dest\$Doc"
+        $TargetLink = $Doc
+        $FileName = [System.IO.Path]::GetFileName($DocumentPath)
+        If($Flatten)
+        {
+            $BuildPath = "$Dest\$FileName"
+            $TargetLink = $FileName
+        }
+        # alle asciidoc-Endungen durch die kompilierte html-Variante ersetzen
+        $BuildPath = $BuildPath -Replace ".asciidoc",".html" -Replace ".adoc",".html" -Replace ".ad",".html"
+        $TargetLink = $TargetLink -Replace ".asciidoc",".html" -Replace ".adoc",".html" -Replace ".ad",".html"
+
+        # verarbeite die Zieldatei
+        $OriginalContent = Get-Content $Document -Encoding UTF8
+        # Sammle Daten für index-Dokument
         # entferne führendes '= ' vom Titel
         $Title = $OriginalContent[0]
         $Title = $Title.Substring(2).Trim()
-
-        # entferne ':dewey:'-Deklaration und baue Liste aus der Themenhierarchie
-        $Meta = ($Meta -Split ":dewey:")[1]
-        $Meta = $Meta -Split ";" | % { $_.Trim() }
-        # wenn nur ein Thema ausgezeichnet ist, wrappe das Thema in einer Liste mit einem Eintrag
-        If(($Meta | Measure-Object).Count -eq 1)
-        {
-            $Meta = @($Meta)
-        }
-
-        # erstelle den build-Path, indem die Verzeichnisse miteinander geschnitten werden
-        # schneide den aboluten Pfad heraus
-        $AbsolutePart = $SrcPath.IndexOf($Src.Substring(1))
-        $BuildPath = $SrcPath.Substring($AbsolutePart)
-        $BuildPath = ".$BuildPath"
-
-        # erstelle ein temporäres build-Dokument, in dem die ':dewey-x'-Platzhalter aufgelöst werden
-        $OriginalItem = Get-Item $BuildPath
-        $OriginalName = $OriginalItem.Name
-        $TempItemName = "_$OriginalName"
-        $BuildDirectory = $OriginalItem.DirectoryName
-        $TempItem = "$BuildDirectory/$TempItemName"
-        # schreibe die Inhalte des Original-Dokuments in das temporäre build-Dokument
+        # ersetze im Inhalt den Template-Verweis durch das tatsächliche Template
         $BuildContent = $OriginalContent | % {
             $Content = $_
             If($_.Contains(":dewey-template:"))
             {
                 $TemplateName = $_.Substring(":dewey-template: ".Length)
-                $TemplatePath = "$TemplateRoot/$TemplateName"
-                $Content = Get-Content $TemplatePath -Encoding UTF8
+                $TemplatePath = "$Resources\templates\$TemplateName"
+                    $Content = Get-Content $TemplatePath -Encoding UTF8
             }
             return $Content
         }
-        $BuildContent | Out-File -FilePath $TempItem -Encoding UTF8
-        $TempItem = $TempItem.Substring($AbsolutePart)
-        $TempItem = ".$TempItem"
-
-        # Pfade ja relativ zu einer Datei im obersten build-Verzeichnis funkionieren sollen!
-        $TargetPath = ".$($TempItem.Substring($Src.Length))"
-        $TargetPath = $TargetPath.Substring(0, ($TargetPath.Length - ($TempItemName.Length + 1)))
-        If($Flatten) {
-            $TargetPath = "pages/$OriginalName"
-        }
-        Else
-        {
-            $TargetPath = "$TargetPath/$OriginalName"
-        }
-        # alle asciidoc-Endungen durch die kompilierte html-Variante ersetzen
-        $TargetPath = $TargetPath -Replace ".asciidoc",".html" -Replace ".adoc",".html" -Replace ".ad",".html"
-
-        # bereite den Zielpfad als relativ zum root-Verzeichnis auf
-        If($Flatten)
-        {
-            $BuildTarget = "$Dest/$TargetPath"
-        }
-        Else
-        {
-            $BuildTarget = "$Dest/$($TargetPath.Substring(2))"
-        }
-
-        # kompiliere .adoc nach .html
-        Write-Log "Compile: $TempItem"
+        $SrcPath = $DocumentItem.DirectoryName
+        $BuildFile = "$SrcPath\_$FileName"
+        $BuildContent | Out-File -FilePath $BuildFile -Encoding UTF8
+        Write-Log "Compile: $BuildFile"
         Write-Log "Src: $Src, Dest: $Dest" DEBUG 1
-        Write-Log "Build target: $BuildTarget" DEBUG 1
-        Write-Log "Reference in index.html: $TargetPath" DEBUG 1
-        & asciidoctor.bat -o $BuildTarget -a stylesheet=$BuildCss -a lang=de $TempItem
-        Remove-Item -Force $TempItem
-        Write-Log "Finished: $BuildTarget" DEBUG
+        Write-Log "Build target: $BuildPath" DEBUG 1
+        Write-Log "Reference in index.html: $TargetLink" DEBUG 1
+        & asciidoctor.bat -o $BuildPath -a stylesheet=$BuildCss -a lang=de $BuildFile
+        Remove-Item -Force $BuildFile
 
-        If($Production)
-        {
-            $TargetPath = $TargetPath.Substring(0, ($TargetPath.Length - 5))
-        }
+        # baue den Link zur enrsprechenden Seite (sowie eine kurze Zusammenfassung der Themen) auf
+        $ReplaceValue = "===== link:$TargetLink[$Title]`n `n"
         $ContentSummary = ""
         $OriginalContent | ? { $_ -match "^== " } | % {
             $ContentSummary += ($_.Substring(3) + ", ")
         }
         $ContentSummary = $ContentSummary.Substring(0, ($ContentSummary.Length - 2))
-
-        # verarbeite die angegebene Ordnung im Dokument für die Menüstruktur im index.html
-        $CurrentTopics = $AllTopics
-        For($index = 0; $index -le $Meta.Length; $index++)
-        {
-            If($index -eq ($Meta.Length))
-            {
-                # das hier ist berets die Tiefste Stufe = wir fügen unser Thema der Liste hinzu
-                $CurrentTopics.add($Title, @( $TargetPath, $ContentSummary ))
-            }
-            Else
-            {
-                # wir prüfen, ob der Themenbereich existiert, falls nicht, wird er neu angelegt
-                $Topic = $Meta[$index]
-                If(-Not ($CurrentTopics.ContainsKey($Topic)))
-                {
-                    $CurrentTopics[$Topic] = @{}
-                }
-                $CurrentTopics = $CurrentTopics[$Topic]
-            }
-        }
+        $ReplaceValue += "[horizontal]`n&mdash;:: $ContentSummary`n `n"
+        $IndexFileContent += $ReplaceValue
     }
-}
-
-Function Get-Prefix
-{
-    [CmdletBinding()]
-    Param(
-        [Parameter(Mandatory=$true)]
-        [int32]$Depth,
-
-        [Parameter(Mandatory=$false)]
-        [string]$Prefix = "",
-
-        [Parameter(Mandatory=$false)]
-        [string]$Start = "",
-
-        [Parameter(Mandatory=$false)]
-        [string]$End = ""
-    )
-
-    $Result = $Start
-    For($index = 0; $index -lt $Depth; $index++)
+    Else
     {
-        $Result += $Prefix
+        $IndexFileContent += "$_"
     }
-    return ($Result + $End)
 }
 
-Function Print-Topics
+$IndexFile = "$Dest\index.ad"
+Write-Log "Create $IndexFile"
+$IndexFileContent | Out-File -FilePath $IndexFile -Encoding UTF8
+Write-Log "Compile $IndexFile "
+& asciidoctor.bat -a stylesheet=$BuildCss -a lang=de $IndexFile
+
+If($Production)
 {
-    [CmdletBinding()]
-    Param(
-        [Parameter(Mandatory=$true)]
-        [int32]$Depth,
-
-        [Parameter(Mandatory=$true)]
-        [Hashtable]$Topics
-    )
-
-    $Result = ""
-    $Topics.keys | % {
-        $Value = $Topics[$_]
-        $IsTopic = $Value.GetType().Name -eq "Hashtable"
-        If($IsTopic)
-        {
-            # hier startet die Rekursion
-            $Prefix = Get-Prefix $Depth "=" "==" " "
-            $Result = $Result + "$($Prefix)$($_)`n `n"
-            $Result += Print-Topics -Depth ($Depth + 1) -Topics $Value
-        }
-        Else
-        {
-            $Prefix = Get-Prefix $Depth "" "=====" " "
-            $Result += "$($Prefix)link:$($Value[0])[$($_)]`n `n"
-            $Result += "[horizontal]`n&mdash;:: $($Value[1])`n `n"
-        }
-    }
-    return $Result
+    # lösche sämtliche anfallenden build-Artefakte
+    Get-ChildItem $Dest | Remove-Item -Recurse -Include *.ad, *.adoc, *.asciidoc, *.css
+    # lösche leere Verzeichnisse rekursiv
 }
-
-$Doc = Get-Content "$TemplateRoot/index.root.ad" -Encoding UTF8
-$Doc = $Doc | % {
-    $_.Replace("[TocLevels]", "$TocLevels")
-}
-$Doc += "`n"
-
-# erstelle eine Navigations-Seite
-$Doc += Print-Topics -Depth 0 -Topics $AllTopics
-
-# schreibe die Navigations-Seite heraus und kompiliere und lösche sie anschließend
-$OutFile = "$($Dest)/index.adoc"
-Write-Log "Create $OutFile"
-$Doc | Out-File -FilePath $OutFile -Encoding UTF8
-Write-Log "Compile $OutFile "
-& asciidoctor.bat -a stylesheet=$BuildCss -a lang=de $OutFile
-# lösche sämtliche anfallenden build-Artefakte
-Get-ChildItem $Dest | Remove-Item -Recurse -Include *.ad, *.adoc, *.asciidoc, *.css
-# lösche leere Verzeichnisse rekursiv
 Remove-Empty $Dest
