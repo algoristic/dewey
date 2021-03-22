@@ -15,6 +15,10 @@ Param(
     [Parameter(Mandatory=$false)]
     [string]$Theme = "dark",
 
+    # Defines the depth of the TOC on the index-Page
+    [Parameter(Mandatory=$false)]
+    [string]$TocLevels = 10,
+
     # Retains original structure if $false
     [Parameter(Mandatory=$false)]
     [switch]$Flatten = $true,
@@ -312,6 +316,9 @@ Function Print-Topics
 }
 
 $Doc = Get-Content "$TemplateRoot/index.root.ad" -Encoding UTF8
+$Doc = $Doc | % {
+    $_.Replace("[TocLevels]", "$TocLevels")
+}
 $Doc += "`n"
 
 # erstelle eine Navigations-Seite
