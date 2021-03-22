@@ -1,0 +1,26 @@
+= 🚧 Projektorganisation
+:dewey: Projektmanagement; 🚧 Projektorganisation
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+
+== Übersicht
+Für die Dauer eines Projektes liegt im Unternehmen, parallel zur bestehenden Linienorganisation, eine Projektorganisation vor.
+
+In dieser Projektorganisation gelten andere...
+
+* Kompetenzen
+* Regeln der Zusammenarbeit
+* Konflikt- und Kommunikationskultur
+* Tabus
+* ...
+
+Grundsätzlich gilt:
+
+Projektablauforganisation::
+Legt *Vorgehensweisen*, *Prozesse*, *Methoden* und *Tools* fest, die im Projekt genutzt werden sollen.
+Beispiel::: Im Projekt bekommt jede umzusetzende Entwicklungsaufgabe eine _Definition of Ready_ und eine _Definition of Done_, die eingehalten werden müssen. Im Tagesgeschäft spielen diese beiden Praktiken keine Rolle.
+
+Projektaufbauorganisation::
+Kann aus Bestandteilen der bestehenden Aufbauorganisation bestehen, diese ergänzen oder komplett eigenständig sein.
+Beispiel::: Das Tagesegschäft in der Entwicklung wird, wie schon immer, nach dem Wasserfall-Prinzip bearbeitet. Für die Umsetzung der Entwicklungsaufgaben im Projekt wird hier im Projektteam allerdings nach Scrum vorgegangen.
