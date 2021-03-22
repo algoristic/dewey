@@ -119,6 +119,17 @@ table.tableblock, th.tableblock, td.tableblock {
 dl dt {
     color: var(--primary);
 }
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: var(--secondary);
+    text-decoration: underline;
+    text-decoration-color: var(--highlight);
+}
+#toc a:hover {
+    color: var(--highlight);
+}
 .dlist .dlist dl dt {
     color: var(--color);
 }
