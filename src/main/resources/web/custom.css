@@ -1,3 +1,4 @@
+/* LAYOUTING */
 body {
     font-family: "Open Sans", "DejaVu Sans", sans-serif;
 }
@@ -10,6 +11,10 @@ details, .audioblock, .imageblock, .literalblock, .listingblock, .stemblock, .vi
 }
 .admonitionblock td.content>.title, .audioblock>.title, .exampleblock>.title, .imageblock>.title, .listingblock>.title, .literalblock>.title, .stemblock>.title, .openblock>.title, .paragraph>.title, .quoteblock>.title, table.tableblock>.title, .verseblock>.title, .videoblock>.title, .dlist>.title, .olist>.title, .ulist>.title, .qlist>.title, .hdlist>.title {
     font-family: inherit;
+}
+#header>h1:first-child {
+    font-family: "Noto Serif", "DejaVu Serif", serif;
+    font-style: italic;
 }
 .paragraph.lead>p, #preamble>.sectionbody>[class="paragraph"]:first-of-type p {
     font-size: .9em
@@ -52,6 +57,77 @@ ul, ol, dl {
 a {
     text-decoration: none;
 }
-a:hover {
+a:hover, a:focus {
     text-decoration: underline;
+}
+a:focus {
+    outline: none;
+}
+/* COLORING */
+body {
+    background: var(--background);
+    color: var(--color);
+}
+a {
+    color: var(--secondary);
+}
+.subheader, .admonitionblock td.content>.title, .audioblock>.title, .exampleblock>.title, .imageblock>.title, .listingblock>.title, .literalblock>.title, .stemblock>.title, .openblock>.title, .paragraph>.title, .quoteblock>.title, table.tableblock>.title, .verseblock>.title, .videoblock>.title, .dlist>.title, .olist>.title, .ulist>.title, .qlist>.title, .hdlist>.title {
+    color: var(--primary);
+}
+.imageblock>.title {
+    color: var(--gray-medium);
+}
+.admonitionblock>table td.content {
+    border-left-color: var(--gray);
+    color: var(--color);
+    background: var(--header-background);
+}
+.sect1+.sect1 {
+    border-top-color: var(--gray);
+}
+#header>h1:first-child,
+h1, h2, h3, #toctitle, .sidebarblock>.content>.title, h4, h5, h6 {
+    color: var(--primary);
+}
+#header .details {
+    color: var(--color);
+    border-bottom-color: var(--gray);
+}
+table {
+    background: none;
+}
+table thead, table tfoot {
+    background: var(--header-background);
+}
+table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
+    color: var(--color);
+}
+table tr th, table tr td {
+    color: inherit;
+}
+table.tableblock, th.tableblock, td.tableblock {
+    border-color: var(--gray);
+}
+dl dt {
+    color: var(--primary);
+}
+a:hover, a:focus {
+    color: var(--secondary);
+    text-decoration: underline var(--highlight);
+}
+#toc a:hover {
+    color: var(--highlight);
+}
+.dlist .dlist dl dt {
+    color: var(--color);
+}
+@media screen and (min-width:768px) {
+    #toc.toc2 {
+        background: var(--header-background);
+        border-right-color: var(--gray);
+    }
+}
+/* SPECIFIC CONSTRUCTS */
+#traditional-vs-agile-table tbody tr td:first-child {
+    background: var(--header-background);
 }
