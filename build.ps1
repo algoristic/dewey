@@ -166,7 +166,7 @@ Foreach ($_ in $IndexFile)
             If($Production)
             {
                 $IndexFileContent += ""
-                Break
+                Continue
             }
             Else
             {
@@ -176,8 +176,9 @@ Foreach ($_ in $IndexFile)
                 If($Doc -like "=*")
                 {
                     $IndexFileContent += "$Doc`n `n"
-                    Break
+                    Continue
                 }
+                Write-Log $Doc WARN
             }
         }
         $Document = "$Src\$Doc"
