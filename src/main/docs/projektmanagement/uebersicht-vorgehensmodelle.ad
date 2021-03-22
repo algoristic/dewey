@@ -127,7 +127,7 @@ image::uebersicht-pm-standards_001.png[Übersicht Projektmanagement-Standards, 5
 Beschreibung:: Die DIN 69901:2009 ist ein kosequent prozessorientiertes Vorgehensmodell für das Projektmanagement. Es defininiert Führungs- Projektmanagement-, Unterstützungs- und Wertschöpfungsprozesse und ordnet diese in einem "Prozesshaus" entlang des Projektlebenszyklus an.
 
 .Prozesshaus DIN 69901
-image::din69901_001.png[Prozesshaus DIN 69901, 550, align="center"]
+image::din69901_001.png[Prozesshaus DIN 69901, 420, align="center"]
 
 Pro::
 * konsequent Prozessorientiert
@@ -137,6 +137,9 @@ Pro::
 Kontra::
 * liefert keine konkreten Handlungsempfehlungen
 * auf vollständige Darstellung aller Abhängigkeiten wird (bewusst) verzichtet
+
+.Vorgehensmodell nach DIN 69901:2009
+image::din69901_002.png[Vorgehensmodell nach DIN 69901:2009, 550, align="center"]
 
 === PMI/PMBOK
 

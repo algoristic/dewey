@@ -180,3 +180,9 @@ Hybrides Projektmanagement bedeutet die Kombination zweier oder mehr Projektmana
 Grundprinzip::
 * ein Modell bildet als sogenanntes *Steuerungsmodell* den übergeordneten Rahmen für _leitungs-, planungs- und organisatorische Arbeit_
 * ein anderes Modell wird als *Durchführungsmodell* an bestimmten Kopplungspunkten für die _Leistungserstellung_ eingebettet
+
+Beispiel::
+Anhand des Vorgehensmodells von DIN 69901 können wir sehen, dass dort die reinen Managementphasen (_Initialisierung, Definition, Planung und Abschluss_) auf einer linearen Bahn liegen. Während der Steuerungsphase werden die Aufgaben _Überwachung_ und _Durchführung_ definiert, zwischen denen, über die Rückführung des Ist-Zustands und Maßnahmenergreifung bei Abweichungen, eine Feedback-Loop erzeugt wird. Dies hat bereits einen nicht-linearen Charakter, jedoch kann die _Durchführung_ über eine agile Implementierung, z. B. nach _Scrum_, komplett iterativ ablaufen. Das wäre in diesem Fall sogar sehr vorteilhaft, da, nehmen wir einmal _Scrum_ als Durchführungsmodell an, hier automatisch ein Feedback für den Steuerungsprozess entsteht.
+
+.Hybrides Projektmanagement am Beispiel von DIN 69901
+image::hybrides_pm_001.png[Hybrides Projektmanagement am Beispiel von DIN 69901, 640, align="center"]
