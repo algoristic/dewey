@@ -150,7 +150,13 @@ Else
 
 # verarbeite index.ad
 $IndexFile = Get-Content $Src\index.ad -Encoding UTF8
-$IndexFile = $IndexFile | % {
+$IndexFileContent = Get-Content "$Resources\templates\index.root.ad" -Encoding UTF8
+$IndexFileContent = $IndexFileContent | % {
+    $_.Replace("[TocLevels]", "$TocLevels")
+}
+$IndexFileContent += "`n"
+Foreach ($_ in $IndexFile)
+{
     If($_ -and (-not ($_ -like "=*")))
     {
         $Doc = $_
@@ -159,7 +165,8 @@ $IndexFile = $IndexFile | % {
             # im Prod-build werden mit dev: markierte Bereiche weggelassen, da sich diese noch in Arbeit befinden
             If($Production)
             {
-                return ""
+                $IndexFileContent += ""
+                Break
             }
             Else
             {
@@ -168,7 +175,8 @@ $IndexFile = $IndexFile | % {
                 # liegt hier allerdings eine Üerschrift vor, so wird diese einfach übernommen und muss nicht weiterverarbeitet werden
                 If($Doc -like "=*")
                 {
-                    return $Doc
+                    $IndexFileContent += "$Doc`n `n"
+                    Break
                 }
             }
         }
@@ -221,11 +229,22 @@ $IndexFile = $IndexFile | % {
             $ContentSummary += ($_.Substring(3) + ", ")
         }
         $ContentSummary = $ContentSummary.Substring(0, ($ContentSummary.Length - 2))
-        $ReplaceValue += "[horizontal]`n&mdash;:: $ContentSummary"
-        return $ReplaceValue
+        $ReplaceValue += "[horizontal]`n&mdash;:: $ContentSummary`n `n"
+        $IndexFileContent += $ReplaceValue
     }
     Else
     {
-        return $_
+        $IndexFileContent += "$_`n `n"
     }
 }
+
+$IndexFile = "$Dest\index.ad"
+Write-Log "Create $IndexFile"
+$Doc | Out-File -FilePath $IndexFile -Encoding UTF8
+Write-Log "Compile $IndexFile "
+& asciidoctor.bat -a stylesheet=$BuildCss -a lang=de $IndexFile
+
+# lösche sämtliche anfallenden build-Artefakte
+###Get-ChildItem $Dest | Remove-Item -Recurse -Include *.ad, *.adoc, *.asciidoc, *.css
+# lösche leere Verzeichnisse rekursiv
+Remove-Empty $Dest
