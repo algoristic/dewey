@@ -223,13 +223,13 @@ Foreach ($_ in $IndexFile)
         Remove-Item -Force $BuildFile
 
         # baue den Link zur enrsprechenden Seite (sowie eine kurze Zusammenfassung der Themen) auf
-        $ReplaceValue = "`n===== link:$TargetLink[$Title]`n `n"
+        $ReplaceValue = "===== link:$TargetLink[$Title]`n `n"
         $ContentSummary = ""
         $OriginalContent | ? { $_ -match "^== " } | % {
             $ContentSummary += ($_.Substring(3) + ", ")
         }
         $ContentSummary = $ContentSummary.Substring(0, ($ContentSummary.Length - 2))
-        $ReplaceValue += "[horizontal]`n&mdash;:: $ContentSummary`n `n"
+        $ReplaceValue += "[horizontal]`n&mdash;:: $ContentSummary`n"
         $IndexFileContent += $ReplaceValue
     }
     Else
@@ -240,7 +240,7 @@ Foreach ($_ in $IndexFile)
 
 $IndexFile = "$Dest\index.ad"
 Write-Log "Create $IndexFile"
-$Doc | Out-File -FilePath $IndexFile -Encoding UTF8
+$IndexFileContent | Out-File -FilePath $IndexFile -Encoding UTF8
 Write-Log "Compile $IndexFile "
 & asciidoctor.bat -a stylesheet=$BuildCss -a lang=de $IndexFile
 
