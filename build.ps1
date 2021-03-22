@@ -3,11 +3,14 @@
 #>
 [CmdletBinding()]
 Param(
-    [Parameter(Mandatory=$true)]
-    [String]$Src,
+    [Parameter(Mandatory=$false)]
+    [String]$Src = ".\src\main\docs",
 
-    [Parameter(Mandatory=$true)]
-    [string]$Dest,
+    [Parameter(Mandatory=$false)]
+    [string]$Dest = ".\dist",
+
+    [Parameter(Mandatory=$false)]
+    [string]$Resources = ".\src\main\resources",
 
     [Parameter(Mandatory=$false)]
     [switch]$Production = $false,
@@ -24,7 +27,7 @@ Param(
     [switch]$Flatten = $true,
 
     [Parameter(Mandatory=$false)]
-    [string]$TemplateRoot = "./src/main/resources/templates",
+    [string]$TemplateRoot = ".\src\main\resources\templates",
 
     [Parameter(Mandatory=$false)]
     [ValidateSet("TRACE", "DEBUG","INFO","WARN","ERROR")]
@@ -103,17 +106,17 @@ If(Test-Path $Dest)
 New-Item $Dest -ItemType "directory" | Out-Null
 
 # Erstelle build-style Datei (aus default+theme), nutze diese und lösche sie danach
-$DefaultCss = "$Src/resources/lib/style.css"
+$DefaultCss = "$Resources\lib\style.css"
 $DefaultCssPath = (Get-Item $DefaultCss).FullName
-$ThemeCss = "$Src/resources/web/themes/$Theme.css"
-$CustomCss = "$Src/resources/web/custom.css"
+$ThemeCss = "$Resources\web\themes\$Theme.css"
+$CustomCss = "$Resources\web\custom.css"
 $ThemeExists = Test-Path $ThemeCss
 $BuildCss = $DefaultCssPath
 If($ThemeExists)
 {
     Write-Log "Use theme $theme"
     # Pfad für temporäre build-CSS
-    $BuildCss = "$Dest/_build.css"
+    $BuildCss = "$Dest\_build.css"
     # lese Inhalte (Standard und Theme)
     $DefaultStyle = Get-Content $DefaultCss -Encoding UTF8
     $CustomStyle = Get-Content $CustomCss -Encoding UTF8
@@ -139,8 +142,8 @@ Else
 
 # Bilder kopieren
 If($Flatten) {
-    New-Item $Dest/pages/images -ItemType "directory" | Out-Null
-    Get-ChildItem -Path $Src -Recurse -Filter *.png | Copy-Item -Destination $Dest/pages/images
+    New-Item $Dest\pages\images -ItemType "directory" | Out-Null
+    Get-ChildItem -Path $Src -Recurse -Filter *.png | Copy-Item -Destination $Dest\pages\images
 }
 Else
 {
@@ -180,14 +183,14 @@ Foreach ($SrcDoc in $SrcDocs)
         $OriginalName = $OriginalItem.Name
         $TempItemName = "_$OriginalName"
         $BuildDirectory = $OriginalItem.DirectoryName
-        $TempItem = "$BuildDirectory/$TempItemName"
+        $TempItem = "$BuildDirectory\$TempItemName"
         # schreibe die Inhalte des Original-Dokuments in das temporäre build-Dokument
         $BuildContent = $OriginalContent | % {
             $Content = $_
             If($_.Contains(":dewey-template:"))
             {
                 $TemplateName = $_.Substring(":dewey-template: ".Length)
-                $TemplatePath = "$TemplateRoot/$TemplateName"
+                $TemplatePath = "$Resources\templates\$TemplateName"
                 $Content = Get-Content $TemplatePath -Encoding UTF8
             }
             return $Content
@@ -200,11 +203,11 @@ Foreach ($SrcDoc in $SrcDocs)
         $TargetPath = ".$($TempItem.Substring($Src.Length))"
         $TargetPath = $TargetPath.Substring(0, ($TargetPath.Length - ($TempItemName.Length + 1)))
         If($Flatten) {
-            $TargetPath = "pages/$OriginalName"
+            $TargetPath = "pages\$OriginalName"
         }
         Else
         {
-            $TargetPath = "$TargetPath/$OriginalName"
+            $TargetPath = "$TargetPath\$OriginalName"
         }
         # alle asciidoc-Endungen durch die kompilierte html-Variante ersetzen
         $TargetPath = $TargetPath -Replace ".asciidoc",".html" -Replace ".adoc",".html" -Replace ".ad",".html"
@@ -212,11 +215,11 @@ Foreach ($SrcDoc in $SrcDocs)
         # bereite den Zielpfad als relativ zum root-Verzeichnis auf
         If($Flatten)
         {
-            $BuildTarget = "$Dest/$TargetPath"
+            $BuildTarget = "$Dest\$TargetPath"
         }
         Else
         {
-            $BuildTarget = "$Dest/$($TargetPath.Substring(2))"
+            $BuildTarget = "$Dest\$($TargetPath.Substring(2))"
         }
 
         # kompiliere .adoc nach .html
@@ -318,7 +321,7 @@ Function Print-Topics
     return $Result
 }
 
-$Doc = Get-Content "$TemplateRoot/index.root.ad" -Encoding UTF8
+$Doc = Get-Content "$Resources\templates\index.root.ad" -Encoding UTF8
 $Doc = $Doc | % {
     $_.Replace("[TocLevels]", "$TocLevels")
 }
@@ -328,7 +331,7 @@ $Doc += "`n"
 $Doc += Print-Topics -Depth 0 -Topics $AllTopics
 
 # schreibe die Navigations-Seite heraus und kompiliere und lösche sie anschließend
-$OutFile = "$($Dest)/index.adoc"
+$OutFile = "$($Dest)\index.adoc"
 Write-Log "Create $OutFile"
 $Doc | Out-File -FilePath $OutFile -Encoding UTF8
 Write-Log "Compile $OutFile "
