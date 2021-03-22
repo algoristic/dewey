@@ -154,12 +154,13 @@ $IndexFileContent = Get-Content "$Resources\templates\index.root.ad" -Encoding U
 $IndexFileContent = $IndexFileContent | % {
     $_.Replace("[TocLevels]", "$TocLevels")
 }
-$IndexFileContent += "`n"
+$IndexFileContent += ""
 Foreach ($_ in $IndexFile)
 {
     If($_ -and (-not ($_ -like "=*")))
     {
         $Doc = $_
+        $Dev = $false
         If($Doc -like "dev:*")
         {
             # im Prod-build werden mit dev: markierte Bereiche weggelassen, da sich diese noch in Arbeit befinden
@@ -175,10 +176,10 @@ Foreach ($_ in $IndexFile)
                 # liegt hier allerdings eine Üerschrift vor, so wird diese einfach übernommen und muss nicht weiterverarbeitet werden
                 If($Doc -like "=*")
                 {
-                    $IndexFileContent += "$Doc`n `n"
+                    $IndexFileContent += "$Doc"
                     Continue
                 }
-                Write-Log $Doc WARN
+                $Dev = $true
             }
         }
         $Document = "$Src\$Doc"
@@ -230,12 +231,12 @@ Foreach ($_ in $IndexFile)
             $ContentSummary += ($_.Substring(3) + ", ")
         }
         $ContentSummary = $ContentSummary.Substring(0, ($ContentSummary.Length - 2))
-        $ReplaceValue += "[horizontal]`n&mdash;:: $ContentSummary`n"
+        $ReplaceValue += "[horizontal]`n&mdash;:: $ContentSummary`n `n"
         $IndexFileContent += $ReplaceValue
     }
     Else
     {
-        $IndexFileContent += "$_`n `n"
+        $IndexFileContent += "$_"
     }
 }
 
@@ -245,7 +246,10 @@ $IndexFileContent | Out-File -FilePath $IndexFile -Encoding UTF8
 Write-Log "Compile $IndexFile "
 & asciidoctor.bat -a stylesheet=$BuildCss -a lang=de $IndexFile
 
-# lösche sämtliche anfallenden build-Artefakte
-###Get-ChildItem $Dest | Remove-Item -Recurse -Include *.ad, *.adoc, *.asciidoc, *.css
-# lösche leere Verzeichnisse rekursiv
+If($Production)
+{
+    # lösche sämtliche anfallenden build-Artefakte
+    Get-ChildItem $Dest | Remove-Item -Recurse -Include *.ad, *.adoc, *.asciidoc, *.css
+    # lösche leere Verzeichnisse rekursiv
+}
 Remove-Empty $Dest
