@@ -15,11 +15,11 @@ Param(
     [Parameter(Mandatory=$false)]
     [string]$Theme = "dark",
 
-    # Defines the depth of the TOC on the index-Page
+    # Definiere die Tiefe der Inhaltsverzeichnisses auf der Startseite
     [Parameter(Mandatory=$false)]
     [string]$TocLevels = 10,
 
-    # Retains original structure if $false
+    # Behält die ursprünliche Verzeichnisstruktur bei, wenn -Flatten:$false
     [Parameter(Mandatory=$false)]
     [switch]$Flatten = $true,
 
@@ -103,9 +103,10 @@ If(Test-Path $Dest)
 New-Item $Dest -ItemType "directory" | Out-Null
 
 # Erstelle build-style Datei (aus default+theme), nutze diese und lösche sie danach
-$DefaultCss = "$Src/resources/web/style.css"
+$DefaultCss = "$Src/resources/lib/style.css"
 $DefaultCssPath = (Get-Item $DefaultCss).FullName
 $ThemeCss = "$Src/resources/web/themes/$Theme.css"
+$CustomCss = "$Src/resources/web/custom.css"
 $ThemeExists = Test-Path $ThemeCss
 $BuildCss = $DefaultCssPath
 If($ThemeExists)
@@ -115,11 +116,13 @@ If($ThemeExists)
     $BuildCss = "$Dest/_build.css"
     # lese Inhalte (Standard und Theme)
     $DefaultStyle = Get-Content $DefaultCss -Encoding UTF8
-    $CustomStyle = Get-Content $ThemeCss -Encoding UTF8
+    $CustomStyle = Get-Content $CustomCss -Encoding UTF8
+    $ThemeStyle = Get-Content $ThemeCss -Encoding UTF8
     # schreibe Inhalte in build-CSS
     $BuildStyle = @()
     $DefaultStyle | % { $BuildStyle += $_ }
     $CustomStyle | % { $BuildStyle += $_ }
+    $ThemeStyle | % { $BuildStyle += $_ }
 
     # Wichtig: das Rausschreiben funktioniert nur so, da auf dem Standardweg (via Out-File)
     # der Output-Typ immer "UTF-8-BOM" ist (anstatt) "UTF-8".
