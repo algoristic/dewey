@@ -1,18 +1,18 @@
-== Projektmanagement
+= Projektmanagement
 
-=== Grundlagen
+== Grundlagen
 projektmanagement\was-ist-ein-projekt.ad
 projektmanagement\was-ist-projektmanagement.ad
 
-=== Vorgehensmodelle
+== Vorgehensmodelle
 projektmanagement\phasen-und-vorgehensmodelle.ad
 projektmanagement\uebersicht-vorgehensmodelle.ad
 
-==== Agiles Vorgehen
+=== Agiles Vorgehen
 projektmanagement\agil\das-agile-manifest.ad
 projektmanagement\agil\scrum.ad
 projektmanagement\agil\kanban.ad
 projektmanagement\agil\agile-skalierungsframeworks.ad
 
-dev:=== Projektorganisation
+dev:== Projektorganisation
 dev:projektmanagement\organisation\projektorganisation.ad

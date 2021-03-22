@@ -176,7 +176,7 @@ Foreach ($_ in $IndexFile)
                 # liegt hier allerdings eine Üerschrift vor, so wird diese einfach übernommen und muss nicht weiterverarbeitet werden
                 If($Doc -like "=*")
                 {
-                    $IndexFileContent += "$Doc"
+                    $IndexFileContent += "=$Doc"
                     Continue
                 }
                 $Dev = $true
@@ -236,7 +236,14 @@ Foreach ($_ in $IndexFile)
     }
     Else
     {
-        $IndexFileContent += "$_"
+        If($_ -like "=*")
+        {
+            $IndexFileContent += "=$_"
+        }
+        Else
+        {
+            $IndexFileContent += "$_"
+        }
     }
 }
 
