@@ -20,6 +20,9 @@ details, .audioblock, .imageblock, .literalblock, .listingblock, .stemblock, .vi
     font-family: "Noto Serif", "DejaVu Serif", serif;
     font-style: italic;
 }
+.no-hyphens #header>h1:first-child {
+    hyphens: initial;
+}
 .paragraph.lead>p, #preamble>.sectionbody>[class="paragraph"]:first-of-type p {
     font-size: .9em
 }
