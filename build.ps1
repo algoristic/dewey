@@ -95,6 +95,41 @@ Function Remove-Empty
     }
 }
 
+Function Resolve-Template
+{
+    [CmdletBinding()]
+    Param(
+        [Parameter(Mandatory=$true)]
+        [array]$Template
+    )
+    $TemplatePath = "$Resources\templates\$Template"
+    $Content = Get-Content $TemplatePath -Encoding UTF8
+    $Resolved = "`n"
+    $Content | % {
+        $Resolved += "$_`n"
+    }
+    Return $Resolved
+}
+
+Function Render-ContentSummary
+{
+    [CmdletBinding()]
+    Param(
+        [Parameter(Mandatory=$true)]
+        [array]$Content
+    )
+
+    $ContentSummary = ""
+    $Content | ? { $_ -match "^== " } | % {
+        $ContentSummary += ($_.Substring(3) + ", ")
+    }
+    If($ContentSummary.Length -gt 2)
+    {
+        $ContentSummary = $ContentSummary.Substring(0, ($ContentSummary.Length - 2))
+    }
+    return $ContentSummary
+}
+
 Function Render-IndexFile
 {
     [CmdletBinding()]
@@ -107,11 +142,7 @@ Function Render-IndexFile
 
     )
     $File = Get-Content $FilePath -Encoding UTF8
-    $IndexFileContent = Get-Content "$Resources\templates\index.root.ad" -Encoding UTF8
-    $IndexFileContent = $IndexFileContent | % {
-        $_.Replace("[TocLevels]", "$TocLevels")
-    }
-    $IndexFileContent += ""
+    $IndexFileContent = ""
 
     $Title = $File[0]
     $Title = $Title.Substring(2).Trim()
@@ -143,15 +174,15 @@ Function Render-IndexFile
                 $Doc = $Doc.Substring(6)
                 $IndexFileContent += Render-IndexFile "$Src\$Doc" $Css
             }
-            ElseIf($Doc -like "=*")
+            ElseIf($Doc -like ":dewey-template:*")
             {
-                $IndexFileContent += "=$Doc"
+                $Doc = $Doc.Substring(17)
+                $IndexFileContent += Resolve-Template $Doc
             }
             Else
             {
                 $IndexFileContent += $Doc
             }
-
         }
         Else
         {
@@ -164,11 +195,15 @@ Function Render-IndexFile
     & asciidoctor.bat -a stylesheet=$Css -a lang=de -q $Index
 
     $TargetLink = ".\$FileName"
-    If($Production)
+    If(-not $Production)
     {
         $TargetLink += ".html"
     }
-    Return "link:$TargetLink[$Title]"
+
+    $Value = "=== link:$TargetLink[$Title]`n"
+    $ContentSummary = Render-ContentSummary $File
+    $Value += "&mdash; $ContentSummary`n `n"
+    Return $Value
 }
 
 Function Render-IncludeFile
@@ -214,8 +249,7 @@ Function Render-IncludeFile
         If($_.Contains(":dewey-template:"))
         {
             $TemplateName = $_.Substring(":dewey-template: ".Length)
-            $TemplatePath = "$Resources\templates\$TemplateName"
-                $Content = Get-Content $TemplatePath -Encoding UTF8
+            $Content = Resolve-Template $TemplateName
         }
         return $Content
     }
@@ -227,11 +261,7 @@ Function Render-IncludeFile
 
     # baue den Link zur enrsprechenden Seite (sowie eine kurze Zusammenfassung der Themen) auf
     $ReplaceValue = "link:$TargetLink[$Title]::`n"
-    $ContentSummary = ""
-    $OriginalContent | ? { $_ -match "^== " } | % {
-        $ContentSummary += ($_.Substring(3) + ", ")
-    }
-    $ContentSummary = $ContentSummary.Substring(0, ($ContentSummary.Length - 2))
+    $ContentSummary = Render-ContentSummary $OriginalContent
     $ReplaceValue += "&mdash; $ContentSummary`n `n"
     Return $ReplaceValue
 }
