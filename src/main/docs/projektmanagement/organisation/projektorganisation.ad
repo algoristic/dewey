@@ -24,4 +24,42 @@ Projektaufbauorganisation::
 Kann aus Bestandteilen der bestehenden Aufbauorganisation bestehen, diese ergänzen oder komplett eigenständig sein.
 Beispiel::: Das Tagesegschäft in der Entwicklung wird, wie schon immer, nach dem Wasserfall-Prinzip bearbeitet. Für die Umsetzung der Entwicklungsaufgaben im Projekt wird hier im Projektteam allerdings nach Scrum vorgegangen.
 
-IMPORTANT: Die Hauptbestandteile der Projektaufbauorganisation sind: Der *Auftraggeber*, der *Projektleiter* und das *Projektteam*
+== Rollen und Gremien
+
+=== Projektträger bzw. Auftraggeber
+(Sowohl intern als auch extern.) Hat das *Interesse an der Umsetzung* des Projektes und *stellt die Mittel* zu Verfügung. (D. h. er ist derjenige, der das Projekt bezahlt.)
+
+Tätigkeiten::
+* stellt den Auftrag
+* setzt die Zielvorgabe
+* gibt Budget und Zeitraum vor
+* führt die Abnahme durch
+
+=== Lenkungsausschuss
+*Gibt das Budget frei* und *beauftragt* offiziell intern das Projekt. Benennt außerdem den Projektmanager.
+
+Tätigkeiten::
+* ernennt den Projektleiter
+* ernennt (_gemeinsam mit Projektleiter_) das Projektteam
+* beauftragt das Projekt
+* gibt die Ressourcen frei
+* kontrolliert die Projektplanung
+* kontrolliert die Phasenergebnisse
+* unterstützt bei schweren Problemen und Entscheidungen
+
+=== Projektleiter
+Ist für die *Erreichung des Projektziels* zuständig. Führt die planerischen, organisatorischen und führenden Tätigkeiten im Projekt aus.
+
+Tätigkeiten::
+* führt Initialisierung und Definition des Projektes durch
+* entwickelt Arbeitspakete
+* plant, steuert und kontrolliert das Projekt und dessen Fortschritt
+* überwacht Termin- und Budgeteinhaltung
+* führt die Projektteams
+* vertritt das Projekt nach außen und sortgt für Informationsfluss
+
+=== Projektteam
+Wird vom Projektleiter (als _fachlichem Vorgesetzten_) koordiniert und *setzt die Aufgaben im Projekt um*. Wird oft in ein Kern- und ein Fachteam unterteilt, wobei sich das eine um die Umsetzungs der Arbeitspakete kümmert, während das andere fachlichen Input und Unterstützung liefert.
+
+Tätigkeiten::
+* _fachspezifische Umsetzung der Arbeitspakete_
