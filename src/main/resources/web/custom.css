@@ -127,6 +127,9 @@ a:hover, a:focus {
 #toc a:hover {
     color: var(--highlight);
 }
+#toc {
+    border-bottom-color: var(--gray);
+}
 .dlist .dlist dl dt {
     color: var(--color);
 }
