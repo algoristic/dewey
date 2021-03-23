@@ -2,6 +2,10 @@
 body {
     font-family: "Open Sans", "DejaVu Sans", sans-serif;
 }
+#author {
+    font-family: "Noto Serif", "DejaVu Serif", serif;
+    font-style: italic;
+}
 #footer {
     display: none
 }
@@ -35,8 +39,10 @@ ol>li p, ul>li p, ul dd, ol dd, .olist .olist, .ulist .ulist, .ulist .olist, .ol
 p, blockquote, dt, td.content, span.alt {
     font-size: .9rem
 }
-p {
+#header>h1:first-child, h1, h2, h3, #toctitle, .sidebarblock>.content>.title, h4, h5, h6, p {
     hyphens: auto;
+}
+p {
     text-align: justify;
 }
 dl dt {
