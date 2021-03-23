@@ -1,8 +1,34 @@
-= Projektunterstuetzung
+= Projektunterstützung
 :dewey-template: default.doc.ad
 
 :imagesdir: images
 
-== Projektbüro bzw. Projekt-Office
+:pmo: Projekt-Management-Office
 
-== Projekt-Management-Office
+== Projektbüro bzw. Projekt-Office
+_Auch "Projektservicegruppe" genannt._
+
+Das Projektbüro ist (lt. _DIN 69901_) eine, *einem einzigen Projekt zugeordnete*, Funktionseinheit, die *Unterstützungsleistungen* erbringt. Das Projektbüro besteht also ausschließlich für die Aufbauorganisation und Dauer eines Projektes. Die Leistungen des Projektbüros sind zumeist *administrative und organisatoriche Arbeiten* zur Entlastung der Projektbeteiligten, wie z. B.:
+
+* organisieren von Meeting
+* überwachen von Terminen und Fristen
+* verfassen von Protokollen und Abschriften
+* &hellip;
+
+=== Abgrenzung zum {pmo}
+Das _{pmo}_ ist eine *projektübergreifende* Unterstützungsfunktion, zur Einführung und Optimierung von Projektmanagementsystemen im Unternehmen.
+
+== {pmo}
+Das *{pmo}* ist (lt. _DIN 69901_) eine projektübergreifende Organisationseinheit für die Umsetzung und Optimierung von Projektmanagementsystemen im Unternehmen. Das {pmo} unterstützt die einzelnen Projekte also indirekt, indem es Abläufe standardisiert und Akzeptanz im Unternehmen schafft.
+
+Die Aufgaben sind bspw.:
+
+* aufbauen eines Projektantragswesens
+* Projektberatung und -unterstützung
+* Projektcontrolling
+* erarbeiten von Projektstandards im Unternehmen, z. B.
+    ** Prozesse
+    ** Formulare
+    ** &hellip;
+* bilden einer Schnittstelle zur Linienorganisation
+    ** z. B. für die Koordination der Ressourcen
