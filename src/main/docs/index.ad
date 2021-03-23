@@ -14,6 +14,6 @@ projektmanagement\agil\scrum.ad
 projektmanagement\agil\kanban.ad
 projektmanagement\agil\agile-skalierungsframeworks.ad
 
-dev:== Projektorganisation
-dev:projektmanagement\organisation\projektorganisation.ad
-dev:projektmanagement\organisation\projektaufbauorganisation.ad
+== Projektorganisation
+projektmanagement\organisation\projektorganisation.ad
+projektmanagement\organisation\projektaufbauorganisation.ad
