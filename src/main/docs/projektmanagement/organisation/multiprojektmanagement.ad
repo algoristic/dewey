@@ -1,0 +1,40 @@
+= Multiprojektmanagement
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+:mpm: Multiprojektmanagement
+:ppm: Projektportfoliomanagement
+
+Das {mpm} bildet einen prozessualen und organisatorischen Rahmen rund um das Management mehrerer paralleler Projekte. Es geht darum zu entscheiden, welche Projekte durchgeführt werden sollen ({ppm}) und um die Koordination von Projekten mit Abhängigkeiten oder solchen, die auf dieselben Ressourcen zugreifen.
+
+Der Einsatz eines organisierten {mpm} zeigt die Tendenz eines Unternehmens Projekte als strategische Anlage oder sogar als eigenen Geschäftsbereich wahrzunehmen.
+
+== Projektportfoliomanagement
+Im {ppm} geht es darum auszuwählen, welche Projekte im Unternehmen durchgeführt werden sollen. Ziel ist es ausschließlich solche Projekte durchzuführen, die strategisch zum Gesamtunternehmen passen. Damit ist das {ppm} nicht an einzelne Projekte gebdunden sondern wird dauerhaft durchgeführt
+
+Projekte werden bewertet hinsichtlich:
+
+* Strategierelevanz
+* Wirtschaftlichkeit
+* Verbesserung der Kundenzufriedenheit
+* Beitrag zur Kostenreduktion
+* Sicherung des Kerngeschäfts
+* Verbesserung des Unternehmensimages
+
+Oft werden aus den bewerteten Projekten zwei Portfolios gebildet, ein fachliches Portfolio, das die strategischen Ziele gegeneinander abbildet und ein technisches Machbarkeitsportfolio, das die technischen Herausforderungen abbildet.
+
+.Fachliches und technisches Portfolio
+image::projektportfolio_001.png[Fachliches und technisches Portfolio, 600, align="center"]
+
+Tätigkeiten::
+* Definition von Projektvorgaben
+* Bewertung von Projektanträgen (im Hinblick auf _Chancen_, _Risiken_ und _strategische Bedeutung_)
+* Genehmigen und Ablehnen von Projektanträgen
+* Bewertung abgeschlossener Projekte und Sicherung von Erfahrungswerten
+
+== Programmmanagement
+Programmmanagement beschreibt alle Tätigkeiten, die das Management inhaltlich zusammenhängender Projekte umfassen. Solche zusammenhängenden Projekte bezeichnet man als _Programm_. Ziel ist es, den Ressourceneinsatz so zu planen und zu steuern, dass das wirtschaftliche Ergebnis optimal ist. Da es an einzelne Projekte gebunden ist, ist das Programmmanagement eine zeitlich befristete Aufgabe.
+
+Tätigkeiten::
+* Analyse von Abhängigkeiten zwischen laufenden Projekten
+* Koordination von laufenden Projekten (im Hinblick auf _Ressourcen_, _Synergien_ und _Konflikte_)
