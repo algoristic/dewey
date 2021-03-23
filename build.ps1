@@ -112,6 +112,10 @@ Function Render-IndexFile
         $_.Replace("[TocLevels]", "$TocLevels")
     }
     $IndexFileContent += ""
+
+    $Title = $File[0]
+    $Title = $Title.Substring(2).Trim()
+
     Foreach ($_ in $File)
     {
         $Doc = $_
@@ -137,7 +141,7 @@ Function Render-IndexFile
             ElseIf($Doc -like "index:*")
             {
                 $Doc = $Doc.Substring(6)
-                $IndexFileContent += "Index"
+                $IndexFileContent += Render-IndexFile "$Src\$Doc" $Css
             }
             ElseIf($Doc -like "=*")
             {
@@ -156,10 +160,15 @@ Function Render-IndexFile
     }
     $FileName = [System.IO.Path]::GetFileNameWithoutExtension($FilePath)
     $Index = "$Dest\$FileName.ad"
-    Write-Log "Create $Index"
     $IndexFileContent | Out-File -FilePath $Index -Encoding UTF8
-    Write-Log "Compile $Index "
     & asciidoctor.bat -a stylesheet=$Css -a lang=de -q $Index
+
+    $TargetLink = ".\$FileName"
+    If($Production)
+    {
+        $TargetLink += ".html"
+    }
+    Return "link:$TargetLink[$Title]"
 }
 
 Function Render-IncludeFile
@@ -282,7 +291,7 @@ Else
 }
 
 # verarbeite zentrale index.ad
-Render-IndexFile "$Src\index.ad" $BuildCss
+Render-IndexFile "$Src\index.ad" $BuildCss | Out-Null
 
 If($Production)
 {

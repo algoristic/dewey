@@ -1,24 +1,3 @@
-= Projektmanagement
+= Inhalte
 
-== Grundlagen
-
-=== Grundbegriffe
-include:projektmanagement\grundlagen\was-ist-ein-projekt.ad
-include:projektmanagement\grundlagen\was-ist-projektmanagement.ad
-
-=== Vorgehensmodelle
-include:projektmanagement\grundlagen\phasen-und-vorgehensmodelle.ad
-include:projektmanagement\grundlagen\uebersicht-vorgehensmodelle.ad
-
-==== Agiles Vorgehen
-include:projektmanagement\grundlagen\agil\das-agile-manifest.ad
-include:projektmanagement\grundlagen\agil\scrum.ad
-include:projektmanagement\grundlagen\agil\kanban.ad
-include:projektmanagement\grundlagen\agil\agile-skalierungsframeworks.ad
-
-dev:=== Organisation
-dev:include:projektmanagement\grundlagen\organisation\projektorganisation.ad
-dev:include:projektmanagement\grundlagen\organisation\projektaufbauorganisation.ad
-dev:include:projektmanagement\grundlagen\organisation\unterstuetzungsfunktionen.ad
-dev:include:projektmanagement\grundlagen\organisation\hilfsmittel.ad
-dev:include:projektmanagement\grundlagen\organisation\multiprojektmanagement.ad
+index:projektmanagement.ad
