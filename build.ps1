@@ -96,6 +96,7 @@ Function Remove-Empty
 }
 
 # eigentliches Skript
+Write-Log "Src: $Src, Dest: $Dest"
 # build Verzeichnis leeren und neu aufbauen
 If(Test-Path $Dest)
 {
@@ -195,7 +196,12 @@ Foreach ($_ in $IndexFile)
         }
         # alle asciidoc-Endungen durch die kompilierte html-Variante ersetzen
         $BuildPath = $BuildPath -Replace ".asciidoc",".html" -Replace ".adoc",".html" -Replace ".ad",".html"
-        $TargetLink = $TargetLink -Replace ".asciidoc",".html" -Replace ".adoc",".html" -Replace ".ad",".html"
+        $Ending = ".html"
+        If($Production)
+        {
+            $Ending = ""
+        }
+        $TargetLink = $TargetLink -Replace ".asciidoc",$Ending -Replace ".adoc",$Ending -Replace ".ad",$Ending
 
         # verarbeite die Zieldatei
         $OriginalContent = Get-Content $Document -Encoding UTF8
@@ -218,7 +224,6 @@ Foreach ($_ in $IndexFile)
         $BuildFile = "$SrcPath\_$FileName"
         $BuildContent | Out-File -FilePath $BuildFile -Encoding UTF8
         Write-Log "Compile: $BuildFile"
-        Write-Log "Src: $Src, Dest: $Dest" DEBUG 1
         Write-Log "Build target: $BuildPath" DEBUG 1
         Write-Log "Reference in index.html: $TargetLink" DEBUG 1
         & asciidoctor.bat -o $BuildPath -a stylesheet=$BuildCss -a lang=de $BuildFile
