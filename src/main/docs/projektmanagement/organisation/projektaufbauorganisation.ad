@@ -8,7 +8,7 @@
 Definition:: Durchführung von Projekten *im Rahmen der Linienorganisation* des Unternehmens. Projektleiter untersteht direkt der Abteilungs- bzw. Bereichsleitung. Das _Tagesgeschäft_ muss oft nebenbei erledigt werden.
 
 .Linien-Projektorganisation
-image::linienorganisation_001.png[Linien-Projektorganisation, 240, align="center"]
+image::linienorganisation_001.png[Linien-Projektorganisation, 260, align="center"]
 
 Pro::
 * geringe organisatorische Anpassungen notwendig
@@ -24,7 +24,7 @@ Kontra::
 _Auch "Einfluss-Projektorganisation"_
 
 .Stab-Linien-Projektorganisation
-image::stab-linienorganisation_001.png[Stab-Linien-Projektorganisation, 240, align="center"]
+image::stab-linienorganisation_001.png[Stab-Linien-Projektorganisation, 260, align="center"]
 
 Definition:: *Projektleiter ist Mitgleid eines Stabes* und daher keine Rolle als _echter_ Vorgesetzter. Die Mitglieder des Projektteams sind über die normale Linienorganisation verteilt und werden vom Projektleiter koordiniert.
 
@@ -41,7 +41,7 @@ Kontra::
 Definition:: Mitglieder des Projektteams *bleiben Teil der Linienorganisation*. Die Matrix entsteht durch übereinanderlegen von Linienorganisation des Unternehmens (_vertikal_) und Projektorganisation (_horizontal_). Dadurch hat jeder Projektmitarbeiter zwei Vorgesetzte: _disziplinarisch_ seinen Linien-Vorgesetzten und _fachlich_ den Projektleiter.
 
 .Matrixorganisation
-image::matrixorganisation_001.png[Matrixorganisation, 280, align="center"]
+image::matrixorganisation_001.png[Matrixorganisation, 360, align="center"]
 
 Pro::
 * gute Auslastung der Mitarbeiter
@@ -68,7 +68,7 @@ In einer reinen Projektorganisation werden die Projektmitarbeiter für die Dauer
 Definition:: Für das Projekt wird eine eigene Organisationseinheit gebildet und die Mitarbeiter des Projektteams für die Dauer des Projektes aus ihrer normalen Linienorganisation entfernt.
 
 .Auftragsorientierte Projektorganisation
-image::auftragsorientiert_001.png[Auftragsorientierte Projektorganisation, 240, align="center"]
+image::auftragsorientiert_001.png[Auftragsorientierte Projektorganisation, 320, align="center"]
 
 Pro::
 * klare Verantwortlichkeiten
@@ -87,7 +87,7 @@ Kontra::
 Definition:: Die Unternehmenseinheiten entsprechen den Projekten oder die Aufbauorganisation des Unternehmens entspricht vollstänig der des Projektes. Folglich ist das ganze Unternehmen ausschließlich auf Projektarbeit ausgerichtet oder es wird (z. B. von gleichberechtigten Geschäftspartnern) ein eigenes Unternehmen für die Projektarbeit gegründet.
 
 .Autonome Projektorganisation
-image::autonom_001.png[Autonome Projektorganisation, 240, align="center"]
+image::autonom_001.png[Autonome Projektorganisation, 320, align="center"]
 
 Pro::
 * höchste Unabhängigkeit
