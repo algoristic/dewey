@@ -1,0 +1,91 @@
+= Projektaufbauorganisation
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+
+== Linien-Projektorganisation
+
+Definition:: Durchführung von Projekten *im Rahmen der Linienorganisation* des Unternehmens. Projektleiter untersteht direkt der Abteilungs- bzw. Bereichsleitung. Das _Tagesgeschäft_ muss oft nebenbei erledigt werden.
+
+Pro::
+* geringe organisatorische Anpassungen notwendig
+* spontane Aufnahme von Projekten möglich
+
+Kontra::
+* oft keine _echten_ Projekte
+* geringe Flexibilität
+* kaum Teambildung
+* gleichbleibende AUfgabenstellung der Linie
+
+.Linien-Projektorganisation
+image::linienorganisation_001.png[Linien-Projektorganisation, 420, align="center"]
+
+== Stab-Linien-Projektorganisation
+_Auch "Einfluss-Projektorganisation"_
+
+Definition:: *Projektleiter ist Mitgleid eines Stabes* und daher keine Rolle als _echter_ Vorgesetzter. Die Mitglieder des Projektteams sind über die normale Linienorganisation verteilt und werden vom Projektleiter koordiniert.
+
+Pro::
+* geringe organisatorische Anpassungen
+* Mitarbeiter können in mehreren Projekten tätig sein
+
+Kontra::
+* niemand fühlt sich verantwortlich (da Projektleiter nur Stabstelle besetzt)
+* geringe Identifikation mit dem Projekt
+
+.Stab-Linien-Projektorganisation
+image::stab-linienorganisation_001.png[Stab-Linien-Projektorganisation, 420, align="center"]
+
+== Matrixorganisation
+
+Definition:: Mitglieder des Projektteams *bleiben Teil der Linienorganisation*. Die Matrix entsteht durch übereinanderlegen von Linienorganisation des Unternehmens (_vertikal_) und Projektorganisation (_horizontal_). Dadurch hat jeder Projektmitarbeiter zwei Vorgesetzte: _disziplinarisch_ seinen Linien-Vorgesetzten und _fachlich_ den Projektleiter.
+
+Pro::
+* gute Auslastung der Mitarbeiter
+* hoher Know-How Transfer
+* gute Integration von Projekten in das Unternehmen
+
+Kontra::
+* hoher Koordinierungs- bzw. Kommunikationsaufwand
+* Mehrfachunterstellung von Mitarbeitern (_fachlich vs. disziplinarisch_)
+
+Je nach Stellung und Befugnis des Projektleiters im Unternehmen kann zwischen drei Ausprägungen der Matrixorganisation unterschieden werden.
+
+[horizontal]
+Schwache Matrix:: Das volle Projektbudget unterliegt den Linienmanagern. Der Projektleiter ist Teil der Linienorganisation und ausschließlich Koordinator. (In den meisten Fällen ist diese Organisation identisch mit der _Stab-Linien-Projektorganisation_.)
+Ausgewogenen Matrix:: Der Projektleiter ist Projektverantwortlicher im Unternehmen und Teil der Linienorganisation. Projektleiter und Linienmanager teilen sich die Verantwortung über das Projektbudget.
+Starke Matrix:: Der Projektleider ist Mitglied der Organisationseinhet _Projektmanager_ und hat weitreichende Befugnisse, wie z. B. die volle Kontrolle über das Projektbudget.
+
+== Reine Projektorganisation
+
+In einer reinen Projektorganisation werden die Projektmitarbeiter für die Dauer des Projektes ausschließlich im Projekt eingesetzt. Es lassen sich zwei Arten der reinen Projektorganisation unterscheiden.
+
+=== Auftragsorientiert
+
+Definition:: Für das Projekt wird eine eigene Organisationseinheit gebildet und die Mitarbeiter des Projektteams für die Dauer des Projektes aus ihrer normalen Linienorganisation entfernt.
+
+Pro::
+* klare Verantwortlichkeiten
+* volle Konzentration auf das Projekt (da kein _Tagesgeschäft_)
+* hohe Projektidentifikation
+* gute Teambildung
+* hohe Geschwindigkeit im Projekt (da kein _Tagesgeschäft_)
+
+Kontra::
+* Einrichtung der Organisationseinheit verursacht Aufwände und Kosten
+* Wieder-Eingliederung von Mitgliedern des Projektteams kann nach langer Projektlaufzeit dauern
+* starkes Projekteigenleben: die Ergebnisse können so eigenständig sein, dass sich die Fachabteilungen nicht mit dem Ergebnis identifizeren
+
+=== Autonom
+
+Definition:: Die Projektaufbauorganisation entspricht der Aufbauorganisation im Unternehmen. Folglich ist das ganze Unternehmen ausschließlich auf Projektarbeit ausgerichtet oder es wird (z. B. von gleichberechtigten Geschäftspartnern) ein eigenes Unternehmen für die Projektarbeit gegründet.
+
+Pro::
+* höchste Unabhängigkeit
+* höchste Flexibilität
+* keine Schnittstellenprobleme
+
+Kontra::
+* sehr aufwändig
+* viel Adminsitration und Organisation notwendig
+* nur für _sehr große_ Projekte sinnvoll
