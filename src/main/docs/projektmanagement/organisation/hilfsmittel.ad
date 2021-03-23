@@ -1,0 +1,29 @@
+= Projektunterstützung
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+:ph: Projekthandbuch
+:pmh: Projektmanagementhandbuch
+
+== {pmh}
+Das {pmh} ist eine Zusammenstellung von Infos und Regelungen, die innerhalb des Unternehmens generell für die Durchführung von Projekten gelten.
+
+Mögliche Bestandteile eines {pmh} können sein:
+
+* Phaseneinteilung von Projekten
+* Verfahrensanweisungen, z. B. für
+    ** Stakeholdermanagement
+    ** Termin-, Kosten- und Ressourcenmanagement
+    ** Qualitätsmanagement
+    ** Risikomanagement
+    ** Requirements Engineering
+* Abläufe für das Konfigurations- und Änderungsmanagement
+* Anforderungen an das Informations- und Berichtswesen
+* Anforderungen an die Projektdokumentation
+* Festlegung von Controlling-Methoden
+* Formulare und Checklisten
+
+IMPORTANT: Die Rückführung von _Lessons Learned_ in das {pmh} ist extrem wichtig. Das heißt, dass Erfahrungen, die im Projektverlauf gesammelt wurden, die die allgemeinen Regelungen ergänzen, spezifizeren oder um Ausnahmen erweitern, zurückfließen müssen. 
+
+== {ph}
+Das {ph} ist eine Zusammenstellung von Infos und Regelungen, die für ein bestimmtes Projekt gelten sollen. Das {ph} kann also als eine fallspezifische Ergänzung zum {pmh} verstanden werden. In Organisationen, die selten Projekte durchführen, wird vermutlich zunächst für jedes Projekt ein eigenes Handbuch erstellt werden, bevor Best-Practices und Handlungsanweisungen für ein allgemeines Handbuch abgeleitet werden.
