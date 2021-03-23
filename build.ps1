@@ -179,6 +179,7 @@ Function Render-IndexFile
                 $Doc = $Doc.Substring(17)
                 $IndexFileContent += "`n"
                 $IndexFileContent += Resolve-Template $Doc
+                $IndexFileContent += "`n"
             }
             Else
             {
