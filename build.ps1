@@ -230,7 +230,7 @@ Foreach ($_ in $IndexFile)
         Remove-Item -Force $BuildFile
 
         # baue den Link zur enrsprechenden Seite (sowie eine kurze Zusammenfassung der Themen) auf
-        $ReplaceValue = "===== link:$TargetLink[$Title]`n `n"
+        $ReplaceValue = "====== link:$TargetLink[$Title]`n `n"
         $ContentSummary = ""
         $OriginalContent | ? { $_ -match "^== " } | % {
             $ContentSummary += ($_.Substring(3) + ", ")

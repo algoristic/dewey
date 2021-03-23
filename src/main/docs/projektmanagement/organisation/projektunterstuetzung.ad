@@ -2,7 +2,6 @@
 :dewey-template: default.doc.ad
 
 :imagesdir: images
-
 :pmo: Projekt-Management-Office
 
 == Projektbüro bzw. Projekt-Office
@@ -18,7 +17,7 @@ Das Projektbüro ist (lt. _DIN 69901_) eine, *einem einzigen Projekt zugeordnete
 === Abgrenzung zum {pmo}
 Das _{pmo}_ ist eine *projektübergreifende* Unterstützungsfunktion, zur Einführung und Optimierung von Projektmanagementsystemen im Unternehmen.
 
-== {pmo}
+== Projekt-Management-Office
 Das *{pmo}* ist (lt. _DIN 69901_) eine projektübergreifende Organisationseinheit für die Umsetzung und Optimierung von Projektmanagementsystemen im Unternehmen. Das {pmo} unterstützt die einzelnen Projekte also indirekt, indem es Abläufe standardisiert und Akzeptanz im Unternehmen schafft.
 
 Die Aufgaben sind bspw.:
