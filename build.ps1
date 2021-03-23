@@ -104,7 +104,7 @@ Function Resolve-Template
     )
     $TemplatePath = "$Resources\templates\$Template"
     $Content = Get-Content $TemplatePath -Encoding UTF8
-    $Resolved = "`n"
+    $Resolved = ""
     $Content | % {
         $Resolved += "$_`n"
     }
@@ -177,6 +177,7 @@ Function Render-IndexFile
             ElseIf($Doc -like ":dewey-template:*")
             {
                 $Doc = $Doc.Substring(17)
+                $IndexFileContent += "`n"
                 $IndexFileContent += Resolve-Template $Doc
             }
             Else
