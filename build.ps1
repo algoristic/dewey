@@ -111,6 +111,7 @@ Function Resolve-Template
     $Content | % {
         $Line = "$_`n"
         $Line = $Line.Replace("[backToCaller]", "$Caller")
+        $Line = $Line.Replace("[TocLevels]", "$TocLevels")
         $Resolved += $Line
     }
     Return $Resolved
@@ -175,12 +176,12 @@ Function Render-IndexFile
             If($Doc -like "include:*")
             {
                 $Doc = $Doc.Substring(8)
-                $IndexFileContent += Render-IncludeFile $Doc $Css ".\$FileName"
+                $IndexFileContent += Render-IncludeFile $Doc $Css "\$FileName"
             }
             ElseIf($Doc -like "index:*")
             {
                 $Doc = $Doc.Substring(6)
-                $IndexFileContent += Render-IndexFile "$Src\$Doc" $Css ".\$FileName"
+                $IndexFileContent += Render-IndexFile "$Src\$Doc" $Css "\$FileName"
             }
             ElseIf($Doc -like ":dewey-template:*")
             {
