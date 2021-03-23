@@ -17,5 +17,7 @@ Marco Herzig
 
 :icons: font
 
+:back-to-caller: [backToCaller]
+
 // Standard-Link für den Rücksprung zur Hauptseite
-_link:/[&rarr; Zurück zur Startseite]_
+_link:{back-to-caller}[&rarr; Zurück zur Startseite]_

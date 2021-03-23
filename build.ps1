@@ -100,13 +100,21 @@ Function Resolve-Template
     [CmdletBinding()]
     Param(
         [Parameter(Mandatory=$true)]
-        [array]$Template
+        [array]$Template,
+
+        [Parameter(Mandatory=$true)]
+        [string]$Caller
     )
     $TemplatePath = "$Resources\templates\$Template"
     $Content = Get-Content $TemplatePath -Encoding UTF8
     $Resolved = ""
     $Content | % {
-        $Resolved += "$_`n"
+        $Line = "$_`n"
+        If($Line.Contains("[backToCaller]"))
+        {
+            $Line.Replace("[backToCaller]", "$Caller")
+        }
+        $Resolved += $Line
     }
     Return $Resolved
 }
@@ -138,10 +146,13 @@ Function Render-IndexFile
         [string]$FilePath,
 
         [Parameter(Mandatory=$true)]
-        [string]$Css
+        [string]$Css,
 
+        [Parameter(Mandatory=$true)]
+        [string]$Caller
     )
     $File = Get-Content $FilePath -Encoding UTF8
+    $FileName = [System.IO.Path]::GetFileNameWithoutExtension($FilePath)
     $IndexFileContent = ""
 
     $Title = $File[0]
@@ -167,18 +178,18 @@ Function Render-IndexFile
             If($Doc -like "include:*")
             {
                 $Doc = $Doc.Substring(8)
-                $IndexFileContent += Render-IncludeFile $Doc $Css
+                $IndexFileContent += Render-IncludeFile $Doc $Css $FileName
             }
             ElseIf($Doc -like "index:*")
             {
                 $Doc = $Doc.Substring(6)
-                $IndexFileContent += Render-IndexFile "$Src\$Doc" $Css
+                $IndexFileContent += Render-IndexFile "$Src\$Doc" $Css $FileName
             }
             ElseIf($Doc -like ":dewey-template:*")
             {
                 $Doc = $Doc.Substring(17)
                 $IndexFileContent += "`n"
-                $IndexFileContent += Resolve-Template $Doc
+                $IndexFileContent += Resolve-Template $Doc $Caller
                 $IndexFileContent += "`n"
             }
             Else
@@ -198,7 +209,6 @@ Function Render-IndexFile
             $IndexFileContent += ""
         }
     }
-    $FileName = [System.IO.Path]::GetFileNameWithoutExtension($FilePath)
     $Index = "$Dest\$FileName.ad"
     $IndexFileContent | Out-File -FilePath $Index -Encoding UTF8
     & asciidoctor.bat -a stylesheet=$Css -a lang=de -q $Index
@@ -223,7 +233,10 @@ Function Render-IncludeFile
         [String]$File,
 
         [Parameter(Mandatory=$true)]
-        [string]$Css
+        [string]$Css,
+
+        [Parameter(Mandatory=$true)]
+        [string]$Caller
     )
 
     $Document = "$Src\$File"
@@ -258,7 +271,7 @@ Function Render-IncludeFile
         If($_.Contains(":dewey-template:"))
         {
             $TemplateName = $_.Substring(":dewey-template: ".Length)
-            $Content = Resolve-Template $TemplateName
+            $Content = Resolve-Template $TemplateName $Caller
         }
         return $Content
     }
@@ -330,7 +343,7 @@ Else
 }
 
 # verarbeite zentrale index.ad
-Render-IndexFile "$Src\index.ad" $BuildCss | Out-Null
+Render-IndexFile "$Src\index.ad" $BuildCss "~NONE~" | Out-Null
 
 If($Production)
 {
