@@ -153,8 +153,7 @@ Function Render-IndexFile
     $FileName = [System.IO.Path]::GetFileNameWithoutExtension($FilePath)
     $IndexFileContent = ""
 
-    $Title = $File[0]
-    $Title = $Title.Substring(2).Trim()
+    $Title = ""
 
     Foreach ($_ in $File)
     {
@@ -194,6 +193,7 @@ Function Render-IndexFile
             {
                 If($Doc -match "^= ")
                 {
+                    $Title = $Doc.Substring(2)
                     $IndexFileContent += $Doc
                 }
                 Else
