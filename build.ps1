@@ -95,6 +95,136 @@ Function Remove-Empty
     }
 }
 
+Function Render-IndexFile
+{
+    [CmdletBinding()]
+    Param(
+        [Parameter(Mandatory=$true)]
+        [array]$File,
+
+        [Parameter(Mandatory=$true)]
+        [string]$Css
+
+    )
+    $IndexFileContent = Get-Content "$Resources\templates\index.root.ad" -Encoding UTF8
+    $IndexFileContent = $IndexFileContent | % {
+        $_.Replace("[TocLevels]", "$TocLevels")
+    }
+    $IndexFileContent += ""
+    Foreach ($_ in $File)
+    {
+
+        If($_ -and (-not ($_ -like "=*")))
+        {
+            $Doc = $_
+            $Dev = $false
+            If($Doc -like "dev:*")
+            {
+                # im Prod-build werden mit dev: markierte Bereiche weggelassen, da sich diese noch in Arbeit befinden
+                If($Production)
+                {
+                    $IndexFileContent += ""
+                    Continue
+                }
+                Else
+                {
+                    # im dev-build werden dev: Bereiche drin gelassen
+                    $Doc = $Doc.Substring(4)
+                    # liegt hier allerdings eine Üerschrift vor, so wird diese einfach übernommen und muss nicht weiterverarbeitet werden
+                    If($Doc -like "=*")
+                    {
+                        $IndexFileContent += "=$Doc"
+                        Continue
+                    }
+                    $Dev = $true
+                }
+            }
+            $Document = "$Src\$Doc"
+            $DocumentItem = Get-Item($Document)
+            $DocumentPath = $DocumentItem.FullName
+            $BuildPath = "$Dest\$Doc"
+            $TargetLink = $Doc
+            $FileName = [System.IO.Path]::GetFileName($DocumentPath)
+            If($Flatten)
+            {
+                $BuildPath = "$Dest\$FileName"
+                $TargetLink = $FileName
+            }
+            # alle asciidoc-Endungen durch die kompilierte html-Variante ersetzen
+            $BuildPath = $BuildPath -Replace ".asciidoc",".html" -Replace ".adoc",".html" -Replace ".ad",".html"
+            $Ending = ".html"
+            If($Production)
+            {
+                $Ending = ""
+            }
+            $TargetLink = $TargetLink -Replace ".asciidoc",$Ending -Replace ".adoc",$Ending -Replace ".ad",$Ending
+
+            # verarbeite die Zieldatei
+            $OriginalContent = Get-Content $Document -Encoding UTF8
+            # Sammle Daten für index-Dokument
+            # entferne führendes '= ' vom Titel
+            $Title = $OriginalContent[0]
+            $Title = $Title.Substring(2).Trim()
+            # ersetze im Inhalt den Template-Verweis durch das tatsächliche Template
+            $BuildContent = $OriginalContent | % {
+                $Content = $_
+                If($_.Contains(":dewey-template:"))
+                {
+                    $TemplateName = $_.Substring(":dewey-template: ".Length)
+                    $TemplatePath = "$Resources\templates\$TemplateName"
+                        $Content = Get-Content $TemplatePath -Encoding UTF8
+                }
+                return $Content
+            }
+            $SrcPath = $DocumentItem.DirectoryName
+            $BuildFile = "$SrcPath\_$FileName"
+            $BuildContent | Out-File -FilePath $BuildFile -Encoding UTF8
+            Write-Log "Compile: $BuildFile"
+            Write-Log "Build target: $BuildPath" DEBUG 1
+            Write-Log "Reference in index.html: $TargetLink" DEBUG 1
+            & asciidoctor.bat -o $BuildPath -a stylesheet=$Css -a lang=de $BuildFile
+            Remove-Item -Force $BuildFile
+
+            # baue den Link zur enrsprechenden Seite (sowie eine kurze Zusammenfassung der Themen) auf
+            $ReplaceValue = "link:$TargetLink[$Title]::`n"
+            $ContentSummary = ""
+            $OriginalContent | ? { $_ -match "^== " } | % {
+                $ContentSummary += ($_.Substring(3) + ", ")
+            }
+            $ContentSummary = $ContentSummary.Substring(0, ($ContentSummary.Length - 2))
+            $ReplaceValue += "&mdash; $ContentSummary`n `n"
+            $IndexFileContent += $ReplaceValue
+        }
+        Else
+        {
+            If($_ -like "=*")
+            {
+                $IndexFileContent += "=$_"
+            }
+            Else
+            {
+                $IndexFileContent += "$_"
+            }
+        }
+    }
+
+    $Index = "$Dest\index.ad"
+    Write-Log "Create $Index"
+    $IndexFileContent | Out-File -FilePath $Index -Encoding UTF8
+    Write-Log "Compile $Index "
+    & asciidoctor.bat -a stylesheet=$Css -a lang=de -q $Index
+}
+
+Function Render-IncludeFile
+{
+    [CmdletBinding()]
+    Param(
+        [Parameter(Mandatory=$true)]
+        [String]$File
+    )
+
+}
+
 # eigentliches Skript
 Write-Log "Src: $Src, Dest: $Dest"
 # build Verzeichnis leeren und neu aufbauen
@@ -151,112 +281,7 @@ Else
 
 # verarbeite index.ad
 $IndexFile = Get-Content $Src\index.ad -Encoding UTF8
-$IndexFileContent = Get-Content "$Resources\templates\index.root.ad" -Encoding UTF8
-$IndexFileContent = $IndexFileContent | % {
-    $_.Replace("[TocLevels]", "$TocLevels")
-}
-$IndexFileContent += ""
-Foreach ($_ in $IndexFile)
-{
-    If($_ -and (-not ($_ -like "=*")))
-    {
-        $Doc = $_
-        $Dev = $false
-        If($Doc -like "dev:*")
-        {
-            # im Prod-build werden mit dev: markierte Bereiche weggelassen, da sich diese noch in Arbeit befinden
-            If($Production)
-            {
-                $IndexFileContent += ""
-                Continue
-            }
-            Else
-            {
-                # im dev-build werden dev: Bereiche drin gelassen
-                $Doc = $Doc.Substring(4)
-                # liegt hier allerdings eine Üerschrift vor, so wird diese einfach übernommen und muss nicht weiterverarbeitet werden
-                If($Doc -like "=*")
-                {
-                    $IndexFileContent += "=$Doc"
-                    Continue
-                }
-                $Dev = $true
-            }
-        }
-        $Document = "$Src\$Doc"
-        $DocumentItem = Get-Item($Document)
-        $DocumentPath = $DocumentItem.FullName
-        $BuildPath = "$Dest\$Doc"
-        $TargetLink = $Doc
-        $FileName = [System.IO.Path]::GetFileName($DocumentPath)
-        If($Flatten)
-        {
-            $BuildPath = "$Dest\$FileName"
-            $TargetLink = $FileName
-        }
-        # alle asciidoc-Endungen durch die kompilierte html-Variante ersetzen
-        $BuildPath = $BuildPath -Replace ".asciidoc",".html" -Replace ".adoc",".html" -Replace ".ad",".html"
-        $Ending = ".html"
-        If($Production)
-        {
-            $Ending = ""
-        }
-        $TargetLink = $TargetLink -Replace ".asciidoc",$Ending -Replace ".adoc",$Ending -Replace ".ad",$Ending
-
-        # verarbeite die Zieldatei
-        $OriginalContent = Get-Content $Document -Encoding UTF8
-        # Sammle Daten für index-Dokument
-        # entferne führendes '= ' vom Titel
-        $Title = $OriginalContent[0]
-        $Title = $Title.Substring(2).Trim()
-        # ersetze im Inhalt den Template-Verweis durch das tatsächliche Template
-        $BuildContent = $OriginalContent | % {
-            $Content = $_
-            If($_.Contains(":dewey-template:"))
-            {
-                $TemplateName = $_.Substring(":dewey-template: ".Length)
-                $TemplatePath = "$Resources\templates\$TemplateName"
-                    $Content = Get-Content $TemplatePath -Encoding UTF8
-            }
-            return $Content
-        }
-        $SrcPath = $DocumentItem.DirectoryName
-        $BuildFile = "$SrcPath\_$FileName"
-        $BuildContent | Out-File -FilePath $BuildFile -Encoding UTF8
-        Write-Log "Compile: $BuildFile"
-        Write-Log "Build target: $BuildPath" DEBUG 1
-        Write-Log "Reference in index.html: $TargetLink" DEBUG 1
-        & asciidoctor.bat -o $BuildPath -a stylesheet=$BuildCss -a lang=de $BuildFile
-        Remove-Item -Force $BuildFile
-
-        # baue den Link zur enrsprechenden Seite (sowie eine kurze Zusammenfassung der Themen) auf
-        $ReplaceValue = "link:$TargetLink[$Title]::`n"
-        $ContentSummary = ""
-        $OriginalContent | ? { $_ -match "^== " } | % {
-            $ContentSummary += ($_.Substring(3) + ", ")
-        }
-        $ContentSummary = $ContentSummary.Substring(0, ($ContentSummary.Length - 2))
-        $ReplaceValue += "&mdash; $ContentSummary`n `n"
-        $IndexFileContent += $ReplaceValue
-    }
-    Else
-    {
-        If($_ -like "=*")
-        {
-            $IndexFileContent += "=$_"
-        }
-        Else
-        {
-            $IndexFileContent += "$_"
-        }
-    }
-}
-
-$IndexFile = "$Dest\index.ad"
-Write-Log "Create $IndexFile"
-$IndexFileContent | Out-File -FilePath $IndexFile -Encoding UTF8
-Write-Log "Compile $IndexFile "
-& asciidoctor.bat -a stylesheet=$BuildCss -a lang=de -q $IndexFile
+Render-IndexFile $IndexFile $BuildCss
 
 If($Production)
 {
