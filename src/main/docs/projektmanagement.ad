@@ -17,9 +17,9 @@ include:projektmanagement\grundlagen\agil\scrum.ad
 include:projektmanagement\grundlagen\agil\kanban.ad
 include:projektmanagement\grundlagen\agil\agile-skalierungsframeworks.ad
 
-dev:=== Organisation
-dev:include:projektmanagement\grundlagen\organisation\projektorganisation.ad
-dev:include:projektmanagement\grundlagen\organisation\projektaufbauorganisation.ad
-dev:include:projektmanagement\grundlagen\organisation\unterstuetzungsfunktionen.ad
-dev:include:projektmanagement\grundlagen\organisation\hilfsmittel.ad
-dev:include:projektmanagement\grundlagen\organisation\multiprojektmanagement.ad
+=== Organisation
+include:projektmanagement\grundlagen\organisation\projektorganisation.ad
+include:projektmanagement\grundlagen\organisation\projektaufbauorganisation.ad
+include:projektmanagement\grundlagen\organisation\unterstuetzungsfunktionen.ad
+include:projektmanagement\grundlagen\organisation\hilfsmittel.ad
+include:projektmanagement\grundlagen\organisation\multiprojektmanagement.ad
