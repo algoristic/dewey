@@ -217,7 +217,7 @@ Function Render-IndexFile
         $TargetLink += ".html"
     }
 
-    $Value = "=== link:$TargetLink[$Title]`n"
+    $Value = "link:$TargetLink[$Title]::`n"
     $ContentSummary = Render-ContentSummary $File
     $Value += "&mdash; $ContentSummary`n `n"
     Return $Value
