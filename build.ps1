@@ -181,7 +181,14 @@ Function Render-IndexFile
             }
             Else
             {
-                $IndexFileContent += $Doc
+                If($Doc -match "^= ")
+                {
+                    $IndexFileContent += $Doc
+                }
+                Else
+                {
+                    $IndexFileContent += "$Doc`n"
+                }
             }
         }
         Else
