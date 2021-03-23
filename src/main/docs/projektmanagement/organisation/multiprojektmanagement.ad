@@ -4,6 +4,7 @@
 :imagesdir: images
 :mpm: Multiprojektmanagement
 :ppm: Projektportfoliomanagement
+:pm: Programmmanagement
 
 Das {mpm} bildet einen prozessualen und organisatorischen Rahmen rund um das Management mehrerer paralleler Projekte. Es geht darum zu entscheiden, welche Projekte durchgeführt werden sollen ({ppm}) und um die Koordination von Projekten mit Abhängigkeiten oder solchen, die auf dieselben Ressourcen zugreifen.
 
@@ -33,7 +34,12 @@ Tätigkeiten::
 * Bewertung abgeschlossener Projekte und Sicherung von Erfahrungswerten
 
 == Programmmanagement
-Programmmanagement beschreibt alle Tätigkeiten, die das Management inhaltlich zusammenhängender Projekte umfassen. Solche zusammenhängenden Projekte bezeichnet man als _Programm_. Ziel ist es, den Ressourceneinsatz so zu planen und zu steuern, dass das wirtschaftliche Ergebnis optimal ist. Da es an einzelne Projekte gebunden ist, ist das Programmmanagement eine zeitlich befristete Aufgabe.
+{pm} beschreibt alle Tätigkeiten, die das Management inhaltlich zusammenhängender Projekte umfassen. Solche zusammenhängenden Projekte bezeichnet man als _Programm_. Ziel ist es, den Ressourceneinsatz so zu planen und zu steuern, dass das wirtschaftliche Ergebnis optimal ist. Da es an einzelne Projekte gebunden ist, ist das {pm} eine zeitlich befristete Aufgabe.
+
+Programme haben stets eine gemeinsame, übergerodnete Zielsetzung. Damit sollen Programme mit ihren Teilprojekten stets eine strategische Veränderung erbringen. Die Themen {ppm} und {pm} greifen also definitiv ineinander.
+
+.{pm}
+image::programm_001.png[{pm}, 320, align="center"]
 
 Tätigkeiten::
 * Analyse von Abhängigkeiten zwischen laufenden Projekten
