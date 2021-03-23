@@ -256,12 +256,14 @@ $IndexFile = "$Dest\index.ad"
 Write-Log "Create $IndexFile"
 $IndexFileContent | Out-File -FilePath $IndexFile -Encoding UTF8
 Write-Log "Compile $IndexFile "
-& asciidoctor.bat -a stylesheet=$BuildCss -a lang=de $IndexFile
+& asciidoctor.bat -a stylesheet=$BuildCss -a lang=de -q $IndexFile
 
 If($Production)
 {
+    Write-Log "Delete build-Artifacts" DEBUG
     # lösche sämtliche anfallenden build-Artefakte
     Get-ChildItem $Dest | Remove-Item -Recurse -Include *.ad, *.adoc, *.asciidoc, *.css
     # lösche leere Verzeichnisse rekursiv
 }
 Remove-Empty $Dest
+Write-Log "Finished!"
