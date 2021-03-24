@@ -104,3 +104,6 @@ Im Requirements-Eingineering wird stattdessen der Begriff der *Spezifikation* ve
 
 * _Anforderungsspezifikation_ &hArr; _Lastenheft_
 * _Systemspezifikation_ (grob, fein) &hArr; _Pflichtenheft_
+
+.Zusammenspiel der Spezifikationen
+image::spezifikationen_001.png[Zusammenspiel der Spezifikationen, 500, align="center"]
