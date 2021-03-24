@@ -1,0 +1,62 @@
+= Dokumente
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+
+== Projektauftrag
+_Auch "Projektvereinbarung" genannt._
+
+IMPORTANT: Der Auftraggeber autorisiert den Projektmanager das Projekt innerhalb des hier abgesteckten Rahmens durchzuführen.
+
+Inhalte::
+* Zielsetzung
+* Erwartete Ergebnisse / Projektnutzen
+* Randbedingungen
+* Verantwortlichkeiten (ggf. auch Rollen)
+* geplante Personal- und Sachressourcen
+* übereinstimmende Willensbekundung der Beteiligten
+Weitere mögliche Inhalte::
+* Ausgangslage
+* Projektorganisation und Berichtswesen
+* Schnittstellen zu anderen Projekten
+* Budgetrahmen (= Sachressourcen)
+* Projektdauer
+* Wirtschaftlichkeitsbewertung (Kosten-Nutzen-Analyse)
+* Chancen und Risiken
+* Mitwirkungspflichten des Auftraggebers
+
+== Anforderungsspezifikation
+_Im deutschsprachigen Raum wird auch der Begriff "Lastenheft" verwendet._
+
+Auftraggeber oder Auftraggeber und Projektleiter legen die Anforderungen an das Projekt fest. Dieser Schritt ist entscheiden um sicherzustellen, dass der Kunde beim Projektabschluss auch das Ergebnis erhält, das er benötigt.
+
+IMPORTANT: *Was der Kunde sich wünscht &#8800; was der Kunde benötigt!* &rarr; Insbesondere im Prozess der Softwareerstellung sind so viele Fachbereiche in die Kommunikation involviert und ist die Kommunikation oft so fachspezifisch, dass hier genau aufgepasst werden muss. Stichwort: _Requirements Engineering_!
+
+Inhalte::
+    Ausgangssituation:::
+        * Ausgangslage und Anlass zur Durchführung des Projektes
+    Ziele:::
+        * welche Ziele sollen umgesetzt werden und welche Vorteile werden durch das Projektergebnis erwartet?
+    Produkteinsatz:::
+        * Anforderungsbereiche und Zielgruppen
+    Produktübersicht:::
+        * Zusammenhänge von Produkt und Umgebung
+        * Schnittstellen zu Anwender, Unterstützungs- und Nachbarsystemen
+    Funktionale Anforderungen:::
+        * welche Leistungen erwartet der Anwender, um ein fachliches Problem zu lösen?
+    Nicht-funktionale Anforderungen:::
+        * Benutzbarkeit, Zuverlässigkeit, Effizienz, Änderbarkeit, Übertragbarkeit
+    Lieferumfang:::
+        * Ergebnisse/Dienstleistungen, die der Auftragnehmer zu liefern hat
+        * zum Abschluss aber auch während des Projektes
+    Abnahmekriterien:::
+        * was muss das Projektergebnis erfüllen, um beim Abnahmetest erfolgreich zu sein
+
+
+== Systemspezifikation
+_Im deutschsprachigen Raum werden auch die Begriffe "Pflichtenheft" und "Soll-Konzeption" verwendet._
+
+== Dokumente im Projektverlauf
+
+.Dokumente im Projektverlauf
+image::dokumente_im_projektverlauf_001.png[Dokumente im Projektverlauf, 500, align="center"]

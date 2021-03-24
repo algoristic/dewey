@@ -30,3 +30,4 @@ dev:include:projektmanagement\initialisierung\uebersicht.ad
 dev:== Definition
 dev:include:projektmanagement\definition\uebersicht.ad
 dev:include:projektmanagement\definition\meetings.ad
+dev:include:projektmanagement\definition\dokumente.ad
