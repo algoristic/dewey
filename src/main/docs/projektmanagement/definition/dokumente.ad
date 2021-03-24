@@ -3,6 +3,11 @@
 
 :imagesdir: images
 
+== Dokumente im Projektverlauf
+
+.Dokumente im Projektverlauf
+image::dokumente_im_projektverlauf_001.png[Dokumente im Projektverlauf, 500, align="center"]
+
 == Projektauftrag
 _Auch "Projektvereinbarung" genannt._
 
@@ -25,8 +30,8 @@ Weitere mögliche Inhalte::
 * Chancen und Risiken
 * Mitwirkungspflichten des Auftraggebers
 
-== Anforderungsspezifikation
-_Im deutschsprachigen Raum wird auch der Begriff "Lastenheft" verwendet._
+== Lastenheft
+_Im internationalen Raum wird der Begriff "Anforderungsspezifikation" verwendet._
 
 Auftraggeber oder Auftraggeber und Projektleiter legen die Anforderungen an das Projekt fest. Dieser Schritt ist entscheiden um sicherzustellen, dass der Kunde beim Projektabschluss auch das Ergebnis erhält, das er benötigt.
 
@@ -53,8 +58,8 @@ Inhalte::
         * was muss das Projektergebnis erfüllen, um beim Abnahmetest erfolgreich zu sein
 
 
-== Systemspezifikation
-_Im deutschsprachigen Raum werden auch die Begriffe "Pflichtenheft" und "Soll-Konzeption" verwendet._
+== Pflichtenheft bzw. Soll-Konzeption
+_Im internationalen Raum wird der Begriff "Systemspezifikation" verwendet._
 
 Inhalte::
     Zielbestimmung:::
@@ -92,7 +97,10 @@ Inhalte::
     Glossar:::
         * Verzeichnis von technischem und Fachvokabular
 
-== Dokumente im Projektverlauf
+== Internationaler Kontext
+Lasten- und Pflichtenheft sind spezifische _Formulierungen für den deutschsprachigen Raum_. In international genutzten Projektmanagementstandards gibt es dafür _keine_ exakten Entsprechungen.
 
-.Dokumente im Projektverlauf
-image::dokumente_im_projektverlauf_001.png[Dokumente im Projektverlauf, 500, align="center"]
+Im Requirements-Eingineering wird stattdessen der Begriff der *Spezifikation* verwendet. Dabei gilt:
+
+* _Anforderungsspezifikation_ &hArr; _Lastenheft_
+* _Systemspezifikation_ (grob, fein) &hArr; _Pflichtenheft_
