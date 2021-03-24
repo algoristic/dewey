@@ -1,0 +1,41 @@
+= Übersicht
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+
+== Beschreibung
+
+Nachdem ein Projektantrag erstellt wurde, geht es in dieser Phase darum die *Aufgabenstellung zu fixieren* -- insbesondere um ein Verständnis für die Anforderungen des Auftraggebers zu bekommen -- und den *Durchführungsrahmen zu klären*.
+
+Das Ziel dieser Projektphase ist es einen *Projektauftrag* zu erstellen, der Ziele und deren Abgrenzung enthält, sowie ein Konzept für die Organisation und eine erste grobe Planung.
+
+IMPORTANT: Dieser Projektauftrag wird das zentrale Dokument sein, das die vertraglichen Vereinbahrungen zwischen Auftraggeber und Auftragnehmer fixiert.
+
+== Ablauf
+
+.Ablauf Definitionsphase
+image::ablauf_definition_001.png[Ablauf Definitionsphase, 750, align="center"]
+
+== Aktivitäten
+
+Stakeholder- und Projektumfeld::
+* ermitteln und analysieren
+* Maßnahmen definieren
+Ziele und Abgrenzungen definieren::
+* Anforderungsanalyse
+* Soll-Konzeption
+Umgang mit Risiken und Chancen::
+* Vorgehenswesen und Berichtswesen festlegen
+Machbarkeitsanalyse::
+* technische, organisatorische und wirtschaftliche Machbarkeit
+Grobplanung::
+* Phasen- und Meilenstein-Plan
+
+== Ergebnisse
+
+* *Projektauftrag*
+    ** Leistungs- und Anforderungsspezifikation, Grobkonzept
+    ** Zeit, Projektdauer
+    ** Aufwand, Budget
+* ggf. detaillierte Anforderungsspezifikation: *Lastenheft*
+* ggf. detaillierte Soll-Konzeption: *Pflichtenheft*
