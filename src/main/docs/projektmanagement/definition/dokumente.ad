@@ -56,6 +56,42 @@ Inhalte::
 == Systemspezifikation
 _Im deutschsprachigen Raum werden auch die Begriffe "Pflichtenheft" und "Soll-Konzeption" verwendet._
 
+Inhalte::
+    Zielbestimmung:::
+        * Muss-, Soll-, Kann- und Abgrenzungskriterien
+    Produkteinsatz:::
+        * Anwendungsbereiche, Zielgruppen und Betriebsbedingungen
+        * Physikalische Umgebung, tägliche Betriebszeit, etc.
+    Produktübersicht:::
+        * kurze Übersicht (z. B. ein Produktstrukturplan)
+    Produktfunktionen:::
+        * detaillierte Beschreibung von Geschäftsprozessen, Listen, Reports, ...
+    Produktleistungen:::
+        * Anforderungen bzgl. Zeit und Genauigkeit der Produktfunktionen
+    Produktdaten:::
+        * langfristig zu speichernde Daten
+    Qualitätsanforderungen:::
+        * weitere messbare Kriterien zu Funktionalität, Zuverlässigkeit, Benutzbarkeit, Effizienz, Änderbarkeit, Übertragbarkeit
+    Benutzeroberfläche:::
+        * grundlegende Anforderungen
+        * Zugriffsrechte
+    weitere nicht-funktionale Anforderungen:::
+        * Gesetze und Normen, Sicherhetsanforderungen, Plattformunabhängigkeiten
+    Technische Produktumgebung:::
+        * Software (Client, Server)
+        * Hardware (Client, Server)
+        * Orgware (organisatorische Rahmenbedingungen)
+        * Produktschnittstellen
+     Anforderungen an Entwicklungsumgebung:::
+        * Software, Hardware, Orgware
+        * Entwicklungsschnittstellen
+    Gliederung in Teilprodukte:::
+        * Teilprodukte
+        * Abhängigkeiten
+        * Liefertermine
+    Glossar:::
+        * Verzeichnis von technischem und Fachvokabular
+
 == Dokumente im Projektverlauf
 
 .Dokumente im Projektverlauf
