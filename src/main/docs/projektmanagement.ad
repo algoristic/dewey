@@ -23,3 +23,6 @@ include:projektmanagement\grundlagen\organisation\projektaufbauorganisation.ad
 include:projektmanagement\grundlagen\organisation\unterstuetzungsfunktionen.ad
 include:projektmanagement\grundlagen\organisation\hilfsmittel.ad
 include:projektmanagement\grundlagen\organisation\multiprojektmanagement.ad
+
+dev:== Initialisierung
+dev:include:projektmanagement\initialisierung\uebersicht.ad
