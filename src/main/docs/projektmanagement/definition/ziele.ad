@@ -19,14 +19,12 @@ Zielfunktionen::
 == Zielarten
 
 === Nach Schwere
-
 Hauptziele:: Sollten *nie aus den Augen verloren* werden
 Teilziele:: Helfen bei der *Strukturierung* eines (großen) Projektes
 Nebenziele:: Können errecht werden, sind jedoch *nicht bindend*
 Nicht-Ziele:: Sollen nicht erreicht werden und dienen der *Abgrenzung* des Projektes
 
 === Nach Funktion
-
 Projekt-Nutzen-Ziel::
     _Auch Produkt-Ziel oder Projektgesamtzielsetzung._ +
     Ziel, das mit der Nutzung der Projektergebnisse erreicht werden soll. (_z. B. Kostenreduktion durch neue Software)
@@ -41,7 +39,6 @@ Projekt-Ziele::
         Erstellung des Projektergebnis entsprechend der Anforderungen des Auftraggebers. (Nach *Funktion*, *Leistung* und *Qualität*.)
 
 == Zielfindungsprozess
-
 _Beispielhaft:_
 
 . *Zielideen*: z. B. als Gruppe im Workshop sammeln, Key-User interviewen, ...
@@ -54,7 +51,6 @@ _Beispielhaft:_
 . *Zielkommunikation starten*: Projektmarketing betreiben und die Stakeholder von den gefundenen und formulierten Zielen überzeugen
 
 == Zielhierarchie
-
 Unterschieden wird zwischen Ober-, Zwischen und Unterzielen.
 
 Oberziele::
@@ -67,13 +63,13 @@ Unterziele::
     ...legen die Umsetzung anhand von Plänen und konkreten Verhaltensweisen fest.
     Beispiel::: ...dabei geht es insbesondere um Einsparungen bei Material-, Lohn- und Gemeinkosten.
 
+=== Zielpyramide
+Ein einfaches Hilfsmittel ist die Visualisierung entlang einer *Zielpyramide*, bei der von unten nach oben die Frage nach dem Grund der der *Ursache eins Zieles* geklärt wird und von oben nach unten die Frage nach der *konkreten Umsetzung*.
+
 .Zielpyramide
 image::zielpyramide_001.png[Zielpyramide, 360, align="center"]
 
-Ein einfaches Hilfsmittel ist die Visualisierung entlang einer *Zielpyramide*, bei der von unten nach oben die Frage nach dem Grund der der *Ursache eins Zieles* geklärt wird und von oben nach unten die Frage nach der *konkreten Umsetzung*.
-
 == Priorisierung
-
 Muss-Ziele::
     Müssen erreicht werden, sonst gilt das Projekt als gescheitert.
     Beispiel::: Budget- oder technische Vorgaben, Kernfunktionen
@@ -88,10 +84,25 @@ Nicht-Ziele::
     Dienen der Klarheit und der Abgrenzung, damit durch Übererfüllung keine unnötgen Kosten entstehen.
 
 == Zielbeziehungen
+Die *horizontalen und vertikalen* Zielbeziehungen, also die Frage danach, ob Ziele eauf einer Ebene stehen oder sich begründen, bzw. spezifizieren, wurde bereits beim Aufbau einer Hierarchie geklärt.
 
+Die *Zielverträglichkeiten* werden in diesem Schritt geklärt. Es wird unterschieden nach:
+
+Zielantinomie:: Ziele schließen sich gegenseitig aus
+Zielkonkurrenz:: Ziele beeinträchtigen sich
+Zielneutralität:: Ziele sind unabhängig voneinander
+Zielkomplementarität:: Ziele fördern oder unterstützen sich
+Zielidentät:: Ziele sind deckungsgleich
+
+Je nachdem, was für Beziehungen identifizert werden, wird geprüft, wie sich Konkurrenzbeziehung auflösen oder Synergien nutzen lassen. Diesem Schritt sollte genug Beachtung geschenkt werden, da spät entdeckte Zielkonflikte den Projekterfolg gefährden. Ebenso werden durch zu spät entdeckte Synergien eventuell gute Chancen verpasst.
+
+=== Zielbeziehungsmatrix
+Eine einfache Methode zur Festtellung der Zielbeziehungen ist der Aufbau einer Zielbeziehungsmatrix.
+
+.Zielbeziehungsmatrix
+image::zielbeziehungsmatrix_001.png[Zielbeziehungsmatrix, 360, align="center"]
 
 == Operationalisierung
-
 Die Zielformulierung nach *SMART* ist am geläufigsten.
 
 IMPORTANT: _SMART_ ist nur eine Technik mit der sich leicht überprüfen lässt, ob eine Zielaussage *richtig formuliert* wurde, ähnlich einer _Rechtschreibprüfung_ für Ziele. Eine qualitative Überprüfung der Ziele ist damit nicht möglich!
