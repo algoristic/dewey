@@ -150,7 +150,10 @@ Function Render-IndexFile
         [string]$Css,
 
         [Parameter(Mandatory=$true)]
-        [string]$Caller
+        [string]$Caller,
+
+        [Parameter(Mandatory=$true)]
+        [int]$LogDepth
     )
     $File = Get-Content $FilePath -Encoding UTF8
     $FileName = [System.IO.Path]::GetFileNameWithoutExtension($FilePath)
@@ -178,14 +181,14 @@ Function Render-IndexFile
             If($Doc -like "include:*")
             {
                 $Doc = $Doc.Substring(8)
-                Write-Log "Render include: $Doc" INFO 1
-                $IndexFileContent += Render-IncludeFile $Doc $Css "\$FileName"
+                Write-Log "Render include: $Doc" INFO ($LogDepth + 1)
+                $IndexFileContent += Render-IncludeFile $Doc $Css "\$FileName" ($LogDepth + 2)
             }
             ElseIf($Doc -like "index:*")
             {
                 $Doc = $Doc.Substring(6)
-                Write-Log "Render index: $Doc"
-                $IndexFileContent += Render-IndexFile "$Src\$Doc" $Css "\$FileName"
+                Write-Log "Render index: $Doc" INFO ($LogDepth + 1)
+                $IndexFileContent += Render-IndexFile "$Src\$Doc" $Css "\$FileName" ($LogDepth + 2)
             }
             ElseIf($Doc -like ":dewey-template:*")
             {
@@ -239,7 +242,10 @@ Function Render-IncludeFile
         [string]$Css,
 
         [Parameter(Mandatory=$true)]
-        [string]$Caller
+        [string]$Caller,
+
+        [Parameter(Mandatory=$true)]
+        [int]$LogDepth
     )
 
     $Document = "$Src\$File"
@@ -288,7 +294,7 @@ Function Render-IncludeFile
     }
     Else
     {
-        Write-Log "Skip existing: $FileName" DEBUG 2
+        Write-Log "Skip existing: $FileName" DEBUG $LogDepth
     }
 
     # baue den Link zur enrsprechenden Seite (sowie eine kurze Zusammenfassung der Themen) auf
@@ -355,7 +361,7 @@ Else
 
 # verarbeite zentrale index.ad
 Write-Log "Render index: index.ad"
-Render-IndexFile "$Src\index.ad" $BuildCss "~NONE~" | Out-Null
+Render-IndexFile "$Src\index.ad" $BuildCss "~NONE~" 0 | Out-Null
 
 If($Production)
 {
