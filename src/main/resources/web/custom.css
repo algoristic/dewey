@@ -48,6 +48,11 @@ p, blockquote, dt, td.content, span.alt {
 p {
     text-align: justify;
 }
+.no-justify {
+    hyphens: unset;
+    text-align: left;
+    word-break: keep-all;
+}
 dl dt {
     font-style: italic;
     font-weight: inherit;

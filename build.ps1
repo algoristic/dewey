@@ -224,7 +224,7 @@ Function Render-IndexFile
 
     $Value = "link:$TargetLink[$Title]::`n"
     $ContentSummary = Render-ContentSummary $File
-    $Value += "&mdash; $ContentSummary`n `n"
+    $Value += "[no-justify]#&mdash; $ContentSummary#`n `n"
     Return $Value
 }
 
@@ -294,7 +294,7 @@ Function Render-IncludeFile
     # baue den Link zur enrsprechenden Seite (sowie eine kurze Zusammenfassung der Themen) auf
     $ReplaceValue = "link:$TargetLink[$Title]::`n"
     $ContentSummary = Render-ContentSummary $OriginalContent
-    $ReplaceValue += "&mdash; $ContentSummary`n `n"
+    $ReplaceValue += "[no-justify]#&mdash; $ContentSummary#`n `n"
     Return $ReplaceValue
 }
 
