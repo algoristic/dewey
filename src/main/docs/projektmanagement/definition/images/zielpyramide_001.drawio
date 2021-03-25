@@ -1,0 +1,40 @@
+<mxfile host="Electron" modified="2021-03-25T18:07:23.766Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.1.8 Chrome/87.0.4280.88 Electron/11.1.1 Safari/537.36" etag="iae8GMpSxowJNUKQfBV6" compressed="false" version="14.1.8" type="device">
+  <diagram id="cl4mBG8tXB1VxFSdqOy6" name="Seite-1">
+    <mxGraphModel dx="782" dy="497" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#000000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hCJ5qOt0vFq8-54Sz7CY-3" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.acute_triangle;dx=0.5;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="140" y="80" width="360" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="hCJ5qOt0vFq8-54Sz7CY-2" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.acute_triangle;dx=0.5;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="200" y="80" width="240" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="hCJ5qOt0vFq8-54Sz7CY-1" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.acute_triangle;dx=0.5;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="260" y="80" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="hCJ5qOt0vFq8-54Sz7CY-4" value="Oberziele" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="300" y="120" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hCJ5qOt0vFq8-54Sz7CY-5" value="Zwischenziele" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="300" y="190" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hCJ5qOt0vFq8-54Sz7CY-6" value="Unterziele" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="300" y="270" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hCJ5qOt0vFq8-54Sz7CY-10" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=north;notch=0;horizontal=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="210" y="100" width="60" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="hCJ5qOt0vFq8-54Sz7CY-11" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;direction=south;notch=0;fillColor=#e1d5e7;strokeColor=#9673a6;horizontal=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="130" width="60" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="hCJ5qOt0vFq8-54Sz7CY-12" value="Warum?" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=3;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="200" y="330" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="hCJ5qOt0vFq8-54Sz7CY-13" value="Wie?" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=3;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="360" y="90" width="80" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

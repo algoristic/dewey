@@ -2,3 +2,114 @@
 :dewey-template: default.doc.ad
 
 :imagesdir: images
+
+== Projektziele
+...liegen in der Verantwortung des Projektleiters! Eine überprüfbare Zieldefinition ist einer der entscheidenden Erfolgsfaktoren für das Projekt, da sich das Projektergebnis an ihr misst.
+
+Die Projektziele sollten (_selbstverständlich_) mit den übergeordneten Zielen (Unternehmens- oder Bereichsziele) im Einklang stehen. Projektziele werden am Anfang des Projektes definiert aber ihre Klarheit nimmt im Projektverlauf zu -- d. h. man muss erst lernen _die Sprache des Kunden zu sprechen_, damit man die Ziele versteht und wie sie dem Kunden einen Mehrwert bringen.
+
+Zielfunktionen::
+    Entscheiden::: Ziele geben den Weg im Projekt vor.
+    Kontrollieren::: Ziele bilden die Grundlage für eine messbare Leistung.
+    Informieren::: Ziele bilden die Basis für die Erstellung des Projektergebnisses.
+    Motivieren::: Gut formulierte Ziele spornen zu hoher Leistung an.
+    Koordinieren::: Entlang der Ziele richtet sich die Arbeit aller am Projekt beteiligten Personen aus.
+    Legitimieren::: Ziele bilden de Basis für Entscheidungen im Projekt.
+
+== Zielarten
+
+=== Nach Schwere
+
+Hauptziele:: Sollten *nie aus den Augen verloren* werden
+Teilziele:: Helfen bei der *Strukturierung* eines (großen) Projektes
+Nebenziele:: Können errecht werden, sind jedoch *nicht bindend*
+Nicht-Ziele:: Sollen nicht erreicht werden und dienen der *Abgrenzung* des Projektes
+
+=== Nach Funktion
+
+Projekt-Nutzen-Ziel::
+    _Auch Produkt-Ziel oder Projektgesamtzielsetzung._ +
+    Ziel, das mit der Nutzung der Projektergebnisse erreicht werden soll. (_z. B. Kostenreduktion durch neue Software)
+Projekt-Ziele::
+    Projekt-Management-Ziele:::
+        _Auch Projekt Vorgehensziele._
+        * Erreichung der definierten Ziele
+        * hohe Motivation und Produktivität
+        * Zufriedenstellung der Stakeholder
+    Projekt-Ergebnis-Ziele:::
+        _Auch Projekt-Sachziele oder Projekt-Leistungs-Ziele._ +
+        Erstellung des Projektergebnis entsprechend der Anforderungen des Auftraggebers. (Nach *Funktion*, *Leistung* und *Qualität*.)
+
+== Zielfindungsprozess
+
+_Beispielhaft:_
+
+. *Zielideen*: z. B. als Gruppe im Workshop sammeln, Key-User interviewen, ...
+. *Zielhierarchie*: Gruppierung der Ziele
+. *Priorisierung*: Muss-, Soll-, Kann- und Nicht-Ziele definieren
+. *Zielbeziehungen*: Zielkonflikte oder auch -synergien identifizieren
+. *Operationalisierung*: Ziele messbar machen (z. B. nach SMART)
+. *Timeline*: Ziele zeitlich gliedern
+. *Qualitätsprüfung*: Kontrolle der Ergebnisse
+. *Zielkommunikation starten*: Projektmarketing betreiben und die Stakeholder von den gefundenen und formulierten Zielen überzeugen
+
+== Zielhierarchie
+
+Unterschieden wird zwischen Ober-, Zwischen und Unterzielen.
+
+Oberziele::
+    ...geben die Strategie, den Zweck oder die Vision vor.
+    Beispiel::: Oberziel ist es, _den Gewinn zu erhöhen_...
+Zwischenziele::
+    ...definieren Maßnahmen zur Erreichung der Oberziele.
+    Beispiel::: ...das soll erreicht werden, indem die Kosten gesengkt werden...
+Unterziele::
+    ...legen die Umsetzung anhand von Plänen und konkreten Verhaltensweisen fest.
+    Beispiel::: ...dabei geht es insbesondere um Einsparungen bei Material-, Lohn- und Gemeinkosten.
+
+.Zielpyramide
+image::zielpyramide_001.png[Zielpyramide, 360, align="center"]
+
+Ein einfaches Hilfsmittel ist die Visualisierung entlang einer *Zielpyramide*, bei der von unten nach oben die Frage nach dem Grund der der *Ursache eins Zieles* geklärt wird und von oben nach unten die Frage nach der *konkreten Umsetzung*.
+
+== Priorisierung
+
+Muss-Ziele::
+    Müssen erreicht werden, sonst gilt das Projekt als gescheitert.
+    Beispiel::: Budget- oder technische Vorgaben, Kernfunktionen
+Soll-Ziele::
+    Sollen weitestgehend erreicht werden, denn sie tragen entscheidend zur Erhöhung der Zufriedenheit bei. (_Soll-Ziele_ können sich im Projektverlauf durchaus als _Muss-Ziele_ herausstellen, da die fachlichen Zusammenhänge am Anfang eventuell nicht komplett klar sind!)
+    Beispiel::: Features und Leistungsvorgaben
+Kann-Ziele::
+    Sind wünschenswert zu erreichen. Die Grundhaltung sollte nicht sein, dass sie von vornherein vernachlässigt werden können. Die erreichung solcher Ziele kann oft das _"Sahnehäuchen"_ sein, dass den Kunden dazu bewegt für das nächste Projekt wiederzukommen.
+    Beispiel::: Optische Gestaltung, Komfort-Funktionen
+Nicht-Ziele::
+    _Oder auch schärfer: *Darf-Nicht-Ziele*._ +
+    Dienen der Klarheit und der Abgrenzung, damit durch Übererfüllung keine unnötgen Kosten entstehen.
+
+== Zielbeziehungen
+
+
+== Operationalisierung
+
+Die Zielformulierung nach *SMART* ist am geläufigsten.
+
+IMPORTANT: _SMART_ ist nur eine Technik mit der sich leicht überprüfen lässt, ob eine Zielaussage *richtig formuliert* wurde, ähnlich einer _Rechtschreibprüfung_ für Ziele. Eine qualitative Überprüfung der Ziele ist damit nicht möglich!
+
+Wofür das Akronym _SMART_ steht ist nicht einheitlich definiert, meistens wrd aber etwa folgende Definition genutzt:
+
+**S**pecific::
+    **S**pezifisch bzw. konkret::: Das Ziel ist eindeutig und positiv beschrieben.
+    Beispiel::: _Jeder Anwender, der sich erfolgreich eingeloggt hat, sieht als erstes eine Startseite, auf der er die folgenden Module vorfindet: [...]_
+**M**easurable::
+    **M**essbar::: Qualität Kosten und Leistung sind überprüfbar beschrieben.
+    Beispiel::: _Die Dokumentation soll 10 Seiten lang sein und 5000 Wörter enthalten._
+**A**chievable::
+    **A**usführbar bzw. erreichbar::: Das Ziel ist realistisch erreichbar und soziel durchführbar.
+    Beispiel::: _Wir konzentrieren uns auf die Grundlagen: erst wenn das Oberflächenkonzept von Designer entworfen und vom Kunden abgenommen wurde, beginnen wir mit der Implementierung der Oberfläche._
+**R**elevant::
+    **R**elevant::: Das Ziel erbringt einen Mehrwert.
+    Beispiel::: _Der implementierte Report aggregiert die wichtigsten Informationen des Tages für Management-Entscheidungen._
+**T**ime-bound::
+    **T**ermingebunden::: Das Ziel ist zeitlich planbar.
+    Beispiel::: _Das Ziel ist spätestens 50 Tage nach Projektstart erreicht._
