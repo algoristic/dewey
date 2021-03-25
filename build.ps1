@@ -3,33 +3,30 @@
 #>
 [CmdletBinding()]
 Param(
-    [Parameter(Mandatory=$false)]
-    [String]$Src = ".\src\main\docs",
+    [Parameter(Mandatory=$true)]
+    [String]$Src,
 
-    [Parameter(Mandatory=$false)]
-    [string]$Dest = ".\dist",
+    [Parameter(Mandatory=$true)]
+    [string]$Dest,
 
-    [Parameter(Mandatory=$false)]
-    [string]$Resources = ".\src\main\resources",
+    [Parameter(Mandatory=$true)]
+    [string]$Resources,
 
-    [Parameter(Mandatory=$false)]
-    [switch]$Production = $false,
+    [Parameter(Mandatory=$true)]
+    [switch]$Production,
 
-    [Parameter(Mandatory=$false)]
-    [string]$Theme = "dark",
+    [Parameter(Mandatory=$true)]
+    [string]$Theme,
 
     # Definiere die Tiefe der Inhaltsverzeichnisses auf der Startseite
-    [Parameter(Mandatory=$false)]
-    [string]$TocLevels = 10,
+    [Parameter(Mandatory=$true)]
+    [string]$TocLevels,
 
     # Behält die ursprünliche Verzeichnisstruktur bei, wenn -Flatten:$false
-    [Parameter(Mandatory=$false)]
+    [Parameter(Mandatory=$true)]
     [switch]$Flatten = $true,
 
-    [Parameter(Mandatory=$false)]
-    [string]$TemplateRoot = ".\src\main\resources\templates",
-
-    [Parameter(Mandatory=$false)]
+    [Parameter(Mandatory=$true)]
     [ValidateSet("TRACE", "DEBUG","INFO","WARN","ERROR")]
     [String]$LogLevel = "INFO"
 )
@@ -287,7 +284,16 @@ Function Render-IncludeFile
 }
 
 # eigentliches Skript
-Write-Log "Src: $Src, Dest: $Dest"
+Write-Log "Params:"
+Write-Log "Src = $Src" INFO 1
+Write-Log "Dest = $Dest" INFO 1
+Write-Log "Resources = $Resources" INFO 1
+Write-Log "Production = $Production" INFO 1
+Write-Log "Theme = $Theme" INFO 1
+Write-Log "TocLevels = $TocLevels" INFO 1
+Write-Log "Flatten = $Flatten" INFO 1
+Write-Log "LogLevel = $LogLevel" INFO 1
+
 # build Verzeichnis leeren und neu aufbauen
 If(Test-Path $Dest)
 {
