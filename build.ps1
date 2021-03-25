@@ -278,11 +278,18 @@ Function Render-IncludeFile
         }
         return $Content
     }
-    $SrcPath = $DocumentItem.DirectoryName
-    $BuildFile = "$SrcPath\_$FileName"
-    $BuildContent | Out-File -FilePath $BuildFile -Encoding UTF8
-    & asciidoctor.bat -o $BuildPath -a stylesheet=$Css -a lang=de $BuildFile
-    Remove-Item -Force $BuildFile
+    If(-not (Test-Path $BuildPath))
+    {
+        $SrcPath = $DocumentItem.DirectoryName
+        $BuildFile = "$SrcPath\_$FileName"
+        $BuildContent | Out-File -FilePath $BuildFile -Encoding UTF8
+        & asciidoctor.bat -o $BuildPath -a stylesheet=$Css -a lang=de $BuildFile
+        Remove-Item -Force $BuildFile
+    }
+    Else
+    {
+        Write-Log "Skip existing: $FileName" DEBUG 2
+    }
 
     # baue den Link zur enrsprechenden Seite (sowie eine kurze Zusammenfassung der Themen) auf
     $ReplaceValue = "link:$TargetLink[$Title]::`n"
