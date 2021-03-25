@@ -37,3 +37,19 @@ Projekt-Ziele::
     Projekt-Ergebnis-Ziele:::
         _Auch Projekt-Sachziele oder Projekt-Leistungs-Ziele._ +
         Erstellung des Projektergebnis entsprechend der Anforderungen des Auftraggebers. (Nach *Funktion*, *Leistung* und *Qualität*.)
+
+== Anforderungen vs. Ziele
+*Beide* beschreiben etwas zu erreichendes.
+
+Anforderungen::
+* beschreiben eine zu erreichende Leistung
+* haben einen hohen Detaillierungsgrad
+* konkretisieren Ziele
+
+Ziele::
+* beschreiben einen zu erreichenden Zustand (aber nicht wie man dorthin gelangt)
+* sind oft wenig konkret
+
+IMPORTANT: Ziele sagen _was erreicht werden soll_, Anforderungen zeigen konkret _wie etwas erreicht werden soll_!
+
+_TODO: GRAFIK ERSTELLEN!_
