@@ -75,7 +75,7 @@ Function Write-Log
     $line += $Message
     if(Is-RightLevel -WriteLevel $Level)
     {
-        Write-Output $line
+        Write-Host $line
     }
 }
 
@@ -178,11 +178,13 @@ Function Render-IndexFile
             If($Doc -like "include:*")
             {
                 $Doc = $Doc.Substring(8)
+                Write-Log "Render include: $Doc" INFO 1
                 $IndexFileContent += Render-IncludeFile $Doc $Css "\$FileName"
             }
             ElseIf($Doc -like "index:*")
             {
                 $Doc = $Doc.Substring(6)
+                Write-Log "Render index: $Doc"
                 $IndexFileContent += Render-IndexFile "$Src\$Doc" $Css "\$FileName"
             }
             ElseIf($Doc -like ":dewey-template:*")
@@ -290,7 +292,7 @@ Function Render-IncludeFile
 }
 
 # eigentliches Skript
-Write-Log "Params:"
+Write-Log "Start :DEWEY: => Params:"
 Write-Log "Src = $Src" INFO 1
 Write-Log "Dest = $Dest" INFO 1
 Write-Log "Style = $Style" INFO 1
@@ -344,6 +346,7 @@ Else
 }
 
 # verarbeite zentrale index.ad
+Write-Log "Render index: index.ad"
 Render-IndexFile "$Src\index.ad" $BuildCss "~NONE~" | Out-Null
 
 If($Production)
