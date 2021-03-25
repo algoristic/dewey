@@ -10,13 +10,19 @@ Param(
     [string]$Dest,
 
     [Parameter(Mandatory=$true)]
-    [string]$Resources,
+    [string]$Templates,
 
     [Parameter(Mandatory=$true)]
     [switch]$Production,
 
     [Parameter(Mandatory=$true)]
-    [string]$Theme,
+    [string]$Style,
+
+    [Parameter(Mandatory=$false)]
+    [string]$StyleExtension,
+
+    [Parameter(Mandatory=$false)]
+    [string]$StyleTheme,
 
     # Definiere die Tiefe der Inhaltsverzeichnisses auf der Startseite
     [Parameter(Mandatory=$true)]
@@ -102,7 +108,7 @@ Function Resolve-Template
         [Parameter(Mandatory=$true)]
         [string]$Caller
     )
-    $TemplatePath = "$Resources\templates\$Template"
+    $TemplatePath = "$Templates\$Template"
     $Content = Get-Content $TemplatePath -Encoding UTF8
     $Resolved = ""
     $Content | % {
@@ -287,9 +293,11 @@ Function Render-IncludeFile
 Write-Log "Params:"
 Write-Log "Src = $Src" INFO 1
 Write-Log "Dest = $Dest" INFO 1
-Write-Log "Resources = $Resources" INFO 1
+Write-Log "Style = $Style" INFO 1
+Write-Log "StyleExtension = $StyleExtension" INFO 1
+Write-Log "StyleTheme = $StyleTheme" INFO 1
+Write-Log "Templates = $Templates" INFO 1
 Write-Log "Production = $Production" INFO 1
-Write-Log "Theme = $Theme" INFO 1
 Write-Log "TocLevels = $TocLevels" INFO 1
 Write-Log "Flatten = $Flatten" INFO 1
 Write-Log "LogLevel = $LogLevel" INFO 1
@@ -302,39 +310,28 @@ If(Test-Path $Dest)
 New-Item $Dest -ItemType "directory" | Out-Null
 
 # Erstelle build-style Datei (aus default+theme), nutze diese und lösche sie danach
-$DefaultCss = "$Resources\lib\style.css"
-$DefaultCssPath = (Get-Item $DefaultCss).FullName
-$ThemeCss = "$Resources\web\themes\$Theme.css"
-$CustomCss = "$Resources\web\custom.css"
-$ThemeExists = Test-Path $ThemeCss
-$BuildCss = $DefaultCssPath
-If($ThemeExists)
-{
-    Write-Log "Use theme $theme"
-    # Pfad für temporäre build-CSS
-    $BuildCss = "$Dest\_build.css"
-    # lese Inhalte (Standard und Theme)
-    $DefaultStyle = Get-Content $DefaultCss -Encoding UTF8
-    $CustomStyle = Get-Content $CustomCss -Encoding UTF8
-    $ThemeStyle = Get-Content $ThemeCss -Encoding UTF8
-    # schreibe Inhalte in build-CSS
-    $BuildStyle = @()
-    $DefaultStyle | % { $BuildStyle += $_ }
-    $CustomStyle | % { $BuildStyle += $_ }
-    $ThemeStyle | % { $BuildStyle += $_ }
+# Pfad für (temporäre) build-CSS
+$BuildCss = "$Dest\_build.css"
+$BuildStyle = @()
+$DefaultStyle = Get-Content $Style -Encoding UTF8
+$DefaultStyle | % { $BuildStyle += $_ }
 
-    # Wichtig: das Rausschreiben funktioniert nur so, da auf dem Standardweg (via Out-File)
-    # der Output-Typ immer "UTF-8-BOM" ist (anstatt) "UTF-8".
-    # Das wiederum sorgt dafür, dass das CSS keine externen Quellen lädt - wie z. B. fonts.google oder fontawesome.io
-    $Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding $False
-    [System.IO.File]::WriteAllLines($BuildCss, $BuildStyle, $Utf8NoBomEncoding)
-    $BuildCss = (Get-Item $BuildCss).FullName
-}
-Else
+If($StyleExtension -and (Test-Path $StyleExtension))
 {
-    Write-Log "Theme $Theme does not exist (under path '$ThemeCss')" WARN
-    Write-Log "Use default asciiDoc theme"
+    $CustomStyle = Get-Content $StyleExtension -Encoding UTF8
+    $CustomStyle | % { $BuildStyle += $_ }
 }
+
+If($StyleTheme -and (Test-Path $StyleTheme))
+{
+    $ThemeStyle = Get-Content $StyleTheme -Encoding UTF8
+    $ThemeStyle | % { $BuildStyle += $_ }
+}
+
+$Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding $False
+[System.IO.File]::WriteAllLines($BuildCss, $BuildStyle, $Utf8NoBomEncoding)
+$BuildCss = (Get-Item $BuildCss).FullName
+
 
 # Bilder kopieren
 If($Flatten) {
