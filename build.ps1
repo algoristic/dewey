@@ -310,6 +310,7 @@ Write-Log "Production = $Production" INFO 1
 Write-Log "TocLevels = $TocLevels" INFO 1
 Write-Log "Flatten = $Flatten" INFO 1
 Write-Log "LogLevel = $LogLevel" INFO 1
+$Stopwatch =  [system.diagnostics.stopwatch]::StartNew()
 
 # build Verzeichnis leeren und neu aufbauen
 If(Test-Path $Dest)
@@ -364,4 +365,6 @@ If($Production)
     # lösche leere Verzeichnisse rekursiv
 }
 Remove-Empty $Dest
-Write-Log "Finished!"
+$Stopwatch.Stop()
+$Time = $Stopwatch.Elapsed.ToString('hh\:mm\:ss\:fff')
+Write-Log "Finished! Elapsed Time: $Time"
