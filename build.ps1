@@ -67,7 +67,7 @@ Function Write-Log
     )
 
     $stamp = (Get-Date).ToString("yyyy/MM/dd HH:mm:ss")
-    $line = "$stamp $Level"
+    $line = [string]::Format("{0} {1,-6}", $stamp, $Level)
     for($i = 0; $i -le $Depth; $i++)
     {
         $line += "  "
