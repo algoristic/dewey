@@ -9,7 +9,7 @@ set COMMAND=%COMMAND% -StyleTheme .\src\main\resources\web\themes\dark.css
 set COMMAND=%COMMAND% -Templates .\src\main\resources\templates
 set COMMAND=%COMMAND% -TocLevels 4
 set COMMAND=%COMMAND% -Production:$false
-set COMMAND=%COMMAND% -Flatten:$false
+set COMMAND=%COMMAND% -Flatten:$true
 set COMMAND=%COMMAND% -LogLevel DEBUG
 
 powershell.exe -ExecutionPolicy Unrestricted -Command %COMMAND%
