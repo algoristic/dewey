@@ -22,8 +22,20 @@ Wird das Skript `build.ps1` über die exemplarischen Batch-Dateien `build.dev.ba
 
 == dewey-Funktionen
 
-_TO-DO_
-
 === Parameter
 
-=== Dokumente
+* *Src*: Legt den Pfad fest, unter dem sich die zu rendernden Dokumente befinden, hier muss sich als Einstieg eine `index.ad`-Datei befinden.
+* *Dest*: Legt den Zielpfad für die gerenderten Dateien fest.
+* *Style*: Legt die `CSS`-Datei fest, die den Standard-Style der generierten HTML-Seiten festlegt.
+    ** Unter `src/main/resources/lib/style.css` liegt das _AsciiDoctor Default Stylesheet_ zur Verwendung bereit.
+* *StyleExtension*: _[optional]_ Legt eine `CSS`-Datei fest, die den Standard-Syle ergänzt  .
+* *StyleTheme*: _[optional]_ Legt eine weitere `CSS`-Datei fest, die den Standard-Syle ergänzt.
+* *Templates*: Legt den Ordner fest, in dem sich die Vorlagendateien befinedn.
+* *TocLevels*: Legt die Tiefe der generierten Inhaltsverzeichnisse fest, wenn diese nicht fest in den `.ad`-Dateien gesetzt wurde.
+* *Production*: Führt das Skript im `Production`-Modus aus -- Abschnitte, die mit `dev:` markiert sind werden ignoriert und sämtliche `build`-Artefakte werden gelöscht.
+* *Flatten*: `true` "glättet" die Ordnerstruktur, sodass sämtliche generierten `.html`-Dateien direkt ins _Dest_-Verzeichnis gerendert werden. Außerdem wird ein zentraler Ordner für Bilder angelegt. _Namensgleichheiten sind zu vermeiden!_ `false` belässt die Verzeichnisstrukturen so, wie sie sind.
+* *LogLevel*: Legt das Level fest, auf dem das Log geschrieben wird. Die meisten Meldungen werden unter `INFO` herausgeschrieben, `DEBUG` ergänzt diese Informationen um `build`- und `render`-Zeiten
+
+=== Dokumenterstellung
+
+_TO-DO_
