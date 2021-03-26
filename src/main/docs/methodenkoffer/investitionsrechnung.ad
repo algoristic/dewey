@@ -2,6 +2,7 @@
 :dewey-template: default.doc.ad
 
 :imagesdir: images
+:stem:
 
 Die Investitionsrechnung soll die finanzielle Auswirkung einer Investition prognostizieren, um eine Investitionsentscheidung treffen zu können. Im Grunde geht es um die Frage "Ist die Investition günstiger als die Nicht-Investition?"
 
@@ -22,10 +23,13 @@ image::berechnung_statisch_001.png[Übersicht statische Berechnungsmethoden, 550
 
 Der sogenannte Break-Even-Point ist Verkaufsmenge, an der die Kosten vollständig von den Erlösen gedeckt werden und das Ergebnise in die Gewinnzone gelangt. Die Kosten werden dabei als Gesamtkosten aus fixen Investitionskosten und variablen Stück- oder Betriebskosten betrachtet.
 
-.Rechenformel
-image::break_even_analyse_002.png[Rechenformel, 200, align="center"]
+stem:["Break-Even-Menge" = "Fixkosten" / ("Stückpreis" - "variable Kosten")]
 
 .Break-Even-Analyse
 image::break_even_analyse_001.png[Break-Even-Analyse, 420, align="center"]
 
 == Dynamische Verfahren
+
+=== Kapitalwertmethode
+
+=== Interne Zinsfußmethode
