@@ -52,4 +52,5 @@ Ziele::
 
 IMPORTANT: Ziele sagen _was erreicht werden soll_, Anforderungen zeigen konkret _wie etwas erreicht werden soll_!
 
-_TODO: GRAFIK ERSTELLEN!_
+.Ziele, Anforderungen ihre Herkunft
+image::ziele_und_anforderungen_001.png[Ziele Anforderungen ihre Herkunft, 500, align="center"]
