@@ -200,6 +200,18 @@ Function Render-IndexFile
                     $Doc = $Doc.Substring(4)
                 }
             }
+            If($Doc -like "prod:*")
+            {
+                If(-not $Production)
+                {
+                    $IndexFileContent += ""
+                    Continue
+                }
+                Else
+                {
+                    $Doc = $Doc.Substring(5)
+                }
+            }
             If($Doc -like "include:*")
             {
                 $Doc = $Doc.Substring(8)
