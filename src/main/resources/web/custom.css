@@ -145,6 +145,12 @@ a:hover, a:focus {
     }
 }
 /* SPECIFIC CONSTRUCTS */
+.overview-link {
+    font-weight: 300;
+    font-size: 1.25em;
+    word-spacing: -.05em;
+    line-height: 1.2;
+}
 #traditional-vs-agile-table tbody tr td:first-child {
     background: var(--header-background);
 }

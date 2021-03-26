@@ -120,6 +120,25 @@ Function Resolve-Template
     Return $Resolved
 }
 
+Function Render-ContentLink
+{
+    [CmdletBinding()]
+    Param(
+        [Parameter(Mandatory=$true)]
+        [string]$Link,
+
+        [Parameter(Mandatory=$true)]
+        [string]$Title,
+
+        [Parameter(Mandatory=$true)]
+        [array]$Content
+    )
+    $Text = "[overview-link]#link:$TargetLink[$Title]#`n"
+    $ContentSummary = Render-ContentSummary $Content
+    $Text += "[horizontal]`n&mdash;::: $ContentSummary`n `n"
+    Return $Text
+}
+
 Function Render-ContentSummary
 {
     [CmdletBinding()]
@@ -225,10 +244,8 @@ Function Render-IndexFile
         $TargetLink += ".html"
     }
 
-    $Value = "link:$TargetLink[$Title]::`n"
-    $ContentSummary = Render-ContentSummary $File
-    $Value += "[no-justify]#&mdash; $ContentSummary#`n `n"
-    Return $Value
+    $Link = Render-ContentLink $TargetLink $Title $File
+    Return $Link
 }
 
 Function Render-IncludeFile
@@ -298,10 +315,8 @@ Function Render-IncludeFile
     }
 
     # baue den Link zur enrsprechenden Seite (sowie eine kurze Zusammenfassung der Themen) auf
-    $ReplaceValue = "link:$TargetLink[$Title]::`n"
-    $ContentSummary = Render-ContentSummary $OriginalContent
-    $ReplaceValue += "[no-justify]#&mdash; $ContentSummary#`n `n"
-    Return $ReplaceValue
+    $Link = Render-ContentLink $TargetLink $Title $OriginalContent
+    Return $Link
 }
 
 # eigentliches Skript
