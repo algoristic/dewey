@@ -24,11 +24,16 @@ include:projektmanagement\grundlagen\organisation\unterstuetzungsfunktionen.ad
 include:projektmanagement\grundlagen\organisation\hilfsmittel.ad
 include:projektmanagement\grundlagen\organisation\multiprojektmanagement.ad
 
-dev:== Initialisierung
-dev:include:projektmanagement\initialisierung\initialisierung.ad
+== Initialisierung
+include:projektmanagement\initialisierung\initialisierung.ad
 
-dev:== Definition
-dev:include:projektmanagement\definition\definition.ad
-dev:include:projektmanagement\definition\meetings.ad
-dev:include:projektmanagement\definition\dokumente.ad
-dev:include:projektmanagement\definition\ziele.ad
+== Definition
+include:projektmanagement\definition\definition.ad
+
+=== Zielfindung
+include:projektmanagement\definition\zielfindung\ziele.ad
+include:projektmanagement\definition\zielfindung\zielfindungsprozess.ad
+
+=== Organsatorisches
+include:projektmanagement\definition\organisatorisches\meetings.ad
+include:projektmanagement\definition\organisatorisches\dokumente.ad
