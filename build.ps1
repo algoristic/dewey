@@ -174,8 +174,11 @@ Function Render-IndexFile
         [Parameter(Mandatory=$true)]
         [int]$LogDepth
     )
+    $RenderStopwatch =  [system.diagnostics.stopwatch]::StartNew()
+
     $File = Get-Content $FilePath -Encoding UTF8
     $FileName = [System.IO.Path]::GetFileNameWithoutExtension($FilePath)
+    $FullFileName = [System.IO.Path]::GetFileName($FilePath)
     $IndexFileContent = ""
 
     $Title = ""
@@ -200,13 +203,13 @@ Function Render-IndexFile
             If($Doc -like "include:*")
             {
                 $Doc = $Doc.Substring(8)
-                Write-Log "Render include: $Doc" INFO ($LogDepth + 1)
+                Write-Log "Build include: $Doc" INFO ($LogDepth + 1)
                 $IndexFileContent += Render-IncludeFile $Doc $Css "\$FileName" ($LogDepth + 2)
             }
             ElseIf($Doc -like "index:*")
             {
                 $Doc = $Doc.Substring(6)
-                Write-Log "Render index: $Doc" INFO ($LogDepth + 1)
+                Write-Log "Build index: $Doc" INFO ($LogDepth + 1)
                 $IndexFileContent += Render-IndexFile "$Src\$Doc" $Css "\$FileName" ($LogDepth + 2)
             }
             ElseIf($Doc -like ":dewey-template:*")
@@ -234,9 +237,14 @@ Function Render-IndexFile
             $IndexFileContent += ""
         }
     }
-    $Index = "$Dest\$FileName.ad"
+    $Index = "$Dest\$FullFileName"
     $IndexFileContent | Out-File -FilePath $Index -Encoding UTF8
+
+    $BuildStopwatch =  [system.diagnostics.stopwatch]::StartNew()
     & asciidoctor.bat -a stylesheet=$Css -a lang=de -q $Index
+    $BuildStopwatch.Stop()
+    $BuildTime = $BuildStopwatch.Elapsed.ToString('hh\:mm\:ss\:fff')
+    Write-Log "Build time ($FullFileName): $BuildTime" DEBUG $LogDepth
 
     $TargetLink = ".\$FileName"
     If(-not $Production)
@@ -245,6 +253,9 @@ Function Render-IndexFile
     }
 
     $Link = Render-ContentLink $TargetLink $Title $File
+    $RenderStopwatch.Stop()
+    $RenderTime = $RenderStopwatch.Elapsed.ToString('hh\:mm\:ss\:fff')
+    Write-Log "Render time ($FullFileName): $RenderTime" DEBUG $LogDepth
     Return $Link
 }
 
@@ -265,6 +276,7 @@ Function Render-IncludeFile
         [int]$LogDepth
     )
 
+    $RenderStopwatch =  [system.diagnostics.stopwatch]::StartNew()
     $Document = "$Src\$File"
     $DocumentItem = Get-Item($Document)
     $DocumentPath = $DocumentItem.FullName
@@ -306,8 +318,12 @@ Function Render-IncludeFile
         $SrcPath = $DocumentItem.DirectoryName
         $BuildFile = "$SrcPath\_$FileName"
         $BuildContent | Out-File -FilePath $BuildFile -Encoding UTF8
+        $BuildStopwatch =  [system.diagnostics.stopwatch]::StartNew()
         & asciidoctor.bat -o $BuildPath -a stylesheet=$Css -a lang=de $BuildFile
         Remove-Item -Force $BuildFile
+        $BuildStopwatch.Stop()
+        $BuildTime = $BuildStopwatch.Elapsed.ToString('hh\:mm\:ss\:fff')
+        Write-Log "Build time ($FileName): $BuildTime" DEBUG $LogDepth
     }
     Else
     {
@@ -316,6 +332,9 @@ Function Render-IncludeFile
 
     # baue den Link zur enrsprechenden Seite (sowie eine kurze Zusammenfassung der Themen) auf
     $Link = Render-ContentLink $TargetLink $Title $OriginalContent
+    $RenderStopwatch.Stop()
+    $RenderTime = $RenderStopwatch.Elapsed.ToString('hh\:mm\:ss\:fff')
+    Write-Log "Render time ($FileName): $RenderTime" DEBUG $LogDepth
     Return $Link
 }
 
