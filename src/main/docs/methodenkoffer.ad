@@ -1,0 +1,8 @@
+= Methodenkoffer
+:dewey-template: index.topic.ad
+
+== Kosten und Nutzen
+
+include:methodenkoffer\kosten-und-nutzenarten.ad
+include:methodenkoffer\stundensatz.ad
+include:methodenkoffer\investitionsrechnung.ad

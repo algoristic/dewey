@@ -1,0 +1,97 @@
+<mxfile host="Electron" modified="2021-03-26T08:28:41.024Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.1.8 Chrome/87.0.4280.88 Electron/11.1.1 Safari/537.36" etag="5xHxW2_3FSziDLl_fM3u" compressed="false" version="14.1.8" type="device">
+  <diagram id="tu2jqCNHXQWSxaOwyR4i" name="Seite-1">
+    <mxGraphModel dx="769" dy="484" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-1" value="Netto-Arbeitszeit pro Jahr" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;strokeColor=#d79b00;fillColor=#ffcd28;gradientColor=#ffa500;" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-2" value="Tage je Jahr" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="40" y="60" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-3" value="- Wochenende" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="40" y="80" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-4" value="- Feiertage" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="40" y="100" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-5" value="- Urlaub" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="40" y="120" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-7" value="= Normalarbeitszeit" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="40" y="140" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-8" value="- Weiterbildung" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="40" y="180" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-9" value="= Brutto-Arbeitszeit" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="40" y="200" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-10" value="- Verteilzeit bzw. nicht produktive Arbeitszeit (bspw. Besprechungen, Verwaltungsaufgaben) ca. 8%" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="40" y="220" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-11" value="- Krankheit (Pauschale)" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="40" y="160" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-12" value="= Netto-Arbeitszeit" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="40" y="280" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-26" value="Interner Stundensatz" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;gradientColor=#ffd966;" parent="1" vertex="1">
+          <mxGeometry x="280" y="40" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-27" value="Gehalt p. a." style="rounded=0;whiteSpace=wrap;html=1;align=left;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="280" y="60" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-29" value="- Sozialabgabe Arbeitgeber" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="280" y="80" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-30" value="- Gemeinkostenzuschlag (unternehmensindviduell)" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="280" y="100" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-31" value="= Mitarbeiterkosten je Stunde" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="280" y="220" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-32" value="= Mitarbeiterkosten p. d." style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="280" y="180" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-33" value="= Mitarbeiterkosten p. a." style="rounded=0;whiteSpace=wrap;html=1;align=left;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="280" y="140" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-34" value="/ Netto-Arbeitszeit Tage p. a." style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="280" y="160" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-44" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=elbowEdgeStyle;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" source="1qs7x0QP8bx6zekQD0Fm-12" target="1qs7x0QP8bx6zekQD0Fm-34" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="290" as="sourcePoint" />
+            <mxPoint x="380" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-45" value="Mitarbeiterkosten je Stunde" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="500" y="60" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-46" value="+ Gewinnzuschlag (unternehmensindividuell)" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="500" y="80" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-47" value="= Mitarbeiterstundensatz" style="rounded=0;whiteSpace=wrap;html=1;align=left;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="500" y="160" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-51" value="+ Kostenpuffer / Risikozuschlag (optional, unternehmensindividuell)" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+          <mxGeometry x="500" y="120" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-53" value="Externer Stundensatz" style="rounded=0;whiteSpace=wrap;html=1;align=center;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;gradientColor=#97d077;" parent="1" vertex="1">
+          <mxGeometry x="500" y="40" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-54" value="" style="endArrow=classic;html=1;edgeStyle=elbowEdgeStyle;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" source="1qs7x0QP8bx6zekQD0Fm-31" target="1qs7x0QP8bx6zekQD0Fm-45" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="210" as="sourcePoint" />
+            <mxPoint x="670" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1qs7x0QP8bx6zekQD0Fm-55" value="/ Tagesarbeitszeit" style="rounded=0;whiteSpace=wrap;html=1;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="280" y="200" width="180" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,15 @@
+= Personalkosten
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+
+== Stundensatzberechnung
+Zur Berechnung des Stundensatzes werden aktuelle tarifliche Werte und die Kosten- und Vermögenswerte des jeweils vergangenen Jahres verwendet. Dieser Wert wird sowohl zur innerbetrieblichen Leistungsverrechnung als auch zur Angebotskalkulation für externe Aufträge verwendet.
+
+.Stundensatz berechnen
+image::stundensatz_002.png[Stundensatz berechnen, 500, align="center"]
+
+=== Beispielrechnung
+
+.Beispielrechnung Stundensatz
+image::stundensatz_001.png[Beispielrechnung Stundensatz, 500, align="center"]

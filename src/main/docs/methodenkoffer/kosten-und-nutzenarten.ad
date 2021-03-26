@@ -1,0 +1,74 @@
+= Kosten und Nutzenarten
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+
+Investitionsentscheidungen werden zumeist im Vorfeld in anderen Bereichen (oder auf höheren Ebenen) getroffen. Daher spielt de Betrachtung von Kosten und Nutzen für uns zumeist eine nachrangige Rolle im Tagesgeschäft. Sie sollte allerdings auch nicht komplett vernachlässigt werden, es sich dabei um eine betriebswirtschaftliche Grundkompetenz handelt, die im Rahmen von Entscheidungen immer wieder zur Rechtfertigung verwendet werden kann.
+
+Für die Berechnung ist allerdings eine Übersicht der möglichen anfallenden Kosten und der resultierenden Formen des Nutzens notwendig. Daher beginnen wir mit einer kurzen Übersicht (die im Übrigen nicht den Anspruch auf Vollständgkeit erhebt aber sicherlich einen kleinen Überblick liefert und zum weiteren Nachdenken anregen kann).
+
+== Kostenarten
+Eine kurze Übersicht über die wichtigten Kostenarten im IT-Umfeld und wo sie entstehen können.
+
+Einmalige Kosten / Investitionskosten::
+    Projektkosten:::
+        . Sachmittel: Hard- und Software, Büromaterial, Raummiete, ...
+        . Externe Leistungen: Dienstleistungen von externen Unternehmen, Freelancern, ...
+        . Interne Leistungen: Personalkosten
+        . Schulungen: Schulungen und Fortbildungen der Projektmitarbeiter aber auch Kundenschulungen (Kosten für den Referenten, das Arbeitsmaterial, etc.)
+        . Reisen: Reisekosten und Unterbringung
+        . Weitere: Übersetzungen, Gutachten, Bonitätsauskünfte, ...
+    Hard- und Softwarekosten:::
+        . IT-Infrastruktur: Anschaffung von Servern, Netzwerkausrüstung, Laptops, Betrebssystemen
+        . Lizenzen: Lizenzgebühren bei Softwarekauf
+    Sonstige:::
+        . "Unkosten": Kosten durch vorzeitige Auflösung oder Kündigung von Verträgen (Leasing, Wartung, ...)
+Laufende Kosten / Betriebskosten::
+    Hard- und Softwarekosten:::
+        . Abschreibungen: Jährliche Abschreibungen auf IT-Hardware und Anwendungssysteme
+        . Wartung / Instandhaltung: für IT-Hardware und Anwendungssysteme
+        . Miete: Räumlichkeiten, SaaS, ...
+        . Energiekosten: Strom, Kühlungssysteme, ...
+    Personalkosten:::
+        . Entwicklung: Software-, Requirements-, Security-Engineering, ...
+        . IT-Infrastruktur: Betriebsmanagement
+        . Management: Disziplinarische Leitung
+    Sonstige:::
+        . Business-Prozesskosten: Personal, Dienstleistungen
+Versteckte Kosten / Nicht-budgetierte Kosten::
+    Unproduktive Nutzung:::
+        . Enduser-Kosten: Hey-Joe-Prinzip, ...
+    Produktivitätsausfälle:::
+        . Geplante Downtime: Updates, ...
+        . Ungeplante Downtime: Ausfälle, Bugs, ...
+
+== Nutzenarten
+
+Während sich die meisten Kosten gut monetär bewerten lassen, gibt es beim Nutzen, bspw. im Rahmen der produktgetriebenen Entwicklung, viele Faktoren, die nur schwer quantitativ zu erfassen sind.
+
+Quantitativer Nutzen::
+    Kosteneinsparung:::
+        . Personal: Zusammenlegung von Stellen, ...
+        . Material: weniger Verbrauch, bessere Ausnutzung, ...
+    Produktivitätssteigerung:::
+        . Erhöhung der Anzahl: Kunden, Produkte, Leistungen, ...
+        . Performance-Gewinn: Erhöhtes Transaktionsvolumen, Skalierbarkeit
+Qualitativer Nutzen::
+    Erhöhte Servicequalität:::
+        . Erreichbarkeit: Zeiteinparung beim Kunden, Risikosenkung, ...
+        . Ergonomie: Barrierefreiheit, höhere Attraktivität für Nutzer, ...
+    Erhöhte Entscheidungseffizenz:::
+        . KPIs: Verfürgbarkeit von Informationen
+
+=== Pyramide der Nutzenelemente
+
+Die Pyramide der Nutzenelementefootnote:[Quelle: angelehnt an Almquist, Senior, Bloch: Was Produkte wertvoll macht. Harvard Business Manager 10/2016] (die ich hier zur Vereinfachung in Textform wiedergegeben habe) schafft eine übersicht der verschiedenen Aspekte des Nutzens eine Produktes. Sie kann als Ideengeber fungieren aber auch eine Argumentationsgrundlage für bereits entwickelte Software liefern.
+
+Gesellschaftliche Wirtkung::
+    Selbsttranszendenz
+Nutzen durch Lebensveränderung::
+    Motivation, Hoffnung, Vererbung, Selbstverwrklichung, Zugehörigkeit und Einbindung
+Emotionaler Nutzen::
+    Sorgenfreiheit, Belohnung, Nostalgie, Design und Ästhetik, Image, Wohlergehen, therapeutischer Wert, Spaß und Unterhaltung, Attraktivität, Zugang
+Funktionaler Nutzen::
+    Zeitersparnis, Vereinfachung, mehr Einkünfte, Risikosenkung, Organisation, Integration, Verbindung, Aufwandssenkung, Konfliktvermeidung, Kostensenkung, Qualität, Vielfalt, sensorische Attraktivität, AUfklärung
