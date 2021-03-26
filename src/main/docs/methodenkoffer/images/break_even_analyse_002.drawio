@@ -1,0 +1,22 @@
+<mxfile host="Electron" modified="2021-03-26T10:53:24.998Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.1.8 Chrome/87.0.4280.88 Electron/11.1.1 Safari/537.36" etag="o0ml5MfI3VQnLzZX7VRg" compressed="false" version="14.1.8" type="device">
+  <diagram id="5WZZvxEBvL5ExUomgLbI" name="Seite-1">
+    <mxGraphModel dx="439" dy="277" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#000000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zdnxf9mfUe7O4XI5CTcb-1" value="Fixkosten" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="270" y="140" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="zdnxf9mfUe7O4XI5CTcb-2" value="Stückpreis - variable Kosten" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="270" y="160" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="zdnxf9mfUe7O4XI5CTcb-3" value="" style="endArrow=none;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;fontColor=#FFFFFF;strokeColor=#FFFFFF;" edge="1" parent="1" source="zdnxf9mfUe7O4XI5CTcb-2" target="zdnxf9mfUe7O4XI5CTcb-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="210" as="sourcePoint" />
+            <mxPoint x="280" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
