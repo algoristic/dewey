@@ -23,38 +23,39 @@ image::berechnung_statisch_001.png[Übersicht statische Berechnungsmethoden, 550
 
 Der sogenannte Break-Even-Point ist Verkaufsmenge, an der die Kosten vollständig von den Erlösen gedeckt werden und das Ergebnise in die Gewinnzone gelangt. Die Kosten werden dabei als Gesamtkosten aus fixen Investitionskosten und variablen Stück- oder Betriebskosten betrachtet.
 
-.Rechenformel
-
-Seien +
-stem:["BEM" = "Break-Even-Menge"] +
-stem:[K_"fix" = "Fixkosten"] +
-stem:[K_"var" = "variable Kosten"] +
-stem:[P = "Stückpreis"]
-
-Dann gilt: +
-stem:["BEM" = K_"fix" / ("P" - K_"var")]
+Rechenformel::
+    Seien:::
+        stem:["BEM" = "Break-Even-Menge"] +
+        stem:[K_"fix" = "Fixkosten"] +
+        stem:[K_"var" = "variable Kosten"] +
+        stem:[P = "Stückpreis"]
+    Dann gilt:::
+        stem:["BEM" = K_"fix" / ("P" - K_"var")]
 
 .Break-Even-Analyse
 image::break_even_analyse_001.png[Break-Even-Analyse, 420, align="center"]
 
 == Dynamische Verfahren
+Die dynamischen versuchen die Rendite der Investition vergleichbar zu machen mit einer Investition am Kapitalmarkt zum gleichen Zeitpunkt. Basis dafür ist der Zins, den man zum Zeitpunkt der Berechnung im Schnitt mit einem Investment am Kapitalmarkt erzielen kann.
 
 === Kapitalwertmethode
+Aufgrund von Verzinsung hat jeder Geldbetrag einen umso höheren Wert, je eher man ihn erhält. Dieser Umstand wird hier über eine *Abzinsung* dargestellt, die jedes Jahr größer ausfällt, da die Einnahmen ja zu einem umso späteren Zeitpunkt verfügbar sind. Damit wird versucht den Vergleich mit einer Investition am Kapitalmarkt zu simulieren, bei der das Geld entsprechend verzinst wird.
 
-Seien +
-stem:[Z_t = "Cashflow zum Zeitpunkt " t] +
-stem:[t = "Jahr"] +
-stem:[r = "Zins"]
+Für die Abzinsung wird aus den verfügbaren Daten ein sogenannter *Abzinsungsfaktor* errechnet, mit dem die verrechneten Einnahmen und Ausgaben des jeweiligen Jahres multipliziert werden.
 
-Dann ergibt sich für die Summe der Investitionen: +
-stem:[Z_0 + sum_(t=1)^TZ_t/(1+r)^t]
+Berechnung des Abzinsungsfaktors::
+    Seien:::
+        stem:[Z_t = "Cashflow zum Zeitpunkt " t] +
+        stem:[t = "Jahr"] +
+        stem:[r = "Zins"]
+    Dann ergibt sich für die Summe der Investitionen:::
+        stem:[Z_0 + sum_(t=1)^TZ_t/(1+r)^t]
+    Daraus ergibt sich für jedes Jahr:::
+        stem:[Z_t/(1+r)^t = Z_t 1/(1+r)^t]
+    Der Abzinsungsfaktor ist also:::
+        stem:[1/(1+r)^t]
 
-Daraus ergibt sich für jedes Jahr: +
-stem:[Z_t/(1+r)^t = Z_t 1/(1+r)^t]
-
-Der Abzinsungsfaktor ist also: +
-stem:[1/(1+r)^t]
-
+==== Kapitalwertmethode tabellarisch dargestellt
 [width="100%",cols="^,>,>,>,>",options=header]
 |===
 |Jahr
@@ -87,3 +88,18 @@ faktor
 
 
 === Interne Zinsfußmethode
+Mit der _Zinsfußmethode_ lässt sich aus der Differenz zweier _Cashflows_ zu verschiedenen Zeitpunkten der _Abzinsungsfaktor_ (zumindest grob) errechnen. Damit lässt sich eine theoretische mittlere Rendite für das betrachtete Jahr ermitteln.
+
+_Der ermittelte Abszinsungsfaktor kann selbstverständlich auch in der Kapitalwertmethode genutzt werden._
+
+Berechnungsbeispiel::
+    Gegeben sei die Formel:::
+        stem:[0 = t_0 + 1/(1+i)t_1] +
+        stem:[<=> 1+i =  t_1/t_0]
+    Und seien:::
+        stem:[t_0 = -100000"€"] +
+        stem:[t_1 = 1100000"€"]
+    Dann ergibt sich:::
+        stem:[1+i =  (110000"€")/(100000"€")] +
+        stem:[<=> i = 0,1] +
+        stem:[=> 10% "Zinsen"]
