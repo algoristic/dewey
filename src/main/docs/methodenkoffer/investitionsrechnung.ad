@@ -55,4 +55,35 @@ stem:[Z_t/(1+r)^t = Z_t 1/(1+r)^t]
 Der Abzinsungsfaktor ist also: +
 stem:[1/(1+r)^t]
 
+[width="100%",cols="^,>,>,>,>",options=header]
+|===
+|Jahr
+|Ausgaben
+|Ertrag
+|Abzinsungs-
+faktor
+|Kapitalwert
+
+|0
+|50.000,00
+|0,00
+|1,00
+|-50.000,00
+
+|1
+|0,00
+|10.000,00
+|0,94
+|9.400,00
+
+|2
+|...
+|...
+|...
+|...
+
+
+|===
+
+
 === Interne Zinsfußmethode

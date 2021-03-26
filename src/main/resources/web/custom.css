@@ -48,6 +48,9 @@ p, blockquote, dt, td.content, span.alt {
 p {
     text-align: justify;
 }
+p.tableblock {
+    text-align: inherit;
+}
 .no-justify {
     hyphens: unset;
     text-align: left;
