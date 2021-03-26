@@ -23,7 +23,16 @@ image::berechnung_statisch_001.png[Übersicht statische Berechnungsmethoden, 550
 
 Der sogenannte Break-Even-Point ist Verkaufsmenge, an der die Kosten vollständig von den Erlösen gedeckt werden und das Ergebnise in die Gewinnzone gelangt. Die Kosten werden dabei als Gesamtkosten aus fixen Investitionskosten und variablen Stück- oder Betriebskosten betrachtet.
 
-stem:["Break-Even-Menge" = "Fixkosten" / ("Stückpreis" - "variable Kosten")]
+.Rechenformel
+
+Seien +
+stem:["BEM" = "Break-Even-Menge"] +
+stem:[K_"fix" = "Fixkosten"] +
+stem:[K_"var" = "variable Kosten"] +
+stem:[P = "Stückpreis"]
+
+Dann gilt: +
+stem:["BEM" = K_"fix" / ("P" - K_"var")]
 
 .Break-Even-Analyse
 image::break_even_analyse_001.png[Break-Even-Analyse, 420, align="center"]
@@ -31,5 +40,19 @@ image::break_even_analyse_001.png[Break-Even-Analyse, 420, align="center"]
 == Dynamische Verfahren
 
 === Kapitalwertmethode
+
+Seien +
+stem:[Z_t = "Cashflow zum Zeitpunkt " t] +
+stem:[t = "Jahr"] +
+stem:[r = "Zins"]
+
+Dann ergibt sich für die Summe der Investitionen: +
+stem:[Z_0 + sum_(t=1)^TZ_t/(1+r)^t]
+
+Daraus ergibt sich für jedes Jahr: +
+stem:[Z_t/(1+r)^t = Z_t 1/(1+r)^t]
+
+Der Abzinsungsfaktor ist also: +
+stem:[1/(1+r)^t]
 
 === Interne Zinsfußmethode
