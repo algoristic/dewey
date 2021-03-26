@@ -4,4 +4,26 @@ Einfach der Versuch nach und nach eine Wissendatenbank für mich aufzubauen...
 
 Der Name dieses Projektes bezieht sich auf https://de.wikipedia.org/wiki/Melvil_Dewey[Melvil Dewey], den Erfinder der https://de.wikipedia.org/wiki/Dewey-Dezimalklassifikation[Dewey-Dezimalklassifikation] für Bibliotheksestände.
 
-Live Version: http://wiki.algoristic.de/
+*Prod* Version: http://wiki.algoristic.de/ +
+*Develop* System: http://dewey.algoristic.de/
+
+== Getting Started
+
+Das Projekt erfordert, dass `Ruby` auf dem System installiert ist, ebenso wie das `gem` Asciidoctor. Einstieg für die Installation unter Windows ist die Anleitung auf https://docs.asciidoctor.org/asciidoctor/latest/install/windows/[asciidoctor.org].
+
+Wird das Skript `build.ps1` über die exemplarischen Batch-Dateien `build.dev.bat` oder `build.prod.bat` gestartet, so sollte der `build`-Prozess ohne Probleme starten. Andernfalls sollte zunächst geprüft werden, ob die `ExecutionPolicy` von `PowerShell` den Start des Skripts möglicherweise verhindert.
+
+== Inhalte erstellen
+
+. Die Bilder zu einem Artikel sollten immer in einem `images`-Ordner liegen, der sich auf einer Ebene mit dem Artikel befindetfootnote:[Das gilt *nicht* für Artikel, die via `include`-Makro in einen anderen Artikel eingebunden sind und sich auf einer anderen Ebene als der inkludierende Artikel befinden.].
+. Die Bilder in diesem Projekt wurden mit https://www.draw.io/[draw.io] erstellt, da dies die Erstellung von Diagrammen und Grafiken aller Art unterstützt und diese in serialisierter (und damit versionierbarer) Form speichern kann.
+    ** _Hinweis_: Um die Daten serialisiert zu speichern im Programm auf _Datei_ > _Eigenschaften_ > _Komprimiert_ gehen und dort das Häkchen entfernen.
+. __STEM__-Formelnfootnote:[**S**cience, **T**echnology, **E**ngineering and **M**ath] werden automatisch über das https://docs.asciidoctor.org/asciidoc/latest/stem/stem/[AsciiMath]-Makro (http://asciimath.org/[Syntax]) dargestellt, dazu sind keine weiteren Installationen notwendig
+
+== dewey-Funktionen
+
+_TO-DO_
+
+=== Parameter
+
+=== Dokumente
