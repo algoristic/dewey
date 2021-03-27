@@ -1,0 +1,33 @@
+= Stakeholdermanagement
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+
+== Stakeholder
+Definition:: Stakeholder sind Personen, Gruppen und Organisationen, die von dem Projekt direkt oder indirekt betroffen sind, ein Interesse daran haben oder es beeinflussen können.
+
+IMPORTANT: Der Projekterfolg hängt _maßgeblich_ vom Einfluss der betroffenen Personengruppen ab.
+
+Beispiele::
+    Intern:::
+        * Betriebsrat
+        * Beauftragte (z. B. Datenschutz oder QM)
+        * Vorstände, Linienmanager
+        * Mitglieder des Lenkungskreises
+        * von Veränderungen betroffene Mitarbeiter außerhalb des Projektteams
+        * Projketleiter und Projektteam
+    Extern:::
+        * Auftraggeber
+        * Mitareiter des AUftraggebers
+            ** Anwender
+            ** Wichtig bei IT-Projekten: IT-Abteilung, die den Betrieb einer Lösung durchführen soll
+        * Lieferanten
+        * Kunden
+        * Konkurrenten
+
+== Ziele
+Ziel des Stakehodermanagements ist es, die Bedürfnisse der Stakeholder zu identifizieren und im Projekt zu berücksichtigen -- dies wird initial im Rahmen der Projektplanung zwar strukturiert durchgeführt, ist aber während des gesamten Projektes zu leisten!
+
+Entscheiden ist es die Ziele des Projektes mit denen der Stakeholder in Einklang zu bringen. Dazu müssen die Stakeholder identifiziert und ernst genommen werden, da der Projekterfolg maßgeblich von deren Akzeptanz abhängt.
+
+Gutes Stakeholdermanagement räumt Zielkonflikte aus dem Weg, maximiert positive Einflüsse, minimiert negative (_destruktive_) Einflüsse und berücksichtigt (_konstruktive_) Kritik.
