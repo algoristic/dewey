@@ -3,7 +3,7 @@ Marco Herzig
 // Inhaltsverzeichnis Einstellungen
 :toc: left
 :toc-title: Inhalte
-:toclevels: 4
+:toclevels: [TocLevels]
 :sectnums:
 
 // i18n
@@ -22,4 +22,4 @@ Marco Herzig
 :back-to-caller: [backToCaller]
 
 // Standard-Link für den Rücksprung zur Hauptseite
-_link:{back-to-caller}[&rarr; Zurück zur Startseite]_
+_link:{back-to-caller}[&rarr; Zurück zur Übersicht]_
