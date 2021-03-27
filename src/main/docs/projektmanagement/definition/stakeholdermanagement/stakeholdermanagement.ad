@@ -31,3 +31,23 @@ Ziel des Stakehodermanagements ist es, die Bedürfnisse der Stakeholder zu ident
 Entscheiden ist es die Ziele des Projektes mit denen der Stakeholder in Einklang zu bringen. Dazu müssen die Stakeholder identifiziert und ernst genommen werden, da der Projekterfolg maßgeblich von deren Akzeptanz abhängt.
 
 Gutes Stakeholdermanagement räumt Zielkonflikte aus dem Weg, maximiert positive Einflüsse, minimiert negative (_destruktive_) Einflüsse und berücksichtigt (_konstruktive_) Kritik.
+
+== Projektumfeldanalyse
+Aspekte::
+    Systeme:::
+        technische Systeme, Soft-, Hard- und Orgware
+    Prozesse:::
+        sowohl technische wie auch physikalische Prozesse (z. B. in der industriellen Fertigung), Geschäftsprozesse
+    Ereginisse:::
+        sowohl technische wie auch physikalische Ereginisse
+    Wirtschaftlichkeit:::
+        Kosten vs. Nutzen
+    Dokumente:::
+        Gesetze, Standards, Dokumentationen
+    Kulturelle Gegebenheiten:::
+        insb. bei internationalen Projekten
+    Personen und Organisationen:::
+        Stakeholder und Stakeholdergruppen
+
+.Personen und Organisationen
+image::projektumfeld_001.png[Personen und Organisationen, 360, align="center"]
