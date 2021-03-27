@@ -1,0 +1,67 @@
+<mxfile host="Electron" modified="2021-03-27T11:19:16.124Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.1.8 Chrome/87.0.4280.88 Electron/11.1.1 Safari/537.36" etag="7QLzdOhtgdnkOTVGgymE" compressed="false" version="14.1.8" type="device">
+  <diagram id="wwLEe0VopWeSPWumxoTE" name="Seite-1">
+    <mxGraphModel dx="782" dy="497" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#000000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FnKhnbAThVLmzTGDTyjp-1" value="Planung" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FnKhnbAThVLmzTGDTyjp-2" value="Identifikation" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="190" y="80" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FnKhnbAThVLmzTGDTyjp-3" value="Analyse und&lt;br&gt;Bewertung" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="340" y="80" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FnKhnbAThVLmzTGDTyjp-4" value="Steuerung" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="640" y="80" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FnKhnbAThVLmzTGDTyjp-5" value="Behandlung" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="490" y="80" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FnKhnbAThVLmzTGDTyjp-7" value="" style="shape=flexArrow;endArrow=classic;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" edge="1" parent="1" source="FnKhnbAThVLmzTGDTyjp-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="180" as="sourcePoint" />
+            <mxPoint x="260" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FnKhnbAThVLmzTGDTyjp-8" value="&lt;ul&gt;&lt;li&gt;Betroffene&lt;/li&gt;&lt;li&gt;Beteiligte&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=bottom;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="190" y="120" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FnKhnbAThVLmzTGDTyjp-9" value="&lt;ul&gt;&lt;li&gt;Einfluss&lt;/li&gt;&lt;li&gt;Einstellung&lt;/li&gt;&lt;li&gt;Erwartung&lt;/li&gt;&lt;li&gt;Befürchtung&lt;/li&gt;&lt;li&gt;Maßnahmen&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=bottom;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="340" y="120" width="140" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="FnKhnbAThVLmzTGDTyjp-10" value="&lt;ul&gt;&lt;li&gt;Maßnahmen umsetzen&lt;/li&gt;&lt;li&gt;Kommunikationsplan&lt;/li&gt;&lt;li&gt;Projektmarketing&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=bottom;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="490" y="120" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FnKhnbAThVLmzTGDTyjp-11" value="&lt;ul&gt;&lt;li&gt;Überwachung&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=bottom;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="640" y="120" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FnKhnbAThVLmzTGDTyjp-12" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="1" source="FnKhnbAThVLmzTGDTyjp-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="320" as="sourcePoint" />
+            <mxPoint x="410" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FnKhnbAThVLmzTGDTyjp-13" value="" style="shape=flexArrow;endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="FnKhnbAThVLmzTGDTyjp-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="520" y="240" as="sourcePoint" />
+            <mxPoint x="560" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FnKhnbAThVLmzTGDTyjp-15" value="Stakeholderliste" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="190" y="250" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FnKhnbAThVLmzTGDTyjp-16" value="Stakeholderregister" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="340" y="250" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FnKhnbAThVLmzTGDTyjp-17" value="Kraftfeldanalyse" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="340" y="290" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FnKhnbAThVLmzTGDTyjp-18" value="Kommunikationsplan" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="490" y="250" width="140" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
