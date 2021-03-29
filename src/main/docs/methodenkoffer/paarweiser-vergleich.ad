@@ -1,0 +1,29 @@
+= Paarweiser Vergleich
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+
+== Paarweiser Vergleich
+Ziel des paarweisen Vergleiches ist die Ermittlung einer eindeutigen Reihenfolge oder Priorisierung bei vielen scheinbar gleichwertigen Alternativen.
+
+Pro::
+* einfache, übersichtliche Methode
+* je mehr Elemente, desto objektiver
+* kann allein oder in der Gruppe durchgeführt werden
+
+Kontra::
+* alle Bewertungen sind *immer* stets subjektiv
+* durch eine Bewertungsskale täuscht das Ergebnis einen grad der Objektivität vor, der nicht erreichbar ist
+* je mehr Elemente, desto unübersichtlicher
+* berücksichtigt *keine komplexen Wechselwirkungen*
+
+== Durchführung
+. die zu vergleichenden Elemente werden in einer Matrix gegeneinander aufgetragen
+. dann werden sie Spalte für Spalte, Zelle für Zelle, durchgegangen
+. dabei wird je Zelle geprüft ob der Wert aus der zugeordneten Zeile wichtiger ist, oder der aus der Spalte
+. je nachdem was wichtiger ist, wird ein entsprechender Wert eingetragen (siehe Grafik)
+    ** *Achtung*: auf Konsistenz der Werte achten! Wenn entschieden wurde, dass _A1_ wichtiger ist als _A2_, kann das in der zweiten Spalte, in der dieser Vergleich auftritt nicht andersherum sein!
+. am Ende werden die Summen aller Zeilen gezogen und aus dem Anteil der Punkte einer Zeile an der Gesamtzahl der Punkte ergbit sich die Gewichtung und damit der Rang dieses Elementes
+
+.Paarweiser Vergleich
+image::paarweiser-vergleich_001.png[Paarweiser Vergleich, 640, align="center"]

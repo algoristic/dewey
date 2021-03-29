@@ -4,5 +4,13 @@
 == Wirtschaftlichkeitsbetrachtungen
 
 include:methodenkoffer\kosten-und-nutzenarten.ad
+
+=== Monetär
 include:methodenkoffer\stundensatz.ad
 include:methodenkoffer\investitionsrechnung.ad
+
+=== Nicht-monetär
+include:methodenkoffer\paarweiser-vergleich.ad
+include:methodenkoffer\nutzwertanalyse.ad
+
+dev:=== Gemischt

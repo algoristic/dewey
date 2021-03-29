@@ -1,0 +1,27 @@
+= Nutzwertanalyse
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+
+== Nutzwertanalyse
+Ziel der Nutzwertanalyse ist die Ermittlung der besten Alternative aus einer Anzahl von möglichen Lösungen anhand einer Reihe definierter Kriterien.
+
+Pro::
+* transparenter und nachvollziehbarer Entscheidungsprozess
+* weit verbreitet und anerkannt
+* Bewertung von nicht-monetärem Nutzen
+
+Kontra::
+* Aufwand steigt stark mit Menge der Kriterien
+* liefert *keine Aussage über absoluten den Nutzen* einer Alternative, sondern nur über den relativen Nutzen
+* ist keine Alternative zu klassischer Investitionsrechnung -- liegt monetärer Nutzen vor, so sollte dieser auch so bewertet werden
+* täuscht Objektivität vor, die nicht gegeben ist: alle Bewertungen sind subjektiv
+
+== Durchführung
+* Kriterien werden gesammelt und mithilfe eines _paarweisen Vergleiches_ bewertet
+* für jede Alternative wird für jedes Kriterium geprüft, wie hoch der *Erüllungsgrad* ist
+* für jedes bewertete Kriterium wird der Erfüllungsgrad mit dem Gewicht verrechnet, um eine Punktzahl zu erhalten
+* die Punktzahlen aller Alternativen werden addiert
+* die Alternative mit der höchsten Punktzahl gewinnt den direkten Vergleich
+
+image::nutzwertanalyse_001.png[Nutzwertanalyse, 650, align="center"]
