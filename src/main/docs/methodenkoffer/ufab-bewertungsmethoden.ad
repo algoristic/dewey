@@ -1,0 +1,24 @@
+= Bewertungsmethoden
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+:stem:
+
+== Vereinfachte Leistungs-/Preismethode
+Einfachste Methode von allen: das günstigste Angebot erhält den Zuschlag. Wurden Ausschluss- oder K. O.-Kriterien  definiert, so ist die Erfüllung dieser Kriterien eine Grundvoraussetzung.
+
+== Einfache Richtwertmethode
+Es wird das günstigste Leistungs-/Preisverhältnis ermittelt, indem die ermittelte Leistungspunktzahl des Angebots (_aus Nutzwertanalyse_) ins Verhältnis zum Preis gesetzt wird.
+
+Methode::
+    Seien:::
+        stem:[L = "Leistungspunktzahl (Bewertung x Gewichtung)"] +
+        stem:[P = "Preis"] +
+        stem:[z = "Kennzahl Preis-Leistungsverhältnis"]
+    Dann gilt:::
+        stem:[z = L/P]
+
+=== Durchführung
+Die Leistungspunkte werden, wie oben beschrieben, mit dem Preis verrechnet. Die resultierende Kennzahl mit dem höchsten Wert markiert das wirtschaftlich günstigste Angebot.
+
+image::einfache_richtwertmethode_001.png[Einfache Richtwertmethode, 550, align="center"]

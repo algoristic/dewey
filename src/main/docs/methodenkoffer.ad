@@ -14,3 +14,5 @@ include:methodenkoffer\paarweiser-vergleich.ad
 include:methodenkoffer\nutzwertanalyse.ad
 
 dev:=== Gemischt
+dev:include:methodenkoffer\ufab.ad
+dev:include:methodenkoffer\ufab-bewertungsmethoden.ad
