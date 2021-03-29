@@ -1,0 +1,14 @@
+:root {
+    /* boilerplate */
+    --gray: #363b3d;
+    --gray-medium: #BFC0C0; /* orig.: #788387 */
+    --gray-light: #e8e6e3;
+    --color: #fff;
+    --heading-color: #fff;
+    /* colors */
+    --primary: #EF8354; /* Mandarin */
+    --secondary: #fff; /* White */
+    --highlight: #BFC0C0; /* Silver */
+    --background: #4F5D75; /* Independence */
+    --header-background: #2D3142; /* Space Cadet */
+}

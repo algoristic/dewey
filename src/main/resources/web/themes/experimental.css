@@ -1,0 +1,13 @@
+:root {
+    /* boilerplate */
+    --gray: #363b3d;
+    --gray-medium: #788387;
+    --color: #fff;
+    --heading-color: #fff;
+    /* colors */
+    --primary: #FF7D00; /*  */
+    --secondary: #fff; /*  */
+    --highlight: #FFECD1; /*  */
+    --background: #15616D; /*  */
+    --header-background: #001524; /*  */
+}

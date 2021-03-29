@@ -1,0 +1,14 @@
+:root {
+    /* boilerplate */
+    --gray: #363b3d;
+    --gray-medium: #fff; /* orig.: #788387 */
+    --gray-light: #e8e6e3;
+    --color: #fff;
+    --heading-color: #fff;
+    /* colors */
+    --primary: #FF7D00; /* Amber SAE ECE */
+    --secondary: #87BCDE; /* White */
+    --highlight: #FFECD1; /* Blanched Almond */
+    --background: #001E33; /* Oxford Blue */
+    --header-background: #000F1A; /* Rich Back FOGRA 29 */
+}

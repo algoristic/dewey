@@ -1,0 +1,14 @@
+:root {
+    /* boilerplate */
+    --gray: #363b3d;
+    --gray-medium: #788387;
+    --gray-light: #e8e6e3;
+    --color: #fff;
+    --heading-color: #fff;
+    /* colors */
+    --primary: #DDA448; /* Indian Yellow */
+    --secondary: #778DA9; /* Shadow Blue */
+    --highlight: #E0E1DD; /* Platinum */
+    --background: #1B263B; /* Oxford Blue */
+    --header-background: #0D1B2A; /* Rich Black FOGRA 29 */
+}
