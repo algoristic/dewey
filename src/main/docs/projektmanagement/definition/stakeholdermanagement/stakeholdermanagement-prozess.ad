@@ -4,6 +4,103 @@
 :imagesdir: images
 
 == Übersicht
-
 .Stakeholdermanagement
 image::stakeholdermanagementprozess_001.png[Stakeholdermanagement, 640, align="center"]
+
+== Planung
+Welche Elemente des Stakeholdermanagements sollen eingesetzt werden? Dies hängt maßgeblich von Projektgröße und -katerorie ab. Ziel ist die Auwahl geeigneter Prozesse, Methoden, Werkzeuge und Verfahren zu erarbeiten, die angemessen scheinen.
+
+IMPORTANT: Bei vollständigen Neuentwicklungen "auf der grünen Wiese" sind z. B. oft weniger Maßnahmen notwendig, als wenn bspw. eine Systemumstellung durchgeführt werden soll, bei der viele Mitarbeiter Angst haben mit dem neuen System nicht klarzukommen oder sogar ihren Job zu verlieren.
+
+== Identifikation
+Erstellen einer *Liste aller (potentiellen) Stakeholder* und ihrer vermutlichen Haltung zum Projekt.
+
+Hilfsmittel::
+    * Brainstorming
+    * Organigramme
+    * Prozessdarstellungen
+
+Hilfsfragen::
+    * Wer fördert das Projekt?
+    * Wer hat Interesse an der Umsetzung?
+    * Wer hat zusätzliches Wissen?
+    * Wer muss mir zustimmen?
+    * Wer könnte ausbremsen?
+    * Für wen ändert sich etwas durch das Projekt?
+    * Wer wird für die Mitarbeit benötigt?
+    * Wer kann Stimmung dafür oder dagegen machen?
+
+Resultat dieses Vorgehens ist eine einfache Liste:
+[width="100%",cols=2*,options=header]
+|===
+|Stakeholder
+|Erwartungen und/oder Befürchtungen
+
+|...
+|...
+
+|===
+
+== Analyse und Bewertung
+Die Liste wird nun um einige Spalten erweitert und zu einem sogenannten *Stakeholderregister*. Dazu werden die Einstellung des Stakeholders und sein möglicher Einfluss auf das Projekt eingeschätzt und auf einer einfach Skala quanitifiziert, sowie mögliche Konsequenzen, die das auf das Projekt haben könnte, abgeleitet.
+
+=== Stakeholderregister
+Skala::
+* positiv: 3, 2, 1
+* neutral: 0
+* negativ: -1, -2, -3
+
+[width="100%",cols=8*,options=header]
+|===
+|Stakeholder
+|Erwartungen/Befürchtungen
+2+|Einstellung
+2+|Einfluss
+|Konsequenzen
+|Maßnahmen
+
+|...
+|...
+|...
+|...
+|...
+|...
+|...
+|...
+
+|===
+
+=== Kraftfeldanalyse
+Bevor die _Maßnahmen_-Spalte im Register ausgefüllt wird können wir uns mithilfe einer *Kraftfeldanalyse* einen Überblick schaffen. Diese ist einfach eine grafische Darstellung der soeben ermittelten Werte. Aus dieser Darstellung lassen sich leicht die vier Grundstrategien ablesen, mit denen wir bei den verschiedenen Stakeholdergruppen auftreten sollten.
+
+.Kraftfeldanalyse
+image::kraftfeldanalyse_001.png[Kraftfeldanalyse, 450, align="center"]
+
+=== Strategien
+Diskursive Strategie::
+    Ist der Einfluss auf das Projekt hoch aber die Einstellung gegenüber dem Projekt negativ so sind diese Stakeholder als besonders kritisch zu sehen und wir müssen alles tun, um sie von unserem Projekt zu überzeugen.
+    Umgang:::
+        * auf dem laufenden Halten
+        * informieren, wenn deren Einflussbereich betroffen wird
+        * Überzeugungsarbeit leisten
+            ** versuchen Vorbehalte auszuräumen
+            ** in den intensiven Diskurs gehen und die Kritik annehmen
+
+Partizipative Strategie::
+    Mit hohem Einfluss und positiver Einstellung arbeiten wir besondern gerne mit diesen Stakeholdern zusammen.
+    Umgang:::
+        * intensive Einbindung in die Kommunikation
+        * Beteiligung an wichtigen Entscheidungen
+        * sehr enge Zusammenarbeit
+
+Repressive Strategie::
+    Mit einer negativen Einstellung aber auch wenig bis sehr wenig Einfluss auf das Projekt sind diese Stakeholder möglichst aus dem Geschehen herauszuhalten.
+    Umgang:::
+        * wenig Informationsbedarf
+        * formelle Zustellung der notwendigen Informationen
+
+Informative Strategie::
+    Mit einer positiven Einstellung aber wenig Einfluss versuchen wir diese Stakeholder da zu belassen wo sie stehen und für eine positive Grundstimmung zu sorgen.
+    Umgang:::
+        * hoher Informationsbedarf
+        * auf dem laufenden halten
