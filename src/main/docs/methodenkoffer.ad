@@ -13,6 +13,6 @@ include:methodenkoffer\investitionsrechnung.ad
 include:methodenkoffer\paarweiser-vergleich.ad
 include:methodenkoffer\nutzwertanalyse.ad
 
-dev:=== Gemischt
-dev:include:methodenkoffer\ufab.ad
-dev:include:methodenkoffer\ufab-bewertungsmethoden.ad
+=== Gemischt
+include:methodenkoffer\ufab.ad
+include:methodenkoffer\ufab-bewertungsmethoden.ad

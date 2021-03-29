@@ -1,11 +1,11 @@
-= Bewertungsmethoden
+= Bewertungsmethoden UfAB
 :dewey-template: default.doc.ad
 
 :imagesdir: images
 :stem:
 
 == Vereinfachte Leistungs-/Preismethode
-Einfachste Methode von allen: das günstigste Angebot erhält den Zuschlag. Wurden Ausschluss- oder K. O.-Kriterien  definiert, so ist die Erfüllung dieser Kriterien eine Grundvoraussetzung.
+Einfachste Methode von allen: *das günstigste Angebot* erhält den Zuschlag. Wurden Ausschluss- oder K. O.-Kriterien  definiert, so ist die Erfüllung dieser Kriterien eine Grundvoraussetzung.
 
 == Einfache Richtwertmethode
 Es wird das günstigste Leistungs-/Preisverhältnis ermittelt, indem die ermittelte Leistungspunktzahl des Angebots (_aus Nutzwertanalyse_) ins Verhältnis zum Preis gesetzt wird.
@@ -18,7 +18,18 @@ Methode::
     Dann gilt:::
         stem:[z = L/P]
 
-=== Durchführung
+Durchführung::
 Die Leistungspunkte werden, wie oben beschrieben, mit dem Preis verrechnet. Die resultierende Kennzahl mit dem höchsten Wert markiert das wirtschaftlich günstigste Angebot.
 
-image::einfache_richtwertmethode_001.png[Einfache Richtwertmethode, 550, align="center"]
+.Einfache Richtwertmethode
+image::einfache_richtwertmethode_001.png[Einfache Richtwertmethode, 320, align="center"]
+
+== Erweiterte Richtwertmethode
+Nach Durchführung der einfachen Rchtwertmethode gewinnt _nicht_ das Angebot mit der besten ermittelten Kennziffer. Stattdessen wird eine Vorauswahl der bestplatzierten Alterntiven getroffen, innerhalb derer anhand eines Schlüsselkriteriums entschieden wird.
+
+Durchführung::
+. Schwankungsbereich festlegen: beginnt beim Bestplatzierten und endet, je nach Festlegung, darunter (z. B. 10% o. Ä.)
+. Abschlusskriterium: es gewinnt das Angebot, das innerhalb des Schwankungsbereiches liegt und das Abschlusskriteriu am besten erfüllt (nach Erfüllungsgrad aus der Nutzwertanalyse)
+
+.Erweiterte Richtwertmethode
+image::erweiterte_richtwertmethode_001.png[Erweiterte Richtwertmethode, 550, align="center"]
