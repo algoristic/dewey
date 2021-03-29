@@ -31,6 +31,7 @@ Hilfsfragen::
     * Wer kann Stimmung dafür oder dagegen machen?
 
 Resultat dieses Vorgehens ist eine einfache Liste:
+.Stakeholderliste
 [width="100%",cols=2*,options=header]
 |===
 |Stakeholder
@@ -50,6 +51,7 @@ Skala::
 * neutral: 0
 * negativ: -1, -2, -3
 
+.Stakeholderregister
 [width="100%",cols=8*,options=header]
 |===
 |Stakeholder
