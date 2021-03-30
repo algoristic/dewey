@@ -9,26 +9,44 @@ Die Investitionsrechnung soll die finanzielle Auswirkung einer Investition progn
 == Statische Verfahren
 Die statischen Verfahren der Investitionsrechnung betrachten zwar die zeitliche Komponente, verzichten allerdings auf eine Auf- bzw. Abzinsung und treffen generell vereinfachte Annahmen. Dafür sind diese Methoden entsprechend einfach und schnell anzuwenden und werden dementsprechend häufig in der Praxis angewandt.
 
+Es werden folgende grundlegenden Methoden unterschieden:
+
 .Übersicht statische Berechnungsmethoden
 image::berechnung_statisch_001.png[Übersicht statische Berechnungsmethoden, 550, align="center"]
 
-Es werden folgende Grundlegenden Methoden unterschieden:
+=== Kostenvergleichsrechnung
+Direkter Vergleich der Kosten zweier oder mehr Alternativen.
 
-Kostenvergleichsrechnung::
-    Direkter Vergleich der Kosten zweier oder mehr Alternativen
-Gewinnvergleichsrechnung::
-    Direkter Vergleich der prognostizierten Gewinne (abzüglich der Kosten) zweier oder mehr Alternativen
-    Zu beachten:::
-        * stem:["Kapitalkosten" = "Darlehenssumme" / 2 * "Zinssatz"]
-Rentabilitätsvergleichsrechnung::
-    Direkter Vergleich der prognostizierten Gewinne, ins Verhältnis zu den eingesetzten Mitteln gesetzt
-    Zu beachten:::
-        * Die Zinsen werden wieder eingerechnet, um einen von der Finanzierung unabhängigen Vergleich zu schaffen
-        * stem:["Kapitaleinsatz" = ("Anschaffungskosten" + ("Anschaffungskosten" / "Nutzungsdauer"))/2]
-Amortisationsrechnung::
-    Einnahmen kumuliert den eingesetzten Mitteln gegenüberstellen
-    Zu beachten:::
-        * Abschreibungen sind nur kalkulatorisch, müssen also, um den tatsächlichen Geldfluss (_Cashflow_) zu ermitteln, wieder dazugerechnet werden
+.Beispiel Kostenvergleichsrechnung
+image::_excel_kostenvergleichsrechnung_001.png[Beispiel Kostenvergleichsrechnung, 260, align="center"]
+
+=== Gewinnvergleichsrechnung
+Direkter Vergleich der prognostizierten Gewinne (abzüglich der Kosten) zweier oder mehr Alternativen.
+
+Zu beachten::
+    * stem:["Kapitalkosten" = "Darlehenssumme" / 2 * "Zinssatz"]
+
+.Beispiel Gewinnvergleichsrechnung
+image::_excel_gewinnvergleichsrechnung_001.png[Beispiel Gewinnvergleichsrechnung, 260, align="center"]
+
+=== Rentabilitätsvergleichsrechnung
+Direkter Vergleich der prognostizierten Gewinne, ins Verhältnis zu den eingesetzten Mitteln gesetzt.
+
+Zu beachten::
+    * Die Zinsen werden wieder eingerechnet, um einen von der Finanzierung unabhängigen Vergleich zu schaffen
+    * stem:["Kapitaleinsatz" = ("Anschaffungskosten" + ("Anschaffungskosten" / "Nutzungsdauer"))/2]
+
+.Beipsiel Rentabilitätsvergleichsrechnung
+image::_excel_rentabilitätsvergleichsrechnung_001.png[Beipsiel Rentabilitätsvergleichsrechnung, 260, align="center"]
+
+=== Amortisationsrechnung
+Einnahmen kumuliert den eingesetzten Mitteln gegenüberstellen.
+
+Zu beachten::
+    * Abschreibungen sind nur kalkulatorisch, müssen also, um den tatsächlichen Geldfluss (_Cashflow_) zu ermitteln, wieder dazugerechnet werden
+
+.Beispiel Amortisationsrechnung
+image::_excel_amortisationsrechnung_001.png[Beispiel Amortisationsrechnung, 260, align="center"]
 
 === Break-Even-Analyse
 
@@ -66,37 +84,8 @@ Berechnung des Abzinsungsfaktors::
     Der Abzinsungsfaktor ist also:::
         stem:[1/(1+r)^t]
 
-==== Kapitalwertmethode tabellarisch dargestellt
-[width="100%",cols="^,>,>,>,>",options=header]
-|===
-|Jahr
-|Ausgaben
-|Ertrag
-|Abzinsungs-
-faktor
-|Kapitalwert
-
-|0
-|50.000,00
-|0,00
-|1,00
-|-50.000,00
-
-|1
-|0,00
-|10.000,00
-|0,94
-|9.400,00
-
-|2
-|...
-|...
-|...
-|...
-
-
-|===
-
+.Beispiel Kapitalwertmethode
+image::_excel_kapitalwertmethode_001.png[Beispiel Kapitalwertmethode, 500, align="center"]
 
 === Interne Zinsfußmethode
 Mit der _Zinsfußmethode_ lässt sich aus der Differenz zweier _Cashflows_ zu verschiedenen Zeitpunkten der _Abzinsungsfaktor_ (zumindest grob) errechnen. Damit lässt sich eine theoretische mittlere Rendite für das betrachtete Jahr ermitteln.
