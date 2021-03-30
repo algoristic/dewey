@@ -3,7 +3,6 @@
 
 :imagesdir: images
 
-== Übersicht
 .Stakeholdermanagement
 image::stakeholdermanagementprozess_001.png[Stakeholdermanagement, 640, align="center"]
 
@@ -106,3 +105,69 @@ Informative Strategie::
     Umgang:::
         * hoher Informationsbedarf
         * auf dem laufenden halten
+
+Die auf Basis der Kraftfeldanalyse ermittelten Strategien werden zur Übersicht ins Stakeholderregister eingetragen.
+
+== Behandlung
+Die in der Analyse und Bewertung ausgewählten Strategien werden nun in angemessene Maßnahmen umgesetzt. Dazu definieren wir zunächst die Inhaltselemente der Kommuniktaionsmaßnahmen und legen diese dann konkret fest.
+
+IMPORTANT: Die Maßnahmen sind über die gesamte Projektlaufzeit hinweg umzusetzen! _(Nicht vernachlässigen, wenn im Projektverlauf inhaltliche Fragen an Bedeutung gewinnen.)_
+
+=== Kommunikations&shy;managementplan
+Definiert die Inhalte des Kommunikationsplanes und schafft damit eine Übersicht über die einzusetzenden Kommunikationsmittel und- wege.
+
+Grundelemente::
+* *Wann?*: Terminplan (z. B. nach Projektphasen)
+* *Was?*: zu kommunizierende Informationen (formale Spezifikation)
+* *Wer?*: verantwortliche Person für
+    ** Verbreitung von Informationen
+    ** Freigabe vertraulicher Informationen
+* *Wen?*: Empfänger der Informationen
+* *Wie?*: Methoden und Werkzeuge für die Kummunikation
+* Turnus: Abstände in denen berichtet wird
+
+Weitere Inhalte::
+* Anforderungen (der Beteiligten) an die Kommunikation
+* Rssourcen für die Kommunikation
+* Diagramme für Informationsfluss und Kommunikationsprozesse
+* Kommunikationsbeschränkungen (z. B. wegen rechtlicher Aspekte)
+* Beschreibung wie der Kommunikationsmanagementplan im Projektverlauf weiterentwickelt und gepflegt wird
+
+=== Kommunikationsplan
+Die Umsetzung des Komminikationsmanagementplans, gewährleistet dass jedem Projektbeteiligten die zur Durchführung seiner Aufgabe benötigten Informationen rechtzeitig zur Verfügung stehen.
+
+Die Umsetzung kann z. B. in einfacher tabellarischer Form erfolgen (_Kommunikationsmatrix_).
+
+.Beispiel Kommunikationsmatrix
+[width="100%",cols=6*,options=header]
+|===
+|Wann
+|Was
+|Wer
+|Wen
+|Wie
+|Turnus
+
+|Steuerung
+|aktuelle Projektinfos, Erreichung Meilensteine, etc.
+|Projektleiter
+|alle Stakeholder
+|Intranet
+|monatlich
+
+|...
+|...
+|...
+|...
+|...
+|...
+
+|===
+
+== Steuerung
+In diesem Punkt spiegelt sich die dauerhafte Verfolgung und Anpassung der Stakeholderbewertung und der daraus resultierenden Maßnahmen im Projekt wieder.
+
+Hilfsfragen::
+* Ist die Liste der Stakeholder noch aktuell oder sind weitere zu beachten bzw. ausgeschieden?
+* Sind die Bewertungen noch korrekt?
+* Reagieren die Stakeholder wie geplant auf die definierten Maßnahmen oder sollten diese angepasst werden?
