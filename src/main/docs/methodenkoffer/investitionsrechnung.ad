@@ -23,27 +23,27 @@ image::_excel_kostenvergleichsrechnung_001.png[Beispiel Kostenvergleichsrechnung
 === Gewinnvergleichsrechnung
 Direkter Vergleich der prognostizierten Gewinne (abzüglich der Kosten) zweier oder mehr Alternativen.
 
+====
 Zu beachten::
-    * stem:["Kapitalkosten" = "Darlehenssumme" / 2 * "Zinssatz"]
+stem:["Kapitalkosten" = "Darlehenssumme" / 2 * "Zinssatz"]
+====
 
 .Beispiel Gewinnvergleichsrechnung
 image::_excel_gewinnvergleichsrechnung_001.png[Beispiel Gewinnvergleichsrechnung, 260, align="center"]
 
 === Rentabilitätsvergleichsrechnung
-Direkter Vergleich der prognostizierten Gewinne, ins Verhältnis zu den eingesetzten Mitteln gesetzt.
+Direkter Vergleich der prognostizierten Gewinne, ins Verhältnis zu den eingesetzten Mitteln gesetzt. Die Zinsen werden wieder eingerechnet, um einen von der Finanzierung unabhängigen Vergleich zu schaffen.
 
+====
 Zu beachten::
-    * Die Zinsen werden wieder eingerechnet, um einen von der Finanzierung unabhängigen Vergleich zu schaffen
-    * stem:["Kapitaleinsatz" = ("Anschaffungskosten" + ("Anschaffungskosten" / "Nutzungsdauer"))/2]
+stem:["Kapitaleinsatz" = ("Anschaffungskosten" + ("Anschaffungskosten" / "Nutzungsdauer"))/2]
+====
 
 .Beipsiel Rentabilitätsvergleichsrechnung
 image::_excel_rentabilitätsvergleichsrechnung_001.png[Beipsiel Rentabilitätsvergleichsrechnung, 260, align="center"]
 
 === Amortisationsrechnung
-Einnahmen kumuliert den eingesetzten Mitteln gegenüberstellen.
-
-Zu beachten::
-    * Abschreibungen sind nur kalkulatorisch, müssen also, um den tatsächlichen Geldfluss (_Cashflow_) zu ermitteln, wieder dazugerechnet werden
+Einnahmen kumuliert den eingesetzten Mitteln gegenüberstellen. Abschreibungen sind nur kalkulatorisch, müssen also, um den tatsächlichen Geldfluss (_Cashflow_) zu ermitteln, wieder dazugerechnet werden.
 
 .Beispiel Amortisationsrechnung
 image::_excel_amortisationsrechnung_001.png[Beispiel Amortisationsrechnung, 260, align="center"]
@@ -52,6 +52,7 @@ image::_excel_amortisationsrechnung_001.png[Beispiel Amortisationsrechnung, 260,
 
 Der sogenannte Break-Even-Point ist Verkaufsmenge, an der die Kosten vollständig von den Erlösen gedeckt werden und das Ergebnise in die Gewinnzone gelangt. Die Kosten werden dabei als Gesamtkosten aus fixen Investitionskosten und variablen Stück- oder Betriebskosten betrachtet.
 
+====
 Rechenformel::
     Seien:::
         stem:["BEM" = "Break-Even-Menge"] +
@@ -60,6 +61,7 @@ Rechenformel::
         stem:[P = "Stückpreis"]
     Dann gilt:::
         stem:["BEM" = K_"fix" / ("P" - K_"var")]
+====
 
 .Break-Even-Analyse
 image::break_even_analyse_001.png[Break-Even-Analyse, 420, align="center"]
@@ -70,8 +72,9 @@ Die dynamischen versuchen die Rendite der Investition vergleichbar zu machen mit
 === Kapitalwertmethode
 Aufgrund von Verzinsung hat jeder Geldbetrag einen umso höheren Wert, je eher man ihn erhält. Dieser Umstand wird hier über eine *Abzinsung* dargestellt, die jedes Jahr größer ausfällt, da die Einnahmen ja zu einem umso späteren Zeitpunkt verfügbar sind. Damit wird versucht den Vergleich mit einer Investition am Kapitalmarkt zu simulieren, bei der das Geld entsprechend verzinst wird.
 
-Für die Abzinsung wird aus den verfügbaren Daten ein sogenannter *Abzinsungsfaktor* errechnet, mit dem die verrechneten Einnahmen und Ausgaben des jeweiligen Jahres multipliziert werden.
+Für die Abzinsung wird aus den verfügbaren Daten ein sogenannter *Abzinsungsfaktor* errechnet, mit dem die verrechneten Einnahmen des jeweiligen Jahres multipliziert werden.
 
+====
 Berechnung des Abzinsungsfaktors::
     Seien:::
         stem:[Z_t = "Cashflow zum Zeitpunkt " t] +
@@ -83,6 +86,7 @@ Berechnung des Abzinsungsfaktors::
         stem:[Z_t/(1+r)^t = Z_t 1/(1+r)^t]
     Der Abzinsungsfaktor ist also:::
         stem:[1/(1+r)^t]
+====
 
 .Beispiel Kapitalwertmethode
 image::_excel_kapitalwertmethode_001.png[Beispiel Kapitalwertmethode, 500, align="center"]
@@ -92,6 +96,7 @@ Mit der _Zinsfußmethode_ lässt sich aus der Differenz zweier _Cashflows_ zu ve
 
 _Der ermittelte Abszinsungsfaktor kann selbstverständlich auch in der Kapitalwertmethode genutzt werden._
 
+====
 Berechnungsbeispiel::
     Gegeben sei die Formel:::
         stem:[0 = t_0 + 1/(1+i)t_1] +
@@ -103,3 +108,4 @@ Berechnungsbeispiel::
         stem:[1+i =  (110000"€")/(100000"€")] +
         stem:[<=> i = 0,1] +
         stem:[=> 10% "Zinsen"]
+====
