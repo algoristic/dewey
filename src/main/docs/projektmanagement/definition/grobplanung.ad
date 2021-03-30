@@ -5,3 +5,30 @@
 
 == Grobplanung
 In der Defintionsphase wird eine sehr oberflächliche, _grobe_ Planung durchgeführt, die die Chancen für eine generelle Projektdurchführung evaluieren soll.
+
+Das Ergebnis der Gobplanung ist die sogenannte _Grobstruktur_, die z. B. als Liste dargestellt werden kann. Diese enthält mindestens Informationen über die Projektphasen, Tätigkeiten, Phasenergebnisse und einen groben Terminplan.
+
+== Elemente der Grobplanung
+
+=== Meilensteine
+Meilensteine bestimmen in der Grobplanung wichtige Phasen- und Zwischenergebnisse. Sie markieren insbesondere wichtige Termine im Projektverlauf und snd daher für den Projektleiter ein Steuerungselement um kritische Verzögerungen zu erkennen oder in der Definitionsphase bereits eine Abschätzung für die Zeitplanung durchzuführen.
+
+Meilensteine können z. B. sein::
+    * Erreichung eines bestimmten Zustandes (z. B. durch Abnahmetests)
+    * Fertigstellung eines Produktes oder (Teil-) Ergebnisses (z. B. Anforderungsspezifikation, Prototyp, ...)
+    * eine zu treffende Entscheidung (z. B. Abbruch oder Weiterverfolgen des Projektes)
+
+.Meilensteine
+image::meilensteinplan_002.png[Meilensteine, 420, align="center"]
+
+=== Quality Gates
+_Quality Gates_ sind *Synchronisationspunkte*, an denen an kritischen Stellen im Projekt (i. d. R. Meilensteine), die besonders stark vom Ergebnis der vorherigen Phase abhängen, messbare Qualitätskriterien vorgegeben werden.
+
+Quality Gates definieren eine *formale Ergebnisprüfung* der vorgelagerten Phase
+
+IMPORTANT: _Meilensteine_ definieren Termin und Inhalt des Phasenergebnisses, _Quality Gates_ sichern die ihnaltliche Korrektheit.
+
+== Meilensteinplan
+
+.Meilensteinplan
+image::meilensteinplan_001.png[Meilensteinplan, 420, align="center"]
