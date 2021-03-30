@@ -14,7 +14,9 @@ Es werden folgende Grundlegenden Methoden unterschieden:
 Kostenvergleichsrechnung:: Direkter Vergleich der Kosten zweier oder mehr Alternativen
 Gewinnvergleichsrechnung:: Direkter Vergleich der prognostizierten Gewinne (abzüglich der Kosten) zweier oder mehr Alternativen
 Rentabilitätsvergleichsrechnung:: Direkter Vergleich der prognostizierten Gewinne, ins Verhältnis zu den eingesetzten Mitteln gesetzt
+Zu beachten::: Die Zinsen werden wieder eingerechnet, um einen von der Finanzierung unabhängigen Vergleich zu schaffen
 Amortisationsrechnung:: Einnahmen kumuliert den eingesetzten Mitteln gegenüberstellen
+Zu beachten::: Abschreibungen sind nur kalkulatorisch, müssen also, um den tatsächlichen Geldfluss (_Cashflow_) zu ermitteln, wieder dazugerechnet werden
 
 .Übersicht statische Berechnungsmethoden
 image::berechnung_statisch_001.png[Übersicht statische Berechnungsmethoden, 550, align="center"]
