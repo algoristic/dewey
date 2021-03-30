@@ -12,17 +12,17 @@ include:projektmanagement\grundlagen\phasen-und-vorgehensmodelle.ad
 include:projektmanagement\grundlagen\uebersicht-vorgehensmodelle.ad
 
 ==== Agiles Vorgehen
-include:projektmanagement\grundlagen\agil\das-agile-manifest.ad
-include:projektmanagement\grundlagen\agil\scrum.ad
-include:projektmanagement\grundlagen\agil\kanban.ad
-include:projektmanagement\grundlagen\agil\agile-skalierungsframeworks.ad
+include:projektmanagement\grundlagen\das-agile-manifest.ad
+include:projektmanagement\grundlagen\scrum.ad
+include:projektmanagement\grundlagen\kanban.ad
+include:projektmanagement\grundlagen\agile-skalierungsframeworks.ad
 
 === Organisation
-include:projektmanagement\grundlagen\organisation\projektorganisation.ad
-include:projektmanagement\grundlagen\organisation\projektaufbauorganisation.ad
-include:projektmanagement\grundlagen\organisation\unterstuetzungsfunktionen.ad
-include:projektmanagement\grundlagen\organisation\hilfsmittel.ad
-include:projektmanagement\grundlagen\organisation\multiprojektmanagement.ad
+include:projektmanagement\grundlagen\projektorganisation.ad
+include:projektmanagement\grundlagen\projektaufbauorganisation.ad
+include:projektmanagement\grundlagen\unterstuetzungsfunktionen.ad
+include:projektmanagement\grundlagen\hilfsmittel.ad
+include:projektmanagement\grundlagen\multiprojektmanagement.ad
 
 == Initialisierung
 include:projektmanagement\initialisierung\initialisierung.ad
