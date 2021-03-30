@@ -30,14 +30,17 @@ include:projektmanagement\initialisierung\initialisierung.ad
 == Definition
 include:projektmanagement\definition\definition.ad
 
-=== Zielfindung
-include:projektmanagement\definition\zielfindung\ziele.ad
-include:projektmanagement\definition\zielfindung\zielfindungsprozess.ad
-
 === Organsatorisches
 include:projektmanagement\definition\organisatorisches\meetings.ad
 include:projektmanagement\definition\organisatorisches\dokumente.ad
 
+=== Zielfindung
+include:projektmanagement\definition\zielfindung\ziele.ad
+include:projektmanagement\definition\zielfindung\zielfindungsprozess.ad
+
 === Stakeholdermanagement
 include:projektmanagement\definition\stakeholdermanagement\stakeholdermanagement.ad
 include:projektmanagement\definition\stakeholdermanagement\stakeholdermanagement-prozess.ad
+
+=== Planung
+dev:include:projektmanagement\definition\grobplanung.ad
