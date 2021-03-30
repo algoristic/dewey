@@ -38,6 +38,6 @@ include:projektmanagement\definition\zielfindung\zielfindungsprozess.ad
 include:projektmanagement\definition\organisatorisches\meetings.ad
 include:projektmanagement\definition\organisatorisches\dokumente.ad
 
-dev:=== Stakeholdermanagement
-dev:include:projektmanagement\definition\stakeholdermanagement\stakeholdermanagement.ad
-dev:include:projektmanagement\definition\stakeholdermanagement\stakeholdermanagement-prozess.ad
+=== Stakeholdermanagement
+include:projektmanagement\definition\stakeholdermanagement\stakeholdermanagement.ad
+include:projektmanagement\definition\stakeholdermanagement\stakeholdermanagement-prozess.ad
