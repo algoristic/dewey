@@ -28,6 +28,11 @@ Quality Gates definieren eine *formale Ergebnisprüfung* der vorgelagerten Phase
 
 IMPORTANT: _Meilensteine_ definieren Termin und Inhalt des Phasenergebnisses, _Quality Gates_ sichern die ihnaltliche Korrektheit.
 
+.Typische Quality Gates der Software Entwicklung
+image::quality_gates_001.png[Typische Quality Gates der Software Entwicklung, 720, align="center"]
+
+
+
 == Meilensteinplan
 
 .Meilensteinplan
