@@ -31,7 +31,27 @@ IMPORTANT: _Meilensteine_ definieren Termin und Inhalt des Phasenergebnisses, _Q
 .Typische Quality Gates der Software Entwicklung
 image::quality_gates_001.png[Typische Quality Gates der Software Entwicklung, 720, align="center"]
 
-== Meilensteinplan
+== Phasen-Meilensteinplan
+Stellt als Ergebnis der Grobplanung die Projektphasen mit den wichtigsten Tätigkeiten und ihren Ergebnissen (Qulity Gates und Meilensteine) dar. Daraus resultieren bereits zu diesem frühen Zeitpunkt im Projekt der grobe Ablauf und eine ungefähre Terminstruktur.
 
-.Meilensteinplan
-image::meilensteinplan_001.png[Meilensteinplan, 420, align="center"]
+Die Darstellung kann in grafischer Form oder als einfache Tabelle erfolgen.
+
+.Phasen-Meilensteinplan
+[width="100%",cols=5*,options=header]
+|===
+|Phase
+|Beschreibung
+|Ergebnis
+|Kriterien
+|Termin
+
+|...
+|...
+|...
+|...
+|...
+
+|===
+
+.Phasen-Meilensteinplan
+image::meilensteinplan_001.png[Phasen-Meilensteinplan, 420, align="center"]
