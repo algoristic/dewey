@@ -44,3 +44,6 @@ include:projektmanagement\definition\stakeholdermanagement-prozess.ad
 
 === Planung
 include:projektmanagement\definition\grobplanung.ad
+
+dev:=== Machbarkeitsanalyse
+dev:include:projektmanagement\definition\machbarkeitsanalyse.ad
