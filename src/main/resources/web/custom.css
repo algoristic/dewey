@@ -141,6 +141,10 @@ a:hover, a:focus {
 .dlist .dlist dl dt {
     color: var(--color);
 }
+.exampleblock > .content {
+    background: none;
+    box-shadow: none;
+}
 @media screen and (min-width:768px) {
     #toc.toc2 {
         background: var(--header-background);
