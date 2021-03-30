@@ -43,4 +43,4 @@ include:projektmanagement\definition\stakeholdermanagement.ad
 include:projektmanagement\definition\stakeholdermanagement-prozess.ad
 
 === Planung
-dev:include:projektmanagement\definition\grobplanung.ad
+include:projektmanagement\definition\grobplanung.ad
