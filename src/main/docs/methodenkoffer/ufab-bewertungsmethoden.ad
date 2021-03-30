@@ -1,8 +1,15 @@
-= Bewertungsmethoden UfAB
+= Bewertungsmethoden nach UfAB
 :dewey-template: default.doc.ad
 
 :imagesdir: images
 :stem:
+
+== Beschreibung
+Die UfAB (**U**nterlagen **f**ür **A**usschreibung und **B**ewertung von IT-Lstiungen) sind ein Praxisleitfaden des Bundes für die Durchführung von IT-Beschaffung.
+
+IMPORTANT: Die UfAB enthalten Methoden zur Ermittlung und Bewertung des wirtschaftlich günstigsten Angebotes.
+
+image::ufab_001.png[UfAB, 650, align="center"]
 
 == Vereinfachte Leistungs-/Preismethode
 Einfachste Methode von allen: *das günstigste Angebot* erhält den Zuschlag. Wurden Ausschluss- oder K. O.-Kriterien  definiert, so ist die Erfüllung dieser Kriterien eine Grundvoraussetzung.
