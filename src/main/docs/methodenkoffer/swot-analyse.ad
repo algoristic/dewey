@@ -6,6 +6,12 @@
 == Übersicht
 Die SWOT-Analyse ist eine Methode aus der strategischen Unternehmensanalyse. Mit ihr lassen sich strukturiert Stärken, Schwächen, Chancen und Bedrohungen, die im Hinblick auf Produkte, Projekte, Prozese, Unternehmen und andere Objekte existieren, identifizieren.
 
+Namensgebung::
+* **S**trengths -- Stärken
+* **W**eaknesses -- Schwächen
+* **O**pportunities -- Chancen
+* **T**hreats -- Bedrhungen
+
 == Pro und Kontra
 Pro::
 * geeignet für eine Entscheidungsfindung in einem nicht-linearen Umfeld
@@ -20,25 +26,58 @@ Kontra::
 == Vorbereitung
 Um aussagekräftige Ergebnisse zu erhalten, muss eine gute Vorarbeit durchgeführt werden.
 
-=== Zieldefinition
+Zieldefinition::
 Aufgabe, Frage oder Ziel definieren! Je genauer formuliert, desto besser. Die SWOT-Analyse darf nicht zu allgemein durchgeführt werden.
 
-=== Teilnehmer festlegen
+Teilnehmer festlegen::
 Die am besten geeigneten Teilnehmer ergeben sich aus der Fragestellung. Es sollte alle berührten Bereiche vertreten sein.
 
-=== Recherche
+Recherche::
 Externe Analysen (je nach Projektgröße auch Marktforschungsstudien o. Ä.) durchführen und eine interne Analyse vornehmen. Externe Themen können beispielsweise Technologien, Trends oder Politik sein, interne eher Finanzen, Know-How, Personal...
 
-=== Workshop vorbereiten
+Workshop vorbereiten::
 Siehe Methodenkoffer: link:./workshops[Workshops].
 
 == Durchführung
 Die Durchführung der SWOT-Analyse bietet sich als Workshop an, die wir so viele unterschiedliche Fachdisziplinen und Gedankengänge versammeln und nutzen können.
 
-=== SWOTs zusammentragen
+SWOTs zusammentragen::
+Die einzelnen Themenfelder werden eines nach dem anderen durchgegangen. Am besten eigenet sich dafür die namensgebende Reihenfolge S -- W -- O -- T, da diese die **T**hreats am Schnluss platziert, sodass zunächst eine positive Entfaltung der Ideen gewährtleistet ist. Zu jedem Themenfeld werden zunächst Ideen gesammelt. Das kann sowohl unstrukturiert oder direkt in Form einer Mindmap passieren.
+Leitfragen zur Orientierung:::
+    Strengths::::
+        * Erfolgserlebnisse in letzter Zeit?
+        * Begeisterte Kunden?
+        * Was trauen wir uns zu?
+        * ...
+    Weaknesses::::
+        * Wann ziehen wir uns zurück?
+        * Ausgelassene Herausforderungen?
+        * Finanzielle Verluste im Unternehmen?
+        * ...
+    Opportunities::::
+        * Gut verkaufte Produkte?
+        * Gutes Feedback?
+        * Trends?
+        * ...
+    Threats::::
+        * Umsatzrückgang in bestimmten Bereichen?
+        * Wo haben Wettbewerber Vorsprung?
+        * Verlust von Marktanteilen?
+        * ...
 
-=== Präzisieren und Clustern
+.SWOT-Analyse: Prinzip
+image::swot_prinzip_001.png[SWOT-Analyse: Prinzip, 320, align="center"]
+
+Präzisieren und Clustern::
 Doppelnennungen eliminieren, Themengruppen identifizieren, Aussagen klar und verständlich machen. (_Ohne eine Wertung vorzunehmen!_)
 
-=== Bewertung
+Bewertung::
 Wertung oder Priorisierung der SWOTs vornehmen, z. B. mittels eines link:./paarweiser-vergleich[paarweisen Vergleichs].
+
+Lösungen entwicken::
+_Am besten nur die wichtigsten Punkte nutzen._
+
+Lösungen priorisieren::
+* abermals einen link:./paarweiser-vergleich[paarweisen Vergleich] durchführen
+* jeder Teilnehmer erhält eine gewisse Anzahl von Punkten, die er auf die Lösungen verteilt
+* Formulierung von Arbeitsanweisungen oder Business Cases auf Basis der Lösung -- die Konkretisierung hilft bei der Priorisierung
