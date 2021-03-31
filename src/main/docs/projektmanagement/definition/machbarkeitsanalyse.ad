@@ -6,4 +6,46 @@
 == Machbarkeitsanalyse
 In der Machbarkeitsanalyse (_nach der Zieldefinition, sinnvollerweise vor der Konzeption_) wird geprüft, wie realistisch das Projektziel ist. Dazu werden Erfolgskriterien für das Projekt definiert, die mindestens für ein Gelingen gegeben sein müssen.
 
-_MEMO: SWOT-Analyse in "Methodenkoffer"_
+Allgemeine Erfolgskriterien::
+* Unterstützung der obersten Führungsebene
+* fachlich und persönlich passende Zusammensetzung des Projektteams
+* Kommunikation im Projektteam
+* Führungsqualität des Projektleiters
+* richtige Zieldefefinition(en)
+
+Weitere Erfolgskriterien werden am Ende der durchgeführten Machbarkeitsanalyse vorliegen!
+
+NOTE: Die Machbarkeitsanalyse/-bewertung liefert die Datengrundlage für ein realistisches Risikomanagement.
+
+=== Aspekte der Machbarkeitsanalyse
+Die folgenden Gesichtspunkte sollten mindestens betrachtet werden, um die Umsetzbarkeit eines Vorhabens zu analysieren:
+Technische Machbarkeit:: IT-Infrastruktur, Hardware, Software, Tools
+Wirtschaftliche Machbarkeit:: Finanzierbarkeit, Rentabilität
+Organisatorische Machbarkeit:: Ressourcen, Akzeptanz, Zulässigkeit
+
+== Fragestellungenen
+Können die Projektziele...
+
+* ...mit den zur Verfügung stehenden Mitteln...
+* ...in der vorgegebenen Zeit...
+* ...mit den vorhandenen Ressourcen...
+
+...umgesetzt werden?
+
+== Ziele und Ergebnisse
+Ziele::
+* Verhinderung von Fehlinvestitionen
+* Identifizierung des optimalen (oder eines guten) Lösungsweges
+* Identifizierung von Risiken (als Input für die Risikoanalyse)
+
+Ergebnisse::
+* Analysen und Bewertungen der betrachteten Lösungswege
+* Entscheidungsmöglichkeiten mit dokumentierten Chancen und Risiken
+* Entscheidungsempfehlung
+
+== Lösungsansätze
+
+* SWOT-Analysefootnote:[SWOT-Analyse: siehe link:./swot-analyse[Methodenkoffer]]
+* Nutzwertanalysefootnote:[Nutzwertanalyse: siehe link:./nutzwertanalyse[Methodenkoffer]]
+* Wirtschaftlichkeitsanalyse
+* Prototyping
