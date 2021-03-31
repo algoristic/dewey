@@ -1,9 +1,8 @@
-= Workshops
+= Checkliste: Workshop planen und durchführen
 :dewey-template: default.doc.ad
 
 :imagesdir:
 
-== Workshop
 Ein Team von Spezialisten erarbeitet eine Lösung. Der Lösungsprozess wird von einem Moderator gestaltet, strukturiert und gesteuert -- nicht aber inhaltlich beeinflusst.
 
 Pro::
@@ -16,3 +15,82 @@ Kontra::
 * evtl. aufwändige Organisation
 * evtl. teuer (Personal- und Raumkosten)
 * Moderationskompetenzen erforderlich
+
+== Vorbereitung
+
+=== Planung
+Klärung der wichtgsten Fragen zur Planung.
+
+Was?::
+* Warum wird der Workshop benötigt?
+* Welches Thema soll besprochen werden?
+* Was soll am Ende erreicht werden?
+* Wer muss teilnehmen?
+* Welche Ressourcen stehen zur Verfügung?
+
+Wer?::
+* Teilnehmer festlegen: wer hat die nötigen Kompetenzen?
+* Moderator festlegen -- _Aufgaben des Moderators_:
+    ** Ablaufplan erstellen
+    ** Methoden auswählen
+    ** Arbeitsathmosphäre gestalten
+    ** Redebeiträge und Zeiteinhaltung steuern
+    ** Störungen beseitigen
+
+Wo?::
+* Besprechungsraum organisieren, möglichst hell
+* Für Getränke und kleine Speisen sorgen
+
+Wann?::
+Termin festlegen -- _Faktoren_:
+* Termin für das Thema
+* Verfügbarkeit der Teilnehmer
+* Verfügbarkeit des Raumes
+* Verfügbarkeit des Moderators
+
+Wie?::
+Moderator legt (zusammen mit den wichtigsten Stakeholdern) der Ablaufplan fest. Zu klärende Punkte:
+* Teilthemen
+* Ziel, das mit der Bearbeitung eines Teilthemas erreicht werden soll
+* Bearbeitungszeit
+* Bearbeitungsmethode
+* Gruppenarbeiten
+* erfoderliches Arbeitsmaterial
+
+Womit?::
+Geeignete Arbeitsmaterialien beschaffen. Dazu zählen z. B. die technische Ausstattung (_Beamer_ und _Leinwand_, _Tonanlage_) oder Moderationsausstattung (_Pinnwände_, _Flip-Chart_, _Namensschilder, ...) aber auch die Ermittlung der erforderlichen Ressourcen (_Raum_, _Getränke und Verpflegung_ aber auch _Übernachtungs- und Reisekosten_).
+
+=== Einladung
+Sind die inhaltlichen Fragen geklärt und die Planung abgeschlossen, so müssen die Teilnehmer eingeladen werden. Den Teilnehmern _Zeit_, _Ort_ und _Thema_ zukommen lassen. Eventuell auch die Agenda und eine Teilnehmerliste oder die konkrete Aufgabenstellung -- je nach Methode und Inhalt des Workshops.
+
+== Ablauf
+
+=== Start
+* Begrüßung
+* Klärung der folgenden Punkte: +
+    Sachlich:::
+        ** Thema und Aufgabenstellung
+        ** Ablauf
+        ** Arbeits- und Pausenzeiten
+        ** Arbeitsweise
+    Persönlich:::
+        ** Teilnehmervorstellung
+        ** Vorwissen und Betroffenheit der Teilnehmer hinsichtlich des Themas klären
+        ** Erwartungen erfragen
+
+=== Ziel und Ablauf
+* Thema vorstellen
+* Verständnisfragen klären
+* Thema, Aufgabenstellung und Methode diskutieren
+    ** Agenda
+    ** Arbeitszeitplan
+    ** "Spielregeln"
+    ** was ist *nicht* Gegenstand des Workshops?
+
+=== Thema bearbeiten
+_Das hängt von der mit dem Moderator erarbeiteten Methode ab._
+
+=== Ergebnis dokumentieren
+* Ergebnis(se) sichtbar für alle festhalten
+* Ergebnis(se) sollte(n) von allen Teilnehmern akzeptiert sein
+    ** ansonsten solange diskutieren und modifizieren bis alle zustimmen können
