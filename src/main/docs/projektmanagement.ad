@@ -38,8 +38,8 @@ include:projektmanagement\definition\dokumente.ad
 include:projektmanagement\definition\ziele.ad
 include:projektmanagement\definition\zielfindungsprozess.ad
 
-dev:=== Machbarkeitsanalyse
-dev:include:projektmanagement\definition\machbarkeitsanalyse.ad
+=== Machbarkeitsanalyse
+include:projektmanagement\definition\machbarkeitsanalyse.ad
 
 === Stakeholdermanagement
 include:projektmanagement\definition\stakeholdermanagement.ad

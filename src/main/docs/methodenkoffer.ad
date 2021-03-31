@@ -15,5 +15,5 @@ include:methodenkoffer\wirtschaftlichkeit\investitionsrechnung.ad
 === Gemischte Betrachtung
 include:methodenkoffer\wirtschaftlichkeit\ufab-bewertungsmethoden.ad
 
-dev:== Strategie
-dev:include:methodenkoffer\swot-analyse.ad
+== Strategie
+include:methodenkoffer\swot-analyse.ad
