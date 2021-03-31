@@ -1,4 +1,42 @@
 = Kategorisierung von Unternehmen
 :dewey-template: default.doc.ad
 
-== null
+== Betriebsarten
+Unterscheidung der Unternehmen nach:
+
+Wirtschaftszweig::
+* Handwerk
+* Industrie
+* Handel
+* ...
+
+Leistungserstellung::
+* Sachleistung
+* Dienstleistung
+
+Produktionsfaktor::
+* Arbeit
+* Kapital
+* Material
+
+Zielsetzung::
+* erwerbswirtschaflich
+* gemeinwirtschaftlich
+* gemischtwirtschaftlich
+
+Beschäftigungszahl::
+* &#8924; 50 (_klein_)
+* &#8924; 500 (_mittel_)
+* &#62; 500 (_groß_)
+
+Rechtsform::
+* Einzelunternehmung (_Gewerbe_, _e. K._)
+* Personengesellschaft (_GbR_, _oHG_, _KG_, ...)
+* Kapitalgesellschaft (_GmbH_, _AG_, ...)
+
+== Wirtschaftssektoren
+Primär:: Rohstoff- und Energiegewinnung
+Sekundär:: Stoffbe- und -verarbeitung
+Tertiär:: Handel und Dienstleistungen
+Quartär:: öffentliches Gemeinwesen
+Quintär:: private Haushalte
