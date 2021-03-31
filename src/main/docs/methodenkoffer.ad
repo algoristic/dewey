@@ -1,17 +1,19 @@
 = Methodenkoffer
 :dewey-template: index.topic.ad
 
-== Wirtschaftlichkeitsbetrachtungen
+== Wirtschaftlichkeit
+include:methodenkoffer\wirtschaftlichkeit\kosten-und-nutzenarten.ad
 
-include:methodenkoffer\kosten-und-nutzenarten.ad
+=== Nicht-monetäre Betrachtung
+include:methodenkoffer\wirtschaftlichkeit\paarweiser-vergleich.ad
+include:methodenkoffer\wirtschaftlichkeit\nutzwertanalyse.ad
 
-=== Monetär
-include:methodenkoffer\stundensatz.ad
-include:methodenkoffer\investitionsrechnung.ad
+=== Monetäre Betrachtung
+include:methodenkoffer\wirtschaftlichkeit\stundensatz.ad
+include:methodenkoffer\wirtschaftlichkeit\investitionsrechnung.ad
 
-=== Nicht-monetär
-include:methodenkoffer\paarweiser-vergleich.ad
-include:methodenkoffer\nutzwertanalyse.ad
+=== Gemischte Betrachtung
+include:methodenkoffer\wirtschaftlichkeit\ufab-bewertungsmethoden.ad
 
-=== Gemischt
-include:methodenkoffer\ufab-bewertungsmethoden.ad
+dev:== Strategie
+dev:include:methodenkoffer\swot-analyse.ad
