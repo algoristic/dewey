@@ -1,0 +1,6 @@
+= Betriebswirtschaftslehere
+:dewey-template: index.topic.ad
+
+== Grundlagen
+include:bwl\oekonomisches-prinzip.ad
+include:bwl\kategorisierung-unternehmen.ad
