@@ -1,0 +1,82 @@
+<mxfile host="Electron" modified="2021-03-31T07:00:17.261Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.1.8 Chrome/87.0.4280.88 Electron/11.1.1 Safari/537.36" etag="m6xI6SpA-N6NU8d-hiWL" compressed="false" version="14.1.8" type="device">
+  <diagram id="98VzEBgHLFjBzqonKXNm" name="Seite-1">
+    <mxGraphModel dx="782" dy="497" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#000000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-fTfkG4_E0CUybejK7uq-1" value="&lt;b&gt;S-O-Strategie&lt;/b&gt;:&lt;br&gt;&lt;div&gt;&lt;span&gt;Mit den eigenen Stärken die gegebenen Möglichkeiten ausnutzen.&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacingLeft=10;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="240" y="80" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-fTfkG4_E0CUybejK7uq-2" value="&lt;b&gt;S-T-Strategie&lt;/b&gt;:&lt;br&gt;&lt;div&gt;&lt;span&gt;Mit den eigenen Stärken die Gefahren abwehren.&lt;/span&gt;&lt;/div&gt;" style="text;html=1;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=1;spacingLeft=10;dashed=1;glass=0;sketch=0;shadow=0;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="60" y="200" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-fTfkG4_E0CUybejK7uq-3" value="&lt;b&gt;W-O-Strategie&lt;/b&gt;:&lt;br&gt;&lt;div&gt;&lt;span&gt;Die eigenen Schwächen überwinden, um Möglichkeiten wahrnehmen zu können.&lt;/span&gt;&lt;/div&gt;" style="text;html=1;fillColor=none;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacingLeft=0;spacingRight=10;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="420" y="200" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-fTfkG4_E0CUybejK7uq-4" value="&lt;b&gt;W-T-Strategie&lt;/b&gt;:&lt;br&gt;&lt;div&gt;&lt;span&gt;Die eigenen Schwächen beseitigen, um Gefahren abwehren.&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;spacingLeft=10;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="240" y="320" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-fTfkG4_E0CUybejK7uq-5" value="S" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;fontStyle=1;fontSize=22;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="90" y="90" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-fTfkG4_E0CUybejK7uq-6" value="W" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;fontStyle=1;fontSize=22;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="570" y="330" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-fTfkG4_E0CUybejK7uq-7" value="T" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;fontStyle=1;fontSize=22;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="90" y="330" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-fTfkG4_E0CUybejK7uq-8" value="O" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=center;fontStyle=1;fontSize=22;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="570" y="90" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-fTfkG4_E0CUybejK7uq-9" value="" style="endArrow=classic;html=1;fontSize=22;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="-fTfkG4_E0CUybejK7uq-5" target="-fTfkG4_E0CUybejK7uq-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="120" as="sourcePoint" />
+            <mxPoint x="220" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-fTfkG4_E0CUybejK7uq-10" value="" style="endArrow=classic;html=1;fontSize=22;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="1" source="-fTfkG4_E0CUybejK7uq-8" target="-fTfkG4_E0CUybejK7uq-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="580" y="60" as="sourcePoint" />
+            <mxPoint x="630" y="10" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-fTfkG4_E0CUybejK7uq-11" value="" style="endArrow=classic;html=1;fontSize=22;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#ffe6cc;strokeColor=#d79b00;" edge="1" parent="1" source="-fTfkG4_E0CUybejK7uq-7" target="-fTfkG4_E0CUybejK7uq-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="310" as="sourcePoint" />
+            <mxPoint x="170" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-fTfkG4_E0CUybejK7uq-12" value="" style="endArrow=classic;html=1;fontSize=22;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="-fTfkG4_E0CUybejK7uq-6" target="-fTfkG4_E0CUybejK7uq-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="300" as="sourcePoint" />
+            <mxPoint x="640" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-fTfkG4_E0CUybejK7uq-13" value="" style="endArrow=classic;html=1;fontSize=22;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;fillColor=#d5e8d4;strokeColor=#82b366;" edge="1" parent="1" source="-fTfkG4_E0CUybejK7uq-5" target="-fTfkG4_E0CUybejK7uq-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="210" as="sourcePoint" />
+            <mxPoint x="250" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-fTfkG4_E0CUybejK7uq-14" value="" style="endArrow=classic;html=1;fontSize=22;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;fillColor=#ffe6cc;strokeColor=#d79b00;" edge="1" parent="1" source="-fTfkG4_E0CUybejK7uq-7" target="-fTfkG4_E0CUybejK7uq-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="320" as="sourcePoint" />
+            <mxPoint x="310" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-fTfkG4_E0CUybejK7uq-15" value="" style="endArrow=classic;html=1;fontSize=22;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="-fTfkG4_E0CUybejK7uq-6" target="-fTfkG4_E0CUybejK7uq-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="660" y="350" as="sourcePoint" />
+            <mxPoint x="710" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-fTfkG4_E0CUybejK7uq-16" value="" style="endArrow=classic;html=1;fontSize=22;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;fillColor=#fff2cc;strokeColor=#d6b656;" edge="1" parent="1" source="-fTfkG4_E0CUybejK7uq-8" target="-fTfkG4_E0CUybejK7uq-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="140" as="sourcePoint" />
+            <mxPoint x="740" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
