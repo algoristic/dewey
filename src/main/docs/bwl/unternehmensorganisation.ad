@@ -1,0 +1,16 @@
+= Unternehmensorganisation
+:dewey-template: default.doc.ad
+
+== Aufbauorganisation
+* *langfristige* Regelung der *hierarchischen Beziehungen* im Unternehmen
+* orientiert sich an der Struktur des Unternehmens
+* besteht aus Stellenbeschreibungen und ordnet diese sogenannten *Organisationseinheiten* unter
+    ** z. B. Funktionsbereiche wie Geschäftsführung, Abteilungen, Teams, usw.
+* die klassische Darstellung der Ablauforganisation ist das Organigramm
+* für _Projekte_ siehe link:./projektaufbauorganisation[Projektaufbauorganisation]
+
+== Ablauforganisation
+* *kurzfristige* Regelung der *Abläufe*
+* orientiert sich an den Prozessen des Unternehmens
+* besteht aus Prozessbeschreibungen -- oft eingeordnet in einen Ablaufplan oder eine Prozesskarte des Unternehmens
+* für _Projekte_ siehe link:./phasen-und-vorgehensmodelle[Phasen- und Vorgehensmodelle] und link:./uebersicht-vorgehensmodelle[Übersicht Vorgehensmodelle]
