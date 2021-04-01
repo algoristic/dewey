@@ -7,22 +7,22 @@ Der Name dieses Projektes bezieht sich auf https://de.wikipedia.org/wiki/Melvil_
 *Prod* Version: http://wiki.algoristic.de/ +
 *Develop* System: http://dewey.algoristic.de/
 
-== Getting Started
+== 🚀 Getting Started
 
 Das Projekt erfordert, dass `Ruby` auf dem System installiert ist, ebenso wie das `gem` Asciidoctor. Einstieg für die Installation unter Windows ist die Anleitung auf https://docs.asciidoctor.org/asciidoctor/latest/install/windows/[asciidoctor.org].
 
 Wird das Skript `build.ps1` über die exemplarischen Batch-Dateien `build.dev.bat` oder `build.prod.bat` gestartet, so sollte der `build`-Prozess ohne Probleme starten. Andernfalls sollte zunächst geprüft werden, ob die `ExecutionPolicy` von `PowerShell` den Start des Skripts möglicherweise verhindert.
 
-== Inhalte erstellen
+== ✏️ Inhalte erstellen
 
 . Die Bilder zu einem Artikel sollten immer in einem `images`-Ordner liegen, der sich auf einer Ebene mit dem Artikel befindetfootnote:[Das gilt *nicht* für Artikel, die via `include`-Makro in einen anderen Artikel eingebunden sind und sich auf einer anderen Ebene als der inkludierende Artikel befinden.].
 . Die Bilder in diesem Projekt wurden mit https://www.draw.io/[draw.io] erstellt, da dies die Erstellung von Diagrammen und Grafiken aller Art unterstützt und diese in serialisierter (und damit versionierbarer) Form speichern kann.
     ** _Hinweis_: Um die Daten serialisiert zu speichern im Programm auf _Datei_ > _Eigenschaften_ > _Komprimiert_ gehen und dort das Häkchen entfernen.
 . __STEM__-Formelnfootnote:[**S**cience, **T**echnology, **E**ngineering and **M**ath] werden automatisch über das https://docs.asciidoctor.org/asciidoc/latest/stem/stem/[AsciiMath]-Makro (http://asciimath.org/[Syntax]) dargestellt, dazu sind keine weiteren Installationen notwendig
 
-== dewey-Funktionen
+== ✨ dewey-Funktionen
 
-=== Parameter
+=== 💬 Parameter
 
 * *Src*: Legt den Pfad fest, unter dem sich die zu rendernden Dokumente befinden, hier muss sich als Einstieg eine `index.ad`-Datei befinden.
 * *Dest*: Legt den Zielpfad für die gerenderten Dateien fest.
@@ -36,6 +36,6 @@ Wird das Skript `build.ps1` über die exemplarischen Batch-Dateien `build.dev.ba
 * *Flatten*: `true` "glättet" die Ordnerstruktur, sodass sämtliche generierten `.html`-Dateien direkt ins _Dest_-Verzeichnis gerendert werden. Außerdem wird ein zentraler Ordner für Bilder angelegt. _Namensgleichheiten sind zu vermeiden!_ `false` belässt die Verzeichnisstrukturen so, wie sie sind.
 * *LogLevel*: Legt das Level fest, auf dem das Log geschrieben wird. Die meisten Meldungen werden unter `INFO` herausgeschrieben, `DEBUG` ergänzt diese Informationen um `build`- und `render`-Zeiten
 
-=== Dokumenterstellung
+=== 📝 Dokumenterstellung
 
 _TO-DO_
