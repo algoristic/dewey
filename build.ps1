@@ -406,7 +406,7 @@ Else
 }
 
 # verarbeite zentrale index.ad
-Write-Log "Render index: index.ad"
+Write-Log "Build index: index.ad"
 Render-IndexFile "$Src\index.ad" $BuildCss "~NONE~" 0 | Out-Null
 
 If($Production)
