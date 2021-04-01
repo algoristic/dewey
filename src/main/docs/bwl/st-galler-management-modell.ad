@@ -1,0 +1,10 @@
+= St. Galler Management-Modell
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+
+== St. Galler Management-Modell
+Dieses Modell versucht die komplexen Beziehungen eines Unternehmens zur "Außenwelt", sowie seine inneren Beziehungen und Abläufe zu strukturieren. Das Unternehmen wird dabei als Gesamtheit seiner Prozesse interpretiert.
+
+.St. Galler Management-Modell
+image::st_galler_mgmt_modell_001.png[St. Galler Management-Modell, align="center"]
