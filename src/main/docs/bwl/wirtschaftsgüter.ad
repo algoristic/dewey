@@ -1,0 +1,48 @@
+= Wirtschaftsgüter
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+
+== Klassifikation
+Nach...
+
+...Art der Nutzung::
+* Verbrauchsgüter
+* Gebrauchsgüter
+
+...Stufe im Produktionsprozess::
+* Inputgüter
+* Outputgüter
+
+...Verwendungszweck::
+* Produktionsgüter
+* Konsumgüter
+
+...Physische Substanz::
+* materielle Güter
+* immaterielle Güter
+
+== Produkte
+...sind...
+
+* materielle Güter oder immaterielle Dienstleistungen am Ende eines Produktionsprozesses
+* wirtschaftliche Leistungen zur Befriedigung der Bedürfnisse des (ptentiellen) Kunden
+* unterscheidbar/unterteilbar in Sachgüter, Dienst- und Energieleistungen
+
+== Wertschöpfungskette
+Die Wertschöpfungskette stellt die zusammenhängenden Aktivitäten des unternehmerischen Geschäftsprozesses dar.
+
+.Wertschöpfungskette
+image::wertschoepfungskette_001.png[Wertschöpfungskette, 860, align="center"]
+
+Entscheidend ist, dass durch *jeden* Abschnitt entlang der Wertschöpfungskette ein Mehrwert für den Kunden generiert wird.
+
+=== Beispiel
+Produktion eines Fahrrades
+
+Forschung und Entwicklung:: Am Anfang steht die Idee für die eines Fahrrades. Diese könnten wir zwar eventuell auch verkaufen, dann liegt aber die gesamte Planung, Arbeit, etc. beim Käufer.
+Beschaffung:: Wir beschaffen die Einzelteile bei verschiedenen Produzenten -- auch diese könnten wir wie einen Bausatz bereits verkaufen.
+Produktion:: Wir setzen das fertige Produkt aus den Einzelteilen zusammen. Jetzt haben wir bereits ein fertiges Produkt für den Endkunden -- dieser weiß aber leider noch nichts davon, dass es dieses Produkt gibt!
+Vertrieb:: Der Vertrieb macht gegenüber dem Kunden bekannt, dass es unser Fahrrad zu kaufen gibt. Der Kunde kauft tatsächlich ein Fahrrad -- dieses muss er allerdings noch abholen. (Schließlich sagt der Gesetzgeber sinngemäß _Warenschulden sind *Holschulden*_.)
+Versand:: Der Versand liefert dem Kunden das Produkt bequem nach Hause. Nach einigen Wochen reißt die Fahrradkette -- der Kunde weiß nicht, was er jetzt mit dem kaputten Fahrrad machen soll.
+Service:: Der Service organisiert für den Kunden eine Reparatur in einer Vertragswerkstatt, sodass das Fahrrad wieder funktioniert und der Kunde unbeschwert weiterfahren kann.

@@ -1,0 +1,37 @@
+<mxfile host="Electron" modified="2021-04-01T05:43:01.781Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.1.8 Chrome/87.0.4280.88 Electron/11.1.1 Safari/537.36" etag="OO3IJ3_nTQj_O6lM2k4o" compressed="false" version="14.1.8" type="device">
+  <diagram id="Nbs87VXkQiy5Cywtt8eT" name="Seite-1">
+    <mxGraphModel dx="1086" dy="806" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XZd-bz3J4H8LYd24WKQG-1" value="" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0.6;dx=40;notch=15;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="20" y="150" width="980" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="6gDusoAKEKmkELs4LC8_-1" value="Beschaffung" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="190" y="200" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6gDusoAKEKmkELs4LC8_-2" value="Forschung und&lt;br&gt;Entwicklung" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="40" y="200" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6gDusoAKEKmkELs4LC8_-3" value="Produktion" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="340" y="200" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6gDusoAKEKmkELs4LC8_-4" value="Vertrieb" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="490" y="200" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6gDusoAKEKmkELs4LC8_-5" value="Versand" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="640" y="200" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6gDusoAKEKmkELs4LC8_-6" value="Service" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#b0e3e6;strokeColor=#0e8088;" parent="1" vertex="1">
+          <mxGeometry x="790" y="200" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6gDusoAKEKmkELs4LC8_-7" value="Auswertungen, Rechnungswesen, Controlling" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="30" y="260" width="920" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="6gDusoAKEKmkELs4LC8_-8" value="Management, Führung" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="30" y="140" width="920" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
