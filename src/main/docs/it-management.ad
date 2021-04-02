@@ -6,3 +6,7 @@ include:it-management\grundbegriffe\informatik.ad
 include:it-management\grundbegriffe\informationsmanagement.ad
 include:it-management\grundbegriffe\informations-und-anwendungssysteme.ad
 include:it-management\grundbegriffe\nutzer-nutzen-nutzung.ad
+
+== Anwendungssysteme
+include:it-management\anwendungssysteme.ad
+include:it-management\klassifikation-anwendungssysteme.ad

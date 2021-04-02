@@ -1,0 +1,22 @@
+= Klassifikation
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+
+== Klassifikation nach Art und Zweck der Erstellung
+Eine Möglichkeit Software zu klassifizieren ist es, dies nach Art und Zweck ihrer Erstellung zu tun -- also anhand der Fragen "_Wer entwickelt die Software für wen?_" und "_Wofür wird die Software eingesetzt?_".
+
+.Klassifikation nach Art und Zweck
+image::klassifikation-erstellung_001.png[Klassifikation nach Art und Zweck, 600, align="center"]
+
+Systemsoftware bzw. Firmware:: Ganz grob gesagt steuert Systemsoftware die technischen Bauteile eines Rechners an (_Kernel_) und schafft mit darauf aufbauenden Bestandteilen eine bedienbare Oberfläche für den Nutzer. Systemsoftware ist ein ganz eigener, sehr spezieller Bereich, auf den ich hier nicht näher eingehen werde.
+Anwendungssoftware:: Anwendungssoftware bezeichnet ganz allgemein Prorgamme, die Probleme eines Anwenders lösen, also die Möglichkeit schaffen eine Tätigkeit auszuführen oder sie effizienter zu erledigen. Darunter praktisch alle Anwendungen, die wir in unserem privaten aber auch beruflichen Alltag nutzen - von der Text- oder Bildbearbeitung über den Browser, unserer Entwicklungsumgebung bis hin zu Steuerungstechnik von Maschinen. Diese kann nach der Frage "_Wer entwickelt die Software für wen?_" in die Kategorien _Individual-_ und _Standardsoftware_ untergrliedert werden.
+    Individualsoftware::: Die Software wird speziell für die Anforderungen eines bestimmten Unternehmens entwickelt
+        Eigenentwicklung:::: Das Unternehmen baut die Software selbst
+        Fremdentwicklung:::: Ein Dienstleister erstellt die Software
+    Standardsoftware::: Die Software bildet die Anforderungen einer ganzen Branche ab
+        Technische Software:::: Software, die beispielsweise zur Entwicklung eingesetzt wird, also Entwicklungsumgebungen, CAD-Systeme, ...
+        Geschäftsanwendungen:::: Software, die Geschäftsprozesse in Industrie-, Handels- und anderen Unternehmen abbildet
+        Gemischte Software:::: Software, die diese Felder miteinander vermischt
+
+TIP: Wusstest du, dass _Firmware_ so heißt, weil sie zwischen _Soft-_ und _Hardware_ liegt?

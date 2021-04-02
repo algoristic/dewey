@@ -1,0 +1,20 @@
+= Anwendungssysteme
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+
+== Definition
+Wie wir im Bereich der _IT Grundbegriffe_ bereits gesehen haben, bezeichnen Anwendungssysteme sämtliche technischen Aspekte der IT-Infrastruktur, die sich mit einem bestimmten Aufgabengebiet umfassen. Das beinhaltet sowohl die _Hard- und Software_ aber auch _Daten, Speichertechnik, Kommunikation und Netzwerk_. Nun ist natürlich nicht die gesamte Infrastruktur eines Unternehmens als _ein_ Anwendungssystem zu sehen. Ein Anwendungssystem ist praktisch eine Teilbetrachtung des Ganzen: wenn wir uns eine bestimmte Software, die dieses Unternehmen einsetzt, herauspicken und alles betrachten, was für den Einsatz dieser notwendig ist, dann ist das ein Anwendungssystem. Das kann der Server sein, auf dem die Software zentral installiert ist, das Intranet, über das sie erreichbar ist, der Rechner des Angestellten, über den er sich in die Software einloggt und natürlich die Software selbst.
+
+== Geschäftsprozessorientierte Anwendungssysteme
+In Unternehmen und öffentlichen Einrichtungen aller Größen und Branchen bestimmen heute geschäftsprozessorientierte Softwaresysteme über Funktion und Flexibilität dieser Organisation. Als geschäftsprozessorientierte Softwaresysteme bezeichnen wir solche Systeme, die wesentliche Daten und Funktionen von Geschäftsprozessen abbilden.
+
+Daraus lässt sich im Umkehrschluss meiner wichtigsten Erkenntnisse über Softwareentwicklung ableiten: *Software bzw. Technik ist kein Selbstzewck!* Das klingt so banal, dass man es gerne einfach so stehen lassen möchte -- ich werde das jedoch nicht einfach so im Raum stehen lassen.
+
+Ich gehe intuitiv davon aus, dass wir Menschen, die wir im engeren IT-Umfeld arbeiten, im Herzen _Nerds_ sind. Und mit _Nerd_ meine ich weder die Leute, die in abgedunkelten Räumen oder Kellern alleine vor ihrem Bildschirm sitzen, noch Vertreter der modernen _hippen Nerdkultur_, die sich auf den Einschlägigen Streaming- und Social-Media Plattformen profilieren. Ich meine einfach Menschen, die sich für technische oder wissenschaftliche Themen und Problemlösungen begeistern können. Und als solche lenken wir unseren Fokus gerne auf die technische Seite des Systems und beschäftigen uns dabei zu wenig mit dem eigentlichen Kern des Problems: der fachlichen Seite.
+
+== IT-Einsatz und Unternehmenserfolg
+Denn Software ist, wie bereits oben erwähnt, kein Sebstzweck: sie dient stets dazu Gechäftsprozesse zu optimieren oder überhaupt erst zu ermöglichen. Bevor eine Anwendungssoftware entwickelt wird gibt es immer in irgendeinem Unternehmen oder einer Branche den Wunsch nach einer Verbesserung des aktuellen Ablaufs. Das ist bei den meisten Unternehmen, die IT einsetzen, vom Handwerker mit seinem Bürocomputer bis zum Industrieunternehmen mit automatisierter Fertigung intuitiv klar. Es gilt allerdings auch für die großen Technologie-Unternehmen, die auf ihren gigantischen Infrastruktur-Plattformen einen guten Teil des mordernen Internets bereitstellen. Denn auch dort wird ein neues _Framework_ oder eine neue Datenbank-Technologie nicht eingesetzt, _weil es so cool ist_, sondern weil es die Dienstleistung dieses Unternehmens unterstützt und damit verbessert.
+
+.IT-Einsatz und Unternehmenserfolg
+image::it-einsatz_unternehmenserfolg_001.png[IT-Einsatz und Unternehmenserfolg, 320, align="center"]
