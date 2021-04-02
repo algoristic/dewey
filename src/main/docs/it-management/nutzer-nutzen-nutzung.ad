@@ -1,0 +1,11 @@
+= Nutzer-, Nutzungs- und Nutzenorientierung
+:dewey-template: default.doc.ad
+
+Wenn wir Software nicht für uns selber schreiben, sondern weil andere Menschen sie einsetzen sollen, müssen wir eine andere Messlatte, als bei uns selbst, anlegen. Es geht um die Frage, wie das Produkt gebaut sein muss, damit es den Wünschen und Vorstellungen des Kunden am besten dient. Dabei gibt es drei grundlegende Aspekte, die wir betrachten müssen:
+
+== Nutzer-, Nutzungs- und Nutzenorientierung
+Nutzerorientierung:: ... bezeichnet das Identifizieren und Verstehen der Bedürfnisse des Nutzers der Software. In dieser Definition steckt bereits eine große Herausforderung: _den_ Nutzer gibt es in den seltensten Fällen, eher verschiedene Nutzergruppen.
+Nutzungsorientierung:: ... beschreibt das Befriedigen der ermittelten Nutzerbedürfnisse. Dabei spielen, neben den fachlichen Aspekten dessen was die Anwendung leisten soll, auch die Gebrauchtauglichkeit (_Usability_) und das Nutzungserlebnis (_User Experience_) eine Rolle.
+Nutzenorientierung:: ... heißt, dass eine Anwendung der Unternehmung als Ganzes einen Nutzen bringen soll. Das kann beispielsweise in Form von Kostenersparnis durch Produktivitätssteigerung der Fall sein.
+
+NOTE: Diese Aspekte finden wir im Bereich der Anforderungsanalyse im Detail wieder.

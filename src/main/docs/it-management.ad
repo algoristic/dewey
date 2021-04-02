@@ -1,7 +1,8 @@
 = IT-Management
 :dewey-template: index.topic.ad
 
-== Grundlagen
+== Grundbegriffe
 include:it-management\informatik.ad
 include:it-management\informationsmanagement.ad
 include:it-management\informations-und-anwendungssysteme.ad
+include:it-management\nutzer-nutzen-nutzung.ad
