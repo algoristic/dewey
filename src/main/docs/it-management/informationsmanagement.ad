@@ -1,0 +1,36 @@
+= Informationsmanagement
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+
+== Daten, Informationen und Wissen
+
+Beginnen wir mit ein paar Definitionen:
+Zeichen:: ... befinden sich gewissermaßen auf der "untersten Ebene". Zeichen kann man ganz wörtlich als alphanumerische Zeichen und Sonderzeichen begreifen, sie können aber auch abstrakter als kleinstmögliche Bausteine des betrachteten Systems angesehen werden.
+
+Daten:: ... sind _Zeichen_, die mit einer _Syntax_ zu einer _Aussage_ angeordnet wurden. Daten lassen messen, ordnen und strukturieren.
+
+Informationen:: ... sind _Daten_ denen mittels einer _Semantik_ eine Bedeutung zugeordnet wird. Mit Informationen lassen sich bereits Zusammenhänge erkennen und einfache Probleme erkennen.
+
+Wissen:: ... besteht aus _Informationen_, die in einem bestimmten Kontext und mittels Erfahrungen, Wertvorstellungen und Fachkenntnissen betrachtet werden. Wissen weißt daher eine wesentlich höhere Komplexität auf, als die reinen Informationen. Und nur mithilfe von Wissen lassen sich Situtationen vergleichen und Entscheidungen treffen.
+
+.Zusammenhang von Daten, Informationen & Wissen
+image::informationen_001.png[Daten Informationen & Wissen, align="center"]
+
+== Wissensmanagement im Unternehmen
+
+.Wissenstreppe nach North
+image::wissenstreppe_001.png[Wissenstreppe nach North, 640, align="center"]
+
+Daten, Informationen und Wissen sind kein Selbstzweck. Viel mehr sind sie im unternehmerischen Kontext als Stufen auf dem Weg zum Gesamtziel _Wettbewerbsfähigkeit_ einzuordnen. Dies gilt natürlich nicht nur im Umfeld von Big-Data. Die Wissenstreppe nach _Prof. Dr. Klaus North_ gibt uns darüber einen guten Überblick. Denn mittlerweile wird Wissen in der Volkswirtschaftslehre -- neben Boden, Arbeit und Kapital -- in einigen Publikationen als weiterer Produktionsfaktor identifiziertfootnote:[Dietmar Lindenberger, Reiner Kümmel: Energy and the state of nations, EWI Working Paper, No 11/2011].
+
+.Moderne Produktionsfaktoren
+image::produktionsfaktoren_001.png[Produktionsfaktoren, 360, align="center"]
+
+Praktisch heißt das, dass ein Aufgabenträger den Zweck der Aufgabe in einem größeren Sinnzusammenhang oder Arbeitsprozess einordnen kann. Seine Erfahrungen helfen ihm dabei erfolgversprechende Herangehensweisen für die Aufgabenstellung zu entwickeln und letzendlich die angemessenen Techniken und Methoden für die Bearbeitung der Aufgabe auszuwählen.
+
+IMPORTANT: Besonders wir Softwareentwickler als *Wissensarbeiter* sollten die Bedeutung von Wissen im Unternehmen kennen. Wenn wir neue Features entwickeln, rufen wir automatisch die dafür notwendigen Kontrollstrukturen der jeweiligen Programmiersprache im Kopf ab. Und noch deutlicher wird es im fachlichen Kontext: Stellen wir uns eine sehr große Anwendung vor, die sehr generisch programmiert und sehr wenig dokumentiert ist. Ein Wiki ist praktisch nicht existent. Ein Kunde hat ein Problem an einer Stelle, die du noch nie betrachtet hast. Es grenzt ans Unmögliche hier eine geziehlte Fehlersuche durchzuführen oder einen Fix zu programmieren. _So wichtig ist Wissensmanagement im Unternehmen._
+
+Gerade im IT-Umfeld gibt es großartige Tools für das Informations- und Wissensmanagement. Es gibt beispielsweise Lösungen, die Firmenwiki, Dokumentation und Ticketsystem für Entwicklung und Support miteinander vereinen und Reports und Steuerungsmöglichkeiten für das Management bereitstellen. Natürlich sind solche Lösungen ind der Regel kostspielig. Doch dem Unternehmen entstehen auch Kosten, wenn Mitarbeitern die Übericht über das eigene Produkt fehlt und sie sich immer wieder in oft aufkommende Themen einlesen müssen oder den Kollegen, _der sich mit dem Thema auskennt_ um Hilfe bitten. Oder noch schwerwiegender: wenn das Unwissen der Mitarbeiter zu Softwarefehlern oder sogar zu Produktionsausfällen führt. (-> Siehe auch: _Total Cost of Ownership_.)
+
+<<<
