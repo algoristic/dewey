@@ -1,0 +1,30 @@
+= Informations- und Anwendungssysteme
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+
+== Informationssysteme
+
+Informationssysteme sind der Gegenstand unserer täglichen Arbeit als Entwickler. *Informationssysteme* (oder auch _Informations- und Kommunikationssysteme_, kurz _IuK_) sind dabei der der Überbegriff für Systeme, bei denen Menschen, Technik und Aufgaben miteinander in Verbindung stehen, um Daten (_= Informationen_) zu erzeugen, beschaffen, verarbeiten und zu verteilen.
+
+.Definition Informationssystem
+image::informationssysteme_001.png[Informationssystem, 320, align="center"]
+
+Wirtschaftlich gesehen ist ein Informationssystem damit ein _soziotechnisches System_ (-> _Mensch-Maschine-System_) mit dem Ziel der wirtschaftlich optimalen Bereitstellung von Information und Kommunikation.
+
+TIP: Etwas weniger abstrakt: Wenn Du (_= Mensch_) vor deinem Browser (_= Technik_) sitzt und bei _stackoverflow.com_ nach der Lösung für ein Problem suchst (_= Aufgabe_), bildet ihr ein Informationssystem, dass sich der Datenbeschaffung und -weiterverarbeitung für ein Problem widmet.
+
+== Anwendungssysteme
+
+Anwendungssysteme sind dabei der Teil des Systems, der die _Hard- und Software_ aber auch die _Daten, Speichertechnik, Kommunikation und Netzwerk_ umfasst -- man könnte auch sagen, das Anwendungssystem ist einfach der Teil unserer Arbeit, über den wir die meiste Hoheit haben. (Warum nicht die volle Hoheit? Dazu kommen wir später im Thema Anforderungsanalyse.) Anwendungssysteme bilden im wesentlichen die Daten und Funktionen von Geschäftsprozessen im Unternehmen ab.
+
+.Übersicht: Informations- und Anwengungssysteme
+image::informationssysteme_002.png[Informations- und Anwengungssysteme, 420, align="center"]
+
+Ein Anwendungssystem bezeichnet also im engeren Sinne die Programme un zugehörigen Daten für ein bestimmtes Anwendungsgebiet, bzw. im weiteren Sinne die gesamte IT-Infratruktur (inkl. Hard- und Software) für einen bestimmten Verantwortungsbereich. Ein Informationssystem beinhaltet immer ein Anwendungssystem, betrachtet aber immer auch Menschen und deren Aufgaben in organisatorischen Umgebungen. In der Praxis werden diese Begriffe allerdings auch oft einfach synonym verwendet, da diese Grundbegriffe sehr theoretischer Natur sind und ein grober Überblick hier völlig ausreicht.
+
+Historisch gesehen nimmt der Einfluss von Informationssystemen spätestens seit den 1950er Jahren immer weiter zu. Während der Einsatz solcher Systeme am Anfang noch auf wissenschaftliche und sehr technische Bereiche beschränkt war, erweiterte sich das Feld immer mehr, zunächst um Steuerungsmöglichkeiten für Führungskräfte begann aber auch in den Kernaktivitäten der Unternehmen Einzug zu halten. Der schrittweise Einzug von Anwendungssystemen in der indutriellen Fertigung aber auch bei Bürotätigkeiten wird als _digitale Revolution_ oder auch als _dritte industrielle Revolution_ bezeichnet.
+
+NOTE: Der Begriff _dritte industrielle Revolution_ lehnt sich an die klassischen Bezeichnuungen für die Weiterentwicklungsstufen der Industrie an. Die erste industrielle Revolution wurde durch die Erfindung der Dampfmaschine angestoßen, die zweite durch Rationalisierung, Arbeitsteilung und das Fließprinzip. Aktuell befinden wir uns mitten in der vierten industriellen Revolution, die durch die zunehmende Vernetzung von Systemen und die damit einhergehende Einbindung von  Kunden und Geschäftspartnern in die Geschäftsprozesse und die Wertchöpfungkette von Unternehmen getrieben wird.
+
+Unser Anwendungssystem besteht allerdings nicht nur aus der Anwendungssoftware, die wir programmieren, sondern auch aus der darunterliegenden Infrastruktur. Deshalb werden wir jetzt einen kleinen Blick auf diesen Bereich werfen.
