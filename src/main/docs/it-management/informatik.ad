@@ -1,0 +1,27 @@
+= Informatik
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+
+"Bei der Informatik handelt es sich um die Wissenschaft von der systematischen Darstellung, Speicherung, Verarbeitung und Übertragung von Informationen [...]."
+-- Wikipediafootnote:[https://de.wikipedia.org/wiki/Informatik, Abgerufen am 23.02.2021]
+
+== Fachbereiche
+Die Informatik lässt sich im wesentlichen in drei Hauptbereiche untergliedern:
+
+Die Theoretische Informatik:: ... befasst sich mit sehr abstrakten und formalen Fragestellungen und ist in ihrer Geschichte sehr eng mit Mathematik und der Logik verknüpft. Im frühen 20. Jahrhundert etablierte oder vielmehr _emazipierte_ sie sich als eigenstädige Disziplin.
+Themen::: Automatentheorie, formale Sprachen, Berechenbarkeits- und Komplexitätstheorie, ...
+
+Die Technische Informatik:: ... kann man als Schnittstelle von der Informatik zur Elektrotechnik bezeichnen. Sie befasst sich ausschließlich mit der Umsetzung von Rechner-, Kommunikations und eingebetteten Systemen auf Hardwareebene und in Fragen der systemnahen Software (z. B. Assemblerprogrammierung).
+Themen::: Rechnerarchitektur, Regelungstechnik, Signal- und Bildverarbeitung, ...
+
+Die Praktische Informatik:: ... ist der Teil der Informatik, der uns, als praxisorientierten Entwicklern am vertrautesten ist: ihr Schwerpunkt liegt darauf konkrete informatische Problemstellungen zu lösen, wie z. B. die Entwicklung von Datenstrukturen oder Programmiersprachen. Damit liefert uns die Praktische Informatik gewissermaßen den Unterbau für unsere tägliche Arbeit.
+Themen::: Algorithmen und Datenstrukturen, Betriebssysteme, Datenbanken, Programmiersprachen, ...
+
+== Angewandte Informatik
+Die angewandte Informatik ist nun keiner der eigentlichen Teilbereiche der Informatik, sondern ein eigenständiger Bereich, der sich mit der Anwendung informatischer Methoden in informatikfremden Gebieten befasst (wie bspw. die Wirtschaftinformatik).
+
+.Teilbereiche der Informatik
+image::informatik_001.png[Teilbereiche der Informatik, 380, align="center"]
+
+Genau das ist der Bereich, der die meisten von uns betreffen wird, da die ursprünglichen Hauptbereiche eher akademischer Natur sind. Man kann das im Grunde ganz kurz zusammenfassen: In der angewandten Informatik nutzen wir unsere Kenntnisse von Algorithmen und Datenstrukturen, Technik und Programmiersprachen, um Probleme in anderen Fachgebieten (-> _Domänen_) zu analysieren, abstrahieren und zu lösen.

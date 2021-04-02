@@ -2,3 +2,4 @@
 :dewey-template: index.topic.ad
 
 == Grundlagen
+include:it-management\informatik.ad
