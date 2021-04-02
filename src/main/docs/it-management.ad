@@ -2,7 +2,7 @@
 :dewey-template: index.topic.ad
 
 == Grundbegriffe
-include:it-management\informatik.ad
-include:it-management\informationsmanagement.ad
-include:it-management\informations-und-anwendungssysteme.ad
-include:it-management\nutzer-nutzen-nutzung.ad
+include:it-management\grundbegriffe\informatik.ad
+include:it-management\grundbegriffe\informationsmanagement.ad
+include:it-management\grundbegriffe\informations-und-anwendungssysteme.ad
+include:it-management\grundbegriffe\nutzer-nutzen-nutzung.ad
