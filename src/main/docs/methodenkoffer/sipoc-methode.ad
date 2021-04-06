@@ -1,0 +1,18 @@
+= SIPOC-Methode
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+
+== Übersicht
+Die SIPOC-Methode kann genutzt werden, um einen Geschäftsprozess in einem ersten Ansatz zu umreißen, zu identifizieren oder zu verstehen, bevor er in einer ausführlichen Variante, z. B. via BPML, modelliert wird.
+
+.SIPOC
+image::sipoc_001.png[SIPOC, 450, align="center"]
+
+_SIPOC_ steht für **S**upplier, **I**nput, **P**rocess, **O**utput, **C**onsumer.
+
+== Vorgehen
+In der SIPOC-Methode wird die Kette aus Supplier, Input, Process, Output und Consumer *von hinten nach vorne* durchgegangen und wichtige Kernelemente identifiziert. Durch den Beginn am _Ende_ der Kette beim _Consumer_ wird ein *kundenorientierter* Denkansatz forciert.
+
+.SIPOC Beispiel
+image::sipoc_002.png[SIPOC Beispiel, 550, align="center"]

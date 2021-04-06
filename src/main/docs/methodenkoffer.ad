@@ -17,6 +17,7 @@ include:methodenkoffer\wirtschaftlichkeit\ufab-bewertungsmethoden.ad
 
 == Strategie
 include:methodenkoffer\swot-analyse.ad
+include:methodenkoffer\sipoc-methode.ad
 
 == Organisation
 include:methodenkoffer\workshops.ad
