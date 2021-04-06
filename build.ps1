@@ -133,7 +133,7 @@ Function Render-ContentLink
         [Parameter(Mandatory=$true)]
         [array]$Content
     )
-    $Text = "[overview-link]#link:$TargetLink[$Title]#`n"
+    $Text = "===== link:$TargetLink[$Title]`n"
     $ContentSummary = Render-ContentSummary $Content
     $Text += "[horizontal]`n&mdash;::: $ContentSummary`n `n"
     Return $Text
