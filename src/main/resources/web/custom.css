@@ -24,7 +24,8 @@ details, .audioblock, .imageblock, .literalblock, .listingblock, .stemblock, .vi
     hyphens: initial;
 }
 .paragraph.lead>p, #preamble>.sectionbody>[class="paragraph"]:first-of-type p {
-    font-size: .9em
+    font-size: .9em;
+    color: var(--color);
 }
 ul.no-bullet, ol.no-bullet, ol.unnumbered {
     margin-left: .625em
