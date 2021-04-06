@@ -1,0 +1,19 @@
+= Integrationsrichtungen
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+
+.Integrationsrichtungen
+image::integrationsrichtungen_001.png[Integrationsrichtungen, 550, align="center"]
+
+== Horizontale Integration
+* Integration einer Software *innerhalb einer Hierarchie-Ebene* im Unternehmen
+* Verbindung der Informationen und Prozesse verschiedener Funktionsbereiche einer Ebene
+
+Beispiel:: ERP-System, das die gesamte Wertschöpfungskette auf der operativen Ebene abbildet.
+
+== Vertikale Integration
+* Integratione einer Software *innerhalb eines Funktionsbereiches* im Unternehmen
+* Verbindung der Informationen und Prozesse der verschiedenen Hierarchie-Ebenen eines Funktionsbereiches
+
+Beispiel:: Ticketsystem, bei dem die Mitarbeiter das Tagesgeschäft erledigen und die Führungskräfte sich die Informationen aggregiert anzeigen lassen können.
