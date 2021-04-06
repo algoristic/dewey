@@ -155,6 +155,11 @@ a:hover, a:focus {
         border-right-color: var(--gray);
     }
 }
+@media screen and (max-width:767px) {
+    #toc ul>li>ul>li>ul {
+        display: none;
+    }    
+}
 /* SPECIFIC CONSTRUCTS */
 .overview-link {
     font-weight: 300;
@@ -164,4 +169,7 @@ a:hover, a:focus {
 }
 #traditional-vs-agile-table tbody tr td:first-child {
     background: var(--header-background);
+}
+.sect2, .sect3, .sect4, .sect5, .sect6 {
+    padding-left: 1.5rem;
 }
