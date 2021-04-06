@@ -246,7 +246,7 @@ Function Render-IndexFile
         }
         Else
         {
-            $IndexFileContent += ""
+            $IndexFileContent += "`n"
         }
     }
     $Index = "$Dest\$FullFileName"
