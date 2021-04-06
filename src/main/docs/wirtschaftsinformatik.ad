@@ -1,0 +1,21 @@
+= Wirtschaftsinformatik
+:dewey-template: index.topic.ad
+
+== Grundbegriffe
+include:wirtschaftsinformatik\grundbegriffe\informatik.ad
+include:wirtschaftsinformatik\grundbegriffe\informationsmanagement.ad
+include:wirtschaftsinformatik\grundbegriffe\informations-und-anwendungssysteme.ad
+include:wirtschaftsinformatik\grundbegriffe\nutzer-nutzen-nutzung.ad
+
+== Betriebswirtschaftslehre
+include:wirtschaftsinformatik\bwl\oekonomisches-prinzip.ad
+include:wirtschaftsinformatik\bwl\wirtschaftsgüter.ad
+include:wirtschaftsinformatik\bwl\kategorisierung-unternehmen.ad
+include:wirtschaftsinformatik\bwl\unternehmensorganisation.ad
+include:wirtschaftsinformatik\bwl\st-galler-management-modell.ad
+include:wirtschaftsinformatik\bwl\governance.ad
+
+== Anwendungssysteme
+include:wirtschaftsinformatik\anwendungssysteme\anwendungssysteme.ad
+include:wirtschaftsinformatik\anwendungssysteme\klassifikation-anwendungssysteme.ad
+include:wirtschaftsinformatik\anwendungssysteme\integrationsrichtungen.ad
