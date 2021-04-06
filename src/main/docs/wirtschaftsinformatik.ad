@@ -13,12 +13,10 @@ include:wirtschaftsinformatik\bwl\wirtschaftsgueter.ad
 include:wirtschaftsinformatik\bwl\kategorisierung-unternehmen.ad
 include:wirtschaftsinformatik\bwl\unternehmensorganisation.ad
 include:wirtschaftsinformatik\bwl\st-galler-management-modell.ad
+include:wirtschaftsinformatik\bwl\geschaeftsprozesse.ad
 include:wirtschaftsinformatik\bwl\governance.ad
 
 == Anwendungssysteme
 include:wirtschaftsinformatik\anwendungssysteme\anwendungssysteme.ad
 include:wirtschaftsinformatik\anwendungssysteme\klassifikation-anwendungssysteme.ad
 include:wirtschaftsinformatik\anwendungssysteme\integrationsrichtungen.ad
-
-dev:== dev
-dev:include:wirtschaftsinformatik\geschaeftsprozesse.ad
