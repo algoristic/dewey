@@ -1,0 +1,34 @@
+= Eisenhower-Matrix
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+
+== Priorisierung
+Ein Thema oder eine Aufgabe wird nach zwei Kriterien bewertet:
+
+Dringlichkeit:: Ist die Aufgabe *dringend* zu erledigen?
+    Hilfsfragen:::
+        * Dient sie als Vorarbeit für einen kommenden Termin?
+        * Warten andere auf baldige Antwort?
+        * Ist sie allgemein terminiert?
+        * ...
+Wichtigkeit:: Ist die Aufgabe generell *wichtig*?
+    Hilfsfragen:::
+        * Welche strategische Bedeutung hat das Thema?
+        * Wie hoch ist das Umsatzvolumen bzw. der Betrag, der von dieser Aufgabe abhängt?
+        * Wartet ein wichtiger Kunde auf Erledigung?
+        * Kann nur ich diese Aufgabe zur Zeit erledigen?
+        * ...
+
+Danach wird die Aufgabe entsprechend dieser Bewertung in folgendes Schema eingeordnet:
+
+.Eisenhower-Matrix
+image::eisenhower_matrix_001.png[Eisenhower-Matrix, 320, align="center"]
+
+== Bearbeitung
+Die Bearbeitung erfolgt anhand des Schemas:
+
+Machen:: Diese Aufgaben haben oberste Priorität und sollten sobald wie möglich angegangen werden. Sollte eine Priorisierung mehrerer wichtiger Aufgaben schwerfallen gibt es die Möglichkeit in wenigen Minuten einen link:./paarweiser-vergleich[paarweisen Vergleich] durchzuführen, um zu einer Entscheidung zu kommen.
+Planen:: Die Aufgabe sollte so geschickt wie möglich geplant werden. Lassen sich auf Basis von Abhängkeiten zu anderen Themen Termine ausmachen? Ansonsten einfach hinter den wichtigsten Aufgaben anstellen.
+Delegieren:: Die Bearbeitung kann mit gutem Gewissen an jemanden delegiert werden, der über die nötigen Kompetenzen verfügt. Ein kurzer Bericht über die Erleding und eine Ergebniskontrolle sind effizienter als die Aufgabe selbst zu bearbeiten.
+Entfernen:: Diese Aufgabe ist weder wichtig noch in näherer Zukunft zu erledigen. Damit entfällt sie komplett.
