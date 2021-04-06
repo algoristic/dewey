@@ -9,7 +9,7 @@ include:wirtschaftsinformatik\grundbegriffe\nutzer-nutzen-nutzung.ad
 
 == Betriebswirtschaftslehre
 include:wirtschaftsinformatik\bwl\oekonomisches-prinzip.ad
-include:wirtschaftsinformatik\bwl\wirtschaftsgüter.ad
+include:wirtschaftsinformatik\bwl\wirtschaftsgueter.ad
 include:wirtschaftsinformatik\bwl\kategorisierung-unternehmen.ad
 include:wirtschaftsinformatik\bwl\unternehmensorganisation.ad
 include:wirtschaftsinformatik\bwl\st-galler-management-modell.ad
@@ -19,3 +19,6 @@ include:wirtschaftsinformatik\bwl\governance.ad
 include:wirtschaftsinformatik\anwendungssysteme\anwendungssysteme.ad
 include:wirtschaftsinformatik\anwendungssysteme\klassifikation-anwendungssysteme.ad
 include:wirtschaftsinformatik\anwendungssysteme\integrationsrichtungen.ad
+
+dev:== dev
+dev:include:wirtschaftsinformatik\geschaeftsprozesse.ad

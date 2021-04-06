@@ -1,0 +1,64 @@
+<mxfile host="Electron" modified="2021-04-06T07:01:22.701Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.1.8 Chrome/87.0.4280.88 Electron/11.1.1 Safari/537.36" etag="XEW0304thPL6xEbR2cN8" compressed="false" version="14.1.8" type="device">
+  <diagram id="R99UQ-NVE_OsZTJ77c11" name="Seite-1">
+    <mxGraphModel dx="782" dy="497" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="BVH7lWuJyDCuKK-nGpn0-1" value="Managementprozesse" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;verticalAlign=top;fontStyle=5;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="160" y="80" width="560" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BVH7lWuJyDCuKK-nGpn0-2" value="Politik und&lt;br&gt;Strategie" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="110" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BVH7lWuJyDCuKK-nGpn0-3" value="Finanzen und&lt;br&gt;Controlling" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="110" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BVH7lWuJyDCuKK-nGpn0-4" value="Werte und&lt;br&gt;Grundsätze" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="110" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BVH7lWuJyDCuKK-nGpn0-5" value="Daten-/Umwelt- und&lt;br&gt;Arbeitsschutz" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="580" y="110" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BVH7lWuJyDCuKK-nGpn0-6" value="Produktenstehungsprozesse" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;verticalAlign=top;fontStyle=5;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="160" y="170" width="560" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BVH7lWuJyDCuKK-nGpn0-7" value="Produktplanung" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="190" y="200" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BVH7lWuJyDCuKK-nGpn0-8" value="Werkzeugbau" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="200" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BVH7lWuJyDCuKK-nGpn0-9" value="Kontruktion" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="310" y="200" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BVH7lWuJyDCuKK-nGpn0-10" value="Musterprüfung" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="550" y="200" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BVH7lWuJyDCuKK-nGpn0-11" value="Marketingprozesse" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;verticalAlign=top;fontStyle=5;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="160" y="260" width="560" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BVH7lWuJyDCuKK-nGpn0-12" value="Marketing und&lt;br&gt;Public Relations" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="290" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BVH7lWuJyDCuKK-nGpn0-14" value="Kundenzufriedenheit" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="290" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BVH7lWuJyDCuKK-nGpn0-16" value="Vertriebs- und Auftragsabwicklungsprozesse" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;verticalAlign=top;fontStyle=5;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="160" y="350" width="560" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="BVH7lWuJyDCuKK-nGpn0-17" value="Anfrage-/Angebots-&lt;br&gt;bearbeitung" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="380" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BVH7lWuJyDCuKK-nGpn0-18" value="Einkauf und&lt;br&gt;Lager" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="380" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BVH7lWuJyDCuKK-nGpn0-19" value="Auftragsabwicklung" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="380" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="BVH7lWuJyDCuKK-nGpn0-20" value="Lieferung und&lt;br&gt;Retouren" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="580" y="380" width="140" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

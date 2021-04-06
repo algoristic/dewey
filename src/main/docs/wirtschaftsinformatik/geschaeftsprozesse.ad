@@ -1,0 +1,24 @@
+= Geschäftsprozesse
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+
+== Aufbau
+.Geschäftsprozess
+image::geschaeftsprozess_001.png[Geschäftsprozess, 550, align="center"]
+
+Der Lieferant des Inputs und der Kunde des Outputs eines Prozesses müssen nicht zwingend extern sein!
+
+== Kategorien
+Managementprozesse:: Geben Strategien und Ziele vor und kontrollieren die Zielerreichung
+Kernprozesse:: Erzeugen den unmittelbaren Kundennutzen (siehe link:./wirtschaftsgueter#_wertschöpfungskette[Wertschöpfungskette])
+Unterstützungsprozesse:: Verwaltung und Bereitstellung betrieblicher Ressourcen (auch für Managementprozesse)
+
+.Prozesskategorien
+image::prozesskategorien_001.png[Prozesskategorien, 280, align="center"]
+
+== Prozesslandkarte
+Eine Prozesslandkarte bildet übersichtlich die in einem Unternehmen existierenden Prozesse ab. Wenn es nicht zu unübersichtlich wird, werden auch die Beziehungen der Prozesse untereinander dargestellt (_wo stößt ein Vorgang einen anderen Prozess an, etc._).
+
+.Beispiel-Prozesslandkarte
+image::prozesslandkarte_001.png[Beispiel-Prozesslandkarte, 500, align="center"]
