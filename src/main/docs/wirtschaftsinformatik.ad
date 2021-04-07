@@ -20,3 +20,6 @@ include:wirtschaftsinformatik\bwl\governance.ad
 include:wirtschaftsinformatik\anwendungssysteme\anwendungssysteme.ad
 include:wirtschaftsinformatik\anwendungssysteme\klassifikation-anwendungssysteme.ad
 include:wirtschaftsinformatik\anwendungssysteme\integrationsrichtungen.ad
+
+== Geschäftsprozessorientierte Software
+include:wirtschaftsinformatik\anwendungssysteme\erp-systeme.ad

@@ -1,0 +1,37 @@
+<mxfile host="Electron" modified="2021-04-07T05:10:57.301Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.1.8 Chrome/87.0.4280.88 Electron/11.1.1 Safari/537.36" etag="HBlE7TyQTJK05eeinCER" compressed="false" version="14.1.8" type="device">
+  <diagram id="wElEkbDV0-8QjcF6lrXa" name="Seite-1">
+    <mxGraphModel dx="769" dy="484" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WgHj9CW5SNyLfi0Pt2Z4-1" value="Lieferant" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="110" y="160" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WgHj9CW5SNyLfi0Pt2Z4-2" value="Kunde" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="570" y="160" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WgHj9CW5SNyLfi0Pt2Z4-3" value="Beschaffung" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="200" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WgHj9CW5SNyLfi0Pt2Z4-4" value="Produktion" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="320" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WgHj9CW5SNyLfi0Pt2Z4-5" value="Vertrieb" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="440" y="160" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WgHj9CW5SNyLfi0Pt2Z4-6" value="Electronic Procurement" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="110" y="110" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WgHj9CW5SNyLfi0Pt2Z4-7" value="Customer Relationship Management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="440" y="110" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WgHj9CW5SNyLfi0Pt2Z4-8" value="Supply Chain Management" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="110" y="60" width="330" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="WgHj9CW5SNyLfi0Pt2Z4-9" value="Enterprise Resource Planning System" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="110" y="210" width="540" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

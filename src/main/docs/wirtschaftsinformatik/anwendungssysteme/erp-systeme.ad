@@ -1,0 +1,30 @@
+= ERP-Systeme
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+
+== Übersicht
+Aufgabe von Enterprise Resource Planning (_ERP_) Systemen als gechäftsprozessorientierte Software ist im wesentlichen die Abbildung von Daten und Funktionen von Geschäftsprozessen.
+
+.Wertschöpfungskette und ERP-System
+image::erp_001.png[Wertschöpfungskette und ERP-System, 420, align="center"]
+
+== Aufgaben
+ERP-Systeme unterstützen im wesentlichen Daten und Prozesse aus:
+
+Finanzwesen::
+    &rarr; Buchhaltung, Budgetierung, Reporting, ...
+Warenwirtschaft::
+    &rarr; Beschaffung, Bedarfsermittlung, ...
+Forschung & Entwicklung::
+    &rarr; Wissensmanagement, Projektbewertung, ...
+Vertrieb::
+    &rarr; Aufgabenbearbeitung, Rechnungsabwicklung, ...
+Personalwesen::
+    &rarr; Personalplanung, Gehaltsabrechnung, ...
+
+== Vorteile
+
+* Abbildung und _vor allem_ *Einhaltung* standardisierter Abläufe, die damit nicht mehr personengebunden sind
+* gemeinsame Datenbasis für Mitarbeiter aller Funktionsbereiche
+* Vereinfachung von Reporting und Analyse über die Abteilungen hinweg
