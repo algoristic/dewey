@@ -1,5 +1,6 @@
 = Persönliche Kompetenzen
 :dewey-template: index.topic.ad
 
-== Selbstorganisation
+== Allgemein
 include:kompetenzen\arbeitseffizienz.ad
+include:kompetenzen\memo.ad
