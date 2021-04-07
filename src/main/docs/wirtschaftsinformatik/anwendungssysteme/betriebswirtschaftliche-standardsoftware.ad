@@ -114,3 +114,57 @@ Customer Relationship Management::
     ** analytisches CRM: Datensammlung
     ** operatives CRM: Nutzung der Daten für Planung, Kampagnen, ...
     ** kommuniktives CRM: Schnittstelle zum Kunden (Mail, Telefon, Kataloge, Gesprächsnotizen, ...)
+
+=== DWH
+Data Warehouse::
+* Sammlung und Aufbereitung von Geschäfsdaten aus unterschiedlichen Quellen (über lange Zeiträume)
+* bildet mit seinen (unstrukturierten) _Rohdaten_ die Basis für
+    ** Managementinformationssysteme
+    ** Big Data Verarbeitung
+    ** Data Mining (Clustering, Analyse, ...)
+
+=== BI
+Business Intelligence::
+* akkumuliert Daten aus _DWH_, Reporting etc. zu Kennzahlen und Analysen
+* dient Controlling und Entscheidungsunterstützung
+* Systeme, die diese Aufgaben erfüllen:
+    ** *FIS*: Führungsinformationssystem
+    ** *MIS*: Management Information System
+    ** *EIS*: Executive  Information System
+
+=== DMS
+Dokumentenmanagementsystem::
+* Dokumentenverwaltung
+* Aufgaben:
+    ** Erfassung und Indizerung
+    ** Ablage und Archivierung
+    ** Adminsitration
+    ** Suche und Ausgabe
+
+=== CMS
+Content Management System::
+* System zur gemeinschaftlichen Erstellung, Bearbeitung und Organisation von Inhalten
+* Wird meist im Kontext von Webseiten oder Wikis verwendet
+
+=== WFMS
+Workflow Management System::
+* IT-gestützte Vorgangsbearbeitung
+* steuert die Vorgangsbearbeitung entsprechend dem festgelegten Geschäftsprozess
+* existieren als eigenständige Produkte mit Anbindung an führendes System oder als integrierter Bestandteil z. B. von ERP-Systemen
+
+=== e-Invoicing
+Elektronische (Eingangs-) Rechnungsverarbeitung::
+* automatische Erafssung (bzw. Auslesen) der Rechnungsdaten
+    ** Scannen bzw. Importieren
+    ** OCR
+    ** Interpretation
+* fachliche und sachliche Prüfung
+* Vorbereitung für die ausführenden Buchhaltungsmitarbeiter
+
+=== UC /UCC
+Unified Communications::
+* führt Kommunikationsanwendungen zusammen
+* ermöglicht standortunabhänige, beliebig skalierbare Kommunikation
+
+Unified Communications & Collaboration::
+* ergänzt _UC_ um den Aspekt der Kollaboration, also digitaler Zusamenarbeit
