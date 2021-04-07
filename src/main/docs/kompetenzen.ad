@@ -1,7 +1,10 @@
 = Persönliche Kompetenzen
 :dewey-template: index.topic.ad
 
-== Allgemein
+== Weiterentwicklung
 include:kompetenzen\arbeitseffizienz.ad
+include:kompetenzen\persoenlichkeitsentwicklung.ad
+
+== Mindset
+include:kompetenzen\wahrheiten.ad
 include:kompetenzen\zitate.ad
-include:kompetenzen\memo.ad
