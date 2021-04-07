@@ -1,0 +1,116 @@
+= Betriebswirtschaftliche Standardsoftware
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+
+== Industrie
+
+=== ERP
+Enterprise Resource Planning::
+* Produktionsplanung und Steuerung
+* Materialwirtschaft
+* Stammdatenverwaltung
+* Finanz- und Rechnungswesen
+* Vertrieb
+* Personalwirtschaft
+
+=== PPS
+Produktionsplanung und -steuerung::
+* Programmplanung
+* Mengenplanung
+* Termin- und Kapazitätsplanung
+* Auftragsveranlassung und -überwachung
+* Steuerung von Produktion aus operativer Sicht
+
+=== MaWi
+Materialwirtschaft::
+* Beschaffung, Einkauf
+* Logistik
+* Produktion
+
+=== MES
+Manufacturing Execution System::
+* Schnittstelle zwischen Produktions- und Planungsebene
+* Übernahme von Aufträgen etc. aus ERP-System
+* Planung, Steuerung, Überwachung und Optimierung von Produktionsprozessen
+* Steuerung von Produktion aus Sicht der Fertigungsleitung
+
+=== BDE / MDE
+Betriebsdatenerfassung / Maschinendatenerfassung::
+* liefert Rückmeldung für PPS
+* liefert automatisch oder manuell erfasst
+    ** *Auftragsdaten*: Rüstzeiten, fertiggstellte Mengen, ...
+    ** *Maschinendaten*: Beleg- und Stillstandzeiten, gefertigte Mengen, ...
+    ** *Personaldaten*: An- und Abwesenheit, ...
+    ** *Prozessdaten*: Prozessparameter, Qualität, ...
+
+== Handel
+
+=== WWS / WaWi
+Warenwirtschaftssystem::
+* Warenein- und -ausgang
+* Lagerhaltung
+* Dispositions- und Bestellwesen
+* Marketing-/Managementinformationsmodul
+
+=== RFID
+Radio Frequency Identification::
+* berührungslose identifikation von Objekten via Funk über kurze Distanzen
+* Transponder/Chip (_RFID-Tag_) auf zu identifizierendem Objekt reagiert auf Funk
+* _Reader_ empföngt Antwort von Transponder und erkennt Objekt
+* Datenaustausch z. B. mit WWS
+
+=== E-Commerce
+* Anbahnung und Durchführung von Handelstransaktionen im Internet
+* inklusive:
+    ** Sicherheit
+    ** digitale Bezahlung
+    ** Workflowmanagement
+    ** ...
+
+== Branchenübergreifend
+
+=== Fibu
+Finanzbuchhaltung::
+* Debitoren- und Kreditorenbuchhaltung
+    ** Rechnungsein- und -ausgang
+    ** Offene Posten Überwachnung
+    ** Zahlungsverkehr
+* Hauptbuchhaltung: Saldierung, Periodenabschluss, GuV, Bilanz
+* Nebenbuchhaltung: Abschreibungen, Vermögensaufstellung, Inventarlisten
+
+=== PIS
+Personalinformationssystem::
+* Import von Daten aus ERP, BDE, Personalbögen, ...
+* Information über
+    ** Stammdaten
+    ** Abrechnungsdatem
+    ** Qualifiktion
+    ** Verträge
+    ** Arbeitsplatzdaten
+    ** ...
+
+=== PLM
+Produktlebenszyklusmanagement::
+* Verwaltung und Steuerung aller Produktdaten und -prozesse entlang des kompletten Produktlebenszyklus
+* keine standardisierte technische und organisatorische Lösung
+    ** muss in jedem Fall betriebsspezifisch umgesetzt werden
+* beschreibt ein Zusammenspiel diverser Lösungen, die mit ihren Funktionen die Tätigkeiten in allen betroffenen Bereichen unterstützen
+
+=== SCM
+Supply Chain Management::
+* Koordinierung und Zusammenarbeit der beteiligten Partner (Lieferanten, Dienstleister, Händler)
+* betrachtet Material- und Geldflüsse
+* integriert Beschaffuns-, Bestands- und Distributionsmanagement
+
+=== CRM
+Customer Relationship Management::
+* Pflege der (langfristigen) Kundebeziehungen
+* Neukundenakquise
+* Marketing
+* Kundensegmentierung (ABC-Analyse, ...)
+* Analyse von Kundenverhalten
+* Komponenten:
+    ** analytisches CRM: Datensammlung
+    ** operatives CRM: Nutzung der Daten für Planung, Kampagnen, ...
+    ** kommuniktives CRM: Schnittstelle zum Kunden (Mail, Telefon, Kataloge, Gesprächsnotizen, ...)
