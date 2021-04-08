@@ -1,0 +1,64 @@
+<mxfile host="Electron" modified="2021-04-08T12:32:57.406Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.4.2 Chrome/87.0.4280.141 Electron/11.3.0 Safari/537.36" etag="E4NNknxIHCMpC0Oadc4O" compressed="false" version="14.4.2" type="device">
+  <diagram id="9Zlezzs-ueOoSnWW0amn" name="Seite-1">
+    <mxGraphModel dx="769" dy="484" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#000000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="AULAekg4sg8HQ-gJuJak-9" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=1;entryX=1;entryY=0;entryDx=0;entryDy=0;strokeColor=#FFFFFF;fontSize=10;" parent="1" target="AULAekg4sg8HQ-gJuJak-8" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="200" y="200" as="sourcePoint" />
+            <mxPoint x="250" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AULAekg4sg8HQ-gJuJak-10" value="" style="endArrow=none;dashed=1;html=1;strokeWidth=1;entryX=0;entryY=0;entryDx=0;entryDy=0;strokeColor=#FFFFFF;fontSize=10;" parent="1" target="AULAekg4sg8HQ-gJuJak-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="360" as="sourcePoint" />
+            <mxPoint x="460" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AULAekg4sg8HQ-gJuJak-11" value="gering" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="240" y="320" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AULAekg4sg8HQ-gJuJak-12" value="hoch" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="360" y="320" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AULAekg4sg8HQ-gJuJak-13" value="gering" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;horizontal=0;fontColor=#FFFFFF;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="200" y="200" width="40" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="AULAekg4sg8HQ-gJuJak-14" value="hoch" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;horizontal=0;fontColor=#FFFFFF;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="200" y="80" width="40" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="AULAekg4sg8HQ-gJuJak-7" value="&lt;b style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Vermeiden&lt;/font&gt;&lt;/b&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;Gib kein Geld&lt;br style=&quot;font-size: 10px;&quot;&gt;hierfür aus!" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="240" y="200" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="AULAekg4sg8HQ-gJuJak-5" value="&lt;b style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Erkennen&lt;/font&gt;&lt;/b&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;Sei dir im klaren daürber, dass du hierfür Geld aus-&lt;br style=&quot;font-size: 10px;&quot;&gt;geben musst. Auch wenn du es nicht willst." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="240" y="80" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="du3GIvW34ktYrePvJwNn-1" value="Wollen" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#FFFFFF;fontStyle=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="480" y="320" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="du3GIvW34ktYrePvJwNn-2" value="Brauchen" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;horizontal=1;fontColor=#FFFFFF;fontStyle=1;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="160" y="40" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AULAekg4sg8HQ-gJuJak-8" value="&lt;b style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Priorisieren&lt;/font&gt;&lt;/b&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;Das kannst du dir kaufen - aber nur wenn sicher ist, das es nichts wichtigem im Wege steht." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="360" y="200" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="AULAekg4sg8HQ-gJuJak-6" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;b style=&quot;font-size: 10px;&quot;&gt;Verfolgen&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;/b&gt;&lt;/span&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;Das solltest du als erstes anschaffen!" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="360" y="80" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="AULAekg4sg8HQ-gJuJak-2" value="" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#FFFFFF;fontSize=10;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="320" as="sourcePoint" />
+            <mxPoint x="240" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AULAekg4sg8HQ-gJuJak-3" value="" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#FFFFFF;fontSize=10;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="240" y="320" as="sourcePoint" />
+            <mxPoint x="520" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
