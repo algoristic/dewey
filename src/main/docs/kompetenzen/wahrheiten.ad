@@ -1,6 +1,8 @@
 = Wahrheiten
 :dewey-template: default.doc.ad
 
+:imagesdir: images
+
 // evtl. aufteilen in: Wahrheiten über dich, Wahrheiten über andere, Wahrheiten über das Leben
 
 == Unangenehme Wahrheiten
@@ -15,6 +17,35 @@ Es ist niemandes Verantwortlichkeit dich hlücklich zu machen:: Hör auf deine K
 Niemand schuldet dir irgendetwas:: Du bist der Führer und Gestalter deines eigenen Lebens. Arbeit für das, was du erreichen willst. Niemand sonst wird es tun. Nur so kannst du zu deinem stärksten Selbst werden.
 Verwechsle was ein Mensch sein könnte nicht mit dem, was er tatsächlich ist:: Je eher du loslässt, desto eher wird es dir besser gehen.
 Niemand denkt so wie du:: Was für ich Sinn ergibt, ergibt nicht zwingend auch für jemand anderen Sinn. Lerne deine Ideen zu kommunizieren.
+
+== Motivation
+.So etwas wie Motivation _gibt es nicht_!
+
+Und wie soll ich mich dann jeden Tag motivieren, etwas zu tun?
+
+. Gehe 1km laufen
+    ** wenn du nicht laufen gehen kannst, mache 100 Liegestütze
+    ** wenn du keine 100 Liegestütze machen kannst, mache 100 Sit-Ups
+    ** wenn du keine 100 Sit-Ups machen kannst, mache 100 Kniebeugen
+    ** wenn du keine 100 Kniebeugen machen kannst, mache 100 Ausfallschritte (Lunges)
+    ** wenn du keine 100 Lunges machen kannst, ...
+. Schreibe 100 Zeilen Code
+    ** wenn du keine 100 Zeilen Code schreiben kannst, brainstorme 100 Ideen was du schreiben könntest
+    ** wenn du keine 100 Ideen brainstormen kannst, lies 100 Blog Posts zur Motivation
+    ** wenn du keine 100 Blog Posts lesen kannst, höre dir 100 Minuten von einem Hörbuch an
+    ** wenn du keine 100 Minuten von einem Hörbuch hören kannst, ...
+. Mach dir ein gesundes Frühstück
+    ** wenn du kein gesundes Frühstück machen kannst, mache dir einen grünen Smoothie
+    ** wenn du dir keinen Smoothie machen kannst, iss ein Stück Obst
+    ** wenn du kein Stück Ost essen kannst, ...
+. Diese Liste könnte ewig so weitergehen...
+
+Und was ist nun das Geheimnis?
+
+. Ersetze "laufen", "schreiben" und "essen" durch eine beliebige Sache
+. Ersetze "100" durch eine beliebige Zahl, die für dich funktioniert, sei es 50, 15 oder 5, es ist völlig egal
+
+Was nicht egal ist, ist dass du etwas tust! Triff jeden Tag die Entscheidung aufzustehen, dich auf den Tag zu freuen und eine ganze Menge _zu tun_, das dich bei deinen Zielen unterstützt! Setze dir Ziele, überlege dir Mittel, mit denen du die Ziele verfolgen und erreichen kannst und dann machst du es einfach!
 
 == Das hedonistische Hamsterrad
 .Warum es dich nicht dauerhaft glücklich macht, Dinge zu kaufen.
@@ -32,7 +63,7 @@ Niemand denkt so wie du:: Was für ich Sinn ergibt, ergibt nicht zwingend auch f
 * Je nachdem wie die Antwort auf diese Frage ist, gehst du nach dem folgenden Schema vor:
 
 .Das hedonistische Hamsterrad
-image::hedonistisches_hamsterrad_001.png[Das hedonistische Hamsterrad, 360, align="center"]
+image::hedonistisches_hamsterrad_001.png[Das hedonistische Hamsterrad, 420, align="center"]
 
 == Todsünden der Persönlichkeitsentwicklung
 .Neid
