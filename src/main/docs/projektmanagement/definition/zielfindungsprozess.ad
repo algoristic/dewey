@@ -35,6 +35,13 @@ Ein einfaches Hilfsmittel ist die Visualisierung entlang einer *Zielpyramide*, b
 image::zielpyramide_001.png[Zielpyramide, 360, align="center"]
 
 == Priorisierung
+Die Ziele können nach der *MoSCoW*-Priorisierung angeordnet werden:
+
+* *M* = **M**ust Have / Muss-Ziele
+* *S* = **S**hould have / Soll-Ziele
+* *C* = **C**ould have / Kann-Ziele
+* *W* = **W**on't have / Nicht-Ziele
+
 Muss-Ziele::
     Müssen erreicht werden, sonst gilt das Projekt als gescheitert.
     Beispiel::: Budget- oder technische Vorgaben, Kernfunktionen
@@ -46,7 +53,8 @@ Kann-Ziele::
     Beispiel::: Optische Gestaltung, Komfort-Funktionen
 Nicht-Ziele::
     _Oder auch schärfer: *Darf-Nicht-Ziele*._ +
-    Dienen der Klarheit und der Abgrenzung, damit durch Übererfüllung keine unnötgen Kosten entstehen.
+    Dienen der Klarheit und der Abgrenzung, damit durch Übererfüllung keine unnötgen Kosten entstehen. +
+    Andere Interpretation: Werden (in dieser Version) nicht umgesetzt, aber für nächstes Mal vorgemekert -- diese Ziele dienen nicht zwingend der Abgrenzung.
 
 == Zielbeziehungen
 Die *horizontalen und vertikalen* Zielbeziehungen, also die Frage danach, ob Ziele eauf einer Ebene stehen oder sich begründen, bzw. spezifizieren, wurde bereits beim Aufbau einer Hierarchie geklärt.
