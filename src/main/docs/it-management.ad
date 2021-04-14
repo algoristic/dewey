@@ -21,6 +21,10 @@ include:it-management\anwendungssysteme\anwendungssysteme.ad
 include:it-management\anwendungssysteme\klassifikation-anwendungssysteme.ad
 include:it-management\anwendungssysteme\integrationsrichtungen.ad
 
-== Geschäftsprozessorientierte Software
+=== Geschäftsprozessorientierte Software
 include:it-management\anwendungssysteme\erp-systeme.ad
 include:it-management\anwendungssysteme\betriebswirtschaftliche-standardsoftware.ad
+
+dev:=== Misc
+dev:include:it-management\make-or-buy.ad
+dev:include:it-management\anforderungen-an-anwendungssysteme.ad
