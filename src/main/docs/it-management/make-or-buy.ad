@@ -1,0 +1,44 @@
+= Make-or-buy?
+:dewey-template: default.doc.ad
+
+*Make-or-buy*, bzw. auf Deutsch *Eigenfertigung oder Fremdbezug* stellt die Frage danach, ob materielle oder immaterielle Güter oder Dienstleistungen selbst hergestellt oder von Lieferanten bezogen werden. Im Softwarebereich ist mit Aufkommen der "_X_ as a Service"-Modelle allerdings immer mehr von *Make-or-buy/pruchase* zu reden, da Software, Infrastruktur oder Plattformen immer öfter gemietet und nicht gekauft werden.
+
+== Kategorien
+Purchase:: Beschaffung von Standardsoftware am Markt
+    Buy::: Kauf und Einführung von Standardsoftware
+    Rent::: Mieten von _SaaS_/_PaaS_/_IaaS_/...
+Make:: Erstellung von Individualsoftware
+    Fremdentwicklung::: Beauftragung der Erstellung durch externe IT-Spezialisten
+    Eigenentwicklung::: Beauftragung der Erstellung durch eigene IT-Abteilung
+    End-/Power-User-Computing::: Nicht-Programmierer erstellen die Lösung selbst, mit Office-Produkten
+
+== Parameter
+Kosten:: Rechtfertigen die hohen Kosten für Eigenfertigung den Fremdnbezug?
+Produkt:: Existieren angemessene Produkte für Fremdbezug am Markt?
+Produktionskapazität:: Stehen hinreichende Kapazitäten für Eigenfertigung zur Verfügung?
+Finanzmittel:: Ist die Finanzierbarkeit einer Eigenfertigung gegeben?
+Lieferanten:: Erfüllen die Lieferanten die Anforderungen, um eine Eigenfertigung zu bewerkstelligen?
+Mitarbeiter:: Gibt es im Unternehmen das Potential für eine Eigenfertigung?
+Marktentwicklung:: Ist eine Eigenfertigung im Rahmen der Marklage und Unternehmensstrategie zu rechtfertigen?
+Know-How:: Geht dem Unternehmen (zu viel) an anderen Stellen nötige Kompetenz im Rahmen einer Eigenfertigung verloren?
+
+== Pro/Kontra: "Make"
+Pro::
+* Lösung passt optimal zu den unternehmensinternen Prozessen
+* Know-How und Leistung verbelibt vollständig im Unternehmen und verschafft einen Wettbewerbsvorteil vor dritten
+* keine Abhängigkeit von Lieferanten
+Kontra::
+* hohe Kosten für Erstellung und insbesondere Pflege
+* Umfang eines solchen Projektes mit nachträglichen Änderungen kann sehr leicht falsch eingeschätzt werden
+* Bündelung von Kompetenzen abseits des Kerngeschäftes
+
+== Pro/Kontra: "Buy"
+Pro::
+* Fokus liegt weiterhin auf dem Kerngeschäft
+* Verringerung der Fertigungstiefe
+* unternehmerisches Risiko liegt nun (teilweise) beim Lieferanten
+Kontra::
+* je nach Integration: hohe Lieferantenabhängigkeit
+* geringe Flexibilität
+* Möglichkeit, dass Betriebsgeheimsnisse nicht gewahrt werden
+* tiefe Einschnitte in die Organisation bei Einführung
