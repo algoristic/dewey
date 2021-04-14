@@ -1,0 +1,98 @@
+= Anforderungen / Requirements
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+
+_Siehe auch link:./ziele#_anforderungen_vs_ziele[Anforderungen vs. Ziele]_
+
+== Beschreibung
+Anforderungen/_Requirements_...
+
+* ...bilden die Grundlage für jedes (Software-) Projekt
+    ** sie sind die Basis für Konzeption, Design und Entwicklung
+    ** sie bilden die Basis für Validierung und Verifikation der Ergebnisse
+    ** sie sind außerdem die Basis für...
+        *** ...die Kommunikation der Prjektbeteiligten, insbesondere mit dem Auftraggeber
+        *** ...Optimierung und Rationalisierung
+        *** ...Ausschreibungen und Vertragsgestaltung
+* ...sind schwer zu ermitteln
+    ** sie erfodern also ein *strukturiertes* link:./anforderungen-an-anwendungssysteme#_tätigkeiten_des_requirements_engineering[Requirements-Engineering]
+    ** die Kommunikation zwischen allen Stakeholdern schlägt oft fehl, da sie sich verschiedener Fachsprachen bedienen und die des anderen nicht beherrschen. Beteiligte Stakeholder, die eine unterschiedliche Sprache sprechen:
+        *** Kunde
+        *** Vertriebler
+        *** Projektleiter
+        *** Software-Architekt / Software-Entwickler
+        *** ...
+* ...sind wenig stabil über die Projekt- bzw. Produktlaufzeit gesehen
+    ** sie erfordern also einen angemessenen Change-Management-Prozess
+
+== Einteilung
+In der Regel wird zwischen *Funktionalen* und *Nicht-Funktionalen* Anforderungen unterschieden.
+
+Funktional:: Fachliche Anforderungen unter Berücksichtigung von Geschäftsprozessen, Domnäne, Strategie, ...
+Nicht-Funktional:: Alle Anforderungen, die sich *nicht* aus den funktionalen Anforderungen ergeben, z. B.:
+* Sicherheit und Datenschutz
+* effizienter Betrieb (Wartung und Service)
+* angemessene Benutzeroberfläche
+* rechtlich-vertragliche Anforderungen
+* sonstige Qualitätsanforderungen (Testabdeckung, Auditoring, ...)
+
+== Kategorisierung
+Es gibt 3 Kategorien: *Funktionale Anforderungen*, *Nicht-Funktionale Anforderungen* und *Rand- bzw. Rahmenbedingungen*.
+
+Funktional (Leistungen):: Fachliche Leistungsmerkmale
+* Was soll die Software in bestimmten Situationen tun?
+* technische Anforderungen *können auch* funktional sein, wenn die Umgebung das bedingt (z. B. das technische Merkmal _Hochverfügbarkeit_ bei einem Kassenautomaten in einem _24/7 Parkhaus_)
+
+Nicht-Funktional (Eigenschaften):: Anforderungen, die über die _Funktionalen Anforderungen_ hinausgehen
+* Qualitätsanforderungen
+* Look & Feel
+* Performance & Effizienz
+* Security
+* ...
+
+Rand- und Rahmenbedingungen:: Bedingungen, die weiter einschränken, wie das System realisiert werden soll (werden manchmal auch als Teil der _Nicht-Funktionalen Anforderungen_ ausgedrückt)
+* organisatorisch
+* technisch
+* rechtlich
+* ethisch
+
+=== Kategorisierung nach Priorität
+_Siehe auch link:./zielfindungsprozess#_priorisierung[Zielfindungsprozess: Priorisierung]_
+
+Pflicht:: Ist zwingend zu erfüllen und juristisch verbindlich.
+Wunsch:: Zeigt die Intention der Umsetzung, besonders bei Vorschlägen vom Kunden.
+Absicht:: Deutet zukünftige Entwicklungen an.
+Negation:: Wird nicht umgesetzt.
+
+== Tätigkeiten des Requirements-Engineering
+Tätigkeiten und beispielhafte Methoden:
+
+Erheben::
+* Interview
+* Fragebogen
+* On-Site-Customer
+* Videonalyse
+* Apprenticing
+* _Osborn Checkliste_
+* _SOPHIST REgelwerk_
+Prüfen::
+* Review
+* Inspektion
+* Testfall-Erstellung
+* Validieren
+* Konsolidieren
+Dokumentieren::
+* Prosa
+* Styleguide
+* Use-Cases
+* Aktivitätsdiagramme
+* _SOPHIST REgelwerk_
+Verwalten::
+* Releases
+* Branches
+* Versionen
+* Levels
+* Tools
+    ** evaluieren...
+    ** ...und einsetzen
