@@ -1,0 +1,26 @@
+= IT-Management
+:dewey-template: index.topic.ad
+
+== Grundbegriffe
+include:it-management\grundbegriffe\informatik.ad
+include:it-management\grundbegriffe\informationsmanagement.ad
+include:it-management\grundbegriffe\informations-und-anwendungssysteme.ad
+include:it-management\grundbegriffe\nutzer-nutzen-nutzung.ad
+
+== Betriebswirtschaftslehre
+include:it-management\bwl\oekonomisches-prinzip.ad
+include:it-management\bwl\wirtschaftsgueter.ad
+include:it-management\bwl\kategorisierung-unternehmen.ad
+include:it-management\bwl\unternehmensorganisation.ad
+include:it-management\bwl\st-galler-management-modell.ad
+include:it-management\bwl\geschaeftsprozesse.ad
+include:it-management\bwl\governance.ad
+
+== Anwendungssysteme
+include:it-management\anwendungssysteme\anwendungssysteme.ad
+include:it-management\anwendungssysteme\klassifikation-anwendungssysteme.ad
+include:it-management\anwendungssysteme\integrationsrichtungen.ad
+
+== Geschäftsprozessorientierte Software
+include:it-management\anwendungssysteme\erp-systeme.ad
+include:it-management\anwendungssysteme\betriebswirtschaftliche-standardsoftware.ad
