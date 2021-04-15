@@ -1,0 +1,13 @@
+= Prototyping
+:dewey-template: default.doc.ad
+
+== Übersicht
+Prototyping bzw. Prototypenbau ist eine Methode der Softwareentwicklung, die schnell zu ersten Ergebnissen führt und frühzeitiges Feedback bezüglich der Eignung eines Lösungsansatzes ermöglicht. Dadurch ist es möglich, Probleme und Änderungswünsche frühzeitig zu erkennen und mit weniger Aufwand zu beheben, als es nach der kompletten Fertigstellung möglich gewesen wäre.
+
+== Arten
+Exploratives Prototyping:: Ziel ist es nachzuweisen, dass Spezifikationen oder Ideen tauglich sind.
+Evolutionäres Prototyping:: Beim evolutionären Prototyping wird die Anwendung nach und nach erweitert. Ziel ist es anhand der Grundfunktionalitäten die Akzeptanz beim Nutzer und die Notwendigkeit ergänzender Funktionen zu überprüfen.
+Experimentelles Prototyping:: Ziel ist das Sammeln von Erfahrungen und Know-How mit dem Prototyp.
+Rapid Control Prototyping:: bezeichnet die Softwareentwicklung von Regelungen und Steuerungen, mit Hilfe grafischer Tools.
+Vertikales Prototyping (Durchstich):: Ziel ist es explizit einen konkreten Teil eines Programms anzufertigen.
+Horizontales Prototyping:: Ziel ist es eine funktionierende Ebene, die vorgestellt werden kann, oder an der sich andere Ebenen orientieren können, zu realisieren. Beispiel ist Realisierung der Nutzeroberfläche als _Mockup_, um die Akzeptanz zu prüfen, und diese dann mit den tatsächlichen Funktionen zu füllen.
