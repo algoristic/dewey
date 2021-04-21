@@ -1,0 +1,84 @@
+= Rollout
+:dewey-template: default.doc.ad
+
+== Strategien
+
+=== Pilotierte Einführung
+Piloteinführung in *einer Region* und *einem Funktionsbereich*.
+
+Pro::
+    * keine Fehlerwiederholung
+    * sehr hohe Sicherheit
+    * geringer, gleichmäßiger Ressourcenbedarf
+Kontra::
+    * zeitintensiv
+    * ggf. unkoordinierte Vorwegnahme
+
+=== Step-by-step (regional)
+Sukzessive/überlappende Einführung *in einzelnen Regionen*.
+
+Pro::
+    * Erfahrungsgewinn
+    * Bildung von Multiplikatoren
+    * geringes Risiko
+    * geringer, gleichmäßiger Ressourcenbedarf
+    * sukzessive Optimierung
+Kontra::
+    * hohe Ahängigkeit von der ersten Einführung
+    * lange Einführungszeit
+    * Synchonisationsbedarf
+
+=== Step-by-step (funktional)
+Sukzessive/überlappende Einführung *in einzelnen Funktionsbereichen*.
+
+Pro::
+    * Erfahrungsgewinn
+    * geringe Komplexität für das Projektmanagement
+    * geringes Risiko
+    * geringer, gleichmäßiger Ressourcenbedarf
+    * sukzessive Optimierung
+Kontra::
+    * isolierte Betrachtung von Organisationseinheiten (ist in der Ablauforganisation schwierig)
+    * lange Einführungszeit
+    * Synchronisationsbedarf
+    * evtl. sinkende Motivation im Projektverlauf
+
+=== Stichtagseinführung ("Big Bang")
+Die Einführung erfolgt *gleichzeitig und übergreifend* in unterschiedlichen Regionen und Funktionsbereichen
+
+Pro::
+    * schnellste Variante
+    * keine "Unruhe" während der Dauer einer langen Umstellungsphase im Unternehmen
+    * hohe Motivation
+    * Produktivnahme ganzer Prozesse = hoher Integrationsnutzen
+Kontra::
+    * ggf. wiederholte Fehler (in unterschiedlichen Regionen und Funktionsbereichen)
+    * hohe Belastung
+    * hohes Risiko
+    * schwierige Konsolidierung und komplexes Projektmanagement
+
+== Hilfsmethoden
+
+=== Paralleleinführung
+Trotz Umstellung auf ein neues Verfahren *wird das alte Verfahren beibehalten* (zumindest eine zeitlang).
+
+Pro::
+    * Kontrolle des neuen Verfahrens gegenüber dem alten Verfahren
+    * aktiv gepflegtes "Backup", falls alles schief läuft
+Kontra::
+    * erheblicher Mehraufwand für die Benutzer
+
+=== Sandbox-Verfahren
+Die einzuführende Software wird in einer isolierten, oft virtuellen, Umgebung getestetfootnote:[Eine solche Vorgehensweise gilt nicht nur für die initiale Einführung von Software sondern wird auch oft im Zusammenhang mit Updates oder sonstigen Aktualisierungen wie Customizing verwendet.]. Oft erfolgt eine mehrstufige Durchführung, z. B.:
+
+. *Sandbox*: Exploratives Testen durch Entwickler
+. *Dev-System*: Test entwickelter Features
+. *QS-System*: Abnahme durch Qualitätssicherung, Tests mit Echtdaten
+. *PROD-System*: Tatsächliches Produktivsystem
+
+Pro::
+    * sehr sicher (höchste Risikominimierung)
+    * durch Tests mit Echtdaten kann sichergestellt werden, dass alle Features produktiv laufen
+Kontra::
+    * sehr zeitraubend
+    * durch virtuele Laufzeitumgebung kann Leistungsfähigkeit/Performance der Produktivumgebung schwer eingeschätzt werden
