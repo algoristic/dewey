@@ -1,0 +1,58 @@
+= Auswahlprozess Softwarekauf
+:dewey-template: default.doc.ad
+
+== Ablauf
+
+Schritt 1: Analyse::
+    * Ist-Analyse
+    * Anforderungs-Analyse
+    * Soll-Konzeption
+    * Bewertungskriterien definieren
+Schritt 2: Anbieterauswahl::
+    * 2 -- 5 Marktführer
+    * 2 -- 5 Branchenführer
+    * 1 -- 3 Newcomer
+Schritt 3: Grobauswahl:: Stichwort: _Grobanfoderungen_
+    * Angebot(e) sichten
+    * Aussortieren anhand von "Killer-Kriterien"
+Schritt 4: Feinauswahl:: Stichwort: _Funktionale Anforderungen_
+    * Überprüfung von Referenzen
+    * Funktionale Anforderungen
+    * Ausschreibung
+Schritt 5: Endauswahl:: Stichwort: _Prozessorientierte Anforderungen_
+    * Prozessdrehbuch
+    * Workshops
+    * Referenzbesuche
+Schritt 6: Vertragsverhandlungen::
+    * Lastenheft zu Pflichtenheft
+    * Zahlungs- und Abnahmekonditionen
+    * Softwarevertrag
+
+== Einflussgrößen und Parameter
+* alle Ziele, Strategien und Maßnahmen, die die Einführung betreffen identifizieren
+    ** Abstimmung mit den übergeordneten Informationsstrategien
+* Projektvorgaben (Kosten und Zeit)
+* Aspekte
+    ** Verhaltensaspekte
+        *** Führungsstil, der bei der Einführung gewählt wurde
+        *** ...
+    ** Sachaspekte
+        *** Rollout-Strategien
+        *** ...
+* Rahmenbedingungen
+    ** direkte Rahmenbedingungen
+        *** Anwendungssystem
+            **** Komplexität
+            **** Reifegrad
+            **** organisatorische und personelle Änderungen erforderlich?
+        *** Endanwender
+            **** Systemakzeptanz
+            **** Nutzungsgrad
+            **** Motivation
+            **** Qualifikation
+    ** indirekte Rahmenbedingungen
+        *** Systemumgebung
+            **** Integrationsaufwand
+        *** Unternehmensebene
+            **** Führungsstil des Managements
+            **** Technikaffinität des M.

@@ -1,0 +1,33 @@
+= Prozess Softwarekauf
+:dewey-template: default.doc.ad
+
+== Vor dem Kauf
+Projektteam bilden:: &nbsp;
+Im Projektteam::
+. Abgrenzung und Festlegung von Zielen
+. Ist-Analyse der Geschäftsprozesse
+. Analyse der link:./anforderungen-an-anwendungssysteme[Anforderungen]
+. Soll-Konzeption mit Optimierungszielen
+. link:./auswahlprozess-softwarekauf[Softwareauswahl]
+    * Bewertungskriterien für Nutzwert- bzw. Kosten-Nutzen-Analyse definieren
+    * Marktevaluierung / Informationsbeschaffung / Vorauswahl / Angebotseinholung
+    * Grobbewertung und Ausahal für die "Short-List"
+    * ggf. link:./make-or-buy[Make-or-buy] Entscheidung treffen
+    * Endauswahl mit Workshop ausgewählter Anbieter
+        ** Produktdemo oder Prototyp auf Basis von Kunden bzw. Testdaten
+        ** Vergleich realer Geschäftsprozesse mit Software
+. Vertragsverhandlungen und Kaufawicklung
+
+== Nach dem Kauf
+Einführung (Projektarbeit)::
+. Organisation und Konzeption
+. Detaillierung und Realisierung anhand des Soll-Konzepts
+    * Customizing
+    * Schnittstellen
+    * individuelle Ergänzungen
+. Produktionsvorbereitung
+    * Übernahme von Altdaten
+    * Schulungen
+. Test/Abnahme
+. Rollout
+Wartung / Betrieb:: &nbsp;
