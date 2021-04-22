@@ -28,12 +28,12 @@ include:it-management\anwendungssysteme\betriebswirtschaftliche-standardsoftware
 include:it-management\anwendungssysteme\enterprise-architektur.ad
 
 === Beschaffung
-include:it-management\beschaffung\prozess-softwarekauf.ad
 include:it-management\beschaffung\anforderungen-an-anwendungssysteme.ad
-include:it-management\beschaffung\make-or-buy.ad
+include:it-management\beschaffung\prozess-softwarekauf.ad
 include:it-management\beschaffung\auswahlprozess-softwarekauf.ad
 include:it-management\beschaffung\software-rollout.ad
 
-dev:== MISC
-dev:include:it-management\it-outsourcing.ad
-dev:include:it-management\cloud-computing.ad
+==== Auslagerung
+include:it-management\beschaffung\make-or-buy.ad
+include:it-management\beschaffung\it-outsourcing.ad
+include:it-management\beschaffung\cloud-computing.ad
