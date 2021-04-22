@@ -20,7 +20,7 @@ include:it-management\bwl\governance.ad
 include:it-management\anwendungssysteme\anwendungssysteme.ad
 include:it-management\anwendungssysteme\klassifikation-anwendungssysteme.ad
 include:it-management\anwendungssysteme\integrationsrichtungen.ad
-include:it-management\prototyping.ad
+include:it-management\anwendungssysteme\prototyping.ad
 
 === Geschäftsprozessorientierte Software
 include:it-management\anwendungssysteme\erp-systeme.ad
