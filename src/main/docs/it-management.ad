@@ -32,3 +32,6 @@ include:it-management\beschaffung\anforderungen-an-anwendungssysteme.ad
 include:it-management\beschaffung\make-or-buy.ad
 include:it-management\beschaffung\auswahlprozess-softwarekauf.ad
 include:it-management\beschaffung\software-rollout.ad
+
+dev:== MISC
+dev:include:it-management\enterprise-architektur.ad

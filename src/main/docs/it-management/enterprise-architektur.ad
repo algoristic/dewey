@@ -1,0 +1,53 @@
+= Enterprise Architektur
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+:ea: Enterprise Architektur
+:eam: Enterprise Architektur Management
+:zf: Zachmann Framework
+
+== Beschreibung
+{ea} beschreibt das Zusammenspiel von Prozessen (_= Business_) und IT im Unternehmen.
+
+.{ea}
+image::enterprise_architektur_001.png[{ea}, 300, align="center"]
+
+Die {ea} einer Organisation lässt sich in die folgenden Elemente aufgliedern:
+
+Business Architecture::
+    Geschäftsarchitektur::: fachliche Architekturen, Organsiation, Prozess und Unternehmensstrategie
+Information System Architecture::
+    Anwendungsarchitektur::: Applikations-Architekturen, die in der Organisation genutzt werden
+    Daten-/Informationsarchitektur::: Daten und ihre Beziehungen, sowie ihre Nutzung -- essentiell notwendig für den Geschäftsbetrieb
+Technology Architecture::
+    IT-Infratsruktur::: auf dieser Basis können Anwendungen beschafft, integriert und betrieben werden
+
+== Enterprise Architektur Management
+Bestandteile des {eam}:
+
+* *Analyse und Dokumentation* einer gegenwärtigen oder zukünftigen (IT-) Unternehmensstruktur
+* link:./multiprojektmanagement#_projektportfoliomanagement[*Projektportfolio-Management*], besonders in Bezug zur strategisch besseren Positionierung des Unternehmens
+* *Management* einer vorhandenen *IT-Infratsruktur*
+    ** soll das *gemeinsame Vorgehen* von geschäftlichem und IT-Management ermöglichen
+    ** Erstellung, Planung und Umsetzung einer *{ea}*
+    ** Prinzipien, Methoden udn Werkzeuge ür *Ausgestaltung und Änderung der IT-Landschaft*
+    ** entscheidend für link:./anwendungssysteme#_it_einsatz_und_unternehmenserfolg[nachhaltigen Unternehmenserfolg]
+
+.{eam}
+image::enterprise_architektur_management_001.png[{eam}, 420, align="center"]
+
+== Zachmann Framework
+Das {zf} ist ein domänenneutraler Ordnungsrahmen zur Entwicklung von Informationssystemen und damit ein Management-Framework.
+
+Das {zf} setzt weniger auf Prozesse, als vielmehr auf Rollen und Perspektiven.
+
+Rollen::
+* Planer -- Business Context *Planner* -- _Executive_
+* Besitzer -- Business Concept *Owner* -- _Management_
+* Designer -- Business Logic *Designer* -- _Architect_
+* Builder -- Business Physics *Builder* -- _Engineer_
+* Programmierer -- Business Component *Implementer* -- _Technician_
+* Nutzer -- *User* -- _Enterprise_
+
+.{zf}footnote:[Quelle: https://www.zachman.com/images/ZI_PIcs/ZF3.0.jpg]
+image::zachmann_framework_001.png[Übersicht: das Zachmann Framework]

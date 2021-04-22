@@ -1,0 +1,28 @@
+<mxfile host="Electron" modified="2021-04-22T08:05:20.473Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/14.1.8 Chrome/87.0.4280.88 Electron/11.1.1 Safari/537.36" etag="yCwMxlnCghcQhq9qYoA9" compressed="false" version="14.1.8" type="device">
+  <diagram id="BYRCWBrbArzfpqCXAJ1M" name="Seite-1">
+    <mxGraphModel dx="769" dy="484" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XuA-t1UUFwMdNn0SZnyr-5" value="Enterprise Architecture" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#6c8ebf;align=right;verticalAlign=top;spacing=10;spacingTop=8;fillColor=#dae8fc;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="260" y="230" width="340" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="XuA-t1UUFwMdNn0SZnyr-4" value="IT Architecture" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#9673a6;align=right;spacing=10;fillColor=#e1d5e7;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="270" y="290" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="XuA-t1UUFwMdNn0SZnyr-1" value="Business Architecture" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="280" y="240" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XuA-t1UUFwMdNn0SZnyr-3" value="Technology Architecture" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="280" y="360" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XuA-t1UUFwMdNn0SZnyr-6" value="Technology Architecture" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="280" y="360" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="XuA-t1UUFwMdNn0SZnyr-7" value="Information System Architecture" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="280" y="300" width="160" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
