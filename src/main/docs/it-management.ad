@@ -25,6 +25,7 @@ include:it-management\anwendungssysteme\prototyping.ad
 === Geschäftsprozessorientierte Software
 include:it-management\anwendungssysteme\erp-systeme.ad
 include:it-management\anwendungssysteme\betriebswirtschaftliche-standardsoftware.ad
+include:it-management\anwendungssysteme\enterprise-architektur.ad
 
 === Beschaffung
 include:it-management\beschaffung\prozess-softwarekauf.ad
@@ -34,6 +35,5 @@ include:it-management\beschaffung\auswahlprozess-softwarekauf.ad
 include:it-management\beschaffung\software-rollout.ad
 
 dev:== MISC
-dev:include:it-management\enterprise-architektur.ad
 dev:include:it-management\it-outsourcing.ad
 dev:include:it-management\cloud-computing.ad
