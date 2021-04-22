@@ -1,0 +1,50 @@
+= Cloud Computing
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+:cc: Cloud Computing
+
+== Definition
+Eine international einheitliche Definition von {cc} existiert aktuell nicht. Eine allgemein anerkannte Definition ist folgende:
+
+"{cc} ist eine Form der bedarfsgerechten und flexiblen Nutzung von IT-Leistungen. Diese werden in Echtzeit als Service über das Internet bereitgestellt und nach Nutzung abgerechnet."
+-- Definition lt. BITKOMfootnote:[**B**ranchenverband der **I**nformations- und **T**ele**kom**munikationsbranche]
+
+== Cloud Services
+Bereitgestellt werden:
+
+=== SaaS
+Stellt bereit:: Anwendungen
+Nutzer:: Nutzer sind meist _Fachabteilungen_, _Wissensarbeiter_, _Privatkunden_
+
+=== PaaS
+Stellt bereit:: Plattformen für Anwendungsentwicklung und Betrieb
+Nutzer:: Nutzer sind meist _Anwendungsentwickler_ oder _Integratoren_
+
+=== IaaS
+Stellt bereit:: Basisinfratsruktur
+Nutzer:: Nutzer sind meist _IT-Betriebe_ und _-dienstleister_
+
+=== XaaS
+Stellt bereit:: Weitere Mietmodelle, die bspw. die obigen erweitern oder nur einzelne Teilbereiche dieser Modelle bereitstellen.
+
+image::cloud_computing_001.png[{cc} ,500, align="center"]
+
+== Formen der Bereitstellung
+
+=== Private Cloud
+* Wird vom Kunden betrieben (im eigenen Rechenzentrum oder bei externem Dienstleister)
+* *Bereitstellung via Intranet*
+* Zugriff nur für den Kunden, autorisierte Geschäftspartner und Lieferanten
+
+=== Public Cloud
+* Betrieb durch einen IT-Dienstleister
+* *Bereitstellung via Internet*
+* steht (üblicherweise als "pay per use") allen Kunden des IT-Dienstleisters zur Verfügung
+
+=== Hybrid Cloud
+* Mischform aus Private und Public CLoud
+* dabei _orchestriert_ meist eine zentrale Instanz Dienste, die auf den verschiedensten Wegen bereitgestellt werden
+
+=== Community Cloud
+* Cloud-Architektur, die von mehreren Unternehmen gemeinsam betrieben wird und nur für einen bechränkten Nutzerkreis zur Verfügung steht

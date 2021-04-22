@@ -1,0 +1,38 @@
+= IT-Outsourcing
+:dewey-template: default.doc.ad
+
+:imagesdir: images
+
+== Übersicht
+Philosophie::
+    * Konzentration auf das Kerngeschäft, vermeiden vom Aufbau und Halten von Know-How in anderen Bereichen
+Auslöser::
+    * Kostensteierungen
+    * Mangel an IT-Experten
+    * Technologiewandel
+Erwartungshaltung::
+    * Kostenreduktion
+    * Standortunabhängigkeit
+Risiko::
+    * Koordinationskosten
+    * Reaktionszeiten
+
+== Formen
+Nach Funktion::
+    Unterscheidung nach *Grad des externen Leistungsbezugs*:
+    * alle IT-Funktionen _outsourcen_
+    * nur Teile der IT
+Nach Dienstleistungsanbieter::
+    Unterscheidung nach *Grad der finanziellen Unabhängigkeit*:
+    * externe Dienstleister
+    * ausgegliedertes, aber rechtlich verbundenes Unternehmen (interner Dienstleister)
+
+== Gegenstände
+* Netzmanagement
+* Rechenzentrumsbetrieb
+    ** Webhosting
+    ** Output-Management (Druck und Versand)
+    ** ...
+* IT-Security
+* Benutzerservice
+* ...

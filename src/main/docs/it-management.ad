@@ -35,3 +35,5 @@ include:it-management\beschaffung\software-rollout.ad
 
 dev:== MISC
 dev:include:it-management\enterprise-architektur.ad
+dev:include:it-management\it-outsourcing.ad
+dev:include:it-management\cloud-computing.ad
