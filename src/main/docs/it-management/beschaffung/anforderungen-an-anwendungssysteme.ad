@@ -96,3 +96,8 @@ Verwalten::
 * Tools
     ** evaluieren...
     ** ...und einsetzen
+
+=== Zu Beachten
+Bei Befragungen geben Nutzer gerne bei den Anforderungen an eine Software und die Arbeitsweise ein Idealbild an, das sie selbst gar nicht ausfüllen. Sprich, sie beschreiben weniger die tatsächliche Nutzung, als vielmehr die von ihnen als idealisiert wahrgenommene Nutzung. Wird die Software dann, ohne die Aussagen zu hinterfragen, so gebaut, kommt es zu Beschwerden.
+
+Beispiel:: Die Nutzer geben an, dass sie, wenn sie nicht weiter wissen, gerne die Hilfe der Software benutzen. In der Folge wird bei der Implementierung der Software weniger auf eine ansprechend und intuitiv gestaltete Oberfläche geachtet und mehr auf eine komprehensive Dokumentation und Hilsfunktion. Bei der Einführung beschweren sich die Nutzer über die komplizierte Steuerung.
