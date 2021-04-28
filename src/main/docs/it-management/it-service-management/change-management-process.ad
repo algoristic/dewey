@@ -7,7 +7,6 @@
 image::change_management_process_001.png[Change Management Prozess]
 
 == Beschreibung
-Grober ablauf:
 . Der Change wird (über einen RFC/Request for Change) initiiert.
 . Der Change-Manager prüft die Korrektheit des RFC und versuch vorab zu erkennen, ob die Priorität des Change korrekt gesetzt wurde.
 . Je nach Priorität kann der Change Manager den Change nun selbstständig autorisieren (für geringfügige Änderungen) _oder_ an das CAB (Change Advisory Board) zur Autorisierung weiterleiten _oder_ an das _ECAB_ weiterleiten (Emergency CAB).
