@@ -1,0 +1,115 @@
+= Kernbereiche
+:dewey-template: default.doc.ad
+
+Die Kernbereiche, die _ITIL_ entlang seines link:./itil#_kernelemente[Service Lifecycle] definiert.
+
+== Service Strategy
+Bietet einen Leitfaden, wie _Service Management_ als strategisches _Asset_ designed, entwickelt und implementiert wird.
+
+Funktionen::
+    * Service Strategy
+    * Financial Management
+    * Service Portfolio Management
+    * Demand Management
+    * ...
+
+Rollen::
+    * Chief Sourcing Officer
+    * Product Manager
+    * Service Owner
+    * Process Owner
+    * ...
+
+== Service Design
+Definiert und entwirft _Services_ und _Service Assets_ (&rarr; Policies, Architekturen, Portfolios) aus Basis von strategischen Zielen und _Business Requirements_.
+
+Funktionen::
+    * Service Catalogue Management
+    * Service Level Management
+    * Avilability Management
+    * Capacity Management
+    * Information Security Management
+    * ...
+
+Rollen::
+    * Service Design Manager
+    * Service Catalogue Manager
+    * Service Level Manager
+    * ...
+
+== Service Transition
+Bietet einen Leitfaden für die Entwicklung und Verbesserung (und _Transitionsfähigkeit_) neuer oder geänderter Services in den Betrieb.
+
+Funktionen::
+    * Transition Planning & Support
+    * Change Management
+    * Service Asset & Configuration Management
+    * Release & Deployment Management
+    * Service Testing & Validation
+    * Knowledge Management
+
+Rollen::
+    * Change Manager
+    * Change Advisory Board
+    * Service Asset Manager
+    * Confiuration Analyst
+    * Configuration Manager
+    * Release & Deployment Manager
+
+== Service Operation
+Ist für das "Tagesgechäft" verantwortlich.
+
+Funktionen::
+    * Event Management
+    * Incident Management
+    * Request Fullfillment
+    * Problem Management
+    * Access Management
+    * Service Desk
+        ** Technical Management
+        ** Application Management
+        ** IT-Operation Management
+    * ...
+
+Rollen::
+    * Incident Manager
+    * Problem Manager
+    * Service Desk Manager
+    * Service Desk Analyst
+    * ...
+
+== Continual Service Improvement
+Das Hauptzeil von _ITIL_ ist die kontinuierliche Anpasung und Neuorientierung der IT-Services an die, sich verändernden Business Requirements, durch das Erkennen und Umsetzen von möglichen Verbesserungen an den Services. Das ist die Aufgabe von _Continual Service Improvement_.
+
+Funktionen::
+    * Service Reporting
+    * Service Measurement
+    * Service Level Management
+
+Rollen::
+    * Service Manager
+    * Continual Service Improvement Manager
+    * Knowledge Management Owner
+    * Reporting Analyst
+    * ...
+
+Themen::
+    * _RoI for CSI_
+    * 7 step improvement process
+        ** What should be measured?
+        ** What can be measured?
+        ** Gather data
+        ** Process data
+        ** Analyse data
+        ** Present and use information
+        ** implement corrective action
+
+Modelle::
+    * link:./phasen-und-vorgehensmodelle#_pdca_zyklus_deming_cycle[PDCA-Modell]
+    * RACI-Matrix
+    * Governance Modelle
+        ** Enterprise-, Corporate-, IT-Governance
+    * Monitoring Loop
+    * Business Value
+    * Metriken:
+        ** Technology, Process & Service Metrics

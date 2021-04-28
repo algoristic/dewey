@@ -40,3 +40,5 @@ include:it-management\beschaffung\cloud-computing.ad
 
 == ITIL
 include:it-management\it-service-management\itil.ad
+include:it-management\it-service-management\itil-kernbereiche.ad
+include:it-management\it-service-management\change-management-process.ad

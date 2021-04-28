@@ -1,0 +1,16 @@
+= Change Management Prozess
+:dewey-template: default.doc.ad
+:imagesdir: images
+
+== Übersicht
+.Change Management Prozess
+image::change_management_process_001.png[Change Management Prozess]
+
+== Beschreibung
+Grober ablauf:
+. Der Change wird (über einen RFC/Request for Change) initiiert.
+. Der Change-Manager prüft die Korrektheit des RFC und versuch vorab zu erkennen, ob die Priorität des Change korrekt gesetzt wurde.
+. Je nach Priorität kann der Change Manager den Change nun selbstständig autorisieren (für geringfügige Änderungen) _oder_ an das CAB (Change Advisory Board) zur Autorisierung weiterleiten _oder_ an das _ECAB_ weiterleiten (Emergency CAB).
+. Nach Autorisierung durch die vorgelagerte Instanz wird durch dieselbe Instanz ein Terminplan für die Implementierung des Changes erstellt -- je nach Dringlichkeit des Changes kann dies eine langfrisitge Planung oder die Beauftragung der sofortigen Umsetzung sein.
+. Im Folgeschritt wird der Change unter Überwachung durch den Change-Manager implementiert.
+. Nach erfolgter Implementierung werden die erreichten Ergebnisse durch den Change-Manager kontrolliert und, sowie sichergestellt, dass eine Historie der getätigten Aktivitäten vorliegt. Des Weiteren trägt der Change-Manager dafür Sorge, dass aufgetretene Fehler und Lessons-Learned dokumentiert wurden.
