@@ -1,0 +1,36 @@
+= ITIL
+:dewey-template: default.doc.ad
+:imagesdir: images
+
+== IT-Service-Management
+Ein funktionierendes IT-Service-Management (_ITSM_) hat die Planung, Überwachung und Steuerung der Qualität und Quantität der gelieferten IT-Services der Organisation zum Ziel. IT-Services sind hierbei sowohl Produkte als auch Dienstleistungen -- einfach alles, was beim Kunden irgendeine Form des Mehrwerts erzeugt.
+
+=== Zielsetzung
+IT-Serices zur richtigen *Zeit*, am richtigen *Ort*, in der richtigen *Qualität* und *Qunatität* zu marktfähigen **Preis**en für in- und externe Kunden erbringen.
+
+=== Voraussetzung
+* Definition der IT-Services, die zum Kunden hin sichtbar sind
+* Design und Implementierung von Prozessen und Verantwortlichkeiten
+* Aktive, kontinuierliche Verbesserung von Services und Prozessen
+
+== Definition
+_ITIL_ ist eine Sammlung von Best- bzw. _Good_-Practices für die Umsetzung eines _ITSM_. Die Prozesse, Methoden und Werkzeuge, die im Regel- und Definitionswerk aufgeführt werden gelten international als _de-facto Standard_. _ITIL_ ist ein generisches Modell, das individuell in der Organisation implementiert werden muss.
+
+== Philosphie
+. Ausrichtung der Services auf die (_gegenwärtigen und zukünftigen_) Anforderungen des Unternehmens und seiner Kunden
+. Die Qualität der Services (*kontinuierlich*) verbessern
+. Die langfristigen Kosten der Servicetätigkeit reduzieren
+
+== Kernelemente
+_ITIL_ definiert *Prozesse*, *Rollen* und *Funktionen*, die entlang des _ITIL Service Lifecycle_ ausgerichtet sind. Inhalte sind:
+
+* grundsätzliche Anforderungen an Rollen, Funktionen und Prozesse
+* konkrete Prozessziele
+* Gestaltungsvorschläge für Verfahren und Rollen
+* Schnittstellenempfehlungen für Prozessintegration
+* kritische Erfolgsfaktoren und Einführungsrisiken
+* mögliche Messgrößen (__KPI__s) für Prozessmanagement
+* Steuerungsprozesse im großen Zusammenhang
+
+.ITIL Service Lifecycle
+image::itil_service_lifecycle_001.png[ITIL Service Lifecycle, 550, align="center"]
