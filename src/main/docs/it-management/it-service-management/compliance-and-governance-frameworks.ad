@@ -1,0 +1,23 @@
+= Andere Compliance- und Governance-Frameworks
+:dewey-template: default.doc.ad
+:imagesdir: images
+
+image::governance_und_compliance_frameworks_001.png[Compliance- und Governance-Frameworks, 400, align="center"]
+
+== IS0 20000 / ISO IEC 20000
+* International anerkannte Norm mit Anforderungen an das IT Service-Management
+* Für Zertifikat müssen bestimmte Prozesse im Unternehmen implementiert sein (ein Unterschied zu _ITIL_, das keine genauen Prozesse vorgibt, sondern höchstens Empfehlungen)
+* Geforderte Prozesse finden sich in _ITIL_ allerdings wieder
+* Zertifikat muss alle drei Jahre erneuert werden
+
+=== Unterschied zu _ITIL_
+Die _Themen_ und deren _Bewertung_ sind bei _ITIL_ und in der _ISO 20000_ sehr deckungsgleich.
+
+Eine Zertifizierung nach _ISO 20000_ betrifft allerdings das *Unternehmen*, das nach der Norm ausgerichtet ist. Bei _ITIL_ werden ausschließlich *Personen* zertifiziert.
+
+== COBIT
+* Framework für ganzheitliche Governance und ganzheitliches IT-Management
+* ca. 90% der Großunternehmen weltweit setzen _COBIT_ ganz oder zumindest teilweise um
+
+== COSO ERM
+* Ganzheitliches Enterprise Risk Management Framework

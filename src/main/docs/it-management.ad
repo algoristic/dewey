@@ -41,5 +41,6 @@ include:it-management\beschaffung\cloud-computing.ad
 == IT Service-Management
 include:it-management\it-service-management\itil.ad
 include:it-management\it-service-management\itil-kernbereiche.ad
+include:it-management\it-service-management\compliance-and-governance-frameworks.ad
 include:it-management\it-service-management\change-management-process.ad
 include:it-management\it-service-management\service-level-agreement.ad
