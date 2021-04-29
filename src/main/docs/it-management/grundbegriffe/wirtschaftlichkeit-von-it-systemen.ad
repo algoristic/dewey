@@ -1,0 +1,43 @@
+= Wirtschaftlichkeit von IT-Systemen
+:dewey-template: default.doc.ad
+:stem:
+
+== Hintergrund
+IT-Systemee stellen betriebswirtschaftliche Investitionen dar. Daraus ergibt sich die Notwendigkeit die Wirtschaftlichkeit dieser Systeme zu ermitteln. (Siehe dazu auch: link:./anwendungssysteme#_it_einsatz_und_unternehmenserfolg[IT-Einsatz und Unternehmenserfolg].)
+
+Dazu werden Methoden aus der betriebswirtschaftlichen Investitionsrechnung herangezogen.
+
+== Kalkulation
+Laut _DIN 69001:2009_ wird die Kalkulation der Kosten für ein Projekt als *Projektkalkulation* bezeichnet.
+
+Die Projektkalkulation wird *zu Beginn des Projektes* erstellt und in regelmäßigen Abständen kontrolliert und angepasst. Nach Abschluss des Projektes wird eine *Nachkalkulation* erstellt.
+
+* Diese Nachkalkulation ermittelt den tatsächlichen wirtschaftlichen Erfolg und...
+* ...bildet die Basis für die Bewertung und Planung zukünftiger Projekte.
+
+== Projektkosten
+Die Projektkosten lassen sich aufgliedern in:
+
+Personalkosten::
+    * Eigenleistung
+    * Fremdleistung
+Sachkosten::
+    * Zukauf
+    * Investitionen (&rarr; Abschreibungen)
+
+Für eine ausfürhliche Betrachtung siehe link:./kosten-und-nutzenarten[Kosten- und Nutzenarten]
+
+== Wirtschaftlichkeit
+Die Wirtschaftlichkeit lässt sich ermitteln als: +
+stem:["Wirtschaftlichkeit" = "Kosten" / "Nutzen"]
+
+Der *Nutzen* ist allerdings nicht immer eindeutig quantifizierbar, daher ergeben sich für uns drei Varianten:
+
+Nutzen kann monetär dargestellt werden::
+&rarr; Kosten-/Nutzen-Analyse mit den Methoden der link:./investitionsrechnung[Investitionsrechnung]
+
+Kein Kriterium kann monetär dargestellt werden::
+&rarr; erstellen einer link:./nutzwertanalyse.[Nutzwertanalyse]
+
+Die Kriterien können teilweise monetär dargestellt werden::
+&rarr; Bewertungsmethoden nach link:./ufab-bewertungsmethoden[UfAB]
