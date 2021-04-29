@@ -2,6 +2,8 @@
 :dewey-template: default.doc.ad
 :imagesdir: images
 
+Im folgenden wird der _Change Management Prozess_ nach _ITIL_ beschrieben.
+
 == Übersicht
 .Change Management Prozess
 image::change_management_process_001.png[Change Management Prozess]

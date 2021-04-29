@@ -1,0 +1,47 @@
+= Service-Level-Agreement
+:dewey-template: default.doc.ad
+
+Das _Service-Level-Agreement_, kurz _SLA_, legt zwischen einem Service-Provider und einem Service-Consumer Umfang, Inhalt und Qualität des Service fest und verschafft so beiden eine Transparenz und Rechtssicherheit im Umgang mit dem Service.
+
+== Ziele
+Für den Dienstleister::
+    * Fixierung der Kundenerwartung
+    * Planungssicherheit
+
+Für den Kunden::
+    * Reduzierung der IT-Kosten
+    * Kostentransparenz
+
+Für beide gleichermaßen::
+    * Leistungstransparenz
+    * Anpassung der Dienstleistung an die Anforderungen
+    * Sicherstellung der Erbringung der vereinbahrten Leistung
+    * Standardisierung der Infrastruktur
+    * Regelung von Verantwortlichkeiten
+
+== Inhalte
+* *Zweck* der Vereinbahrung
+* Festlegug der *Vertragspartner*
+* Leistungsbechreibung
+    ** Umfang
+    ** Inhalte
+    ** Abgrenzung
+* Qualität der Leistung
+    ** Service-Level *Kennzahlen*
+* Preisgestaltung
+    ** *Preis* der enthaltenen Leistungen
+    ** Sonder- und Mehrleistungen
+* Regelungen zu *Vertraulichkeit und Sicherheit* der Datenbestände
+* Beschreibung des *Eskalationsmanagements*
+* Verinbahrte *Vertragsstrafen*
+* *Laufzeit* des Vertrages
+
+== Weitere Verienbahrungen
+
+=== Operational Level Agreement
+Das _Operational Level Agreement_, kurz _OLA_, legt die oben beschriebenen Inhalte für Vertragspartner innerhalb derselben Organisation fest. Besonders bei großen Firmen mit entsprechend eingerichteter interner IT, die viele Systeme für entsprechend viele Nutzer betreiben muss, sind solche Vereinbahrungen auch im Sinne der internen Leistungsverrechnung unerlässlich.
+
+=== Underpinning Contract
+Ein _Underpinning Contract_, kurz _UC_, regelt die Erbringung von Dienstleistungen durch Dritte, die notwendig sind, damit ein _Service Provider_ einem Kunden seinen _Service_ anbieten kann. So kann es bspw. sein, dass die Anwendung, die dem Kunden zur Verfügung gestellt wird beim _Service Provider_ selbst gehostet wird, die Datenbank, auf die diese Anwendung zugreift, allerdings von einem Drittanbieter betrieben wird.
+
+Selbstverstndlich müssen solche _UCs_ mit den, mit dem Kunden vereinbahrten, _SLAs_ harmonieren.

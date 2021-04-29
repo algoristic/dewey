@@ -38,7 +38,8 @@ include:it-management\beschaffung\make-or-buy.ad
 include:it-management\beschaffung\it-outsourcing.ad
 include:it-management\beschaffung\cloud-computing.ad
 
-== ITIL
+== IT Service-Management
 include:it-management\it-service-management\itil.ad
 include:it-management\it-service-management\itil-kernbereiche.ad
 include:it-management\it-service-management\change-management-process.ad
+include:it-management\it-service-management\service-level-agreement.ad
