@@ -1,7 +1,7 @@
 = ITIL: Kernbereiche
 :dewey-template: default.doc.ad
 
-Die Kernbereiche, die _ITIL_ entlang seines link:./itil#_kernelemente[Service Lifecycle] definiert.
+Die Kernbereiche, die _ITIL_ entlang seines link:./itil#_kernelemente.html[Service Lifecycle] definiert.
 
 == Service Strategy
 Bietet einen Leitfaden, wie _Service Management_ als strategisches _Asset_ designed, entwickelt und implementiert wird.
@@ -105,7 +105,7 @@ Themen::
         ** implement corrective action
 
 Modelle::
-    * link:./phasen-und-vorgehensmodelle#_pdca_zyklus_deming_cycle[PDCA-Modell]
+    * link:./phasen-und-vorgehensmodelle.html#_pdca_zyklus_deming_cycle[PDCA-Modell]
     * RACI-Matrix
     * Governance Modelle
         ** Enterprise-, Corporate-, IT-Governance

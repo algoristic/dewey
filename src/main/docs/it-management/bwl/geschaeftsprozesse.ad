@@ -9,11 +9,11 @@ image::geschaeftsprozess_001.png[Geschäftsprozess, 550, align="center"]
 
 Der Lieferant des Inputs und der Kunde des Outputs eines Prozesses müssen nicht zwingend extern sein!
 
-NOTE: Um Geschäftsprozesse und ihre Beteiligten schnell zu identifizieren und zu umreißen eignet sich die link:./sipoc-methode[SIPOC-Methode]
+NOTE: Um Geschäftsprozesse und ihre Beteiligten schnell zu identifizieren und zu umreißen eignet sich die link:./sipoc-methode.html[SIPOC-Methode]
 
 == Kategorien
 Managementprozesse:: Geben Strategien und Ziele vor und kontrollieren die Zielerreichung
-Kernprozesse:: Erzeugen den unmittelbaren Kundennutzen (siehe link:./wirtschaftsgueter#_wertschöpfungskette[Wertschöpfungskette])
+Kernprozesse:: Erzeugen den unmittelbaren Kundennutzen (siehe link:./wirtschaftsgueter#_wertschöpfungskette.html[Wertschöpfungskette])
 Unterstützungsprozesse:: Verwaltung und Bereitstellung betrieblicher Ressourcen (auch für Managementprozesse)
 
 .Prozesskategorien

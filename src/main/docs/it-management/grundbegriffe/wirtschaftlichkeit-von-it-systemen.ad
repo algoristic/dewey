@@ -3,7 +3,7 @@
 :stem:
 
 == Hintergrund
-IT-Systemee stellen betriebswirtschaftliche Investitionen dar. Daraus ergibt sich die Notwendigkeit die Wirtschaftlichkeit dieser Systeme zu ermitteln. (Siehe dazu auch: link:./anwendungssysteme#_it_einsatz_und_unternehmenserfolg[IT-Einsatz und Unternehmenserfolg].)
+IT-Systemee stellen betriebswirtschaftliche Investitionen dar. Daraus ergibt sich die Notwendigkeit die Wirtschaftlichkeit dieser Systeme zu ermitteln. (Siehe dazu auch: link:./anwendungssysteme#_it_einsatz_und_unternehmenserfolg.html[IT-Einsatz und Unternehmenserfolg].)
 
 Dazu werden Methoden aus der betriebswirtschaftlichen Investitionsrechnung herangezogen.
 
@@ -25,7 +25,7 @@ Sachkosten::
     * Zukauf
     * Investitionen (&rarr; Abschreibungen)
 
-Für eine ausfürhliche Betrachtung siehe link:./kosten-und-nutzenarten[Kosten- und Nutzenarten]
+Für eine ausfürhliche Betrachtung siehe link:./kosten-und-nutzenarten.html[Kosten- und Nutzenarten]
 
 == Wirtschaftlichkeit
 Die Wirtschaftlichkeit lässt sich ermitteln als: +
@@ -34,10 +34,10 @@ stem:["Wirtschaftlichkeit" = "Kosten" / "Nutzen"]
 Der *Nutzen* ist allerdings nicht immer eindeutig quantifizierbar, daher ergeben sich für uns drei Varianten:
 
 Nutzen kann monetär dargestellt werden::
-&rarr; Kosten-/Nutzen-Analyse mit den Methoden der link:./investitionsrechnung[Investitionsrechnung]
+&rarr; Kosten-/Nutzen-Analyse mit den Methoden der link:./investitionsrechnung.html[Investitionsrechnung]
 
 Kein Kriterium kann monetär dargestellt werden::
-&rarr; erstellen einer link:./nutzwertanalyse.[Nutzwertanalyse]
+&rarr; erstellen einer link:./nutzwertanalyse.html[Nutzwertanalyse]
 
 Die Kriterien können teilweise monetär dargestellt werden::
-&rarr; Bewertungsmethoden nach link:./ufab-bewertungsmethoden[UfAB]
+&rarr; Bewertungsmethoden nach link:./ufab-bewertungsmethoden.html[UfAB]

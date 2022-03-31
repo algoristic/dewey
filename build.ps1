@@ -24,6 +24,9 @@ Param(
     [Parameter(Mandatory=$false)]
     [string]$StyleTheme,
 
+    [Parameter(Mandatory=$false)]
+    [switch]$FileExtensions = $true,
+
     # Definiere die Tiefe der Inhaltsverzeichnisses auf der Startseite
     [Parameter(Mandatory=$true)]
     [string]$TocLevels,
@@ -178,6 +181,10 @@ Function Render-IndexFile
 
     $File = Get-Content $FilePath -Encoding UTF8
     $FileName = [System.IO.Path]::GetFileNameWithoutExtension($FilePath)
+    If($FileExtensions)
+    {
+        $FileName += ".html"
+    }
     $FullFileName = [System.IO.Path]::GetFileName($FilePath)
     $IndexFileContent = ""
 
@@ -259,10 +266,6 @@ Function Render-IndexFile
     Write-Log "Build time ($FullFileName): $BuildTime" DEBUG $LogDepth
 
     $TargetLink = ".\$FileName"
-    If(-not $Production)
-    {
-        $TargetLink += ".html"
-    }
 
     $Link = Render-ContentLink $TargetLink $Title $File
     $RenderStopwatch.Stop()
@@ -303,7 +306,7 @@ Function Render-IncludeFile
     # alle asciidoc-Endungen durch die kompilierte html-Variante ersetzen
     $BuildPath = $BuildPath -Replace ".asciidoc",".html" -Replace ".adoc",".html" -Replace ".ad",".html"
     $Ending = ".html"
-    If($Production)
+    If(-not $FileExtensions)
     {
         $Ending = ""
     }
@@ -357,6 +360,7 @@ Write-Log "Dest = $Dest" INFO 1
 Write-Log "Style = $Style" INFO 1
 Write-Log "StyleExtension = $StyleExtension" INFO 1
 Write-Log "StyleTheme = $StyleTheme" INFO 1
+Write-Log "FileExtensions = $FileExtensions" INFO 1
 Write-Log "Templates = $Templates" INFO 1
 Write-Log "Production = $Production" INFO 1
 Write-Log "TocLevels = $TocLevels" INFO 1

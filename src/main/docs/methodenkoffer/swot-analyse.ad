@@ -36,7 +36,7 @@ Recherche::
 Externe Analysen (je nach Projektgröße auch Marktforschungsstudien o. Ä.) durchführen und eine interne Analyse vornehmen. Externe Themen können beispielsweise Technologien, Trends oder Politik sein, interne eher Finanzen, Know-How, Personal...
 
 Workshop vorbereiten::
-Siehe Methodenkoffer: link:./workshops[Workshops].
+Siehe Methodenkoffer: link:./workshops.html[Workshops].
 
 == Durchführung
 Die Durchführung der SWOT-Analyse bietet sich als Workshop an, die wir so viele unterschiedliche Fachdisziplinen und Gedankengänge versammeln und nutzen können.
@@ -72,7 +72,7 @@ Präzisieren und Clustern::
 Doppelnennungen eliminieren, Themengruppen identifizieren, Aussagen klar und verständlich machen. (_Ohne eine Wertung vorzunehmen!_)
 
 Bewertung::
-Wertung oder Priorisierung der SWOTs vornehmen, z. B. mittels eines link:./paarweiser-vergleich[paarweisen Vergleichs].
+Wertung oder Priorisierung der SWOTs vornehmen, z. B. mittels eines link:./paarweiser-vergleich.html[paarweisen Vergleichs].
 
 Lösungen entwicken::
 _Am besten nur die wichtigsten Punkte nutzen._ Aus der Kombination SWOTs je zweier Kategorien werden offen Lösungsideen formuliert.
@@ -80,6 +80,6 @@ _Am besten nur die wichtigsten Punkte nutzen._ Aus der Kombination SWOTs je zwei
 image::swot_strategien_001.png[Mögliche Strategien, 550, align="center"]
 
 Lösungen priorisieren::
-* abermals einen link:./paarweiser-vergleich[paarweisen Vergleich] durchführen
+* abermals einen link:./paarweiser-vergleich.html[paarweisen Vergleich] durchführen
 * jeder Teilnehmer erhält eine gewisse Anzahl von Punkten, die er auf die Lösungen verteilt
 * Formulierung von Arbeitsanweisungen oder Business Cases auf Basis der Lösung -- die Konkretisierung hilft bei der Priorisierung

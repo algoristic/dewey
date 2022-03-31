@@ -6,13 +6,13 @@ Projektteam bilden:: &nbsp;
 Im Projektteam::
 . Abgrenzung und Festlegung von Zielen
 . Ist-Analyse der Geschäftsprozesse
-. Analyse der link:./anforderungen-an-anwendungssysteme[Anforderungen]
+. Analyse der link:./anforderungen-an-anwendungssysteme.html[Anforderungen]
 . Soll-Konzeption mit Optimierungszielen
-. link:./auswahlprozess-softwarekauf[Softwareauswahl]
+. link:./auswahlprozess-softwarekauf.html[Softwareauswahl]
     * Bewertungskriterien für Nutzwert- bzw. Kosten-Nutzen-Analyse definieren
     * Marktevaluierung / Informationsbeschaffung / Vorauswahl / Angebotseinholung
     * Grobbewertung und Ausahal für die "Short-List"
-    * ggf. link:./make-or-buy[Make-or-buy] Entscheidung treffen
+    * ggf. link:./make-or-buy.html[Make-or-buy] Entscheidung treffen
     * Endauswahl mit Workshop ausgewählter Anbieter
         ** Produktdemo oder Prototyp auf Basis von Kunden bzw. Testdaten
         ** Vergleich realer Geschäftsprozesse mit Software
@@ -29,5 +29,5 @@ Einführung (Projektarbeit)::
     * Übernahme von Altdaten
     * Schulungen
 . Test/Abnahme
-. link:./software-rollout[Rollout]
+. link:./software-rollout.html[Rollout]
 Wartung / Betrieb:: &nbsp;

@@ -3,7 +3,7 @@
 
 :imagesdir: images
 
-_Siehe auch link:./ziele#_anforderungen_vs_ziele[Anforderungen vs. Ziele]_
+_Siehe auch link:./ziele.html#_anforderungen_vs_ziele[Anforderungen vs. Ziele]_
 
 == Beschreibung
 Anforderungen/_Requirements_...
@@ -16,7 +16,7 @@ Anforderungen/_Requirements_...
         *** ...Optimierung und Rationalisierung
         *** ...Ausschreibungen und Vertragsgestaltung
 * ...sind schwer zu ermitteln
-    ** sie erfodern also ein *strukturiertes* link:./anforderungen-an-anwendungssysteme#_tätigkeiten_des_requirements_engineering[Requirements-Engineering]
+    ** sie erfodern also ein *strukturiertes* link:./anforderungen-an-anwendungssysteme.html#_tätigkeiten_des_requirements_engineering[Requirements-Engineering]
     ** die Kommunikation zwischen allen Stakeholdern schlägt oft fehl, da sie sich verschiedener Fachsprachen bedienen und die des anderen nicht beherrschen. Beteiligte Stakeholder, die eine unterschiedliche Sprache sprechen:
         *** Kunde
         *** Vertriebler
@@ -58,7 +58,7 @@ Rand- und Rahmenbedingungen:: Bedingungen, die weiter einschränken, wie das Sys
 * ethisch
 
 === Kategorisierung nach Priorität
-_Siehe auch link:./zielfindungsprozess#_priorisierung[Zielfindungsprozess: Priorisierung]_
+_Siehe auch link:./zielfindungsprozess.html#_priorisierung[Zielfindungsprozess: Priorisierung]_
 
 Pflicht:: Ist zwingend zu erfüllen und juristisch verbindlich.
 Wunsch:: Zeigt die Intention der Umsetzung, besonders bei Vorschlägen vom Kunden.

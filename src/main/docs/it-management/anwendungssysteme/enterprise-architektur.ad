@@ -26,12 +26,12 @@ Technology Architecture::
 Bestandteile des {eam}:
 
 * *Analyse und Dokumentation* einer gegenwärtigen oder zukünftigen (IT-) Unternehmensstruktur
-* link:./multiprojektmanagement#_projektportfoliomanagement[*Projektportfolio-Management*], besonders in Bezug zur strategisch besseren Positionierung des Unternehmens
+* link:./multiprojektmanagement.html#_projektportfoliomanagement[*Projektportfolio-Management*], besonders in Bezug zur strategisch besseren Positionierung des Unternehmens
 * *Management* einer vorhandenen *IT-Infratsruktur*
     ** soll das *gemeinsame Vorgehen* von geschäftlichem und IT-Management ermöglichen
     ** Erstellung, Planung und Umsetzung einer *{ea}*
     ** Prinzipien, Methoden udn Werkzeuge ür *Ausgestaltung und Änderung der IT-Landschaft*
-    ** entscheidend für link:./anwendungssysteme#_it_einsatz_und_unternehmenserfolg[nachhaltigen Unternehmenserfolg]
+    ** entscheidend für link:./anwendungssysteme.html#_it_einsatz_und_unternehmenserfolg[nachhaltigen Unternehmenserfolg]
 
 .{eam}
 image::enterprise_architektur_management_001.png[{eam}, 420, align="center"]

@@ -6,9 +6,9 @@
 == Kategorien
 Purchase:: Beschaffung von Standardsoftware am Markt
     Buy::: Kauf und Einführung von Standardsoftware
-    Rent::: Mieten von link:./cloud-computing#_cloud_services[SaaS/PaaS/IaaS/...]
+    Rent::: Mieten von link:./cloud-computing.html#_cloud_services[SaaS/PaaS/IaaS/...]
 Make:: Erstellung von Individualsoftware
-    Fremdentwicklung::: link:./it-outsourcing[Beauftragung der Erstellung durch externe IT-Spezialisten]
+    Fremdentwicklung::: link:./it-outsourcing.html[Beauftragung der Erstellung durch externe IT-Spezialisten]
     Eigenentwicklung::: Beauftragung der Erstellung durch eigene IT-Abteilung
     End-/Power-User-Computing::: Nicht-Programmierer erstellen die Lösung selbst, mit Office-Produkten
 
