@@ -158,7 +158,7 @@ a:hover, a:focus {
 @media screen and (max-width:767px) {
     #toc ul>li>ul>li>ul {
         display: none;
-    }    
+    }
 }
 /* SPECIFIC CONSTRUCTS */
 .overview-link {
@@ -170,6 +170,8 @@ a:hover, a:focus {
 #traditional-vs-agile-table tbody tr td:first-child {
     background: var(--header-background);
 }
-.sect2, .sect3, .sect4, .sect5, .sect6 {
-    padding-left: 1.5rem;
+@media screen and (orientation: landscape) {
+    .sect2, .sect3, .sect4, .sect5, .sect6 {
+        padding-left: 1.5rem;
+    }
 }
