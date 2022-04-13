@@ -219,11 +219,11 @@ Function Render-IndexFile
                     $Doc = $Doc.Substring(5)
                 }
             }
-            If($Doc -like "include:*")
+            If($Doc -like "import:*")
             {
                 $Doc = $Doc.Substring(8)
-                Write-Log "Build include: $Doc" INFO ($LogDepth + 1)
-                $IndexFileContent += Render-IncludeFile $Doc $Css "\$FileName" ($LogDepth + 2)
+                Write-Log "Build import: $Doc" INFO ($LogDepth + 1)
+                $IndexFileContent += Render-ImportFile $Doc $Css "\$FileName" ($LogDepth + 2)
             }
             ElseIf($Doc -like "index:*")
             {
@@ -274,7 +274,7 @@ Function Render-IndexFile
     Return $Link
 }
 
-Function Render-IncludeFile
+Function Render-ImportFile
 {
     [CmdletBinding()]
     Param(

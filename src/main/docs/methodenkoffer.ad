@@ -2,23 +2,23 @@
 :dewey-template: index.topic.ad
 
 == Wirtschaftlichkeit
-include:methodenkoffer\wirtschaftlichkeit\kosten-und-nutzenarten.ad
+import:methodenkoffer\wirtschaftlichkeit\kosten-und-nutzenarten.ad
 
 === Nicht-monetäre Betrachtung
-include:methodenkoffer\wirtschaftlichkeit\paarweiser-vergleich.ad
-include:methodenkoffer\wirtschaftlichkeit\nutzwertanalyse.ad
+import:methodenkoffer\wirtschaftlichkeit\paarweiser-vergleich.ad
+import:methodenkoffer\wirtschaftlichkeit\nutzwertanalyse.ad
 
 === Monetäre Betrachtung
-include:methodenkoffer\wirtschaftlichkeit\stundensatz.ad
-include:methodenkoffer\wirtschaftlichkeit\investitionsrechnung.ad
+import:methodenkoffer\wirtschaftlichkeit\stundensatz.ad
+import:methodenkoffer\wirtschaftlichkeit\investitionsrechnung.ad
 
 === Gemischte Betrachtung
-include:methodenkoffer\wirtschaftlichkeit\ufab-bewertungsmethoden.ad
+import:methodenkoffer\wirtschaftlichkeit\ufab-bewertungsmethoden.ad
 
 == Strategie
-include:methodenkoffer\swot-analyse.ad
-include:methodenkoffer\sipoc-methode.ad
-include:methodenkoffer\eisenhower-matrix.ad
+import:methodenkoffer\swot-analyse.ad
+import:methodenkoffer\sipoc-methode.ad
+import:methodenkoffer\eisenhower-matrix.ad
 
 == Organisation
-include:methodenkoffer\workshops.ad
+import:methodenkoffer\workshops.ad

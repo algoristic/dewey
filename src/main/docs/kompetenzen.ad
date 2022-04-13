@@ -2,9 +2,9 @@
 :dewey-template: index.topic.ad
 
 == Weiterentwicklung
-include:kompetenzen\arbeitseffizienz.ad
-include:kompetenzen\persoenlichkeitsentwicklung.ad
+import:kompetenzen\arbeitseffizienz.ad
+import:kompetenzen\persoenlichkeitsentwicklung.ad
 
 == Mindset
-include:kompetenzen\wahrheiten.ad
-include:kompetenzen\zitate.ad
+import:kompetenzen\wahrheiten.ad
+import:kompetenzen\zitate.ad

@@ -2,46 +2,46 @@
 :dewey-template: index.topic.ad
 
 == Grundbegriffe
-include:it-management\grundbegriffe\informatik.ad
-include:it-management\grundbegriffe\informationsmanagement.ad
-include:it-management\grundbegriffe\informations-und-anwendungssysteme.ad
-include:it-management\grundbegriffe\nutzer-nutzen-nutzung.ad
-include:it-management\grundbegriffe\wirtschaftlichkeit-von-it-systemen.ad
+import:it-management\grundbegriffe\informatik.ad
+import:it-management\grundbegriffe\informationsmanagement.ad
+import:it-management\grundbegriffe\informations-und-anwendungssysteme.ad
+import:it-management\grundbegriffe\nutzer-nutzen-nutzung.ad
+import:it-management\grundbegriffe\wirtschaftlichkeit-von-it-systemen.ad
 
 == Betriebswirtschaftslehre
-include:it-management\bwl\oekonomisches-prinzip.ad
-include:it-management\bwl\wirtschaftsgueter.ad
-include:it-management\bwl\kategorisierung-unternehmen.ad
-include:it-management\bwl\unternehmensorganisation.ad
-include:it-management\bwl\st-galler-management-modell.ad
-include:it-management\bwl\geschaeftsprozesse.ad
-include:it-management\bwl\governance.ad
+import:it-management\bwl\oekonomisches-prinzip.ad
+import:it-management\bwl\wirtschaftsgueter.ad
+import:it-management\bwl\kategorisierung-unternehmen.ad
+import:it-management\bwl\unternehmensorganisation.ad
+import:it-management\bwl\st-galler-management-modell.ad
+import:it-management\bwl\geschaeftsprozesse.ad
+import:it-management\bwl\governance.ad
 
 == Anwendungssysteme
-include:it-management\anwendungssysteme\anwendungssysteme.ad
-include:it-management\anwendungssysteme\klassifikation-anwendungssysteme.ad
-include:it-management\anwendungssysteme\integrationsrichtungen.ad
-include:it-management\anwendungssysteme\prototyping.ad
+import:it-management\anwendungssysteme\anwendungssysteme.ad
+import:it-management\anwendungssysteme\klassifikation-anwendungssysteme.ad
+import:it-management\anwendungssysteme\integrationsrichtungen.ad
+import:it-management\anwendungssysteme\prototyping.ad
 
 === Geschäftsprozessorientierte Software
-include:it-management\anwendungssysteme\erp-systeme.ad
-include:it-management\anwendungssysteme\betriebswirtschaftliche-standardsoftware.ad
-include:it-management\anwendungssysteme\enterprise-architektur.ad
+import:it-management\anwendungssysteme\erp-systeme.ad
+import:it-management\anwendungssysteme\betriebswirtschaftliche-standardsoftware.ad
+import:it-management\anwendungssysteme\enterprise-architektur.ad
 
 === Beschaffung
-include:it-management\beschaffung\anforderungen-an-anwendungssysteme.ad
-include:it-management\beschaffung\prozess-softwarekauf.ad
-include:it-management\beschaffung\auswahlprozess-softwarekauf.ad
-include:it-management\beschaffung\software-rollout.ad
+import:it-management\beschaffung\anforderungen-an-anwendungssysteme.ad
+import:it-management\beschaffung\prozess-softwarekauf.ad
+import:it-management\beschaffung\auswahlprozess-softwarekauf.ad
+import:it-management\beschaffung\software-rollout.ad
 
 === Auslagerung
-include:it-management\beschaffung\make-or-buy.ad
-include:it-management\beschaffung\it-outsourcing.ad
-include:it-management\beschaffung\cloud-computing.ad
+import:it-management\beschaffung\make-or-buy.ad
+import:it-management\beschaffung\it-outsourcing.ad
+import:it-management\beschaffung\cloud-computing.ad
 
 == IT Service-Management
-include:it-management\it-service-management\itil.ad
-include:it-management\it-service-management\itil-kernbereiche.ad
-include:it-management\it-service-management\compliance-and-governance-frameworks.ad
-include:it-management\it-service-management\change-management-process.ad
-include:it-management\it-service-management\service-level-agreement.ad
+import:it-management\it-service-management\itil.ad
+import:it-management\it-service-management\itil-kernbereiche.ad
+import:it-management\it-service-management\compliance-and-governance-frameworks.ad
+import:it-management\it-service-management\change-management-process.ad
+import:it-management\it-service-management\service-level-agreement.ad

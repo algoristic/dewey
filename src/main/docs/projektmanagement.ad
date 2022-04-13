@@ -4,46 +4,46 @@
 == Grundlagen
 
 === Grundbegriffe
-include:projektmanagement\grundlagen\was-ist-ein-projekt.ad
-include:projektmanagement\grundlagen\was-ist-projektmanagement.ad
+import:projektmanagement\grundlagen\was-ist-ein-projekt.ad
+import:projektmanagement\grundlagen\was-ist-projektmanagement.ad
 
 === Vorgehensmodelle
-include:projektmanagement\grundlagen\phasen-und-vorgehensmodelle.ad
-include:projektmanagement\grundlagen\uebersicht-vorgehensmodelle.ad
+import:projektmanagement\grundlagen\phasen-und-vorgehensmodelle.ad
+import:projektmanagement\grundlagen\uebersicht-vorgehensmodelle.ad
 
 ==== Agiles Vorgehen
-include:projektmanagement\grundlagen\das-agile-manifest.ad
-include:projektmanagement\grundlagen\scrum.ad
-include:projektmanagement\grundlagen\kanban.ad
-include:projektmanagement\grundlagen\agile-skalierungsframeworks.ad
+import:projektmanagement\grundlagen\das-agile-manifest.ad
+import:projektmanagement\grundlagen\scrum.ad
+import:projektmanagement\grundlagen\kanban.ad
+import:projektmanagement\grundlagen\agile-skalierungsframeworks.ad
 
 === Organisation
-include:projektmanagement\grundlagen\projektorganisation.ad
-include:projektmanagement\grundlagen\projektaufbauorganisation.ad
-include:projektmanagement\grundlagen\unterstuetzungsfunktionen.ad
-include:projektmanagement\grundlagen\hilfsmittel.ad
-include:projektmanagement\grundlagen\multiprojektmanagement.ad
+import:projektmanagement\grundlagen\projektorganisation.ad
+import:projektmanagement\grundlagen\projektaufbauorganisation.ad
+import:projektmanagement\grundlagen\unterstuetzungsfunktionen.ad
+import:projektmanagement\grundlagen\hilfsmittel.ad
+import:projektmanagement\grundlagen\multiprojektmanagement.ad
 
 == Initialisierung
-include:projektmanagement\initialisierung\initialisierung.ad
+import:projektmanagement\initialisierung\initialisierung.ad
 
 == Definition
-include:projektmanagement\definition\definition.ad
+import:projektmanagement\definition\definition.ad
 
 === Organsatorisches
-include:projektmanagement\definition\meetings.ad
-include:projektmanagement\definition\dokumente.ad
+import:projektmanagement\definition\meetings.ad
+import:projektmanagement\definition\dokumente.ad
 
 === Zielfindung
-include:projektmanagement\definition\ziele.ad
-include:projektmanagement\definition\zielfindungsprozess.ad
+import:projektmanagement\definition\ziele.ad
+import:projektmanagement\definition\zielfindungsprozess.ad
 
 === Machbarkeitsanalyse
-include:projektmanagement\definition\machbarkeitsanalyse.ad
+import:projektmanagement\definition\machbarkeitsanalyse.ad
 
 === Stakeholdermanagement
-include:projektmanagement\definition\stakeholdermanagement.ad
-include:projektmanagement\definition\stakeholdermanagement-prozess.ad
+import:projektmanagement\definition\stakeholdermanagement.ad
+import:projektmanagement\definition\stakeholdermanagement-prozess.ad
 
 === Planung
-include:projektmanagement\definition\grobplanung.ad
+import:projektmanagement\definition\grobplanung.ad
