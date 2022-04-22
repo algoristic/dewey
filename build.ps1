@@ -221,15 +221,15 @@ Function Render-IndexFile
             }
             If($Doc -like "import:*")
             {
-                $Doc = $Doc.Substring(8)
+                $Doc = $Doc.Substring(7)
                 Write-Log "Build import: $Doc" INFO ($LogDepth + 1)
-                $IndexFileContent += Render-ImportFile $Doc $Css "\$FileName" ($LogDepth + 2)
+                $IndexFileContent += Render-ImportFile $Doc $Css ".\$FileName" ($LogDepth + 2)
             }
             ElseIf($Doc -like "index:*")
             {
                 $Doc = $Doc.Substring(6)
                 Write-Log "Build index: $Doc" INFO ($LogDepth + 1)
-                $IndexFileContent += Render-IndexFile "$Src\$Doc" $Css "\$FileName" ($LogDepth + 2)
+                $IndexFileContent += Render-IndexFile "$Src\$Doc" $Css ".\$FileName" ($LogDepth + 2)
             }
             ElseIf($Doc -like ":dewey-template:*")
             {
