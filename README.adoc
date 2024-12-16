@@ -4,8 +4,7 @@ Einfach der Versuch nach und nach eine Wissendatenbank für mich aufzubauen...
 
 Der Name dieses Projektes bezieht sich auf https://de.wikipedia.org/wiki/Melvil_Dewey[Melvil Dewey], den Erfinder der https://de.wikipedia.org/wiki/Dewey-Dezimalklassifikation[Dewey-Dezimalklassifikation] für Bibliotheksestände.
 
-*Prod* Version: http://wiki.algoristic.de/ +
-*Develop* System: http://dewey.algoristic.de/
+Live Version: https://algoristic.de/wiki/
 
 == 🚀 Getting Started
 
